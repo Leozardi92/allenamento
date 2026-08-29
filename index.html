@@ -1,22 +1,1167 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard Allenamento — Leonardo Zardini</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Piano allenamento 2026-2027 — Leonardo Zardini</title>
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
-  body { background: #0f0f0f; color: #f0ede8; font-family: -apple-system, sans-serif;
-    display: flex; align-items: center; justify-content: center; min-height: 100vh;
-    flex-direction: column; gap: 16px; text-align: center; padding: 20px; }
-  h1 { font-size: 24px; font-weight: 900; }
-  p { color: #6b6560; font-size: 14px; }
-  .pill { background: #1a1a1a; border: 1px solid #2e2e2e; border-radius: 99px;
-    padding: 8px 20px; font-size: 13px; color: #4ade80; }
+  :root {
+    --bg:#0f0f0f; --card:#1a1a1a; --card2:#242424; --border:#2e2e2e;
+    --text:#f0ede8; --muted:#6b6560;
+    --p1:#4ade80; --p2:#60a5fa; --p3:#f97316; --p4:#a78bfa; --p5:#f43f5e; --p6:#fbbf24;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; color: var(--text); }
+  #root { min-height: 100vh; max-width: 480px; margin: 0 auto; padding-bottom: 60px; }
+
+  .header { background: linear-gradient(160deg,#1a1a2e 0%,#0f0f1a 100%); padding: 40px 20px 20px; border-bottom: 1px solid var(--border); }
+  .eyebrow { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  h1 { font-size: 22px; font-weight: 900; letter-spacing: -0.5px; margin: 0; }
+  .subline { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+  .tabs { display: flex; gap: 6px; padding: 14px 16px 0; }
+  .tab-btn { flex: 1; padding: 8px 0; border-radius: 10px; font-size: 12px; font-weight: 700; border: none; cursor: pointer; background: var(--card); color: var(--muted); }
+  .tab-btn.active { background: var(--p2); color: #000; }
+  .page { padding: 12px 16px 0; display: none; }
+  .page.active { display: block; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 12px; }
+  .card-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid var(--border); }
+  .card-head .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+  .card-head .date { font-size: 11px; color: var(--p6); }
+  .card-body { padding: 12px 14px; }
+
+  .semaforo { margin: 0 0 12px; padding: 10px 14px; border-radius: 12px; font-size: 12px; font-weight: 600; border: 1px solid; }
+
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; }
+  .stat-grid > div { padding: 10px 14px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stat-grid > div:nth-child(2n) { border-right: none; }
+  .stat-grid > div:nth-last-child(-n+2):nth-child(2n) ~ div { border-bottom: none; }
+  .stat-v { font-size: 18px; font-weight: 800; }
+  .stat-l { font-size: 10px; color: var(--muted); margin-top: 1px; }
+
+  .param-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .param-grid > div { padding: 14px 8px; text-align: center; border-right: 1px solid var(--border); }
+  .param-grid > div:last-child { border-right: none; }
+  .param-v { font-size: 22px; font-weight: 900; }
+  .param-l { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--text); margin-top: 4px; }
+  .param-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  #activity-map { height: 200px; width: 100%; background: #1a1a1a; }
+  .leaflet-container { background: #1a1a1a !important; }
+  .activity-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; padding: 12px 14px; }
+  .activity-stats div { text-align: center; }
+  .activity-stats .v { font-size: 15px; font-weight: 800; }
+  .activity-stats .l { font-size: 9px; color: var(--muted); margin-top: 1px; text-transform: uppercase; letter-spacing: .05em; }
+
+  .zone-bar { display: flex; height: 22px; border-radius: 6px; overflow: hidden; margin: 8px 14px; }
+  .zone-bar > div { display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 700; color: #0008; }
+  .zone-legend { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 14px 12px; font-size: 10px; color: var(--muted); }
+  .zone-legend span { display: inline-flex; align-items: center; gap: 4px; }
+  .zone-legend i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+
+  .note { font-size: 11px; color: var(--muted); line-height: 1.5; padding: 0 14px 12px; }
+  .note.warn { color: var(--p6); }
+
+  .chart-legend { display: flex; flex-wrap: wrap; gap: 12px; padding: 0 14px 12px; font-size: 10px; color: var(--muted); }
+  .chart-legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .chart-legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .chart-legend i.dashed { background: none; border: 1.5px dashed var(--muted); }
+
+  .footer-note { text-align: center; font-size: 10px; color: var(--muted); padding: 20px 16px; }
+
+  /* --- Tab Piano --- */
+  .countdown { display: grid; grid-template-columns: 1fr 1fr 1fr; background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 12px; }
+  .countdown > div { padding: 14px 0; text-align: center; border-right: 1px solid var(--border); }
+  .countdown > div:last-child { border-right: none; }
+  .countdown .v { font-size: 22px; font-weight: 900; color: var(--p6); }
+  .countdown .l { font-size: 9px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-top: 2px; }
+
+  .milestone-row { display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .milestone-row:last-child { border-bottom: none; }
+  .milestone-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+  .milestone-date { font-size: 10px; color: var(--muted); }
+  .milestone-name { font-size: 13px; font-weight: 700; margin-top: 1px; }
+  .milestone-detail { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  .phase-tabs { display: flex; gap: 6px; padding: 0 0 10px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .phase-tab { flex-shrink: 0; padding: 7px 14px; border-radius: 10px; font-size: 12px; font-weight: 700; border: none; cursor: pointer; background: var(--card); color: var(--muted); }
+  .phase-tab.active { color: #000; }
+  .phase-meta { padding: 0 0 10px; font-size: 11px; color: var(--muted); }
+
+  .week-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 8px; }
+  .week-head { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 13px 14px; background: none; border: none; cursor: pointer; text-align: left; color: inherit; font: inherit; }
+  .week-title-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .week-title { font-size: 14px; font-weight: 800; color: var(--text); }
+  .week-badge { font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
+  .week-dates { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .week-chevron { font-size: 12px; color: var(--muted); }
+  .week-body { border-top: 1px solid var(--border); }
+  .week-note { margin: 10px 12px 0; background: var(--card2); border: 1px solid var(--border); border-radius: 10px; padding: 9px 11px; font-size: 12px; color: #a0a0a0; line-height: 1.5; }
+  .week-days { padding: 10px 12px 12px; }
+  .day-row { display: flex; align-items: flex-start; gap: 10px; padding: 7px 9px; border-radius: 10px; margin-bottom: 4px; }
+  .day-row.key { background: var(--card2); border: 1px solid var(--border); }
+  .day-label { font-size: 10px; font-weight: 700; color: var(--muted); width: 26px; flex-shrink: 0; padding-top: 2px; }
+  .day-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+  .day-pill { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
+  .day-detail { font-size: 11px; color: var(--muted); margin-top: 3px; line-height: 1.4; }
+
+  /* --- Tab Panoramica --- */
+  .heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; }
+  table.heatmap { border-collapse: collapse; font-size: 9px; }
+  table.heatmap th, table.heatmap td { min-width: 28px; height: 28px; text-align: center; border: 1px solid var(--border); white-space: nowrap; padding: 0 2px; }
+  table.heatmap thead th { font-size: 9px; color: var(--muted); font-weight: 700; background: var(--card); position: sticky; top: 0; z-index: 2; }
+  table.heatmap .hm-label { position: sticky; left: 0; z-index: 3; background: var(--card); text-align: left; font-size: 9px; color: var(--muted); padding: 0 6px; min-width: 76px; }
+  table.heatmap thead th.hm-label { z-index: 4; }
+  table.heatmap .hm-current { outline: 1.5px solid var(--p6); outline-offset: -1.5px; }
+  .panorama-legend { display: flex; flex-wrap: wrap; gap: 10px; padding: 10px 14px; font-size: 10px; color: var(--muted); }
+  .panorama-legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .panorama-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+
+  /* --- Tab Forma --- */
+  .toggle-row { display: flex; gap: 6px; padding: 0 14px 10px; }
+  .toggle-btn { flex: 1; padding: 6px 0; border-radius: 8px; font-size: 11px; font-weight: 700; border: none; cursor: pointer; background: var(--card2); color: var(--muted); }
+  .toggle-btn.active { background: var(--p2); color: #000; }
+  .threshold-box { display: flex; gap: 10px; padding: 0 14px 12px; }
+  .threshold-box > div { flex: 1; background: var(--card2); border-radius: 12px; padding: 12px; text-align: center; }
+  .threshold-box .tv { font-size: 20px; font-weight: 900; }
+  .threshold-box .tl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .threshold-box .tp { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  /* --- Tab Verdict --- */
+  .verdict-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; margin-bottom: 8px; padding: 13px 14px; }
+  .verdict-title-row { display: flex; align-items: center; justify-content: space-between; }
+  .verdict-title { font-size: 14px; font-weight: 800; }
+  .verdict-dates { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .verdict-status { font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
 </style>
 </head>
 <body>
-  <div class="pill">🏔️ Lavaredo 80K · 26 giu 2027</div>
-  <h1>Dashboard in arrivo</h1>
-  <p>Claude Code genererà la dashboard completa<br>al prossimo avvio sul PC.</p>
+<div id="root">
+  <div class="header">
+    <div class="eyebrow">Leonardo Zardini</div>
+    <h1>Piano allenamento 2026-2027</h1>
+    <div class="subline" id="generated-at"></div>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" data-page="oggi">Oggi</button>
+    <button class="tab-btn" data-page="forma">Forma</button>
+    <button class="tab-btn" data-page="piano">Piano</button>
+    <button class="tab-btn" data-page="blocchi">Blocchi</button>
+    <button class="tab-btn" data-page="verdict">Verdict</button>
+  </div>
+  <div class="page active" id="page-oggi"></div>
+  <div class="page" id="page-forma"></div>
+  <div class="page" id="page-piano"></div>
+  <div class="page" id="page-blocchi"></div>
+  <div class="page" id="page-verdict"></div>
+  <div class="footer-note">Generato automaticamente · dati Garmin + Strava</div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+"use strict";
+
+var DATA = {"generated_at": "29/08/2026 19:27", "wellness": {"date": "2026-08-29", "rhr": 48, "bb": 86, "stress": 13, "tr": 71, "hrv": 66, "sleep_h": 7.2, "sleep_score": 67}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "08/06", "planned": null, "actual": 25.3, "is_current": false}, {"label": "15/06", "planned": null, "actual": 26.2, "is_current": false}, {"label": "22/06", "planned": null, "actual": 21.6, "is_current": false}, {"label": "29/06", "planned": null, "actual": 34.4, "is_current": false}, {"label": "06/07", "planned": null, "actual": 19.9, "is_current": false}, {"label": "13/07", "planned": null, "actual": 16.4, "is_current": false}, {"label": "20/07", "planned": null, "actual": 14.6, "is_current": false}, {"label": "27/07", "planned": null, "actual": 0.0, "is_current": false}, {"label": "03/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "10/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "17/08", "planned": null, "actual": 4.5, "is_current": false}, {"label": "24/08", "planned": null, "actual": 7.8, "is_current": true}], "weekly_actual_km": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "19879149439", "name": "Morning Hike", "sport_type": "Hike", "start_local": "2026-08-24T10:10:00", "summary": {"distance": 7812.6, "moving_time": 10369, "elapsed_time": 19583, "elevation_gain": 647, "avg_speed": 0.7534574211592246, "total_calories": 1147, "relative_effort": 29}, "polyline": "_`ezG{hsfAfAFXJPLT?`@^BJ^FEf@LADJg@ZUADBINEUB`@E@JCQCFKKDEEPKCDDVFIRZLHVf@`@NTl@Dh@G`@_@d@AJCAB?C?CLA`@Sn@qA`@g@^_@BBAONm@D_@VGRDd@Ir@[tAMPGZWd@Ad@B\\GhAL~A^rC?vAh@hAHt@AXLf@\\h@@JCl@B\\BBBt@I\\MLAFY|AFXTPBN\\PR~@CLaACM|AHb@HKGPh@lBbAbAl@|ATPOfACp@Md@KfAGHDn@MXUFi@WQ?IMOAWo@Q@@JGHJ|CGp@LXAVXp@HNTHKXDl@Ct@r@fCVTN`@d@r@?VRt@Xt@x@hAJZFZALJPNbCZzBB|AFl@L^ALU\\Gx@@JMt@Sf@GjAHXFfAJf@VL?ZCDMKKNI@q@lAAG@FG@DEC?D@EBDCKJ_A@Ic@Qd@g@j@?J[?OVKI?GQGMOHC@SOGBC_@AUW[Ui@KSL_@@_A[cBuAm@GKSEBB@C?AFBAIKWIID_@Wa@Gk@Us@CKEWDEFBHCHc@@UTqAZWPO?GJc@FUGWLO^QRO^B?AIFAMEAFDCB@GABAAE@BEBBICDDECDB@E@HENT`@KAE@]MUFMf@Qh@Dj@UBGpAWVU^EBOLK^GzBd@b@TJCFJXALRj@H|AvA|@Xf@?NKj@Hh@ZNRl@FMVDJRF@RLQBBBKJGFPDG?ILEJYRMPc@DB?`@jAG?Ih@m@HYF?JQRGSWQq@Ec@?[K_@DkAHIh@aBCu@VY_@iAAmBMo@[cEUq@DYMWMKKYWQGOg@wAE[BUGMo@aAUSMm@Q_@BKCOEcAcBd@`BeBC?E[UKa@aACe@GODi@Eo@AwBLSn@XPXFA`@NTNNIFWCc@T}ABcAViACSSSCQk@mA]S[c@O]k@}BHqAHQd@J^CE_@Qi@q@q@KWDYHGHU?]JWJm@E}@EMBo@CQ]a@Gg@BSGq@k@w@COEo@Ba@GABBGBNGE?B@Gq@Me@A_A[aCB{AD_@p@{AFYFu@Pi@G]BYC?JIEAL@C@NBESVOf@CtBy@n@[Pg@Bg@HW\\m@DYBF?KGOGABCAIE@@BE_@i@a@q@_ASG@QJIdAg@SG?e@[BGK?MUUYAMIqAWQDgB_@_@DmASm@FSLSEs@e@y@Gc@DqBk@[Fi@B", "performance": {"average_heartrate": 101.788, "max_heartrate": 140, "average_cadence": 56.0639, "calories": 1147}, "hr_stream": {"time": [0, 98, 198, 297, 394, 493, 588, 692, 787, 889, 984, 1079, 1181, 1279, 1380, 1477, 1575, 1673, 1774, 1866, 1968, 2066, 2165, 2266, 2364, 2459, 2559, 2654, 2755, 2851, 2953, 3054, 3148, 3246, 3348, 3444, 3540, 3640, 3737, 3839, 3861, 4711, 4721, 4826, 4919, 5018, 5117, 5216, 5315, 5410, 5512, 5609, 5707, 5806, 5905, 6009, 6098, 6204, 6302, 6395, 6495, 6597, 6693, 6793, 6889, 6987, 7087, 7181, 7288, 7383, 7478, 7577, 7674, 7773, 7871, 7973, 8067, 8166, 8265, 8366, 8460, 8557, 8660, 8752, 8860, 8954, 9005, 11960, 12005, 12106, 12202, 12302, 12398, 12501, 12594, 12696, 12793, 12892, 12990, 13089, 13185, 13285, 13382, 13479, 13580, 13679, 13774, 13876, 13973, 14071, 14170, 14269, 14311, 16527, 16531, 16630, 16730, 16828, 16927, 17024, 17123, 17220, 17322, 17420, 17517, 17614, 17712, 17808, 17908, 18010, 18108, 18205, 18302, 18402, 18500, 18600, 18697, 18793, 18893, 18992, 19089, 19186, 19285, 19387, 19487, 19583], "heart_rate": [109, 108, 116, 116, 93, 91, 98, 101, 109, 81, 92, 96, 107, 103, 104, 117, 107, 113, 115, 109, 119, 121, 104, 89, 96, 107, 120, 113, 115, 93, 83, 94, 109, 118, 112, 114, 112, 111, 116, 90, 94, 89, 91, 88, 107, 117, 127, 123, 122, 138, 116, 121, 124, 95, 89, 85, 92, 84, 103, 117, 121, 114, 92, 115, 94, 107, 101, 92, 85, 95, 77, 114, 126, 117, 113, 115, 116, 104, 93, 97, 82, 88, 81, 80, 88, 88, 84, 86, 92, 83, 87, 95, 93, 89, 91, 98, 85, 100, 94, 101, 97, 98, 90, 88, 93, 92, 99, 93, 92, 82, 97, 101, 90, 89, 92, 91, 90, 94, 91, 94, 90, 92, 103, 97, 105, 102, 103, 101, 103, 88, 97, 93, 94, 97, 111, 105, 102, 96, 80, 77, 82, 83, 75, 73, 86, 82]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 153}, {"min": 154, "max": 156}, {"min": 157, "max": 161}, {"min": 162, "max": 170}], "thresholds": {"aet": 153, "ant": 161, "fcmax": 170, "aet_pace": "5:43/km", "ant_pace": "5:05/km"}, "latest_activity_zone_seconds": [10369, 0, 0, 0, 0], "latest_activity_comment": "È stata un'escursione prevalentemente aerobica — FC quasi sempre in Z1/Z2 (100% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Dislivello impegnativo (647 m su 7.8 km, ~83 m/km): spiega passo lento e FC media contenuta (102 bpm) — normale su un percorso così ripido, non è un segnale di forma scarsa. Effort relativo Strava: 29 (carico basso).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}], "zone_agg_all": {"zone_seconds": [12012, 268, 89, 36, 0], "n_activities": 2, "z1z2_pct": 99, "low_aerobic_flag": false}, "zone_agg_block": null, "current_block": null, "block_daily_km": []};
+
+var C = { p1:"#4ade80", p2:"#60a5fa", p3:"#f97316", p4:"#a78bfa", p5:"#f43f5e", p6:"#fbbf24", muted:"#6b6560" };
+var ZONE_COLORS = ["#6b7280", "#60a5fa", "#4ade80", "#f97316", "#f43f5e"];
+var ZONE_NAMES = ["Z1", "Z2", "Z3", "Z4", "Z5"];
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, function(c) {
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+  });
+}
+
+// --- Decodifica polyline Google (usata da Strava) — algoritmo standard, nessuna libreria esterna ---
+function decodePolyline(str) {
+  var index = 0, lat = 0, lng = 0, coordinates = [];
+  while (index < str.length) {
+    var b, shift = 0, result = 0;
+    do { b = str.charCodeAt(index++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+    lat += (result & 1) ? ~(result >> 1) : (result >> 1);
+    shift = 0; result = 0;
+    do { b = str.charCodeAt(index++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+    lng += (result & 1) ? ~(result >> 1) : (result >> 1);
+    coordinates.push([lat / 1e5, lng / 1e5]);
+  }
+  return coordinates;
+}
+
+function semaforo(w) {
+  if (!w) return { bg: "#1c1004", col: "#fbbf24", text: "⚠️ Nessun dato Garmin recente disponibile" };
+  var r = 0, y = 0;
+  if (w.rhr > 62) r++; else if (w.rhr > 57) y++;
+  if (w.bb < 40) r++; else if (w.bb < 60) y++;
+  if (w.stress > 50) y++;
+  if (w.tr < 40) r++; else if (w.tr < 60) y++;
+  if (r >= 2) return { bg: "#1c0808", col: "#f87171", text: "🔴 Segnali di affaticamento — riposo o attività molto leggera oggi" };
+  if (r === 1 || y >= 2) return { bg: "#1c1004", col: C.p6, text: "⚠️ Recupero non completo — alleggerisci la sessione del 20–30%" };
+  return { bg: "#052e16", col: C.p1, text: "✅ Garmin nella norma — procedi con la sessione pianificata" };
+}
+
+// --- SVG line chart: km cumulati giorno per giorno nel blocco corrente,
+// con una linea tratteggiata orizzontale per il target pianificato del blocco ---
+function blockKmLineSVG(series, targetTotal) {
+  var w = 420, h = 150, padL = 28, padR = 8, padT = 12, padB = 22;
+  var maxVal = Math.max(targetTotal || 0, series.length ? series[series.length - 1].cumulative_km : 0, 10) * 1.1;
+  function x(i) { return series.length > 1 ? padL + i * (w - padL - padR) / (series.length - 1) : padL; }
+  function y(v) { return padT + (h - padT - padB) * (1 - v / maxVal); }
+
+  var pathParts = series.map(function(d, i) {
+    return (i ? "L" : "M") + x(i).toFixed(1) + "," + y(d.cumulative_km).toFixed(1);
+  });
+  var lastPt = series.length ? [x(series.length - 1), y(series[series.length - 1].cumulative_km)] : null;
+
+  var targetLine = "";
+  if (targetTotal) {
+    var ty = y(targetTotal).toFixed(1);
+    targetLine =
+      '<line x1="' + padL + '" y1="' + ty + '" x2="' + (w - padR) + '" y2="' + ty +
+        '" stroke="' + C.muted + '" stroke-width="1.5" stroke-dasharray="3,3" />' +
+      '<text x="' + (w - padR) + '" y="' + (parseFloat(ty) - 4) + '" font-size="9" fill="' + C.muted +
+        '" text-anchor="end">target ' + targetTotal + ' km</text>';
+  }
+
+  var labelStep = Math.max(1, Math.ceil(series.length / 6));
+  var xLabels = series.map(function(d, i) {
+    if (i % labelStep !== 0 && i !== series.length - 1) return "";
+    return '<text x="' + x(i).toFixed(1) + '" y="' + (h - 6) + '" font-size="8" fill="' + C.muted +
+      '" text-anchor="middle">' + esc(d.date) + '</text>';
+  }).join("");
+
+  return (
+    '<svg viewBox="0 0 ' + w + ' ' + h + '" style="width:100%;height:auto;display:block">' +
+      targetLine +
+      '<path d="' + pathParts.join(" ") + '" fill="none" stroke="' + C.p2 + '" stroke-width="1.8" />' +
+      (lastPt ? '<circle cx="' + lastPt[0].toFixed(1) + '" cy="' + lastPt[1].toFixed(1) + '" r="3" fill="' + C.p6 + '" />' : "") +
+      xLabels +
+    '</svg>'
+  );
+}
+
+function zoneBarHTML(seconds) {
+  var total = seconds.reduce(function(a,b){return a+b;}, 0) || 1;
+  var bar = seconds.map(function(s, i) {
+    var pct = (s / total * 100);
+    if (pct < 1) return "";
+    return '<div style="width:' + pct.toFixed(1) + '%;background:' + ZONE_COLORS[i] + '">' +
+      (pct > 8 ? ZONE_NAMES[i] : "") + '</div>';
+  }).join("");
+  var legend = seconds.map(function(s, i) {
+    var min = Math.round(s / 60);
+    return '<span><i style="background:' + ZONE_COLORS[i] + '"></i>' + ZONE_NAMES[i] + ' ' + min + ' min</span>';
+  }).join("");
+  return '<div class="zone-bar">' + bar + '</div><div class="zone-legend">' + legend + '</div>';
+}
+
+function fmtDuration(sec) {
+  var h = Math.floor(sec / 3600), m = Math.round((sec % 3600) / 60);
+  return h > 0 ? (h + "h " + m + "min") : (m + " min");
+}
+function fmtPace(distM, movingS) {
+  if (!distM) return "N/A";
+  var secPerKm = movingS / (distM / 1000);
+  var m = Math.floor(secPerKm / 60), s = Math.round(secPerKm % 60);
+  return m + ":" + (s < 10 ? "0" : "") + s + "/km";
+}
+
+function renderOggi() {
+  var w = DATA.wellness;
+  var sem = semaforo(w);
+
+  var activityHTML = "";
+  if (DATA.latest_activity) {
+    var a = DATA.latest_activity;
+    var dist = (a.summary.distance / 1000).toFixed(2);
+    activityHTML =
+      '<div class="card">' +
+        '<div class="card-head"><span class="label">🏃 Ultima attività</span><span class="date">' +
+          esc(new Date(a.start_local).toLocaleDateString("it-IT")) + '</span></div>' +
+        '<div id="activity-map"></div>' +
+        '<div class="activity-stats">' +
+          '<div><div class="v">' + dist + ' km</div><div class="l">distanza</div></div>' +
+          '<div><div class="v">' + a.summary.elevation_gain + ' m</div><div class="l">D+</div></div>' +
+          '<div><div class="v">' + fmtDuration(a.summary.moving_time) + '</div><div class="l">durata</div></div>' +
+          '<div><div class="v">' + fmtPace(a.summary.distance, a.summary.moving_time) + '</div><div class="l">passo</div></div>' +
+          '<div><div class="v">' + Math.round(a.performance.average_heartrate) + ' bpm</div><div class="l">FC media</div></div>' +
+          '<div><div class="v">' + a.summary.total_calories + '</div><div class="l">calorie</div></div>' +
+        '</div>' +
+        (DATA.latest_activity_zone_seconds ? zoneBarHTML(DATA.latest_activity_zone_seconds) : "") +
+        (DATA.latest_activity_comment ?
+          '<div class="note" style="padding-top:0">' + esc(DATA.latest_activity_comment) + '</div>' : "") +
+      '</div>';
+  }
+
+  var wellnessDateLabel = w ? esc(w.date.split("-").reverse().join("/")) : "nessun dato recente";
+
+  var blockHTML;
+  if (DATA.current_block) {
+    var b = DATA.current_block;
+    var doneKm = DATA.block_daily_km.length ? DATA.block_daily_km[DATA.block_daily_km.length - 1].cumulative_km : 0;
+    var fmtD = function(iso) { return iso.split("-").reverse().join("/"); };
+    blockHTML =
+      '<div class="card">' +
+        '<div class="card-head"><span class="label">📊 ' + esc(b.name) + ' · ' + fmtD(b.start) + '–' + fmtD(b.end) + '</span>' +
+          '<span class="date">' + doneKm + ' / ' + b.planned_total + ' km</span></div>' +
+        '<div class="card-body">' + blockKmLineSVG(DATA.block_daily_km, b.planned_total) + '</div>' +
+        '<div class="note">Km cumulati (corsa + trail, Strava) dall&apos;inizio del blocco corrente. Linea tratteggiata = target pianificato del blocco.</div>' +
+      '</div>';
+  } else {
+    blockHTML =
+      '<div class="card"><div class="card-body">' +
+        '<div class="note" style="padding:8px 0">Il piano non è ancora iniziato — parte il 1° settembre 2026 con il blocco Restart.</div>' +
+      '</div></div>';
+  }
+
+  document.getElementById("page-oggi").innerHTML =
+    '<div class="semaforo" style="background:' + sem.bg + ';border-color:' + sem.col + ';color:' + sem.col + '">' + sem.text + '</div>' +
+    '<div class="note" style="padding:0 0 12px;text-align:center">⌚ Dati Garmin aggiornati al ' + wellnessDateLabel + '</div>' +
+    blockHTML +
+    activityHTML;
+
+  document.getElementById("generated-at").textContent = "Aggiornato " + DATA.generated_at;
+
+  if (DATA.latest_activity && DATA.latest_activity.polyline && window.L) {
+    var coords = decodePolyline(DATA.latest_activity.polyline);
+    if (coords.length) {
+      var map = L.map("activity-map", { zoomControl: false, attributionControl: false, dragging: false, scrollWheelZoom: false });
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 17 }).addTo(map);
+      var line = L.polyline(coords, { color: "#4ade80", weight: 3 }).addTo(map);
+      map.fitBounds(line.getBounds(), { padding: [12, 12] });
+    }
+  }
+}
+
+// ============================================================
+// TAB FORMA — soglie AeT/AnT nel tempo + zone cardiache aggregate
+// ============================================================
+
+function fmtPaceFromSec(secPerKm) {
+  if (!secPerKm) return "N/A";
+  var m = Math.floor(secPerKm / 60), s = Math.round(secPerKm % 60);
+  return m + ":" + (s < 10 ? "0" : "") + s + "/km";
+}
+
+// Fasce cardiache di riferimento (Z1-Z5), calcolate lato Python da AeT/AnT/
+// FCmax in contesto-allenamento.md — 5 segmenti a LARGHEZZA UGUALE (non
+// proporzionale ai bpm: Z3 può essere larga solo 3 bpm, con una barra
+// proporzionale i numeri si accavallano e diventa illeggibile). Ogni
+// segmento porta il proprio nome + range, quindi resta leggibile a
+// prescindere da quanto è fisiologicamente stretta quella zona.
+function fasceCardiacheSVG(zones) {
+  var names = ["Z1", "Z2", "Z3", "Z4", "Z5+"];
+  var colors = ["#6b7280", "#4ade80", "#fbbf24", "#f97316", "#f43f5e"];
+  var displayFloor = 100; // solo per l'etichetta di Z1 — la classificazione dati reale resta invariata
+
+  var segs = zones.map(function(z, i) {
+    var lo = (i === 0) ? Math.max(z.min, displayFloor) : z.min;
+    var rangeLabel = (i === zones.length - 1) ? (lo + "+") : (lo + "–" + z.max);
+    return (
+      '<div style="flex:1;background:' + colors[i] + ';padding:10px 4px;text-align:center;' +
+        (i > 0 ? 'border-left:2px solid var(--bg);' : '') + '">' +
+        '<div style="font-size:12px;font-weight:900;color:#0009">' + names[i] + '</div>' +
+        '<div style="font-size:11px;font-weight:700;color:#0008;margin-top:2px;white-space:nowrap">' + rangeLabel + '</div>' +
+      '</div>'
+    );
+  }).join("");
+
+  return '<div style="display:flex;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.3)">' + segs + '</div>';
+}
+
+var formaState = { period: "all" };
+
+function renderZoneAggregate() {
+  var agg = formaState.period === "all" ? DATA.zone_agg_all : DATA.zone_agg_block;
+  var body;
+  if (!agg || !agg.n_activities) {
+    body = '<div class="note">' +
+      (formaState.period === "block" && !DATA.current_block
+        ? "Nessun blocco in corso al momento (pre-stagione o piano finito)."
+        : "Nessuna attività con dati FC dettagliati in questo periodo.") +
+      '</div>';
+  } else {
+    var warn = agg.low_aerobic_flag
+      ? '<div class="note warn">⚠️ Z1+Z2 al ' + agg.z1z2_pct + '% — sotto il 60% consigliato per il volume aerobico di base.</div>'
+      : '<div class="note">Z1+Z2: ' + agg.z1z2_pct + '% del tempo (' + agg.n_activities + ' attività con dati FC in questo periodo).</div>';
+    body = zoneBarHTML(agg.zone_seconds) + warn;
+  }
+  document.getElementById("zone-agg-body").innerHTML = body;
+}
+
+function renderForma() {
+  var vo2Latest = DATA.vo2max_entries.length ? DATA.vo2max_entries[DATA.vo2max_entries.length - 1] : null;
+  var aetEntries = DATA.threshold_tests.filter(function(t){ return t.type === "AeT"; });
+  var antEntries = DATA.threshold_tests.filter(function(t){ return t.type === "AnT"; });
+  var aetLatest = aetEntries[aetEntries.length - 1];
+  var antLatest = antEntries[antEntries.length - 1];
+  var isEstimate = aetEntries.length <= 1;
+  var blockLabel = DATA.current_block ? DATA.current_block.name : null;
+
+  document.getElementById("page-forma").innerHTML =
+    '<div class="card"><div class="card-body" style="text-align:center;padding:14px">' +
+      '<div class="param-l" style="margin-bottom:4px">UTMB INDEX</div>' +
+      '<div style="font-size:26px;font-weight:900;color:' + C.p6 + '">504</div>' +
+      '<div class="param-sub">generale · 503 categoria 50K</div>' +
+      '<div class="note" style="padding:6px 0 0">Aggiornato manualmente dopo ogni gara qualificante.</div>' +
+    '</div></div>' +
+    '<div class="card">' +
+      '<div class="param-grid">' +
+        '<div>' +
+          '<div class="param-v" style="color:' + C.p1 + '">' + (vo2Latest ? vo2Latest.vo2max : "N/A") + '</div>' +
+          '<div class="param-l">VO2max</div>' +
+          '<div class="param-sub">' + (vo2Latest ? esc(vo2Latest.date.split("-").reverse().join("/")) : "N/A") + '</div>' +
+        '</div>' +
+        '<div>' +
+          '<div class="param-v" style="color:' + C.p2 + '">' + (aetLatest ? aetLatest.hr : "N/A") + '</div>' +
+          '<div class="param-l">AeT · LT1</div>' +
+          '<div class="param-sub">' + fmtPaceFromSec(aetLatest ? aetLatest.pace_sec_per_km : null) + '</div>' +
+        '</div>' +
+        '<div>' +
+          '<div class="param-v" style="color:' + C.p4 + '">' + (antLatest ? antLatest.hr : "N/A") + '</div>' +
+          '<div class="param-l">AnT · LT2</div>' +
+          '<div class="param-sub">' + fmtPaceFromSec(antLatest ? antLatest.pace_sec_per_km : null) + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="note">' + (isEstimate
+        ? "Ancora nessun test reale su questo piano — valori da stima storica, verranno aggiornati dopo i test di settembre 2026."
+        : "FC in bpm.") + '</div>' +
+    '</div>' +
+    '<div class="card">' +
+      '<div class="card-head"><span class="label">🎚️ Fasce cardiache</span></div>' +
+      '<div class="card-body">' + fasceCardiacheSVG(DATA.hr_zones_def) + '</div>' +
+      '<div class="note">Derivate da AeT/AnT/FC massima qui sopra — si aggiornano da sole quando quei valori cambiano.</div>' +
+    '</div>' +
+    '<div class="card">' +
+      '<div class="card-head"><span class="label">📊 Zone cardiache aggregate</span></div>' +
+      '<div class="toggle-row" style="padding-top:12px">' +
+        '<button class="toggle-btn active" data-period="all">Tutto il piano</button>' +
+        '<button class="toggle-btn" data-period="block">' + (blockLabel ? "Blocco " + esc(blockLabel) : "Per blocco") + '</button>' +
+      '</div>' +
+      '<div id="zone-agg-body" class="card-body"></div>' +
+    '</div>';
+
+  renderZoneAggregate();
+  Array.prototype.forEach.call(document.querySelectorAll("#page-forma .toggle-btn"), function(btn) {
+    btn.addEventListener("click", function() {
+      document.querySelectorAll("#page-forma .toggle-btn").forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      formaState.period = btn.getAttribute("data-period");
+      renderZoneAggregate();
+    });
+  });
+}
+
+// ============================================================
+// TAB PIANO — dati statici piano 40 settimane (stesso contenuto
+// di piano-lavaredo-2027.html)
+// ============================================================
+
+var TS = {
+  rest:  {dot:"#374151",bg:"#1f2937",col:"#6b7280"},
+  run:   {dot:"#60a5fa",bg:"#1e3a5f",col:"#93c5fd"},
+  trail: {dot:"#4ade80",bg:"#052e16",col:"#86efac"},
+  bike:  {dot:"#f97316",bg:"#1c0f04",col:"#fdba74"},
+  gym:   {dot:"#a78bfa",bg:"#1e0a3c",col:"#c4b5fd"},
+  hike:  {dot:"#2dd4bf",bg:"#042f2e",col:"#5eead4"},
+  race:  {dot:"#fbbf24",bg:"#1c1004",col:"#fde68a"},
+  test:  {dot:"#f43f5e",bg:"#1c0808",col:"#fca5a5"},
+  skimo: {dot:"#bae6fd",bg:"#0c2340",col:"#bae6fd"},
+};
+var ICONS = {run:"🏃",trail:"🏔️",bike:"🚴",gym:"💪",hike:"🥾",race:"🏁",test:"🔬",skimo:"⛷️"};
+var DAYS = ["Lun","Mar","Mer","Gio","Ven","Sab","Dom"];
+
+var G1 = "Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS";
+var G2 = "Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS";
+var G3 = "Leg Curl Prono · Affondi camminata · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS";
+var G3d = "Leg Curl Prono · Affondi camminata · Nordic Curl · Spinte panca · Croci · ABS — MAX rinforzo discesa";
+var Gl = "Mobilità leggera · Leg Curl bodyweight · Affondi · Core · ABS — no carichi";
+
+var PHASES = [
+  {id:1,name:"Restart",col:"#4ade80",meta:"Sett. 1–4 · Set 2026 · Max 8km, test soglie, ITB check"},
+  {id:2,name:"Base",col:"#60a5fa",meta:"Sett. 5–12 · Ott–Nov 2026 · Volume cresce, long trail fino a 20km"},
+  {id:3,name:"Aerobico",col:"#f97316",meta:"Sett. 13–20 · Dic–Gen 2027 · Scialpinismo, long trail 25–28km"},
+  {id:4,name:"Specifico",col:"#a78bfa",meta:"Sett. 21–28 · Feb–Mar 2027 · Ultrabericus, qualità trail"},
+  {id:5,name:"Picco",col:"#f43f5e",meta:"Sett. 29–36 · Apr–Mag 2027 · Gran Raid GR60, long 35–40km"},
+  {id:6,name:"Taper",col:"#fbbf24",meta:"Sett. 37–40 · Giu 2027 · Taper → Lavaredo 80K · 26 giu"},
+];
+
+var W = [
+  {w:1,p:1,d:"1–6 set",note:"🔴 ITB: max 8km. Solo easy, zero qualità. Palestra prima di correre.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"gym",l:"💪 Giorno 1",x:G1+" — prima di correre"},
+    {t:"run",l:"6 km easy",x:"FC < 145 bpm · 6:30–7:00/km"},{t:"rest",l:"Riposo",x:""},
+    {t:"bike",l:"Bici Z2 · 45 min",x:"FC < 145 bpm · sera · benvenuta di ritorno 🚴"},
+    {t:"run",l:"8 km easy",x:"FC < 145 bpm · stop immediato se dolore ITB"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:2,p:1,d:"8–13 set",note:"Test AeT — la sessione più importante di questo blocco.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km easy",x:"FC < 145 bpm · pre-test"},{t:"gym",l:"💪 Giorno 3",x:G3},
+    {t:"test",l:"🔬 Test AeT",x:"85 min: 15 riscald. + 60 min FC 135–148 bpm + 10 cool · file: test_AeT.fit"},
+    {t:"rest",l:"Riposo",x:"Recupero post-test"},{t:"run",l:"8 km easy",x:"FC sotto AeT misurata"},
+    {t:"bike",l:"Bici 45 min",x:"Recupero attivo"},
+  ]},
+  {w:3,p:1,d:"15–20 set",note:"Test AnT con dati AeT freschi. Poi scarico.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"test",l:"🔬 Test AnT",x:"15 min warm-up + 30 min all-out · media FC = AnT"},
+    {t:"rest",l:"Riposo",x:"Recupero post-AnT"},{t:"run",l:"6 km easy",x:"FC ben sotto AeT — scarico vero"},
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:"FC sotto AeT"},{t:"bike",l:"Bici 30 min",x:"Solo recupero"},
+  ]},
+  {w:4,p:1,d:"22–27 set",note:"Prime zone calibrate. Primo trail. Iscriviti alla lotteria Lavaredo 80K 2027 — nessun diritto garantito, tentativo unico!",sp:"🎯 Lotteria Lavaredo",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:"FC < AeT misurata"},{t:"gym",l:"💪 Giorno 2",x:G2},
+    {t:"run",l:"8 km progressivo",x:"Ultimi 15 min a AeT bpm"},{t:"bike",l:"Bici Z2 · 50 min",x:""},
+    {t:"trail",l:"Trail 10 km",x:"~400m D+ · FC conversazione · bastoncini · benvenuto sentiero"},
+    {t:"hike",l:"Hiking 1h",x:"Back-to-back leggero"},
+  ]},
+  {w:5,p:2,d:"29 set–4 ott",note:"Volume sale piano. ITB check ogni sessione.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:"FC < AeT"},{t:"gym",l:"💪 Giorno 1",x:G1},
+    {t:"run",l:"9 km progressivo",x:"Ultimi 20 min a AeT bpm"},{t:"bike",l:"Bici Z2 · 55 min",x:""},
+    {t:"trail",l:"Trail 13 km",x:"~600m D+ · ritmo conversazione"},{t:"hike",l:"Hiking 1h",x:""},
+  ]},
+  {w:6,p:2,d:"6–11 ott",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km qualità",x:"5×1 km a AnT bpm · rec 90 sec — prime ripetute"},
+    {t:"gym",l:"💪 Giorno 3",x:G3},{t:"run",l:"9 km easy",x:"FC < AeT"},{t:"bike",l:"Bici Z2 · 55 min",x:""},
+    {t:"trail",l:"Trail 15 km",x:"~700m D+ · bastoncini"},{t:"run",l:"8 km easy",x:"Back-to-back"},
+  ]},
+  {w:7,p:2,d:"13–18 ott",note:"⚡ Scarico. Il corpo si adatta durante il riposo.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:""},{t:"rest",l:"No palestra",x:""},
+    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 35 min",x:""},{t:"trail",l:"Trail 10 km",x:"~400m D+"},
+    {t:"hike",l:"Hiking leggera",x:""},
+  ]},
+  {w:8,p:2,d:"20–25 ott",note:"Test AeT — soglia alzata rispetto a settembre?",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km fartlek",x:"Variazioni libere 30 min"},{t:"gym",l:"💪 Giorno 1",x:G1},
+    {t:"test",l:"🔬 Test AeT",x:"Stesso percorso di settembre · confronta passo a parità FC"},
+    {t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 17 km",x:"~900m D+ · mangia ogni 45 min"},
+    {t:"run",l:"9 km easy",x:"Back-to-back"},
+  ]},
+  {w:9,p:2,d:"27 ott–1 nov",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"11 km qualità",x:"4×2 km a AnT bpm · rec 2 min"},{t:"gym",l:"💪 Giorno 3",x:G3},
+    {t:"run",l:"10 km easy",x:"FC < AeT"},{t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 18 km",x:"~1000m D+"},
+    {t:"run",l:"9 km easy",x:"Back-to-back"},
+  ]},
+  {w:10,p:2,d:"3–8 nov",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"11 km qualità",x:"8×2 min salita · discesa = recupero"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — focus rinforzo discesa"},{t:"run",l:"10 km easy",x:""},
+    {t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 20 km",x:"~1100m D+ · primo long serio del ciclo"},
+    {t:"hike",l:"Hiking 1.5h",x:""},
+  ]},
+  {w:11,p:2,d:"10–15 nov",note:"⚡ Scarico.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:""},{t:"rest",l:"No palestra",x:""},
+    {t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici 40 min",x:""},{t:"trail",l:"Trail 12 km",x:"~500m D+"},
+    {t:"hike",l:"Hiking 1h",x:""},
+  ]},
+  {w:12,p:2,d:"17–22 nov",note:"Chiusura base. Trail 22km: prima pietra miliare seria.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"12 km progressivo",x:"20 warm-up + 30 min a AeT bpm + 10 cool"},
+    {t:"gym",l:"💪 Giorno 1",x:G1},{t:"run",l:"10 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},
+    {t:"trail",l:"Trail 22 km",x:"~1200m D+ · simula nutrizione · ogni 40 min"},{t:"run",l:"10 km easy",x:"Back-to-back"},
+  ]},
+  {w:13,p:3,d:"24–29 nov",note:"Inverno: bici notturna e scialpinismo diventano strumenti chiave. Palestra 2x/sett da qui a gennaio (fase di forza).",days:[
+    {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
+    {t:"run",l:"11 km easy",x:"FC < AeT"},{t:"bike",l:"Bici Z2 · 70 min",x:"Sera — l'inverno si abbina bene"},
+    {t:"trail",l:"Trail 24 km",x:"~1300m D+"},{t:"run",l:"10 km easy",x:""},
+  ]},
+  {w:14,p:3,d:"1–6 dic",days:[
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:"5×3 min colline · rec = discesa"},{t:"gym",l:"💪 Giorno 1",x:G1},
+    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 70 min",x:""},{t:"trail",l:"Trail 25 km",x:"~1400m D+"},
+    {t:"hike",l:"Hiking 1.5h",x:""},
+  ]},
+  {w:15,p:3,d:"8–13 dic",note:"⚡ Scarico + Test AeT terzo round.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"No palestra",x:""},
+    {t:"test",l:"🔬 Test AeT",x:"Terza misurazione · progressione da settembre"},{t:"bike",l:"Bici 40 min",x:""},
+    {t:"trail",l:"Trail 14 km",x:"~600m D+ · scarico"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:16,p:3,d:"15–20 dic",days:[
+    {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
+    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 70 min",x:""},{t:"trail",l:"Trail 26 km",x:"~1500m D+"},
+    {t:"run",l:"10 km easy",x:""},
+  ]},
+  {w:17,p:3,d:"22–27 dic",note:"Natale — adatta alla famiglia. La consistenza è sull'anno, non sulla settimana.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km easy",x:""},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"10 km easy",x:""},{t:"rest",l:"Riposo",x:"Natale"},
+    {t:"skimo",l:"Scialpinismo ⛷️",x:"Se c'è neve — Z2 per ore · ottimo alternativo al long trail"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:18,p:3,d:"29 dic–3 gen",note:"Fine anno. Se hai saltato, riprendi senza stress.",days:[
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:"Prima qualità del nuovo anno"},{t:"gym",l:"💪 Giorno 1",x:G1},
+    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 70 min",x:""},{t:"trail",l:"Trail 27 km",x:"~1600m D+"},
+    {t:"run",l:"10 km easy",x:""},
+  ]},
+  {w:19,p:3,d:"5–10 gen",note:"Valuta TrainingPeaks — AeT/AnT misurati + volume costante.",days:[
+    {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
+    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 75 min",x:""},
+    {t:"skimo",l:"Scialpinismo o Trail 28km",x:"Se neve: skimo giornata lunga. Se no: 28km +1700m D+"},
+    {t:"run",l:"10 km easy",x:""},
+  ]},
+  {w:20,p:3,d:"12–17 gen",note:"⚡ Scarico. Fine ciclo aerobico.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"No palestra",x:""},
+    {t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici 40 min",x:""},{t:"trail",l:"Trail 15 km",x:"~700m D+"},
+    {t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:21,p:4,d:"19–24 gen",note:"Fase specifica: salite più lunghe, discese tecniche.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"12 km qualità",x:"6×3 min salita forte · rec = discesa"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — max rinforzo discesa"},{t:"run",l:"11 km easy",x:""},
+    {t:"bike",l:"Bici Z2 · 75 min",x:""},{t:"trail",l:"Trail 28 km",x:"~1700m D+"},{t:"run",l:"10 km easy",x:""},
+  ]},
+  {w:22,p:4,d:"26–31 gen",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:"Simulazione gara: 45 min a passo Lavaredo (8:30–9:00/km trail)"},
+    {t:"gym",l:"💪 Giorno 1",x:G1},{t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 75 min",x:""},
+    {t:"trail",l:"Trail 30 km",x:"~1800m D+ · 40g CHO/ora · porta cibo come in gara"},{t:"hike",l:"Hiking 2h",x:""},
+  ]},
+  {w:23,p:4,d:"2–7 feb",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:"4×4 km a passo soglia"},{t:"gym",l:"💪 Giorno 3",x:G3},
+    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 80 min",x:""},{t:"trail",l:"Trail 32 km",x:"~1900m D+"},
+    {t:"run",l:"10 km easy",x:""},
+  ]},
+  {w:24,p:4,d:"9–14 feb",note:"⚡ Scarico + Test AnT semestrale.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"No palestra",x:""},
+    {t:"test",l:"🔬 Test AnT",x:"30 min all-out · confronta con settembre · vedi i progressi"},{t:"bike",l:"Bici 40 min",x:""},
+    {t:"trail",l:"Trail 16 km",x:"~800m D+ · scarico"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:25,p:4,d:"16–21 feb",note:"Ultrabericus si avvicina — sett. 25–27 preparazione diretta.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:""},{t:"gym",l:"💪 Giorno 1",x:G1},
+    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 75 min",x:""},{t:"trail",l:"Trail 33 km",x:"~2000m D+"},
+    {t:"trail",l:"Trail easy 12 km",x:"Back-to-back"},
+  ]},
+  {w:26,p:4,d:"23–28 feb",note:"Pre-taper Ultrabericus.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km qualità",x:"Leggero — weekend è la priorità"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — ultima pesante"},{t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici 60 min",x:""},
+    {t:"trail",l:"Trail 22 km",x:"~1100m D+ · scarico pre-gara"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:27,p:4,d:"2–7 mar",note:"Race week Ultrabericus (verifica data esatta). Trattala come allenamento lungo.",sp:"🏁 Ultrabericus Trail Vicenza",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km facilissimi",x:""},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"4 km easy",x:""},{t:"rest",l:"Riposo",x:""},
+    {t:"race",l:"🏁 ULTRABERICUS",x:"45km · Vicenza · UTMB Index · gara di preparazione, non di picco · parti piano"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:28,p:4,d:"9–14 mar",note:"Recupero post-Ultrabericus.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:"Solo se gambe ok"},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici 45 min",x:"Recupero attivo"},{t:"trail",l:"Trail 16 km",x:"~700m D+ · leggero"},
+    {t:"hike",l:"Hiking 1.5h",x:""},
+  ]},
+  {w:29,p:5,d:"16–21 mar",note:"Fase picco. Le uscite più lunghe. Carega o Dolomiti.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:"Colline specifiche Lavaredo"},{t:"gym",l:"💪 Giorno 3",x:G3d},
+    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 80 min",x:""},
+    {t:"trail",l:"Trail 33 km",x:"~2000m D+ · simula rifornimento gara"},{t:"trail",l:"Trail easy 12 km",x:"Back-to-back"},
+  ]},
+  {w:30,p:5,d:"23–28 mar",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:""},{t:"gym",l:"💪 Giorno 1",x:G1},
+    {t:"run",l:"12 km easy",x:""},{t:"bike",l:"Bici Z2 · 80 min",x:""},{t:"trail",l:"Trail 35 km",x:"~2200m D+"},
+    {t:"hike",l:"Hiking 2.5h",x:""},
+  ]},
+  {w:31,p:5,d:"30 mar–4 apr",note:"⚡ Scarico.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km easy",x:""},{t:"rest",l:"No palestra",x:""},
+    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici 45 min",x:""},{t:"trail",l:"Trail 18 km",x:"~900m D+"},
+    {t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:32,p:5,d:"6–11 apr",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:""},{t:"gym",l:"💪 Giorno 3",x:G3d},
+    {t:"run",l:"12 km easy",x:""},{t:"bike",l:"Bici Z2 · 80 min",x:""},
+    {t:"trail",l:"Trail 37 km",x:"~2300m D+ · Carega o Dolomiti · pila nello zaino"},{t:"trail",l:"Trail easy 13 km",x:"Back-to-back"},
+  ]},
+  {w:33,p:5,d:"13–18 apr",note:"🔝 Picco assoluto. Dopo questa sei pronto.",sp:"🔝 Picco",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"12 km qualità",x:"Leggero — il weekend è tutto"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — ultima sessione pesante"},{t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 75 min",x:""},
+    {t:"trail",l:"Trail 40 km",x:"~2400m D+ · il tuo long più lungo · ogni 35 min mangia"},{t:"hike",l:"Hiking 3h",x:"Fondamentale anche se fa male"},
+  ]},
+  {w:34,p:5,d:"20–25 apr",note:"Pre-Gran Raid. Taper inizia.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km easy",x:""},{t:"rest",l:"No palestra",x:""},
+    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici 50 min",x:""},{t:"trail",l:"Trail 20 km",x:"~1000m D+"},
+    {t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:35,p:5,d:"27 apr–2 mag",note:"Gran Raid GR60 — simulazione diretta Lavaredo.",sp:"🏁 Gran Raid GR60 Treviso",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km facilissimi",x:""},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"4 km easy",x:""},{t:"rest",l:"Riposo",x:"Prepara materiale"},
+    {t:"race",l:"🏁 GRAN RAID GR60",x:"60km · ~3500m D+ · UTMB Index · gestisci conservativo · simula Lavaredo"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:36,p:5,d:"4–9 mag",note:"Recupero GR60.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:""},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici 50 min",x:""},{t:"trail",l:"Trail 20 km",x:"~1000m D+"},
+    {t:"hike",l:"Hiking 1.5h",x:""},
+  ]},
+  {w:37,p:6,d:"11–16 mag",note:"Taper. Volume -40%. Ti sentirai pieno di energie — non aggiungere km.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km + 3×1 km",x:"Ritmo gara per sbloccare le gambe"},
+    {t:"gym",l:"💪 Giorno 3 light",x:Gl},{t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici 45 min",x:""},
+    {t:"trail",l:"Trail 20 km",x:"~1000m D+ · ultima uscita di volume"},{t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:38,p:6,d:"18–23 mag",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km + 3×1 km",x:"Ritmo gara (8:30/km trail)"},{t:"rest",l:"No palestra",x:""},
+    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 35 min",x:""},{t:"trail",l:"Trail 14 km",x:"~600m D+"},
+    {t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:39,p:6,d:"25–30 mag",note:"🔋 Taper profondo. Non aggiungere km perché ti senti bene.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km easy",x:""},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"5 km facilissimi",x:""},{t:"bike",l:"Bici 25 min",x:""},{t:"trail",l:"Trail 10 km",x:"~400m D+"},
+    {t:"rest",l:"Riposo",x:""},
+  ]},
+  {w:40,p:6,d:"1–7 giu",note:"Race week. Materiale giovedì. Dormi presto venerdì.",days:[
+    {t:"rest",l:"Camminata 20 min",x:""},{t:"rest",l:"Camminata 20 min",x:""},{t:"rest",l:"Camminata 20 min",x:""},
+    {t:"run",l:"4 km facilissimi",x:"Solo per sentire le gambe"},{t:"rest",l:"Riposo",x:"Prepara zaino e materiale obbligatorio"},
+    {t:"rest",l:"Riposo",x:"Dormi presto"},
+    {t:"race",l:"🏁 LAVAREDO 80K",x:"80km · 4600m D+ · Cortina · parti piano · ogni 35 min mangia · 3 Running Stones"},
+  ]},
+];
+
+var ROADMAP = [
+  {col:"#4ade80", date:"Settembre 2026", name:"Restart + Test AeT/AnT", detail:"Base aerobica, ITB check, calibrazione zone FC"},
+  {col:"#60a5fa", date:"Ottobre–Novembre 2026", name:"Base Building", detail:"35–45 km/sett · Long trail 12→20km · Bici Z2"},
+  {col:"#f97316", date:"Dicembre 2026–Gennaio 2027", name:"Sviluppo Aerobico", detail:"45–60 km/sett · Scialpinismo · Long trail 20→28km"},
+  {col:"#a78bfa", date:"Febbraio–Marzo 2027", name:"Specifico + Ultrabericus", detail:"55–70 km equiv · Ultrabericus Trail Vicenza"},
+  {col:"#f43f5e", date:"Aprile–Maggio 2027", name:"Picco + Gran Raid GR60", detail:"65–80 km equiv · Long trail 35–40km"},
+  {col:"#fbbf24", date:"26 Giugno 2027", name:"🏁 Lavaredo Ultra Trail 80K", detail:"80km · 4600m D+ · 3 Running Stones · lotteria, non garantito — backup: Eiger E101 17 lug 2027 (priority reg.)", gold:true},
+];
+
+var planState = { phase: 1, openWeek: null };
+
+// ============================================================
+// TAB PANORAMICA — heatmap 40 settimane + grafico impilato
+// ============================================================
+
+// Km pianificati per settimana (S1..S40) — stessa fonte di generate_dashboard.py
+var PLANNED_KM = [
+  14,14,14,16,31,34,20,36,38,41,20,44,47,49,23,49,20,50,51,24,
+  52,56,57,26,59,44,12,33,57,62,28,66,66,20,12,38,39,30,21,8
+];
+
+function mondayOnOrBefore(d) {
+  var day = d.getDay(); // 0=Dom..6=Sab
+  var diff = (day === 0) ? 6 : day - 1;
+  var m = new Date(d.getFullYear(), d.getMonth(), d.getDate() - diff);
+  return m;
+}
+var PLAN_WEEK1_MONDAY = mondayOnOrBefore(new Date(2026, 8, 1)); // 1 settembre 2026
+
+function weekIndexForDate(d) {
+  var days = Math.floor((mondayOnOrBefore(d) - PLAN_WEEK1_MONDAY) / 86400000);
+  return Math.floor(days / 7);
+}
+function currentWeekNumber() {
+  return weekIndexForDate(new Date()) + 1;
+}
+
+function computeWeekMetrics(week) {
+  var phase = PHASES.filter(function(p){ return p.id === week.p; })[0];
+  var easy = 0, quality = 0, trailKmTotal = 0, trailKmMax = 0, runKm = 0, bikeMin = 0;
+  var gymDays = [], skimo = false, testType = null, raceName = null;
+
+  week.days.forEach(function(d) {
+    var label = d.l || "";
+    if (d.t === "run") {
+      var mk = /([\d.]+)\s*km/.exec(label);
+      var km = mk ? parseFloat(mk[1]) : 0;
+      runKm += km;
+      if (/qualit|progressivo/i.test(label)) quality++; else easy++;
+    } else if (d.t === "bike") {
+      easy++;
+      var mb = /(\d+)\s*min/.exec(label);
+      if (mb) bikeMin += parseInt(mb[1], 10);
+    } else if (d.t === "trail") {
+      // Alcune settimane hanno due uscite trail (long + back-to-back il
+      // giorno dopo): "Trail lungo" nell'heatmap deve mostrare la singola
+      // uscita più lunga, non la somma delle due (altrimenti un 37+13
+      // diventa un fantomatico "50 km" che in realtà non esiste come sessione).
+      var mt = /([\d.]+)\s*km/.exec(label);
+      if (mt) {
+        var km2 = parseFloat(mt[1]);
+        trailKmTotal += km2;
+        trailKmMax = Math.max(trailKmMax, km2);
+      }
+    } else if (d.t === "gym") {
+      var mg = /Giorno\s*(\d)/.exec(label);
+      if (mg) gymDays.push(mg[1]);
+    } else if (d.t === "skimo") {
+      skimo = true;
+    } else if (d.t === "test") {
+      testType = /AnT/i.test(label) ? "AnT" : "AeT";
+    } else if (d.t === "race") {
+      raceName = label.replace(/[^\w\sÀ-ÿ]/g, "").trim();
+    }
+  });
+
+  return {
+    phase: phase, plannedKm: PLANNED_KM[week.w - 1],
+    easy: easy, quality: quality,
+    trailKmMax: trailKmMax, trailKmTotal: trailKmTotal,
+    runKm: runKm, bikeMin: bikeMin,
+    bikeEquivKm: bikeMin / 3, gymDays: gymDays, skimo: skimo, testType: testType, raceName: raceName,
+  };
+}
+
+function heatmapCell(key, m, weekNum, maxTrail, maxBike, isCur) {
+  var curClass = isCur ? " hm-current" : "";
+  if (key === "phase") {
+    return '<td class="hm-cell' + curClass + '" style="background:' + m.phase.col + '33;color:' + m.phase.col + ';font-weight:700">' + esc(m.phase.name.slice(0, 3)) + '</td>';
+  }
+  if (key === "volume") {
+    var opV = Math.max(0.12, m.plannedKm / 66);
+    return '<td class="hm-cell' + curClass + '" style="background:rgba(96,165,250,' + opV.toFixed(2) + ')">' + m.plannedKm + '</td>';
+  }
+  if (key === "easy") {
+    var opE = m.easy ? Math.min(1, 0.2 + m.easy * 0.18) : 0;
+    return '<td class="hm-cell' + curClass + '" style="background:rgba(74,222,128,' + opE.toFixed(2) + ')">' + (m.easy || "") + '</td>';
+  }
+  if (key === "quality") {
+    var opQ = m.quality ? Math.min(1, 0.25 + m.quality * 0.25) : 0;
+    return '<td class="hm-cell' + curClass + '" style="background:rgba(249,115,22,' + opQ.toFixed(2) + ')">' + (m.quality || "") + '</td>';
+  }
+  if (key === "trail") {
+    var opT = m.trailKmMax ? Math.max(0.15, m.trailKmMax / maxTrail) : 0;
+    return '<td class="hm-cell' + curClass + '" style="background:rgba(74,222,128,' + opT.toFixed(2) + ')">' + (m.trailKmMax || "") + '</td>';
+  }
+  if (key === "bike") {
+    var opB = m.bikeMin ? Math.max(0.15, m.bikeMin / maxBike) : 0;
+    return '<td class="hm-cell' + curClass + '" style="background:rgba(249,115,22,' + opB.toFixed(2) + ')">' + (m.bikeMin || "") + '</td>';
+  }
+  if (key === "gym") {
+    var gymLabel = m.gymDays.length ? m.gymDays.map(function(g){ return "G" + g; }).join("+") : "";
+    return '<td class="hm-cell' + curClass + '" style="color:#a78bfa;font-weight:700;font-size:' + (m.gymDays.length > 1 ? "7px" : "9px") + '">' + gymLabel + '</td>';
+  }
+  if (key === "skimo") {
+    return '<td class="hm-cell' + curClass + '" style="color:#bae6fd">' + (m.skimo ? "✓" : "") + '</td>';
+  }
+  if (key === "test") {
+    return '<td class="hm-cell' + curClass + '" style="color:#f43f5e;font-weight:700">' + (m.testType || "") + '</td>';
+  }
+  if (key === "race") {
+    return '<td class="hm-cell' + curClass + '" style="color:#fbbf24;font-weight:700;font-size:8px">' + esc(m.raceName || "") + '</td>';
+  }
+  return '<td class="hm-cell' + curClass + '"></td>';
+}
+
+function renderHeatmap(metrics) {
+  var rows = [
+    ["phase", "Fase"], ["volume", "Volume km"], ["easy", "Easy Z2"], ["quality", "Qualità"],
+    ["trail", "Trail lungo"], ["bike", "Bici (min)"], ["gym", "Palestra"],
+    ["skimo", "Skimo"], ["test", "Test"], ["race", "Gara"],
+  ];
+  var maxTrail = Math.max.apply(null, metrics.map(function(m){ return m.trailKmMax; }).concat([1]));
+  var maxBike = Math.max.apply(null, metrics.map(function(m){ return m.bikeMin; }).concat([1]));
+  var curWeek = currentWeekNumber();
+
+  var head = '<tr><th class="hm-label"></th>' + W.map(function(w) {
+    return '<th class="' + (w.w === curWeek ? "hm-current" : "") + '">S' + w.w + '</th>';
+  }).join("") + '</tr>';
+
+  var body = rows.map(function(row) {
+    var key = row[0], label = row[1];
+    var cells = W.map(function(w, i) {
+      return heatmapCell(key, metrics[i], w.w, maxTrail, maxBike, w.w === curWeek);
+    }).join("");
+    return '<tr><td class="hm-label">' + esc(label) + '</td>' + cells + '</tr>';
+  }).join("");
+
+  return '<div class="heatmap-scroll"><table class="heatmap"><thead>' + head + '</thead><tbody>' + body + '</tbody></table></div>';
+}
+
+function stackedChartSVG(metrics) {
+  var w = 900, h = 190, padL = 6, padR = 6, padT = 10, padB = 32;
+  var totals = metrics.map(function(m) { return m.trailKmTotal + m.runKm + m.bikeEquivKm + (m.skimo ? 5 : 0); });
+  var actualSeries = DATA.weekly_actual_km || [];
+  var maxVal = Math.max.apply(null, totals.concat(actualSeries).concat([10]));
+  var n = metrics.length;
+  var groupW = (w - padL - padR) / n;
+  var barW = groupW * 0.7;
+  var curWeek = currentWeekNumber();
+
+  function yOf(v) { return padT + (h - padT - padB) * (1 - v / maxVal); }
+
+  var bars = "", markers = "", linePts = [];
+  metrics.forEach(function(m, i) {
+    var x = padL + i * groupW + (groupW - barW) / 2;
+    var curY = h - padB;
+    var segs = [
+      { v: m.trailKmTotal, color: "#166534" },
+      { v: m.runKm, color: "#60a5fa" },
+      { v: m.bikeEquivKm, color: "#f97316" },
+      { v: m.skimo ? 5 : 0, color: "#f0ede8" },
+    ];
+    segs.forEach(function(s) {
+      if (s.v <= 0) return;
+      var segH = (h - padT - padB) * (s.v / maxVal);
+      curY -= segH;
+      bars += '<rect x="' + x.toFixed(1) + '" y="' + curY.toFixed(1) + '" width="' + barW.toFixed(1) + '" height="' + segH.toFixed(1) + '" fill="' + s.color + '" />';
+    });
+
+    if (W[i].w === curWeek) {
+      var totH = (h - padT - padB) * (totals[i] / maxVal);
+      bars += '<rect x="' + (x - 1).toFixed(1) + '" y="' + (h - padB - totH - 1).toFixed(1) + '" width="' + (barW + 2).toFixed(1) + '" height="' + (totH + 2).toFixed(1) + '" fill="none" stroke="#fbbf24" stroke-width="1.2" />';
+    }
+
+    var midX = x + barW / 2;
+    var mark = "";
+    if (m.testType) mark = "🔬";
+    else if (m.raceName) mark = "🏁";
+    else if (/scarico/i.test(W[i].note || "")) mark = "⚡";
+    if (mark) markers += '<text x="' + midX.toFixed(1) + '" y="' + (h - padB + 14) + '" font-size="8" text-anchor="middle">' + mark + '</text>';
+
+    linePts.push([midX, yOf(actualSeries[i] || 0)]);
+  });
+
+  var linePath = linePts.map(function(p, i) { return (i ? "L" : "M") + p[0].toFixed(1) + "," + p[1].toFixed(1); }).join(" ");
+
+  return (
+    '<svg viewBox="0 0 ' + w + ' ' + h + '" style="width:100%;height:auto;display:block">' +
+      bars +
+      '<path d="' + linePath + '" fill="none" stroke="#fbbf24" stroke-width="1.3" opacity="0.85" />' +
+      markers +
+    '</svg>'
+  );
+}
+
+// Timeline orizzontale set 2026 -> giu 2027, marker solo per test/gare/scarichi
+function timelineMilestonesSVG() {
+  var planStart = PLAN_WEEK1_MONDAY;
+  var planEnd = new Date(planStart.getTime() + 39 * 7 * 86400000 + 6 * 86400000);
+  var totalMs = planEnd - planStart;
+
+  var markers = [];
+  W.forEach(function(week) {
+    var wStart = new Date(planStart.getTime() + (week.w - 1) * 7 * 86400000);
+    var frac = (wStart - planStart) / totalMs;
+    var hasTest = week.days.some(function(d){ return d.t === "test"; });
+    var raceDay = week.days.filter(function(d){ return d.t === "race"; })[0];
+    var isScarico = /scarico/i.test(week.note || "");
+    if (hasTest) {
+      var testLabel = week.days.filter(function(d){ return d.t === "test"; })[0].l.replace(/[^\w\sÀ-ÿ]/g, "").trim();
+      markers.push({ frac: frac, icon: "🔬", label: testLabel, date: wStart });
+    }
+    if (raceDay) {
+      markers.push({ frac: frac, icon: "🏁", label: raceDay.l.replace(/[^\w\sÀ-ÿ]/g, "").trim(), date: wStart });
+    } else if (isScarico) {
+      markers.push({ frac: frac, icon: "⚡", label: "Scarico", date: wStart });
+    }
+  });
+
+  var w = Math.max(500, markers.length * 90), h = 90, padL = 16, padR = 16, midY = 30;
+  var line = '<line x1="' + padL + '" y1="' + midY + '" x2="' + (w - padR) + '" y2="' + midY + '" stroke="var(--border)" stroke-width="2" />';
+  var items = markers.map(function(m) {
+    var x = padL + m.frac * (w - padL - padR);
+    var dateLabel = m.date.toLocaleDateString("it-IT", { day: "2-digit", month: "short" });
+    return (
+      '<g>' +
+        '<circle cx="' + x.toFixed(1) + '" cy="' + midY + '" r="4" fill="var(--card)" stroke="var(--p6)" stroke-width="1.5" />' +
+        '<text x="' + x.toFixed(1) + '" y="' + (midY - 12) + '" font-size="13" text-anchor="middle">' + m.icon + '</text>' +
+        '<text x="' + x.toFixed(1) + '" y="' + (midY + 20) + '" font-size="8" fill="var(--text)" text-anchor="middle" font-weight="700">' + esc(m.label.slice(0, 14)) + '</text>' +
+        '<text x="' + x.toFixed(1) + '" y="' + (midY + 32) + '" font-size="7" fill="var(--muted)" text-anchor="middle">' + esc(dateLabel) + '</text>' +
+      '</g>'
+    );
+  }).join("");
+
+  return (
+    '<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">' +
+      '<svg viewBox="0 0 ' + w + ' ' + h + '" style="width:' + w + 'px;height:' + h + 'px;display:block">' +
+        line + items +
+      '</svg>' +
+    '</div>'
+  );
+}
+
+function panoramicaHTML(metrics) {
+  return (
+    '<div class="card">' +
+      '<div class="card-head"><span class="label">📅 Heatmap 40 settimane</span></div>' +
+      '<div class="card-body" style="padding:8px">' + renderHeatmap(metrics) + '</div>' +
+      '<div class="note">Scorri lateralmente per vedere tutte le 40 settimane. Settimana corrente evidenziata in oro.</div>' +
+    '</div>'
+  );
+}
+
+function daysTo(dateStr) {
+  return Math.max(0, Math.ceil((new Date(dateStr) - new Date()) / 86400000));
+}
+function currentPhase() {
+  var n = new Date();
+  if (n < new Date("2026-09-01")) return "Pre";
+  if (n < new Date("2026-10-01")) return "Restart";
+  if (n < new Date("2026-12-01")) return "Base";
+  if (n < new Date("2027-02-01")) return "Aerobico";
+  if (n < new Date("2027-04-01")) return "Specifico";
+  if (n < new Date("2027-06-01")) return "Picco";
+  return "Taper";
+}
+
+function renderDayRow(day, dayLabel) {
+  var s = TS[day.t] || TS.rest;
+  var icon = ICONS[day.t] || "";
+  var isKey = ["trail","race","test","skimo"].indexOf(day.t) !== -1;
+  var detail = day.x ? '<div class="day-detail">' + esc(day.x) + '</div>' : "";
+  return (
+    '<div class="day-row' + (isKey ? " key" : "") + '">' +
+      '<div class="day-label">' + esc(dayLabel) + '</div>' +
+      '<div class="day-dot" style="background:' + s.dot + '"></div>' +
+      '<div style="flex:1">' +
+        '<span class="day-pill" style="background:' + s.bg + ';color:' + s.col + '">' +
+          (icon ? '<span>' + icon + '</span> ' : "") + esc(day.l) +
+        '</span>' + detail +
+      '</div>' +
+    '</div>'
+  );
+}
+
+function renderWeekCard(week) {
+  var isOpen = planState.openWeek === week.w;
+  var hasRace = week.days.some(function(d){ return d.t === "race"; });
+  var hasTest = week.days.some(function(d){ return d.t === "test"; });
+  var badge = "";
+  if (hasRace) badge = '<span class="week-badge" style="background:#1c1004;color:#fbbf24">🏁</span>';
+  else if (hasTest) badge = '<span class="week-badge" style="background:#1c0808;color:#fca5a5">🔬</span>';
+  else if (week.sp) badge = '<span class="week-badge" style="background:#1e0a3c;color:#c4b5fd">' + esc(week.sp) + '</span>';
+
+  var body = "";
+  if (isOpen) {
+    var note = week.note ? '<div class="week-note">' + esc(week.note) + '</div>' : "";
+    var days = week.days.map(function(d, i) { return renderDayRow(d, DAYS[i]); }).join("");
+    body = '<div class="week-body">' + note + '<div class="week-days">' + days + '</div></div>';
+  }
+
+  return (
+    '<div class="week-card">' +
+      '<button class="week-head" data-week="' + week.w + '">' +
+        '<div>' +
+          '<div class="week-title-row"><span class="week-title">Settimana ' + week.w + '</span>' + badge + '</div>' +
+          '<div class="week-dates">' + esc(week.d) + '</div>' +
+        '</div>' +
+        '<span class="week-chevron">' + (isOpen ? "▲" : "▼") + '</span>' +
+      '</button>' + body +
+    '</div>'
+  );
+}
+
+function renderWeeksList() {
+  var phaseWeeks = W.filter(function(w){ return w.p === planState.phase; });
+  document.getElementById("plan-weeks").innerHTML = phaseWeeks.map(renderWeekCard).join("");
+  Array.prototype.forEach.call(document.querySelectorAll("#plan-weeks .week-head"), function(btn) {
+    btn.addEventListener("click", function() {
+      var w = parseInt(btn.getAttribute("data-week"), 10);
+      planState.openWeek = (planState.openWeek === w) ? null : w;
+      renderWeeksList();
+    });
+  });
+}
+
+function renderPhaseTabs() {
+  var tabs = PHASES.map(function(ph) {
+    var active = ph.id === planState.phase;
+    return '<button class="phase-tab' + (active ? " active" : "") + '" data-phase="' + ph.id +
+      '" style="background:' + (active ? ph.col : "var(--card)") + '">' + esc(ph.name) + '</button>';
+  }).join("");
+  document.getElementById("plan-phase-tabs").innerHTML = tabs;
+  document.getElementById("plan-phase-meta").textContent = PHASES.filter(function(p){return p.id===planState.phase;})[0].meta;
+  Array.prototype.forEach.call(document.querySelectorAll("#plan-phase-tabs .phase-tab"), function(btn) {
+    btn.addEventListener("click", function() {
+      planState.phase = parseInt(btn.getAttribute("data-phase"), 10);
+      planState.openWeek = null;
+      renderPhaseTabs();
+      renderWeeksList();
+    });
+  });
+}
+
+function renderPiano() {
+  var days = daysTo("2027-06-26");
+  var countdown = [
+    {v:days,l:"giorni"},{v:Math.ceil(days/7),l:"settimane"},{v:currentPhase(),l:"fase"}
+  ].map(function(item){
+    return '<div><div class="v">' + esc(item.v) + '</div><div class="l">' + esc(item.l) + '</div></div>';
+  }).join("");
+
+  var milestones = ROADMAP.map(function(r){
+    return (
+      '<div class="milestone-row">' +
+        '<div class="milestone-dot" style="background:' + r.col + '"></div>' +
+        '<div>' +
+          '<div class="milestone-date">' + esc(r.date) + '</div>' +
+          '<div class="milestone-name" style="color:' + (r.gold ? "#fbbf24" : "inherit") + '">' + esc(r.name) + '</div>' +
+          '<div class="milestone-detail">' + esc(r.detail) + '</div>' +
+        '</div>' +
+      '</div>'
+    );
+  }).join("");
+
+  var metrics = W.map(computeWeekMetrics);
+
+  document.getElementById("page-piano").innerHTML =
+    '<div class="countdown">' + countdown + '</div>' +
+    '<div class="card">' +
+      '<div class="card-head"><span class="label">Milestone</span></div>' +
+      milestones +
+    '</div>' +
+    panoramicaHTML(metrics);
+}
+
+function renderBlocchi() {
+  document.getElementById("page-blocchi").innerHTML =
+    '<div id="plan-phase-tabs" class="phase-tabs"></div>' +
+    '<div id="plan-phase-meta" class="phase-meta"></div>' +
+    '<div id="plan-weeks"></div>';
+
+  renderPhaseTabs();
+  renderWeeksList();
+}
+
+// ============================================================
+// TAB VERDICT — analisi di fine blocco (Claude Code, non generata
+// automaticamente qui: JS mostra solo lo stato "in attesa" finché
+// non c'è un blocco completato con dati reali da analizzare).
+// ============================================================
+
+function phaseEndDateLabel(phaseId) {
+  var weeks = W.filter(function(w){ return w.p === phaseId; });
+  var last = weeks[weeks.length - 1];
+  return last ? last.d.split(/[–-]/).pop().trim() : "";
+}
+
+function renderVerdict() {
+  var curWeek = currentWeekNumber();
+  var cards = PHASES.map(function(ph) {
+    var weeks = W.filter(function(w){ return w.p === ph.id; });
+    var firstW = weeks[0].w, lastW = weeks[weeks.length - 1].w;
+    var status, statusBg, statusCol;
+    if (curWeek > lastW) { status = "Da generare"; statusBg = "#1c1004"; statusCol = C.p6; }
+    else if (curWeek >= firstW && curWeek <= lastW) { status = "In corso"; statusBg = "#0a1628"; statusCol = C.p2; }
+    else { status = "In attesa"; statusBg = "#1f2937"; statusCol = C.muted; }
+    return (
+      '<div class="verdict-card">' +
+        '<div class="verdict-title-row">' +
+          '<div>' +
+            '<div class="verdict-title" style="color:' + ph.col + '">' + esc(ph.name) + '</div>' +
+            '<div class="verdict-dates">Settimane ' + firstW + '–' + lastW + ' · fino al ' + esc(phaseEndDateLabel(ph.id)) + '</div>' +
+          '</div>' +
+          '<span class="verdict-status" style="background:' + statusBg + ';color:' + statusCol + '">' + status + '</span>' +
+        '</div>' +
+      '</div>'
+    );
+  }).join("");
+
+  document.getElementById("page-verdict").innerHTML =
+    '<div class="note" style="padding:0 0 12px">' +
+      'Analisi automatica generata da Claude Code a fine di ogni blocco: disciplina nelle uscite easy ' +
+      '(% tempo sopra AeT), separazione qualità/easy, progressione del volume, andamento FC a riposo. ' +
+      'Basata sulle metriche descritte in contesto-allenamento.md — nessun documento di riferimento ' +
+      'esterno collegato al momento. Non c&apos;è ancora nessun blocco completato: il primo verdetto ' +
+      'reale arriva dopo la fine del blocco Restart (fine settembre 2026).' +
+    '</div>' +
+    cards;
+}
+
+function initTabs() {
+  var btns = document.querySelectorAll(".tab-btn");
+  btns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      btns.forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      document.querySelectorAll(".page").forEach(function(p){ p.classList.remove("active"); });
+      document.getElementById("page-" + btn.dataset.page).classList.add("active");
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  renderOggi();
+  renderForma();
+  renderPiano();
+  renderBlocchi();
+  renderVerdict();
+  initTabs();
+});
+</script>
 </body>
 </html>
