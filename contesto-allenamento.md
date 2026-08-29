@@ -228,13 +228,89 @@ Card collassabile per ogni blocco. Generata da Claude Code a fine blocco.
 Analisi: easy-day discipline (HR/sec) · hard-day separation · volume sett/sett · RHR trend.
 Verdetto in una frase. Max 3 cose da cambiare. Se va bene, lo dice.
 
+
+---
+
+## Percorso UTMB — Strategia Running Stones
+
+### Come funziona l'estrazione UTMB
+
+Servono due cose per entrare nella lotteria:
+- **UTMB Index 100M valido** (gara 100M completata negli ultimi 24 mesi)
+- **Running Stones** — più ne hai, più alta è la probabilità
+
+Stones per gara WS completata: 20K=1 · 50K=2 · **100K=3** · **100M=4**
+Non scadono mai. Serve almeno 1 stone negli ultimi 24 mesi per partecipare alla lotteria.
+
+### Probabilità di estrazione stimate
+
+| Stones | Probabilità |
+|---|---|
+| 1-3 | ~5-8% |
+| 4-7 | ~10-15% |
+| 8-12 | ~20-30% |
+| 13-17 | ~35-50% |
+| 18-22 | ~60-75% |
+| 23+ | ~80%+ |
+
+Target: **18-20 stones** per probabilità >60%.
+
+### Roadmap stones verso UTMB 2030-31
+
+| Anno | Gara/e | Stones | Totale | UTMB Index | Note |
+|---|---|---|---|---|---|
+| 2026 | — | 0 | 0 | 50K (scade ago 2027) | Anno di base |
+| 2027 | Lavaredo 80K | +3 | **3** | 100K (valido 2029) | Prima WS race |
+| 2028 | 2 gare WS 100K | +6 | **9** | 100K refresh | Accumulo serio |
+| 2029 | Lavaredo 120K + 1 WS 100K | +4+3 | **16** | **100M** (valido 2031) | Index 100M sbloccato |
+| 2030 | 1 gara WS 100M o 100K | +4 | **20** | 100M refresh | Lotteria con 20 stones |
+| **2031** | **UTMB** | — | 20 | 100M valido | ~65-75% estrazione |
+
+Se non estratto 2031: altra gara WS → 23-24 stones → **2032: ~80%+**
+
+### Punti critici
+
+- **2029 è l'anno chiave:** Lavaredo 120K dà il 100M Index — senza quello non si entra in lotteria
+- **2028 è l'anno di costruzione:** da 3 a 9 stones, base per la lotteria
+- **Backup Lavaredo 80K 2027:** Trail Verbier St-Bernard X-Traversée (77km · 5000m D+ · WS · 9-11 lug 2027)
+  → stesso profilo di gara, 2 settimane dopo, logistica valutare (Verbier ~5h da Verona)
+  → alternativa più vicina: cercare gara italiana ~80K non WS per esperienza pura
+
+---
+
+## Specifica Tab UTMB — Dashboard
+
+Tab aggiuntiva "UTMB" nella dashboard (quinta tab dopo Oggi/Forma/Piano/Verdict).
+
+**1. Barra progresso stones**
+Running Stones accumulate / 20 target (%) con colore progressivo verde
+
+**2. UTMB Index tracker**
+Categoria attuale (50K → 100K → 100M) con data scadenza e prossima gara per refresh
+
+**3. Timeline percorso**
+Linea temporale 2026→2031 con:
+- Anno / Gara / Stones guadagnate / Totale progressivo
+- Evidenzia anno corrente
+- Segna gare future come placeholder
+
+**4. Probabilità di estrazione stimata**
+Gauge o barra con % basata sulle stones attuali (tabella probabilità sopra)
+Label: "Con X stones: ~Y% di probabilità di estrazione UTMB"
+
+**5. Stato attuale**
+- UTMB Index: 503 (50K) — scade agosto 2027
+- Running Stones: 0
+- Prossima gara WS: Lavaredo 80K giugno 2027
+
 ---
 
 ## Note
 
 - TrainingPeaks: valutare da gennaio 2027
 - Test settembre 2026: aggiornare soglie con valori reali
-- Lavaredo lotteria: settembre 2026 — non perdere la finestra
-- Eiger E101: iscriversi se non estratto Lavaredo
+- Lavaredo lotteria: settembre 2026 — non perdere la finestra (verificare se tentato anche 2026 → accesso garantito 2027)
+- Backup Lavaredo: Trail Verbier St-Bernard X-Traversée 77K (9-11 lug 2027) o gara italiana ~80K
 - Ultrabericus: **45km** non 65km
 - Scialpinismo: invernale occasionale, comunicato da Leonardo
+- Tempo obiettivo Lavaredo 80K: 14-15h (realistico) · 12-13h (ottimistico)
