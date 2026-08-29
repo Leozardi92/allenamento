@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Training">
-<title>Dashboard Allenamento — Leonardo Zardini</title>
+<meta name="apple-mobile-web-app-title" content="Allenamento">
+<title>Dashboard · Leonardo Zardini</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -16,31 +16,31 @@
   --bg:#0f0f0f;--card:#1a1a1a;--card2:#222;--border:#2a2a2a;
   --text:#f0ede8;--muted:#666;
   --green:#4ade80;--blue:#60a5fa;--orange:#f97316;
-  --purple:#a78bfa;--red:#f43f5e;--gold:#fbbf24;--teal:#2dd4bf;
+  --purple:#a78bfa;--red:#f43f5e;--gold:#fbbf24;
 }
 body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
-  background:var(--bg);color:var(--text);min-height:100vh;max-width:480px;margin:0 auto;}
+  background:var(--bg);color:var(--text);min-height:100vh;max-width:480px;margin:0 auto}
 
 /* HEADER */
-.hdr{background:linear-gradient(160deg,#1a1a2e,#0f0f1a);padding:48px 18px 18px;border-bottom:1px solid var(--border)}
+.hdr{background:linear-gradient(160deg,#1a1a2e,#0f0f1a);padding:48px 16px 16px;border-bottom:1px solid var(--border)}
 .hdr-eye{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .hdr h1{font-size:22px;font-weight:900;letter-spacing:-.5px}
 .hdr h1 span{color:var(--gold)}
-.hdr-sub{font-size:12px;color:var(--muted);margin-top:4px}
+.hdr-sub{font-size:11px;color:var(--muted);margin-top:4px}
 
 /* TABS */
-.tabs{display:flex;background:var(--card);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none}
+.tabs{display:flex;background:var(--card);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;position:sticky;top:0;z-index:100}
 .tabs::-webkit-scrollbar{display:none}
-.tab{flex-shrink:0;padding:12px 16px;font-size:12px;font-weight:700;color:var(--muted);
-  border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+.tab{flex-shrink:0;padding:12px 14px;font-size:12px;font-weight:700;color:var(--muted);
+  border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:color .15s}
 .tab.active{color:var(--gold);border-bottom-color:var(--gold)}
 
 /* PANELS */
-.panel{display:none;padding:14px 14px 60px}
+.panel{display:none;padding:14px 14px 80px}
 .panel.active{display:block}
 
-/* CARDS */
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px}
+/* GENERIC CARD */
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px;overflow:hidden}
 .card-title{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:10px}
 
 /* SEMAFORO */
@@ -49,15 +49,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
 .sem-yellow{background:#1c1004;border-color:#92400e;color:var(--gold)}
 .sem-red{background:#1c0808;border-color:#7f1d1d;color:#f87171}
 
-/* METRICS GRID */
-.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
-.metric{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 8px;text-align:center}
-.metric-val{font-size:18px;font-weight:800}
-.metric-lbl{font-size:9px;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:.05em}
+/* GARMIN METRICS */
+.g-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+.g-m{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:10px 8px;text-align:center}
+.g-m-val{font-size:17px;font-weight:800;line-height:1}
+.g-m-lbl{font-size:9px;color:var(--muted);margin-top:3px;text-transform:uppercase;letter-spacing:.04em}
+.sync-date{font-size:11px;color:var(--muted);margin-bottom:10px;padding:0 2px}
 
-/* BLOCCO CHART */
-.blocco-info{font-size:12px;color:var(--muted);margin-bottom:8px}
-.blocco-nome{font-size:14px;font-weight:700;color:var(--green)}
+/* BLOCCO CORRENTE */
+.blocco-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.blocco-nome{font-size:14px;font-weight:800;color:var(--green)}
+.blocco-date{font-size:11px;color:var(--muted);margin-top:2px}
 
 /* ATTIVITÀ */
 .act-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
@@ -65,97 +67,116 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
   display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
 .act-name{font-size:14px;font-weight:700}
 .act-sub{font-size:11px;color:var(--muted);margin-top:2px}
-.act-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px}
-.act-m{background:var(--card2);border-radius:8px;padding:8px;text-align:center}
-.act-m-val{font-size:14px;font-weight:700}
-.act-m-lbl{font-size:9px;color:var(--muted);margin-top:1px}
-.act-desc{font-size:12px;color:#a0a0a0;line-height:1.5;padding:10px 12px;
+.act-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px}
+.act-stat{background:var(--card2);border-radius:8px;padding:8px;text-align:center}
+.act-stat-val{font-size:13px;font-weight:800}
+.act-stat-lbl{font-size:9px;color:var(--muted);margin-top:1px}
+#map{width:100%;height:200px;border-radius:12px;overflow:hidden;margin-bottom:10px}
+.act-comment{font-size:12px;color:#a0a0a0;line-height:1.5;padding:10px 12px;
   background:var(--card2);border-radius:10px;margin-bottom:10px}
-#map{width:100%;height:220px;border-radius:12px;overflow:hidden;margin-bottom:10px}
 
-/* BOXES FORMA */
-.utmb-box{background:linear-gradient(135deg,#1c1004,#2a1800);border:1px solid #92400e;
+/* ZONE ATTIVITÀ */
+.zone-horiz{display:flex;flex-direction:column;gap:5px}
+.zone-row{display:flex;align-items:center;gap:8px}
+.zone-lbl{font-size:10px;font-weight:700;width:30px;flex-shrink:0}
+.zone-range{font-size:9px;color:var(--muted);width:80px;flex-shrink:0}
+.zone-bar-wrap{flex:1;height:16px;background:var(--card2);border-radius:4px;overflow:hidden}
+.zone-bar-fill{height:100%;border-radius:4px}
+.zone-pct{font-size:10px;color:var(--muted);width:28px;text-align:right;flex-shrink:0}
+
+/* FORMA TAB */
+.utmb-box{background:linear-gradient(135deg,#1c1004,#2a1a00);border:1px solid #78350f;
   border-radius:14px;padding:14px;margin-bottom:10px;text-align:center}
-.utmb-index{font-size:32px;font-weight:900;color:var(--gold)}
-.utmb-cat{font-size:12px;color:#fdba74;margin-top:4px}
-.utmb-exp{font-size:10px;color:var(--muted);margin-top:4px}
+.utmb-idx{font-size:30px;font-weight:900;color:var(--gold);line-height:1}
+.utmb-cat{font-size:11px;color:#fdba74;margin-top:4px}
+.utmb-scad{font-size:10px;color:var(--muted);margin-top:3px}
+
 .boxes3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
 .box3{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 8px;text-align:center}
-.box3-val{font-size:16px;font-weight:800}
-.box3-lbl{font-size:9px;color:var(--muted);margin-top:3px;text-transform:uppercase}
+.box3-val{font-size:15px;font-weight:800;line-height:1}
+.box3-sub{font-size:9px;color:var(--muted);margin-top:4px;line-height:1.3}
 
-/* ZONE BARRE */
-.zone-bar{margin-bottom:8px}
-.zone-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
-.zone-label{font-size:11px;font-weight:700;width:28px;flex-shrink:0}
-.zone-range{font-size:10px;color:var(--muted);width:80px;flex-shrink:0}
-.zone-track{flex:1;height:18px;border-radius:4px;overflow:hidden;background:var(--card2)}
-.zone-fill{height:100%;border-radius:4px;transition:width .3s}
+/* FASCE CARDIACHE — segmenti uguali, parte da 100 bpm */
+.fasce-wrap{display:flex;height:44px;border-radius:10px;overflow:hidden;margin:6px 0 4px}
+.fascia{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative}
+.fascia-name{font-size:10px;font-weight:800;color:#000;line-height:1}
+.fascia-range{font-size:8px;color:rgba(0,0,0,.7);margin-top:2px}
 
-/* MILESTONE TIMELINE */
-.timeline{position:relative;padding:10px 0}
-.tl-line{position:absolute;left:50%;top:20px;bottom:20px;width:2px;background:var(--border);transform:translateX(-50%)}
-.tl-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;position:relative}
-.tl-item.right{flex-direction:row-reverse}
-.tl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:4px;position:relative;z-index:1}
-.tl-content{flex:1;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 10px}
-.tl-date{font-size:9px;color:var(--muted)}
-.tl-name{font-size:12px;font-weight:700;margin-top:1px}
+/* ZONE AGGREGATE */
+.sel-btn-wrap{display:flex;gap:6px;margin-bottom:10px}
+.sel-btn{flex:1;padding:7px;border-radius:8px;font-size:11px;font-weight:700;
+  border:1px solid var(--border);background:var(--card2);color:var(--muted);cursor:pointer}
+.sel-btn.active{background:var(--gold);color:#000;border-color:var(--gold)}
+
+/* PIANO TAB */
+.countdown-wrap{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.cnt-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
+.cnt-val{font-size:28px;font-weight:900;color:var(--gold)}
+.cnt-lbl{font-size:9px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+
+.milestone-row{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)}
+.milestone-row:last-child{border-bottom:none}
+.ms-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.ms-date{font-size:10px;color:var(--muted)}
+.ms-name{font-size:12px;font-weight:700;margin-top:1px}
 
 /* HEATMAP */
-.heatmap-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:10px}
-.heatmap{display:grid;border-radius:10px;overflow:hidden;min-width:640px}
-.hm-row{display:flex}
-.hm-header{width:80px;flex-shrink:0;font-size:9px;color:var(--muted);
-  padding:4px 6px;background:var(--card2);display:flex;align-items:center;border-bottom:1px solid var(--border)}
-.hm-cell{width:28px;height:28px;flex-shrink:0;display:flex;align-items:center;
-  justify-content:center;font-size:8px;border:1px solid var(--bg)}
+.hm-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.hm-table{border-collapse:collapse;min-width:600px}
+.hm-table th{font-size:8px;color:var(--muted);padding:3px 4px;background:var(--card2);
+  text-align:left;white-space:nowrap;border:1px solid var(--border)}
+.hm-table td{width:22px;height:22px;border:1px solid var(--bg);text-align:center;
+  font-size:8px;font-weight:700;cursor:default}
+.hm-header-col{background:var(--card2) !important;font-size:8px;color:var(--muted);
+  white-space:nowrap;padding:2px 6px;min-width:70px}
 
-/* PIANO PHASES */
-.phase-tabs{display:flex;gap:6px;overflow-x:auto;padding:0 0 10px;scrollbar-width:none}
-.phase-tabs::-webkit-scrollbar{display:none}
-.ptab{flex-shrink:0;padding:6px 12px;border-radius:8px;font-size:11px;font-weight:700;
-  border:none;cursor:pointer;background:var(--card);color:var(--muted)}
+/* BLOCCHI TAB */
+.phase-tabs-wrap{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none;margin-bottom:2px}
+.phase-tabs-wrap::-webkit-scrollbar{display:none}
+.ptab{flex-shrink:0;padding:7px 14px;border-radius:10px;font-size:11px;font-weight:700;
+  border:none;cursor:pointer;background:var(--card);color:var(--muted);transition:all .15s}
 .ptab.active{color:#000}
-.week-card{background:var(--card);border:1px solid var(--border);border-radius:12px;
-  overflow:hidden;margin-bottom:8px}
-.week-head{display:flex;justify-content:space-between;align-items:center;
+
+.wk{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:8px}
+.wk-head{display:flex;justify-content:space-between;align-items:center;
   padding:12px 14px;cursor:pointer;background:none;border:none;width:100%;text-align:left}
-.week-num{font-size:13px;font-weight:800;color:var(--text)}
-.week-dates{font-size:10px;color:var(--muted);margin-top:2px}
-.week-body{border-top:1px solid var(--border);padding:10px 12px}
-.day-row{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:8px;margin-bottom:4px}
+.wk-num{font-size:13px;font-weight:800;color:var(--text)}
+.wk-dates{font-size:10px;color:var(--muted);margin-top:2px}
+.wk-body{border-top:1px solid var(--border);padding:10px 12px}
+.wk-note{background:var(--card2);border-radius:8px;padding:8px 10px;font-size:11px;
+  color:#a0a0a0;margin-bottom:8px;line-height:1.5}
+.day-row{display:flex;align-items:flex-start;gap:8px;padding:5px 7px;border-radius:8px;margin-bottom:3px}
 .day-row.key{background:var(--card2)}
-.day-lbl{font-size:9px;font-weight:700;color:var(--muted);width:24px;flex-shrink:0;padding-top:2px}
-.day-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.day-lbl{font-size:9px;font-weight:700;color:var(--muted);width:24px;flex-shrink:0;padding-top:3px}
+.day-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:5px}
 .day-tag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:99px;display:inline-block}
 .day-detail{font-size:10px;color:var(--muted);margin-top:2px;line-height:1.4}
-.week-note{background:var(--card2);border-radius:8px;padding:8px 10px;
-  font-size:11px;color:#a0a0a0;margin-bottom:8px;line-height:1.5}
 
 /* VERDICT */
-.verdict-card{background:var(--card);border:1px solid var(--border);border-radius:12px;
-  overflow:hidden;margin-bottom:8px}
-.verdict-head{padding:14px;display:flex;justify-content:space-between;align-items:center}
-.verdict-name{font-size:13px;font-weight:800}
-.verdict-status{font-size:10px;padding:3px 10px;border-radius:99px;font-weight:700}
-.v-waiting{background:#1a1a1a;color:var(--muted);border:1px solid var(--border)}
-.v-current{background:#052e16;color:var(--green);border:1px solid #166534}
+.vcard{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:8px}
+.vcard-head{padding:14px;display:flex;justify-content:space-between;align-items:center}
+.vcard-name{font-size:13px;font-weight:800}
+.vcard-dates{font-size:10px;color:var(--muted);margin-top:2px}
+.vstatus{font-size:10px;padding:3px 10px;border-radius:99px;font-weight:700;white-space:nowrap}
+.vs-wait{background:var(--card2);color:var(--muted);border:1px solid var(--border)}
+.vs-curr{background:#052e16;color:var(--green);border:1px solid #166534}
 
 /* UTMB TAB */
-.stones-bar-wrap{background:var(--card2);border-radius:99px;height:12px;margin:8px 0}
-.stones-bar-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--green),var(--gold))}
-.prob-display{font-size:48px;font-weight:900;text-align:center;color:var(--gold);padding:10px 0}
-.prob-label{font-size:12px;color:var(--muted);text-align:center;margin-top:-8px;margin-bottom:10px}
-.utmb-timeline-row{display:flex;align-items:flex-start;gap:12px;padding:10px 0;
-  border-bottom:1px solid var(--border)}
-.utmb-timeline-row:last-child{border-bottom:none}
-.utl-year{font-size:11px;font-weight:800;color:var(--muted);width:36px;flex-shrink:0}
-.utl-content{flex:1}
-.utl-race{font-size:12px;font-weight:700}
-.utl-stones{font-size:10px;color:var(--green);margin-top:2px}
-.utl-total{font-size:10px;color:var(--muted)}
+.stones-track{background:var(--card2);border-radius:99px;height:10px;margin:8px 0 4px}
+.stones-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--green),var(--gold));transition:width .5s}
+.prob-big{font-size:46px;font-weight:900;color:var(--gold);text-align:center;padding:8px 0 0}
+.prob-sub{font-size:11px;color:var(--muted);text-align:center;margin-bottom:10px}
+.index-cats{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.icat{padding:3px 10px;border-radius:99px;font-size:10px;font-weight:700}
+.icat-on{background:#052e16;color:var(--green);border:1px solid #166534}
+.icat-off{background:var(--card2);color:var(--muted);border:1px solid var(--border)}
+.utmb-tl-row{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.utmb-tl-row:last-child{border-bottom:none}
 .utl-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px}
+.utl-year{font-size:13px;font-weight:800;width:36px;flex-shrink:0}
+.utl-body{flex:1}
+.utl-race{font-size:12px;font-weight:700}
+.utl-detail{font-size:10px;color:var(--muted);margin-top:2px}
 </style>
 </head>
 <body>
@@ -163,40 +184,51 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
 <div class="hdr">
   <div class="hdr-eye">Dashboard Allenamento</div>
   <h1>Leonardo <span>Zardini</span></h1>
-  <div class="hdr-sub" id="syncDate">Sync: 29/08/2026 · leozardi92.github.io/allenamento</div>
+  <div class="hdr-sub">leozardi92.github.io/allenamento · Sync 29/08/2026</div>
 </div>
 
 <div class="tabs">
-  <button class="tab active" onclick="showTab(0)">Oggi</button>
-  <button class="tab" onclick="showTab(1)">Forma</button>
-  <button class="tab" onclick="showTab(2)">Piano</button>
-  <button class="tab" onclick="showTab(3)">Verdict</button>
-  <button class="tab" onclick="showTab(4)">UTMB</button>
+  <button class="tab active" onclick="ST(0)">Oggi</button>
+  <button class="tab" onclick="ST(1)">Forma</button>
+  <button class="tab" onclick="ST(2)">Piano</button>
+  <button class="tab" onclick="ST(3)">Blocchi</button>
+  <button class="tab" onclick="ST(4)">Verdict</button>
+  <button class="tab" onclick="ST(5)">UTMB</button>
 </div>
 
-<!-- TAB 0: OGGI -->
-<div class="panel active" id="panel0">
+<!-- ══════════════════ TAB 0: OGGI ══════════════════ -->
+<div class="panel active" id="p0">
 
-  <div class="sem sem-green" id="semaforo">✅ Semaforo verde — procedi con la sessione pianificata</div>
+  <div class="sem sem-green">✅ Semaforo verde — procedi con la sessione pianificata</div>
 
-  <div class="metrics">
-    <div class="metric"><div class="metric-val" style="color:var(--blue)">48</div><div class="metric-lbl">RHR bpm</div></div>
-    <div class="metric"><div class="metric-val" style="color:var(--green)">66 ms</div><div class="metric-lbl">HRV notte</div></div>
-    <div class="metric"><div class="metric-val" style="color:var(--purple)">7.2h</div><div class="metric-lbl">Sonno</div></div>
-    <div class="metric"><div class="metric-val" style="color:var(--green)">86</div><div class="metric-lbl">Body Battery</div></div>
-    <div class="metric"><div class="metric-val" style="color:var(--gold)">13</div><div class="metric-lbl">Stress</div></div>
-    <div class="metric"><div class="metric-val" style="color:var(--green)">71</div><div class="metric-lbl">Readiness</div></div>
+  <div class="sync-date">⌚ Ultimo sync Garmin: 29/08/2026</div>
+
+  <div class="g-metrics">
+    <div class="g-m"><div class="g-m-val" style="color:var(--blue)">48</div><div class="g-m-lbl">RHR bpm</div></div>
+    <div class="g-m"><div class="g-m-val" style="color:var(--green)">66ms</div><div class="g-m-lbl">HRV notte</div></div>
+    <div class="g-m"><div class="g-m-val" style="color:var(--purple)">7.2h</div><div class="g-m-lbl">Sonno</div></div>
+    <div class="g-m"><div class="g-m-val" style="color:var(--green)">86</div><div class="g-m-lbl">Body Battery</div></div>
+    <div class="g-m"><div class="g-m-val" style="color:var(--gold)">13</div><div class="g-m-lbl">Stress</div></div>
+    <div class="g-m"><div class="g-m-val" style="color:var(--green)">71</div><div class="g-m-lbl">Readiness</div></div>
   </div>
 
   <div class="card">
     <div class="card-title">Blocco corrente</div>
-    <div class="blocco-nome">Restart · S1-4 · 1–27 set 2026</div>
-    <div class="blocco-info" style="margin-top:6px">Km fatti nel blocco (da aggiornare con i dati reali)</div>
+    <div class="blocco-header">
+      <div>
+        <div class="blocco-nome">Restart · S1–4</div>
+        <div class="blocco-date">1 set – 27 set 2026</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:20px;font-weight:900;color:var(--green)">8 km</div>
+        <div style="font-size:10px;color:var(--muted)">di 14 target</div>
+      </div>
+    </div>
     <canvas id="bloccoChart" height="80"></canvas>
   </div>
 
   <div class="card">
-    <div class="card-title">Ultima attività · 29/08</div>
+    <div class="card-title">Ultima attività · 29/08/2026</div>
     <div class="act-header">
       <div class="act-icon">🏃</div>
       <div>
@@ -204,158 +236,301 @@ body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;
         <div class="act-sub">Verona · sabato sera</div>
       </div>
     </div>
-    <div class="act-metrics">
-      <div class="act-m"><div class="act-m-val">8.0 km</div><div class="act-m-lbl">Distanza</div></div>
-      <div class="act-m"><div class="act-m-val">55 min</div><div class="act-m-lbl">Durata</div></div>
-      <div class="act-m"><div class="act-m-val">6:53/km</div><div class="act-m-lbl">Passo</div></div>
-      <div class="act-m"><div class="act-m-val">142 bpm</div><div class="act-m-lbl">FC media</div></div>
-      <div class="act-m"><div class="act-m-val">157 bpm</div><div class="act-m-lbl">FC max</div></div>
-      <div class="act-m"><div class="act-m-val">596 kcal</div><div class="act-m-lbl">Calorie</div></div>
+    <div class="act-stats">
+      <div class="act-stat"><div class="act-stat-val">8.0 km</div><div class="act-stat-lbl">Distanza</div></div>
+      <div class="act-stat"><div class="act-stat-val">55 min</div><div class="act-stat-lbl">Durata</div></div>
+      <div class="act-stat"><div class="act-stat-val">6:53/km</div><div class="act-stat-lbl">Passo</div></div>
+      <div class="act-stat"><div class="act-stat-val">142 bpm</div><div class="act-stat-lbl">FC media</div></div>
+      <div class="act-stat"><div class="act-stat-val">157 bpm</div><div class="act-stat-lbl">FC max</div></div>
+      <div class="act-stat"><div class="act-stat-val">596 kcal</div><div class="act-stat-lbl">Calorie</div></div>
     </div>
     <div id="map"></div>
-    <div class="act-desc">
-      ✅ Prima uscita del piano. FC media 142 bpm — hai rispettato bene il target <145 bpm. Il picco a 157 bpm è avvenuto durante la salita Via Cà Brusà (+60m D+): normale, la salita alza la FC anche a passo lento. Passo medio 6:53/km a 142 bpm — questo è il tuo punto di partenza aerobico. Nei prossimi mesi, a parità di FC, il passo migliorerà. È la misura del progresso aerobico. PR sul segmento "Pista Ciclabile verso Arcandola". 🏆
+    <div class="act-comment">
+      Prima uscita del piano. FC media 142 bpm — target &lt;145 bpm rispettato. Il picco a 157 bpm è avvenuto durante Via Cà Brusà (+60m D+): normale in salita. Passo 6:53/km a 142 bpm è il punto di partenza aerobico: nei prossimi mesi, a parità di FC, il passo migliorerà — quello è il progresso aerobico reale. 🏆 PR sul segmento "Pista Ciclabile verso Arcandola".
     </div>
-    <div class="card-title" style="margin-bottom:8px">Zone cardiache di questa uscita</div>
-    <canvas id="actZoneChart" height="70"></canvas>
+    <div class="card-title" style="margin-bottom:8px">Zone cardiache · questa uscita</div>
+    <div class="zone-horiz" id="actZones"></div>
   </div>
 
 </div>
 
-<!-- TAB 1: FORMA -->
-<div class="panel" id="panel1">
+<!-- ══════════════════ TAB 1: FORMA ══════════════════ -->
+<div class="panel" id="p1">
 
   <div class="utmb-box">
-    <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px">UTMB Index</div>
-    <div class="utmb-index">504 <span style="font-size:18px">· 503</span></div>
-    <div class="utmb-cat">Generale · Categoria 50K ✅</div>
-    <div class="utmb-exp">Scadenza: 1 agosto 2027 · Aggiornare dopo ogni gara qualificante</div>
+    <div style="font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#92400e;margin-bottom:6px">UTMB Index</div>
+    <div class="utmb-idx">504 <span style="font-size:16px;font-weight:600;color:#fdba74">/ 503 50K</span></div>
+    <div class="utmb-cat">Generale · Categoria 50K ✅ valido</div>
+    <div class="utmb-scad">Scade: 1 agosto 2027 · Aggiornare dopo ogni gara qualificante</div>
   </div>
 
   <div class="boxes3">
-    <div class="box3"><div class="box3-val" style="color:var(--blue)">57</div><div class="box3-lbl">VO2max</div><div style="font-size:9px;color:var(--muted);margin-top:2px">Garmin</div></div>
-    <div class="box3"><div class="box3-val" style="color:var(--green)">153 bpm</div><div class="box3-lbl">AeT (LT1)</div><div style="font-size:9px;color:var(--muted);margin-top:2px">5:43/km · stima</div></div>
-    <div class="box3"><div class="box3-val" style="color:var(--orange)">161 bpm</div><div class="box3-lbl">AnT (LT2)</div><div style="font-size:9px;color:var(--muted);margin-top:2px">5:05/km · stima</div></div>
+    <div class="box3">
+      <div class="box3-val" style="color:var(--blue)">57</div>
+      <div class="box3-sub">VO2max<br><span style="color:var(--muted)">Garmin</span></div>
+    </div>
+    <div class="box3">
+      <div class="box3-val" style="color:var(--green)">153 bpm</div>
+      <div class="box3-sub">AeT (LT1)<br><span style="color:var(--muted)">~5:43/km · stima</span></div>
+    </div>
+    <div class="box3">
+      <div class="box3-val" style="color:var(--orange)">161 bpm</div>
+      <div class="box3-sub">AnT (LT2)<br><span style="color:var(--muted)">~5:05/km · stima</span></div>
+    </div>
   </div>
-  <div style="font-size:10px;color:var(--muted);margin-bottom:10px;padding:0 2px">
-    ⚠️ AeT e AnT sono stime storiche. Test AeT: settimana 2 (10 set) · Test AnT: settimana 3 (15 set)
+  <div style="font-size:10px;color:var(--muted);margin:-4px 0 10px;padding:0 2px">
+    ⚠️ Stime storiche. Test AeT: 10 set · Test AnT: 15 set — da aggiornare
   </div>
 
   <div class="card">
-    <div class="card-title">Fasce cardiache (da 60 bpm)</div>
-    <div class="zone-bar">
-      <div class="zone-row"><span class="zone-label" style="color:#666">Z1</span><span class="zone-range">60–141 bpm</span><div class="zone-track"><div class="zone-fill" style="width:100%;background:#374151"></div></div></div>
-      <div class="zone-row"><span class="zone-label" style="color:var(--green)">Z2</span><span class="zone-range">141–153 bpm</span><div class="zone-track"><div class="zone-fill" style="width:72%;background:var(--green)"></div></div></div>
-      <div class="zone-row"><span class="zone-label" style="color:var(--gold)">Z3</span><span class="zone-range">153–156 bpm</span><div class="zone-track"><div class="zone-fill" style="width:18%;background:var(--gold)"></div></div></div>
-      <div class="zone-row"><span class="zone-label" style="color:var(--orange)">Z4</span><span class="zone-range">156–161 bpm</span><div class="zone-track"><div class="zone-fill" style="width:30%;background:var(--orange)"></div></div></div>
-      <div class="zone-row"><span class="zone-label" style="color:var(--red)">Z5+</span><span class="zone-range">161–170 bpm</span><div class="zone-track"><div class="zone-fill" style="width:54%;background:var(--red)"></div></div></div>
-      <div class="zone-row"><span class="zone-label" style="color:#fff">MAX</span><span class="zone-range">170 bpm</span><div class="zone-track" style="background:#333"><div class="zone-fill" style="width:100%;background:#555"></div></div></div>
-    </div>
-    <div style="font-size:10px;color:var(--muted)">Le barre mostrano la proporzione relativa di ogni zona. I valori si aggiornano dopo ogni test AeT/AnT.</div>
+    <div class="card-title">Fasce cardiache · da 100 bpm</div>
+    <div class="fasce-wrap" id="fasceWrap"></div>
+    <div id="fasceLabels" style="display:flex;margin-top:2px"></div>
+    <div style="font-size:10px;color:var(--muted);margin-top:8px">Segmenti proporzionali ai bpm. Si aggiornano dopo i test AeT/AnT di settembre.</div>
   </div>
 
   <div class="card">
     <div class="card-title">Zone cardiache aggregate</div>
-    <div style="display:flex;gap:6px;margin-bottom:10px">
-      <button onclick="setZonePeriod('piano')" id="zbtn-piano" class="ptab active" style="font-size:10px;padding:5px 10px">Tutto il piano</button>
-      <button onclick="setZonePeriod('restart')" id="zbtn-restart" class="ptab" style="font-size:10px;padding:5px 10px">Restart</button>
+    <div class="sel-btn-wrap">
+      <button class="sel-btn active" id="sbPiano" onclick="setZoneSel('piano')">Tutto il piano</button>
+      <button class="sel-btn" id="sbBlocco" onclick="setZoneSel('blocco')">Blocco corrente</button>
     </div>
-    <canvas id="zoneAggChart" height="100"></canvas>
-    <div id="zoneNote" style="font-size:10px;color:var(--muted);margin-top:8px">Dati disponibili dopo le prime sessioni di settembre.</div>
+    <canvas id="zoneAggChart" height="110"></canvas>
+    <div id="zoneFlag" style="font-size:11px;color:var(--muted);margin-top:8px">Dati disponibili dopo le prime sessioni di settembre.</div>
   </div>
 
 </div>
 
-<!-- TAB 2: PIANO -->
-<div class="panel" id="panel2">
+<!-- ══════════════════ TAB 2: PIANO ══════════════════ -->
+<div class="panel" id="p2">
+
+  <div class="countdown-wrap">
+    <div class="cnt-card"><div class="cnt-val" id="cntDays">–</div><div class="cnt-lbl">Giorni a Lavaredo</div></div>
+    <div class="cnt-card"><div class="cnt-val" id="cntWeeks">–</div><div class="cnt-lbl">Settimane</div></div>
+  </div>
 
   <div class="card">
     <div class="card-title">Milestones</div>
-    <div class="timeline" id="milestones"></div>
+    <div id="milestones"></div>
   </div>
 
   <div class="card">
-    <div class="card-title">Volume settimanale — disponibile prossimamente</div>
-    <div style="height:60px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px">
-      Grafico Kilian in arrivo con Claude Code
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title">Piano per settimane</div>
-    <div class="phase-tabs" id="phaseTabs"></div>
-    <div id="weeksContainer"></div>
+    <div class="card-title">Heatmap volume · 40 settimane</div>
+    <div class="hm-scroll"><div id="heatmap"></div></div>
   </div>
 
 </div>
 
-<!-- TAB 3: VERDICT -->
-<div class="panel" id="panel3">
+<!-- ══════════════════ TAB 3: BLOCCHI ══════════════════ -->
+<div class="panel" id="p3">
+  <div class="phase-tabs-wrap" id="phaseTabs"></div>
+  <div id="weeksEl"></div>
+</div>
+
+<!-- ══════════════════ TAB 4: VERDICT ══════════════════ -->
+<div class="panel" id="p4">
   <div style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.6">
-    Il Verdict viene generato a fine blocco (settimane di scarico). Analizza easy-day discipline, volume progressione, RHR trend. Dice la verità — anche quando tutto va bene.
+    Il Verdict viene generato a fine blocco (settimane di scarico). Analizza easy-day discipline, separazione duro/facile, progressione volume e trend RHR. Il primo verrà generato a fine settembre dopo i test AeT/AnT.
   </div>
-  <div id="verdictCards"></div>
+  <div id="verdictEl"></div>
 </div>
 
-<!-- TAB 4: UTMB -->
-<div class="panel" id="panel4">
+<!-- ══════════════════ TAB 5: UTMB ══════════════════ -->
+<div class="panel" id="p5">
 
   <div class="card">
     <div class="card-title">Running Stones</div>
-    <div style="display:flex;justify-content:space-between;margin-bottom:6px">
-      <span style="font-size:13px;font-weight:700">0 <span style="color:var(--muted);font-weight:400">/ 20 target</span></span>
-      <span style="font-size:12px;color:var(--muted)">0%</span>
+    <div style="display:flex;justify-content:space-between;align-items:baseline">
+      <div style="font-size:22px;font-weight:900">0 <span style="font-size:13px;color:var(--muted);font-weight:400">/ 20 target</span></div>
+      <div style="font-size:11px;color:var(--muted)">0%</div>
     </div>
-    <div class="stones-bar-wrap"><div class="stones-bar-fill" style="width:0%"></div></div>
-    <div style="font-size:10px;color:var(--muted);margin-top:6px">Prima WS race: Lavaredo 80K · giugno 2027 → +3 stones</div>
+    <div class="stones-track"><div class="stones-fill" style="width:0%"></div></div>
+    <div style="font-size:10px;color:var(--muted)">Prima WS race: Lavaredo 80K giugno 2027 → +3 stones</div>
   </div>
 
   <div class="card" style="text-align:center">
     <div class="card-title">Probabilità di estrazione UTMB</div>
-    <div class="prob-display">~0%</div>
-    <div class="prob-label">Con 0 stones — servono almeno 1 stone + Index 100M per partecipare alla lotteria</div>
-    <canvas id="probChart" height="120"></canvas>
+    <div class="prob-big">~0%</div>
+    <div class="prob-sub">Con 0 stones · servono almeno 1 stone + Index 100M per la lotteria</div>
+    <canvas id="probChart" height="110"></canvas>
   </div>
 
   <div class="card">
     <div class="card-title">UTMB Index</div>
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:4px 0">
+    <div style="display:flex;justify-content:space-between;align-items:center">
       <div>
-        <div style="font-size:13px;font-weight:800;color:var(--gold)">503 · Categoria 50K</div>
-        <div style="font-size:10px;color:var(--muted);margin-top:2px">Scade: agosto 2027</div>
+        <div style="font-size:14px;font-weight:800;color:var(--gold)">503 · 50K</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:2px">Scade agosto 2027</div>
       </div>
       <div style="text-align:right">
         <div style="font-size:10px;color:var(--muted)">Prossimo refresh</div>
         <div style="font-size:11px;font-weight:700;color:var(--green)">Lavaredo 80K → 100K</div>
       </div>
     </div>
-    <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
-      <span style="background:#1f2937;border:1px solid #374151;border-radius:99px;padding:3px 10px;font-size:10px;color:#9ca3af">20K 🔒</span>
-      <span style="background:#052e16;border:1px solid #166534;border-radius:99px;padding:3px 10px;font-size:10px;color:var(--green)">50K 503 ✅</span>
-      <span style="background:#1f2937;border:1px solid #374151;border-radius:99px;padding:3px 10px;font-size:10px;color:#9ca3af">100K 🔒</span>
-      <span style="background:#1f2937;border:1px solid #374151;border-radius:99px;padding:3px 10px;font-size:10px;color:#9ca3af">100M 🔒</span>
+    <div class="index-cats">
+      <span class="icat icat-off">20K 🔒</span>
+      <span class="icat icat-on">50K 503 ✅</span>
+      <span class="icat icat-off">100K 🔒</span>
+      <span class="icat icat-off">100M 🔒</span>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title">Percorso 2026–2031</div>
-    <div id="utmbTimeline"></div>
+    <div class="card-title">Percorso verso UTMB 2031</div>
+    <div id="utmbTl"></div>
   </div>
 
 </div>
 
 <script>
-// TAB SWITCHING
-const panels=document.querySelectorAll('.panel');
-const tabs=document.querySelectorAll('.tab');
-function showTab(i){
-  panels.forEach((p,j)=>{p.classList.toggle('active',i===j)});
-  tabs.forEach((t,j)=>{t.classList.toggle('active',i===j)});
-  if(i===2&&!window.pianoBuilt){buildPiano();window.pianoBuilt=true}
-  if(i===4&&!window.utmbBuilt){buildUTMB();window.utmbBuilt=true}
+// ─── TAB SWITCH ───────────────────────────────────────
+const panels = document.querySelectorAll('.panel');
+const tabs   = document.querySelectorAll('.tab');
+let built = {};
+function ST(i) {
+  panels.forEach((p,j) => p.classList.toggle('active', i===j));
+  tabs.forEach((t,j) => t.classList.toggle('active', i===j));
+  if (!built[i]) { buildTab(i); built[i]=true; }
 }
 
-// COLORI TIPO
+// ─── BUILD CHART: BLOCCO KM ──────────────────────────
+new Chart(document.getElementById('bloccoChart'), {
+  type:'line',
+  data:{
+    labels:['1/9','2/9','3/9','4/9','5/9','6/9','7/9','8/9','9/9','10/9','11/9','12/9','13/9','14/9','15/9','16/9','17/9','18/9','19/9','20/9','21/9','22/9','23/9','24/9','25/9','26/9','27/9'],
+    datasets:[
+      {label:'Km fatti',data:[0,0,0,0,0,8,0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],
+       borderColor:'#4ade80',backgroundColor:'rgba(74,222,128,.1)',fill:true,tension:.3,pointRadius:3,spanGaps:false},
+      {label:'Target',data:Array(27).fill(14/27),borderColor:'#444',borderDash:[3,3],pointRadius:0,fill:false}
+    ]
+  },
+  options:{plugins:{legend:{display:false}},scales:{
+    x:{grid:{color:'#1f1f1f'},ticks:{color:'#555',font:{size:8},maxRotation:0,autoSkip:true,maxTicksLimit:7}},
+    y:{grid:{color:'#1f1f1f'},ticks:{color:'#555',font:{size:9}},min:0}
+  }}
+});
+
+// ─── MAPPA ─────────────────────────────────────────────
+const map = L.map('map', {zoomControl:false,attributionControl:false})
+  .setView([45.465, 10.97], 13);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
+L.marker([45.465,10.97], {icon:L.divIcon({html:'🏃',iconSize:[18,18],className:'',iconAnchor:[9,9]})}).addTo(map);
+setTimeout(()=>map.invalidateSize(),200);
+
+// ─── ZONE ATTIVITÀ ─────────────────────────────────────
+// Stima dai dati lap: avg 142, max 157
+// Z1<141: ~15% · Z2 141-153: ~70% · Z3 153-156: ~10% · Z4 156-161: ~5% · Z5>161: 0%
+const ACT_ZONES = [
+  {l:'Z1',r:'<141',pct:15,col:'#374151'},
+  {l:'Z2',r:'141–153',pct:70,col:'#4ade80'},
+  {l:'Z3',r:'153–156',pct:10,col:'#fbbf24'},
+  {l:'Z4',r:'156–161',pct:5, col:'#f97316'},
+  {l:'Z5+',r:'>161',pct:0, col:'#f43f5e'},
+];
+document.getElementById('actZones').innerHTML = ACT_ZONES.map(z=>`
+  <div class="zone-row">
+    <span class="zone-lbl" style="color:${z.col}">${z.l}</span>
+    <span class="zone-range">${z.r} bpm</span>
+    <div class="zone-bar-wrap"><div class="zone-bar-fill" style="width:${z.pct}%;background:${z.col}"></div></div>
+    <span class="zone-pct">${z.pct}%</span>
+  </div>`).join('');
+
+// ─── FASCE CARDIACHE (da 100 bpm, segmenti proporzionali) ──
+// Range totale: 100-170 = 70 bpm
+// Z1: 100-141 = 41 bpm (58.6%) → grigio
+// Z2: 141-153 = 12 bpm (17.1%) → verde
+// Z3: 153-156 = 3 bpm (4.3%) → giallo
+// Z4: 156-161 = 5 bpm (7.1%) → arancione
+// Z5+: 161-170 = 9 bpm (12.9%) → rosso
+const TOTAL_BPM = 70;
+const FASCE = [
+  {n:'Z1',r:'100–141',bpm:41,col:'#374151',tc:'#aaa'},
+  {n:'Z2',r:'141–153',bpm:12,col:'#4ade80',tc:'#000'},
+  {n:'Z3',r:'153–156',bpm:3, col:'#fbbf24',tc:'#000'},
+  {n:'Z4',r:'156–161',bpm:5, col:'#f97316',tc:'#000'},
+  {n:'Z5+',r:'161–170',bpm:9, col:'#f43f5e',tc:'#fff'},
+];
+document.getElementById('fasceWrap').innerHTML = FASCE.map(f=>{
+  const w = (f.bpm/TOTAL_BPM*100).toFixed(1);
+  return `<div class="fascia" style="flex:${f.bpm};background:${f.col}">
+    <div class="fascia-name" style="color:${f.tc}">${f.n}</div>
+    <div class="fascia-range" style="color:${f.tc}">${f.r}</div>
+  </div>`;
+}).join('');
+
+// ─── ZONE AGGREGATE placeholder ──────────────────────
+let zoneAggChart = null;
+function setZoneSel(s){
+  document.getElementById('sbPiano').classList.toggle('active', s==='piano');
+  document.getElementById('sbBlocco').classList.toggle('active', s==='blocco');
+  document.getElementById('zoneFlag').textContent = 'Dati disponibili dopo le prime sessioni di settembre.';
+}
+
+// ─── BUILD PER TAB ────────────────────────────────────
+function buildTab(i){
+  if(i===2) buildPiano();
+  if(i===3) buildBlocchi();
+  if(i===4) buildVerdict();
+  if(i===5) buildUTMB();
+}
+
+// ─── PIANO ─────────────────────────────────────────────
+function buildPiano(){
+  // Countdown
+  const race = new Date('2027-06-26');
+  const now  = new Date();
+  const days = Math.max(0, Math.ceil((race-now)/86400000));
+  document.getElementById('cntDays').textContent = days;
+  document.getElementById('cntWeeks').textContent = Math.ceil(days/7);
+
+  // Milestones
+  const MS = [
+    {d:'10 set 2026',n:'🔬 Test AeT',col:'#f43f5e'},
+    {d:'15 set 2026',n:'🔬 Test AnT',col:'#f43f5e'},
+    {d:'Set 2026',   n:'🎯 Pre-registrazione Lavaredo 80K 2027',col:'#fbbf24'},
+    {d:'Mar 2027',   n:'🏁 Ultrabericus 45K · Vicenza',col:'#4ade80'},
+    {d:'Mag 2027',   n:'🏁 Gran Raid GR60 · Treviso',col:'#60a5fa'},
+    {d:'26 Giu 2027',n:'🏁 LAVAREDO ULTRA TRAIL 80K',col:'#fbbf24'},
+  ];
+  document.getElementById('milestones').innerHTML = MS.map(m=>`
+    <div class="milestone-row">
+      <div class="ms-dot" style="background:${m.col}"></div>
+      <div><div class="ms-date">${m.d}</div><div class="ms-name">${m.n}</div></div>
+    </div>`).join('');
+
+  // Heatmap
+  const PHASES_HM = ['Restart','Base','Aerobico','Specifico','Picco','Taper'];
+  const PHASE_COL = ['#4ade80','#60a5fa','#f97316','#a78bfa','#f43f5e','#fbbf24'];
+  const PHASE_OF  = [0,4,12,20,28,36]; // settimane di inizio (0-indexed)
+  const KM_S = [14,14,14,16,31,34,20,36,38,41,20,44,47,49,23,49,20,50,51,24,52,56,57,26,59,44,12,33,57,62,28,66,66,20,12,38,39,30,21,8];
+
+  function phaseOf(w){ // w 0-indexed
+    let ph=0;
+    for(let i=0;i<PHASE_OF.length;i++) if(w>=PHASE_OF[i]) ph=i;
+    return ph;
+  }
+
+  const rows = [
+    {label:'Fase', fn:(w)=>{const ph=phaseOf(w);return{bg:PHASE_COL[ph],tx:'#000',v:PHASES_HM[ph].slice(0,3)}}},
+    {label:'Km',   fn:(w)=>{const k=KM_S[w];const i=Math.min(1,k/70);return{bg:`rgba(96,165,250,${0.2+i*0.6})`,tx:'#fff',v:k}}},
+  ];
+
+  let html = '<table class="hm-table"><thead><tr><th class="hm-header-col">Settimana</th>';
+  for(let w=0;w<40;w++) html+=`<th style="background:${PHASE_COL[phaseOf(w)]}22;color:${PHASE_COL[phaseOf(w)]};min-width:22px">${w+1}</th>`;
+  html+='</tr></thead><tbody>';
+  rows.forEach(r=>{
+    html+=`<tr><td class="hm-header-col">${r.label}</td>`;
+    for(let w=0;w<40;w++){
+      const c=r.fn(w);
+      html+=`<td style="background:${c.bg};color:${c.tx}">${c.v}</td>`;
+    }
+    html+='</tr>';
+  });
+  html+='</tbody></table>';
+  document.getElementById('heatmap').innerHTML = html;
+}
+
+// ─── BLOCCHI ────────────────────────────────────────────
 const TC={
   rest:{dot:'#374151',tag:'#1f2937',col:'#6b7280'},
   run:{dot:'#60a5fa',tag:'#1e3a5f',col:'#93c5fd'},
@@ -365,243 +540,170 @@ const TC={
   hike:{dot:'#2dd4bf',tag:'#042f2e',col:'#5eead4'},
   race:{dot:'#fbbf24',tag:'#1c1004',col:'#fde68a'},
   test:{dot:'#f43f5e',tag:'#1c0808',col:'#fca5a5'},
-  skimo:{dot:'#bae6fd',tag:'#0c2340',col:'#bae6fd'}
+  skimo:{dot:'#bae6fd',tag:'#0c2340',col:'#bae6fd'},
 };
 const IC={run:'🏃',trail:'🏔️',bike:'🚴',gym:'💪',hike:'🥾',race:'🏁',test:'🔬',skimo:'⛷️'};
 const DAYS=['Lun','Mar','Mer','Gio','Ven','Sab','Dom'];
 
-// MAPPA
-const map=L.map('map',{zoomControl:false,attributionControl:false}).setView([45.4654219,10.9696229],13);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19}).addTo(map);
-L.marker([45.4654219,10.9696229],{icon:L.divIcon({html:'🏃',iconSize:[20,20],className:'',iconAnchor:[10,10]})}).addTo(map);
-setTimeout(()=>map.invalidateSize(),100);
-
-// BLOCCO CHART
-new Chart(document.getElementById('bloccoChart'),{
-  type:'line',
-  data:{
-    labels:['Lun','Mar','Mer','Gio','Ven','Sab','Dom'],
-    datasets:[
-      {label:'Km fatti',data:[0,0,0,0,0,8,0],borderColor:'#4ade80',backgroundColor:'rgba(74,222,128,.15)',
-       fill:true,tension:.4,pointRadius:4,pointBackgroundColor:'#4ade80'},
-      {label:'Km piano',data:[2,2,2,2,2,8,2],borderColor:'#666',borderDash:[4,4],
-       pointRadius:0,fill:false}
-    ]
-  },
-  options:{plugins:{legend:{display:false}},scales:{
-    x:{grid:{color:'#222'},ticks:{color:'#666',font:{size:10}}},
-    y:{grid:{color:'#222'},ticks:{color:'#666',font:{size:10}},min:0}
-  }}
-});
-
-// ZONE ATTIVITÀ CHART
-// Stima basata sui dati lap: avg 142 bpm, max 157
-// Z1(<141): lap1 quasi tutto, lap2 inizio → ~15%
-// Z2(141-153): la maggior parte → ~70%
-// Z3(153-156): punte salita → ~10%
-// Z4(156-161): punta max → ~5%
-// Z5+(>161): nulla → 0%
-new Chart(document.getElementById('actZoneChart'),{
-  type:'bar',
-  data:{
-    labels:['Z1 <141','Z2 141-153','Z3 153-156','Z4 156-161','Z5+ >161'],
-    datasets:[{data:[15,70,10,5,0],
-      backgroundColor:['#374151','#4ade80','#fbbf24','#f97316','#f43f5e'],
-      borderRadius:4}]
-  },
-  options:{indexAxis:'y',plugins:{legend:{display:false}},
-    scales:{x:{grid:{color:'#222'},ticks:{color:'#666',font:{size:10}},max:100},
-      y:{grid:{display:false},ticks:{color:'#aaa',font:{size:10}}}
-    }
-  }
-});
-
-// ZONE AGGREGATE (placeholder)
-let zoneAggChart=null;
-function setZonePeriod(p){
-  document.getElementById('zbtn-piano').classList.toggle('active',p==='piano');
-  document.getElementById('zbtn-restart').classList.toggle('active',p==='restart');
-  document.getElementById('zoneNote').textContent='Dati disponibili dopo le prime sessioni di settembre.';
-}
-
-// MILESTONES
-const milestones=[
-  {date:'10 set 2026',name:'🔬 Test AeT',col:'#f43f5e',right:false},
-  {date:'15 set 2026',name:'🔬 Test AnT',col:'#f43f5e',right:true},
-  {date:'27 set 2026',name:'🎯 Pre-iscr. Lavaredo',col:'#fbbf24',right:false},
-  {date:'Mar 2027',name:'🏁 Ultrabericus 45K',col:'#4ade80',right:true},
-  {date:'Mag 2027',name:'🏁 Gran Raid GR60',col:'#60a5fa',right:false},
-  {date:'26 Giu 2027',name:'🏁 LAVAREDO 80K',col:'#fbbf24',right:true},
-];
-const tlEl=document.getElementById('milestones');
-tlEl.innerHTML='<div class="tl-line"></div>'+milestones.map(m=>`
-<div class="tl-item${m.right?' right':''}">
-  <div class="tl-dot" style="background:${m.col}"></div>
-  <div class="tl-content">
-    <div class="tl-date">${m.date}</div>
-    <div class="tl-name">${m.name}</div>
-  </div>
-  <div style="width:40px;flex-shrink:0"></div>
-</div>`).join('');
-
-// PIANO DATA
-const G1="Adductor · Squat bilanciere · Hip Thrust · Leg Extension · Calf · ABS";
-const G2="Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · ABS";
-const G3="Leg Curl Prono · Affondi · Nordic Curl · Spinte panca · Croci · ABS";
+const G1="Adductor · Squat bilanciere · Hip Thrust · Leg Extension · Calf · Push Down · ABS";
+const G2="Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate · ABS";
+const G3="Leg Curl Prono · Affondi · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS";
 
 const PHASES=[
-  {id:1,name:'Restart',col:'#4ade80'},
-  {id:2,name:'Base',col:'#60a5fa'},
-  {id:3,name:'Aerobico',col:'#f97316'},
-  {id:4,name:'Specifico',col:'#a78bfa'},
-  {id:5,name:'Picco',col:'#f43f5e'},
-  {id:6,name:'Taper',col:'#fbbf24'},
+  {id:1,n:'Restart',col:'#4ade80'},
+  {id:2,n:'Base',col:'#60a5fa'},
+  {id:3,n:'Aerobico',col:'#f97316'},
+  {id:4,n:'Specifico',col:'#a78bfa'},
+  {id:5,n:'Picco',col:'#f43f5e'},
+  {id:6,n:'Taper',col:'#fbbf24'},
 ];
 
 const WEEKS=[
-  {w:1,p:1,d:'1–6 set',note:'🔴 ITB: max 8km. Palestra prima di correre.',days:[
-    {t:'rest',l:'Riposo',x:''},{t:'gym',l:'💪 Giorno 1',x:G1},{t:'run',l:'6 km easy',x:'FC < 145 bpm'},
-    {t:'rest',l:'Riposo',x:''},{t:'bike',l:'Bici Z2 · 45 min',x:'sera 19:00+'},{t:'run',l:'8 km easy',x:'FC < 145 bpm'},{t:'rest',l:'Riposo',x:''}]},
-  {w:2,p:1,d:'8–13 set',note:'Test AeT settimana 2.',days:[
-    {t:'rest',l:'Riposo',x:''},{t:'run',l:'6 km easy',x:'pre-test'},{t:'gym',l:'💪 Giorno 3',x:G3},
-    {t:'test',l:'🔬 Test AeT',x:'85 min · FC 135-148 bpm · file test_AeT.fit'},{t:'rest',l:'Riposo',x:''},{t:'run',l:'8 km easy',x:'FC < AeT misurata'},{t:'bike',l:'Bici 45 min',x:'recupero'}]},
+  {w:1,p:1,d:'1–6 set',note:'🔴 ITB: max 8km. Solo easy, zero qualità. Palestra prima di correre.',days:[
+    {t:'rest',l:'Riposo',x:''},{t:'gym',l:'💪 Giorno 1',x:G1},{t:'run',l:'6 km easy',x:'FC < 145 bpm · 6:30–7:00/km'},
+    {t:'rest',l:'Riposo',x:''},{t:'bike',l:'Bici Z2 · 45 min',x:'FC < 140 bpm · sera 19:00+'},{t:'run',l:'8 km easy',x:'FC < 145 bpm · stop se dolore ITB'},{t:'rest',l:'Riposo',x:''}]},
+  {w:2,p:1,d:'8–13 set',note:'Test AeT — sessione più importante del blocco.',days:[
+    {t:'rest',l:'Riposo',x:''},{t:'run',l:'6 km easy',x:'pre-test · FC < 145 bpm'},{t:'gym',l:'💪 Giorno 3',x:G3},
+    {t:'test',l:'🔬 Test AeT',x:'85 min: 15 riscald + 60 min FC 135-148 + 10 cool · file: test_AeT.fit'},{t:'rest',l:'Riposo',x:'recupero post-test'},{t:'run',l:'8 km easy',x:'FC < AeT misurata'},{t:'bike',l:'Bici 45 min',x:'recupero attivo'}]},
   {w:3,p:1,d:'15–20 set',note:'Test AnT poi scarico.',days:[
     {t:'rest',l:'Riposo',x:''},{t:'test',l:'🔬 Test AnT',x:'15 warm-up + 30 min all-out · FC media = AnT'},{t:'rest',l:'Riposo',x:'recupero'},
-    {t:'run',l:'6 km easy',x:'FC < AeT'},{t:'rest',l:'Riposo',x:''},{t:'run',l:'8 km easy',x:''},{t:'bike',l:'Bici 30 min',x:''}]},
-  {w:4,p:1,d:'22–27 set',note:'Zone calibrate. Primo trail. Iscriviti Lavaredo!',days:[
+    {t:'run',l:'6 km easy',x:'FC < AeT'},{t:'rest',l:'Riposo',x:''},{t:'run',l:'8 km easy',x:'FC < AeT'},{t:'bike',l:'Bici 30 min',x:'recupero'}]},
+  {w:4,p:1,d:'22–27 set',note:'Zone calibrate sui test. Primo trail. Iscriviti Lavaredo 80K 2027!',days:[
     {t:'rest',l:'Riposo',x:''},{t:'run',l:'8 km easy',x:'FC < AeT misurata'},{t:'gym',l:'💪 Giorno 2',x:G2},
-    {t:'run',l:'8 km progressivo',x:'ultimi 15 min a AeT bpm'},{t:'bike',l:'Bici Z2 · 50 min',x:''},{t:'trail',l:'Trail 10 km',x:'~400m D+ · bastoncini'},{t:'hike',l:'Hiking 1h',x:'back-to-back'}]},
+    {t:'run',l:'8 km progressivo',x:'ultimi 15 min a AeT bpm'},{t:'bike',l:'Bici Z2 · 50 min',x:''},{t:'trail',l:'Trail 10 km',x:'~400m D+ · bastoncini · FC conversazione'},{t:'hike',l:'Hiking 1h',x:'back-to-back leggero'}]},
   {w:5,p:2,d:'29 set–4 ott',note:'Volume sale. ITB check ogni sessione.',days:[
     {t:'rest',l:'Riposo',x:''},{t:'run',l:'9 km easy',x:''},{t:'gym',l:'💪 Giorno 1',x:G1},
     {t:'run',l:'9 km progressivo',x:'ultimi 20 min a AeT'},{t:'bike',l:'Bici Z2 · 55 min',x:''},{t:'trail',l:'Trail 13 km',x:'~600m D+'},{t:'hike',l:'Hiking 1h',x:''}]},
   {w:6,p:2,d:'6–11 ott',days:[
-    {t:'rest',l:'Riposo',x:''},{t:'run',l:'10 km qualità',x:'5×1 km a AnT · rec 90 sec'},{t:'gym',l:'💪 Giorno 3',x:G3},
+    {t:'rest',l:'Riposo',x:''},{t:'run',l:'10 km qualità',x:'5×1 km a AnT bpm · rec 90 sec'},{t:'gym',l:'💪 Giorno 3',x:G3},
     {t:'run',l:'9 km easy',x:''},{t:'bike',l:'Bici Z2 · 55 min',x:''},{t:'trail',l:'Trail 15 km',x:'~700m D+'},{t:'run',l:'8 km easy',x:'back-to-back'}]},
   {w:7,p:2,d:'13–18 ott',note:'⚡ Scarico.',days:[
     {t:'rest',l:'Riposo',x:''},{t:'run',l:'8 km easy',x:''},{t:'rest',l:'No palestra',x:''},
     {t:'run',l:'7 km easy',x:''},{t:'bike',l:'Bici 35 min',x:''},{t:'trail',l:'Trail 10 km',x:'~400m D+'},{t:'hike',l:'Hiking leggera',x:''}]},
-  {w:8,p:2,d:'20–25 ott',note:'Test AeT — soglia alzata?',days:[
-    {t:'rest',l:'Riposo',x:''},{t:'run',l:'10 km fartlek',x:''},{t:'gym',l:'💪 Giorno 1',x:G1},
-    {t:'test',l:'🔬 Test AeT',x:'stesso percorso settembre · confronta passo'},{t:'bike',l:'Bici Z2 · 60 min',x:''},{t:'trail',l:'Trail 17 km',x:'~900m D+'},{t:'run',l:'9 km easy',x:'back-to-back'}]},
+  {w:8,p:2,d:'20–25 ott',note:'Test AeT · soglia alzata rispetto a settembre?',days:[
+    {t:'rest',l:'Riposo',x:''},{t:'run',l:'10 km fartlek',x:'variazioni libere 30 min'},{t:'gym',l:'💪 Giorno 1',x:G1},
+    {t:'test',l:'🔬 Test AeT',x:'stesso percorso di settembre · confronta passo a parità FC'},{t:'bike',l:'Bici Z2 · 60 min',x:''},{t:'trail',l:'Trail 17 km',x:'~900m D+'},{t:'run',l:'9 km easy',x:'back-to-back'}]},
 ];
 
-let activePiano=1, openWeek=null;
+let activePh=1, openWk=null;
 
-function buildPiano(){
-  const tabs=document.getElementById('phaseTabs');
-  tabs.innerHTML=PHASES.map(p=>`<button class="ptab${p.id===1?' active':''}" id="ptab-${p.id}" style="${p.id===1?`background:${p.col};color:#000`:'color:var(--muted)'}" onclick="setPianoPhase(${p.id})">${p.name}</button>`).join('');
+function buildBlocchi(){
+  const tabEl=document.getElementById('phaseTabs');
+  tabEl.innerHTML=PHASES.map(ph=>`<button class="ptab${ph.id===1?' active':''}" id="pt${ph.id}"
+    style="${ph.id===1?`background:${ph.col};color:#000`:''}" onclick="setPhase(${ph.id})">${ph.n}</button>`).join('');
   renderWeeks();
 }
 
-function setPianoPhase(id){
-  activePiano=id; openWeek=null;
-  document.querySelectorAll('.ptab').forEach(t=>{
-    const pid=parseInt(t.id.split('-')[1]);
-    const ph=PHASES.find(p=>p.id===pid);
-    t.style.background=pid===id?ph.col:'var(--card)';
-    t.style.color=pid===id?'#000':'var(--muted)';
-    t.classList.toggle('active',pid===id);
+function setPhase(id){
+  activePh=id; openWk=null;
+  PHASES.forEach(ph=>{
+    const b=document.getElementById('pt'+ph.id);
+    if(!b) return;
+    b.style.background=ph.id===id?ph.col:'var(--card)';
+    b.style.color=ph.id===id?'#000':'var(--muted)';
+    b.classList.toggle('active',ph.id===id);
   });
   renderWeeks();
 }
 
 function renderWeeks(){
-  const c=document.getElementById('weeksContainer');
-  const pw=WEEKS.filter(w=>w.p===activePiano);
-  c.innerHTML=pw.map(w=>{
-    const hasRace=w.days.some(d=>d.t==='race');
-    const hasTest=w.days.some(d=>d.t==='test');
-    return `<div class="week-card">
-      <button class="week-head" onclick="toggleWeek(${w.w})">
-        <div>
-          <div class="week-num">Settimana ${w.w} ${hasRace?'🏁':''} ${hasTest?'🔬':''}</div>
-          <div class="week-dates">${w.d}</div>
-        </div>
-        <span style="color:var(--muted);font-size:12px">${openWeek===w.w?'▲':'▼'}</span>
-      </button>
-      ${openWeek===w.w?`<div class="week-body">
-        ${w.note?`<div class="week-note">${w.note}</div>`:''}
-        ${w.days.map((d,i)=>{
-          const s=TC[d.t]||TC.rest;
-          const ic=IC[d.t]||'';
-          const key=['trail','race','test','skimo'].includes(d.t);
-          return `<div class="day-row${key?' key':''}">
-            <div class="day-lbl">${DAYS[i]}</div>
-            <div class="day-dot" style="background:${s.dot}"></div>
-            <div style="flex:1">
-              <span class="day-tag" style="background:${s.tag};color:${s.col}">${ic?ic+' ':''}${d.l}</span>
-              ${d.x?`<div class="day-detail">${d.x}</div>`:''}
-            </div>
-          </div>`;
-        }).join('')}
-      </div>`:''}
-    </div>`;
-  }).join('');
+  const c=document.getElementById('weeksEl');
+  const pw=WEEKS.filter(w=>w.p===activePh);
+  if(!pw.length){c.innerHTML=`<div style="text-align:center;padding:30px;color:var(--muted);font-size:13px">Settimane in arrivo</div>`;return;}
+  c.innerHTML=pw.map(w=>`
+  <div class="wk">
+    <button class="wk-head" onclick="toggleWk(${w.w})">
+      <div>
+        <div class="wk-num">Settimana ${w.w} ${w.days.some(d=>d.t==='race')?'🏁':''} ${w.days.some(d=>d.t==='test')?'🔬':''}</div>
+        <div class="wk-dates">${w.d}</div>
+      </div>
+      <span style="color:var(--muted);font-size:12px">${openWk===w.w?'▲':'▼'}</span>
+    </button>
+    ${openWk===w.w?`<div class="wk-body">
+      ${w.note?`<div class="wk-note">${w.note}</div>`:''}
+      ${w.days.map((d,i)=>{
+        const s=TC[d.t]||TC.rest;
+        const ic=IC[d.t]||'';
+        const key=['trail','race','test','skimo'].includes(d.t);
+        return `<div class="day-row${key?' key':''}">
+          <div class="day-lbl">${DAYS[i]}</div>
+          <div class="day-dot" style="background:${s.dot}"></div>
+          <div style="flex:1">
+            <span class="day-tag" style="background:${s.tag};color:${s.col}">${ic?ic+' ':''}${d.l}</span>
+            ${d.x?`<div class="day-detail">${d.x}</div>`:''}
+          </div>
+        </div>`;
+      }).join('')}
+    </div>`:''}
+  </div>`).join('');
 }
 
-function toggleWeek(w){openWeek=openWeek===w?null:w;renderWeeks();}
+function toggleWk(w){openWk=openWk===w?null:w;renderWeeks();}
 
-// VERDICT CARDS
-const BLOCKS=[
-  {name:'Restart',sub:'S1-4 · set 2026',status:'current'},
-  {name:'Base',sub:'S5-12 · ott-nov 2026',status:'waiting'},
-  {name:'Aerobico',sub:'S13-20 · dic-gen 2027',status:'waiting'},
-  {name:'Specifico',sub:'S21-28 · feb-mar 2027',status:'waiting'},
-  {name:'Picco',sub:'S29-36 · apr-mag 2027',status:'waiting'},
-  {name:'Taper',sub:'S37-40 · giu 2027',status:'waiting'},
-];
-document.getElementById('verdictCards').innerHTML=BLOCKS.map(b=>`
-<div class="verdict-card">
-  <div class="verdict-head">
-    <div><div class="verdict-name">${b.name}</div><div style="font-size:10px;color:var(--muted)">${b.sub}</div></div>
-    <span class="verdict-status ${b.status==='current'?'v-current':'v-waiting'}">${b.status==='current'?'In corso':'In attesa'}</span>
-  </div>
-  ${b.status==='current'?`<div style="padding:0 14px 14px;font-size:11px;color:var(--muted);line-height:1.5">
-    Il Verdict verrà generato a fine settimana 4 (27 set 2026) analizzando: easy-day discipline, hard-day separation, progressione volume, RHR trend.
-  </div>`:''}
-</div>`).join('');
+// ─── VERDICT ────────────────────────────────────────────
+function buildVerdict(){
+  const VBLOCKS=[
+    {n:'Restart',s:'S1–4 · set 2026',st:'curr'},
+    {n:'Base',s:'S5–12 · ott–nov 2026',st:'wait'},
+    {n:'Aerobico',s:'S13–20 · dic–gen 2027',st:'wait'},
+    {n:'Specifico',s:'S21–28 · feb–mar 2027',st:'wait'},
+    {n:'Picco',s:'S29–36 · apr–mag 2027',st:'wait'},
+    {n:'Taper',s:'S37–40 · giu 2027',st:'wait'},
+  ];
+  document.getElementById('verdictEl').innerHTML=VBLOCKS.map(b=>`
+  <div class="vcard">
+    <div class="vcard-head">
+      <div><div class="vcard-name">${b.n}</div><div class="vcard-dates">${b.s}</div></div>
+      <span class="vstatus ${b.st==='curr'?'vs-curr':'vs-wait'}">${b.st==='curr'?'In corso':'In attesa'}</span>
+    </div>
+    ${b.st==='curr'?`<div style="padding:0 14px 14px;font-size:11px;color:var(--muted);line-height:1.5">
+      Verdict generato a fine settimana 4 (27 set). Analizzerà easy-day discipline, volume progressione, separazione duro/facile e trend RHR — dopo i test AeT/AnT del 10 e 15 settembre.
+    </div>`:''}
+  </div>`).join('');
+}
 
-// UTMB TAB
+// ─── UTMB ────────────────────────────────────────────────
 function buildUTMB(){
-  // Probability chart
-  const probLabels=['1-3','4-7','8-12','13-17','18-22','23+'];
-  const probVals=[6,12,25,42,67,82];
+  // Prob chart
   new Chart(document.getElementById('probChart'),{
     type:'bar',
-    data:{labels:probLabels.map(l=>l+' stones'),datasets:[{
-      data:probVals,
-      backgroundColor:probVals.map(v=>v<=12?'#374151':v<=42?'#f97316':'#4ade80'),
-      borderRadius:6
-    }]},
+    data:{
+      labels:['1–3','4–7','8–12','13–17','18–22','23+'],
+      datasets:[{
+        label:'% estrazione',
+        data:[6,12,25,42,67,82],
+        backgroundColor:['#374151','#374151','#f97316','#f97316','#4ade80','#4ade80'],
+        borderRadius:6
+      }]
+    },
     options:{plugins:{legend:{display:false}},scales:{
-      x:{grid:{color:'#222'},ticks:{color:'#666',font:{size:9}}},
-      y:{grid:{color:'#222'},ticks:{color:'#666',font:{size:9},callback:v=>v+'%'},max:100}
+      x:{grid:{color:'#1f1f1f'},ticks:{color:'#666',font:{size:9}},title:{display:true,text:'Running Stones',color:'#555',font:{size:9}}},
+      y:{grid:{color:'#1f1f1f'},ticks:{color:'#666',font:{size:9},callback:v=>v+'%'},max:100}
     }}
   });
 
   // Timeline
-  const utmbItems=[
-    {year:'2026',race:'Anno base · nessuna WS race',stones:'+0',total:'0',col:'#666',done:true},
-    {year:'2027',race:'Lavaredo 80K (giugno)',stones:'+3',total:'3',col:'#4ade80',done:false},
-    {year:'2028',race:'2 gare WS 100K',stones:'+6',total:'9',col:'#60a5fa',done:false},
-    {year:'2029',race:'Lavaredo 120K + WS 100K',stones:'+7',total:'16',col:'#a78bfa',done:false,key:true},
-    {year:'2030',race:'Gara WS 100M o 100K',stones:'+4',total:'20',col:'#f97316',done:false},
-    {year:'2031',race:'🏁 UTMB Mont-Blanc',stones:'lotteria',total:'20 stones',col:'#fbbf24',done:false,utmb:true},
+  const TL=[
+    {y:'2026',race:'Anno base',detail:'0 stones · UTMB Index 50K (503) valido fino ago 2027',col:'#666',stones:'',key:false},
+    {y:'2027',race:'Lavaredo 80K · giu',detail:'+3 stones · UTMB Index 100K sbloccato',col:'#4ade80',stones:'→ 3 tot',key:false},
+    {y:'2028',race:'2 gare WS 100K',detail:'+6 stones · Index 100K refresh',col:'#60a5fa',stones:'→ 9 tot',key:false},
+    {y:'2029',race:'Lavaredo 120K + WS 100K',detail:'+7 stones · ⚠️ UTMB Index 100M sbloccato — anno chiave',col:'#a78bfa',stones:'→ 16 tot',key:true},
+    {y:'2030',race:'Gara WS 100M o 100K',detail:'+4 stones · Index 100M refresh',col:'#f97316',stones:'→ 20 tot',key:false},
+    {y:'2031',race:'🏁 UTMB Mont-Blanc',detail:'Lotteria con 20 stones · ~65–75% probabilità di estrazione',col:'#fbbf24',stones:'',key:false,utmb:true},
   ];
-  document.getElementById('utmbTimeline').innerHTML=utmbItems.map(u=>`
-  <div class="utmb-timeline-row">
-    <div class="utl-dot" style="background:${u.col}"></div>
-    <div style="width:36px;flex-shrink:0"><span style="font-size:11px;font-weight:800;color:${u.col}">${u.year}</span></div>
-    <div class="utl-content">
-      <div class="utl-race" style="${u.utmb?'color:var(--gold)':''}">${u.race}${u.key?' ⚠️ chiave':''}</div>
-      <div style="display:flex;gap:8px;margin-top:3px">
-        <span style="font-size:10px;color:var(--green)">${u.stones}</span>
-        <span style="font-size:10px;color:var(--muted)">Totale: ${u.total}</span>
-        ${u.key?`<span style="font-size:10px;color:#a78bfa">→ Index 100M sbloccato</span>`:''}
-      </div>
+  document.getElementById('utmbTl').innerHTML=TL.map(r=>`
+  <div class="utmb-tl-row">
+    <div class="utl-dot" style="background:${r.col}"></div>
+    <div class="utl-year" style="color:${r.col}">${r.y}</div>
+    <div class="utl-body">
+      <div class="utl-race" style="${r.utmb?'color:var(--gold)':''}">${r.race} ${r.stones?`<span style="color:var(--green);font-size:10px">${r.stones}</span>`:''}</div>
+      <div class="utl-detail">${r.detail}</div>
     </div>
   </div>`).join('');
 }
+
+// ─── INIT ─────────────────────────────────────────────
+built[0]=true; // tab 0 built inline
 </script>
 </body>
 </html>
