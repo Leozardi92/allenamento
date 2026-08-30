@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-08-30T13:19:11",
+  "phase_label": null,
+  "plan_status": "pre_season",
+  "next_workout": {
+    "date": "2026-09-01",
+    "day_label": "Mar",
+    "type": "gym",
+    "label": "💪 Giorno 1",
+    "extra": "Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS — prima di correre"
+  },
+  "key_workout": {
+    "date": "2026-09-10",
+    "day_label": "Gio",
+    "type": "test",
+    "label": "🔬 Test AeT",
+    "extra": "85 min: 15 riscald. + 60 min FC 135–148 bpm + 10 cool · file: test_AeT.fit"
+  },
+  "week": null,
+  "next_race": {
+    "date": "2027-03-06",
+    "label": "🏁 ULTRABERICUS",
+    "days_until": 188
+  }
+}
