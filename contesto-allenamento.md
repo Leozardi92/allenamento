@@ -305,6 +305,82 @@ Label: "Con X stones: ~Y% di probabilità di estrazione UTMB"
 
 ---
 
+## Preparazione Specifica Gara — Gear, Nutrizione, Caldo, Notte
+
+Queste non sono cose da élite — sono requisiti base per finire una ultra in modo sensato.
+Il giorno della gara non è il momento di testare niente.
+
+### Gear training (da ottobre in poi)
+
+**Principio:** ogni long trail dal Blocco Base in poi si corre con l'attrezzatura esatta di gara.
+Nessuna sorpresa alla Lavaredo.
+
+- **Scarpe:** usa le scarpe da gara su ogni long trail da ottobre. Due paia per il training
+  (uno autunno-inverno, uno primavera), uno per le gare. Mai indossare scarpe nuove in gara.
+- **Vest/zaino:** dal primo long trail di ottobre, sempre con il vest da gara carico come in gara
+  (soft flask, gel, barrette, cerata, pila, coperta termica). Il peso e il movimento devono
+  diventare automatici.
+- **Bastoncini:** già in uso. Continuare su ogni uscita con D+ significativo.
+  Kilian non li ha allenati per UTMB — ma lui scia tutto l'inverno. Per noi i bastoncini
+  si allenano attivamente nelle uscite trail da ottobre.
+- **Pila frontale:** testata su almeno 1-2 uscite notturne nei blocchi Picco (aprile-maggio).
+  La Lavaredo parte alle 23:00 — correre la prima ora di notte non deve essere
+  una novità il giorno della gara.
+
+### Nutrizione in corsa (da ottobre in poi)
+
+**Principio:** l'intestino va allenato a ricevere cibo sotto sforzo, esattamente come i muscoli.
+Sapere che "devo mangiare ogni 40 min" non basta — bisogna sapere cosa regge lo stomaco
+durante 6-8-10 ore di corsa in condizioni di vera fatica.
+
+- Da ogni long trail di ottobre in poi: protocollo nutrizione completo
+  (gel + barrette + acqua ogni 40-45 min, 40g CHO/ora)
+- Testa marche e formati diversi di gel: trova 2-3 che reggono lo stomaco e usali sempre
+- Registra cosa hai mangiato e come ti sei sentito dopo ogni long trail
+- Nei blocchi Specifico e Picco: simula i ristori della Lavaredo (tempi tra un punto e l'altro,
+  cosa mangiare al ristoro, quanto fermarsi)
+- La sera prima della gara (riso basmati) e la mattina della gara sono già nel protocollo
+  Dr. Sanson — devono essere stati testati nelle uscite lunghe, non improvvisati
+
+### Gestione del caldo (maggio 2027)
+
+**Principio:** la Lavaredo è il 26 giugno. La parte più calda è la mattina del 27 in quota,
+quando sei già a 12-15 ore di gara. Il corpo deve essere adattato.
+
+- **Ultime 3 settimane di maggio:** 2-3 sessioni nella fascia oraria più calda della giornata
+  (12:00-15:00). Basta una corsa easy da 8-10 km nel caldo — l'adattamento plasma avviene
+  in 10-14 giorni.
+- **Alternativa/aggiunta:** 3-4 sessioni brevi di sauna (15-20 min) nelle ultime 2 settimane
+  prima della gara (protocollo heat acclimation da atleti endurance).
+- **Strategia in gara:** cappellino + maglietta bagnata + acqua su collo e spalle ai ristori.
+  Testa questa routine già al Gran Raid GR60 di maggio.
+
+### Corsa notturna (aprile-maggio 2027)
+
+**Principio:** la Lavaredo parte alle 23:00. Le prime 1-2 ore sono di notte, poi l'alba arriva
+intorno alle 5:00. Non è il momento di scoprire come funziona la pila frontale.
+
+- **Blocco Picco (aprile-maggio):** almeno 1 uscita notturna vera da 2-3 ore
+  (partenza ore 22:00 o 23:00) con la pila che userai in gara
+- Testa: intensità luminosa, durata batteria, come cambia la percezione del terreno,
+  come gestisci il ritmo di notte
+- Se possibile, fai l'uscita notturna sullo stesso tipo di terreno della Lavaredo (sentiero
+  tecnico, non solo strada)
+
+### Integrazione nel piano per blocco
+
+| Blocco | Cosa aggiungere |
+|---|---|
+| **Restart** (set 2026) | Niente — focus su ITB e test AeT/AnT |
+| **Base** (ott-nov 2026) | Vest + scarpe gara su ogni long trail · protocollo nutrizione attivo |
+| **Aerobico** (dic-gen 2027) | Continua vest + nutrizione · test bastoncini su neve/skimo |
+| **Specifico** (feb-mar 2027) | Simula ristori nelle uscite lunghe · test marche gel definitivi |
+| **Picco** (apr-mag 2027) | 1-2 uscite notturne · heat training 2-3 settimane · test tutto insieme |
+| **Taper** (giu 2027) | Solo ripasso mentale — niente di nuovo |
+
+
+---
+
 ## Note
 
 - TrainingPeaks: valutare da gennaio 2027
