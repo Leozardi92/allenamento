@@ -367,6 +367,57 @@ intorno alle 5:00. Non è il momento di scoprire come funziona la pila frontale.
 - Se possibile, fai l'uscita notturna sullo stesso tipo di terreno della Lavaredo (sentiero
   tecnico, non solo strada)
 
+
+### Gestione del sonno e corsa notturna (approfondimento)
+
+**Contesto personale:** Leonardo è una persona che ha bisogno di dormire bene.
+La mancanza di sonno lo impatta significativamente. Alla Lavaredo (partenza 23:00,
+arrivo stimato ore 13:00-15:00 del giorno dopo) attraversa tutta la notte senza dormire
+dopo una giornata di viaggio e preparazione. Questo è uno dei fattori di rischio più
+importanti da preparare, non solo tecnicamente ma anche fisiologicamente e mentalmente.
+
+**La finestra critica: 01:00-05:00**
+In quella fascia il corpo è programmato per dormire — la temperatura corporea scende
+al minimo, il cervello rallenta, la pressione del sonno è al picco. Non è stanchezza
+muscolare, è neurofisiologia. Molti atleti fisicamente allenati cedono proprio lì.
+
+**Tre preparazioni specifiche da inserire nel Blocco Picco (aprile-maggio 2027):**
+
+1. **Uscita notturna completa attraverso la finestra critica**
+   Partenza ore 22:00, corsa fino alle 5:00-6:00 di mattina.
+   Almeno una volta nel blocco Picco.
+   Obiettivo: capire come reagisce il corpo nelle ore 01:00-05:00, testare la pila,
+   testare la nutrizione notturna, capire quando arriva la pressione del sonno.
+
+2. **Simulazione privazione sonno pre-long trail**
+   Una volta in aprile-maggio: vai a dormire tardi (23:30-mezzanotte),
+   svegliati alle 4:30-5:00, fai il long trail senza aver dormito abbastanza.
+   Non per martoriarsi — per capire il proprio funzionamento: ritmo, fame,
+   concentrazione, umore. Quello che scopri lì è oro per gestire la Lavaredo.
+
+3. **Costruire la strategia anti-sonno personale**
+   Da testare nelle uscite notturne, non da inventare in gara:
+   - Timing caffeina (gel con caffeina, caffè ai ristori) — quando prenderla
+   - Musica o no — alcune persone si svegliano con la musica, altre si isolano
+   - Compagnia — valutare se correre con qualcuno nella fascia notturna
+   - Movimento continuo — non fermarsi mai nei momenti peggiori (il fermo peggiora tutto)
+   - Temperature — vestirsi leggermente più caldo di notte per non avere freddo
+     che amplifica la sonnolenza
+
+**Integrazione nel piano:**
+
+| Blocco | Attività sonno/notte |
+|---|---|
+| Picco apr (S29-32) | 1 uscita notturna 22:00-05:00 con protocollo completo |
+| Picco mag (S33-36) | 1 simulazione privazione sonno + long trail mattutino |
+| Taper | Ripasso mentale strategia anti-sonno · niente test fisici |
+
+**Note operative:**
+- Avvisa qualcuno quando fai l'uscita notturna (sicurezza)
+- Porta sempre il telefono carico
+- Scegli un percorso conosciuto per la prima uscita notturna
+- Non farlo mai da solo su terreno tecnico sconosciuto
+
 ### Integrazione nel piano per blocco
 
 | Blocco | Cosa aggiungere |
