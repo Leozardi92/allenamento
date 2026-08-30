@@ -404,13 +404,38 @@ muscolare, è neurofisiologia. Molti atleti fisicamente allenati cedono proprio 
    - Temperature — vestirsi leggermente più caldo di notte per non avere freddo
      che amplifica la sonnolenza
 
-**Integrazione nel piano:**
+**Integrazione nel piano — approccio iterativo:**
 
-| Blocco | Attività sonno/notte |
-|---|---|
-| Picco apr (S29-32) | 1 uscita notturna 22:00-05:00 con protocollo completo |
-| Picco mag (S33-36) | 1 simulazione privazione sonno + long trail mattutino |
-| Taper | Ripasso mentale strategia anti-sonno · niente test fisici |
+Una sola uscita non basta. Come i test AeT/AnT, la gestione del sonno si impara
+per tentativi successivi: provi, scopri come reagisci, aggiusti, riprovi.
+Ogni uscita notturna è un test con domande specifiche.
+
+| Blocco | Uscita | Obiettivo |
+|---|---|---|
+| Picco apr S29-32 | 1ª uscita notturna (22:00-05:00) | Esplorazione — scopri quando arriva la sonnolenza, cosa la peggiora. Non aspettarti di gestirla bene. Registra tutto. |
+| Picco mag S33-35 | 2ª uscita notturna (22:00-05:00) | Applica quello che hai imparato: aggiusta timing caffeina, alimentazione notturna, abbigliamento, compagnia. Vedi se migliora. |
+| S35 Gran Raid GR60 | Gara reale (non notturna) | Prima ultra vera in condizioni di gara. Osserva come gestisci le ultime ore sotto fatica accumulata. |
+| Taper giu | Nessuna sessione nuova | Con 2 uscite notturne + 1 gara hai dati reali. Costruisci la strategia definitiva per la Lavaredo. |
+
+**Domande da rispondere dopo ogni uscita notturna:**
+- A che ora è arrivata la sonnolenza più forte?
+- Cosa l'ha alleviata e cosa l'ha peggiorata?
+- La caffeina ha funzionato? Quando e quanto?
+- Come era la fame di notte? Riuscivi a mangiare?
+- Musica sì o no — ha aiutato o distratto?
+- Fermarsi ha peggiorato la sonnolenza?
+- Come ti sei sentito fisicamente la mattina dopo?
+
+**Contromisure da testare e raffinare:**
+- **Caffeina:** zero fino a mezzanotte, poi gel con caffeina ogni 45-60 min tra 01:00-05:00.
+  Dopo un certo punto smette di funzionare — trova il tuo limite.
+- **Freddo:** acqua fredda su nuca e collo ai ristori notturni. Abbassa la sonnolenza momentaneamente.
+- **Alimentazione:** mantenere il ritmo anche di notte quando non hai fame.
+  L'ipoglicemia amplifica enormemente la sonnolenza.
+- **Movimento continuo:** non sedersi mai nella finestra critica. Stai in piedi ai ristori.
+- **Compagnia:** correre con qualcuno tra 01:00-05:00 cambia tutto. Valuta se organizzarlo.
+- **Musica/podcast:** da testare — per alcuni ricarica, per altri isola troppo dal terreno.
+- **Mantra o focus:** un pensiero fisso per quando la mente vacilla. Decidilo prima.
 
 **Note operative:**
 - Avvisa qualcuno quando fai l'uscita notturna (sicurezza)
