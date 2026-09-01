@@ -507,6 +507,34 @@ cappellino, maglietta bagnata sul collo, sorseggia ogni 15-20 min anche se non h
 | Taper (giu) | Pesa pre/post GR60 | Ripassa strategia definitiva | Solo ripasso mentale |
 
 
+### Altitudine (aprile-maggio 2027)
+
+La Lavaredo 80K passa tra 2000-2400m di quota. Allenarsi a Verona e Lessinia
+(600-1400m) significa che il corpo non è adattato a quella quota.
+In quota la VO2max effettiva cala e la FC sale a parità di sforzo.
+
+**Prevedere 2-3 uscite sopra i 2000m nelle settimane S29-S35 (aprile-maggio 2027).**
+Esempio: Stelvio, Tonale, Rolle, Passo Giau, Pordoi — tutti raggiungibili da Verona
+in 2-3 ore. Bastano uscite da 2-3h a ritmo facile per abituare il corpo.
+Almeno una di queste uscite dovrebbe avere profilo simile alla Lavaredo (salita lunga + discesa).
+
+### Da definire man mano (ricordare a Leonardo)
+
+**Gestione del ritmo in gara (da costruire a marzo-maggio 2027)**
+Sulla base della forma accumulata (test AeT/AnT aggiornati + dati Garmin),
+costruire una strategia di pacing specifica per la Lavaredo:
+- Ritmo target per i primi 20 km (imbarazzantemente lento)
+- Gestione delle salite principali (FC target, non passo)
+- Quando iniziare a spingere (mai prima del km 50)
+Da affrontare insieme dopo l'Ultrabericus (marzo 2027) e il Gran Raid GR60 (maggio 2027).
+
+**Drop bag e gestione ristori (da definire a maggio 2027)**
+- Cosa mettere nella drop bag e dove posizionarla
+- Tempo massimo da passare ad ogni ristoro (target: max 5 min)
+- Routine automatica al ristoro: mangia, bevi, riparti — senza indecisioni
+- Testare la routine ai ristori già durante il Gran Raid GR60
+Da affrontare insieme 4-6 settimane prima della Lavaredo.
+
 ---
 
 ## Note
