@@ -37,7 +37,7 @@ Blocco: Restart
 Tipo: forza
 Durata: 50 min
 Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS
-Stato: ✅ importata (workout_id 1678951946, verificato via API il 28/08/2026)
+Stato: da importare
 
 Data: 2026-09-02
 Blocco: Restart
@@ -45,7 +45,7 @@ Tipo: corsa easy
 Distanza: 6 km
 FC target: < 145 bpm
 Note: passo 6:30-7:00/km · stop se dolore ITB
-Stato: ✅ importata (workout_id 1678951950, verificato via API il 28/08/2026)
+Stato: da importare
 
 Data: 2026-09-04
 Blocco: Restart
@@ -53,7 +53,7 @@ Tipo: bici
 Durata: 45 min
 FC target: < 140 bpm
 Note: Z2 bassa · sera 19:00+
-Stato: ✅ importata (workout_id 1678951952, verificato via API il 28/08/2026)
+Stato: da importare
 
 Data: 2026-09-05
 Blocco: Restart
@@ -61,7 +61,7 @@ Tipo: corsa easy
 Distanza: 8 km
 FC target: < 145 bpm
 Note: ITB check
-Stato: ✅ importata (workout_id 1678951959, verificato via API il 28/08/2026)
+Stato: da importare
 
 ---
 
@@ -73,14 +73,14 @@ Tipo: corsa easy
 Distanza: 6 km
 FC target: < 145 bpm
 Note: pre-test AeT
-Stato: ✅ importata (workout_id 1678951983, verificato via API il 28/08/2026)
+Stato: da importare
 
 Data: 2026-09-09
 Blocco: Restart
 Tipo: forza
 Durata: 50 min
 Note: Palestra Giorno 3 — Leg Curl Prono · Affondi · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS
-Stato: ✅ importata (workout_id 1678951992, verificato via API il 28/08/2026)
+Stato: da importare
 
 Data: 2026-09-10
 Blocco: Restart
@@ -89,14 +89,14 @@ Riscaldamento: 15 min FC 110-130 bpm
 Ripetute: 60 min FC 135-148 bpm (TEST AeT — nota passo medio e FC media)
 Defaticamento: 10 min FC < 125 bpm
 Note: usa file test_AeT.fit su Garmin · riporta risultato a Claude Chat
-Stato: ✅ importata (workout_id 1678951994, verificato via API il 28/08/2026)
+Stato: da importare
 
 Data: 2026-09-12
 Blocco: Restart
 Tipo: corsa easy
 Distanza: 8 km
 FC target: < AeT misurata il 10/09
-Stato: ✅ importata (workout_id 1678951997, verificato via API il 28/08/2026)
+Stato: da importare
 
 Data: 2026-09-13
 Blocco: Restart
@@ -104,7 +104,7 @@ Tipo: bici
 Durata: 45 min
 FC target: < 140 bpm
 Note: recupero attivo post-test
-Stato: ✅ importata (workout_id 1678952001, verificato via API il 28/08/2026)
+Stato: da importare
 
 ---
 
