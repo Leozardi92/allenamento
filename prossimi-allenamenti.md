@@ -37,7 +37,7 @@ Blocco: Restart
 Tipo: forza
 Durata: 50 min
 Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303398, automatico il 01/09/2026)
 
 Data: 2026-09-02
 Blocco: Restart
@@ -45,7 +45,7 @@ Tipo: corsa easy
 Distanza: 6 km
 FC target: < 145 bpm
 Note: passo 6:30-7:00/km · stop se dolore ITB
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303402, automatico il 01/09/2026)
 
 Data: 2026-09-04
 Blocco: Restart
@@ -53,7 +53,7 @@ Tipo: bici
 Durata: 45 min
 FC target: < 140 bpm
 Note: Z2 bassa · sera 19:00+
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303407, automatico il 01/09/2026)
 
 Data: 2026-09-05
 Blocco: Restart
@@ -61,7 +61,7 @@ Tipo: corsa easy
 Distanza: 8 km
 FC target: < 145 bpm
 Note: ITB check
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303411, automatico il 01/09/2026)
 
 ---
 
