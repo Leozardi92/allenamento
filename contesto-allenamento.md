@@ -323,9 +323,9 @@ Nessuna sorpresa alla Lavaredo.
 - **Bastoncini:** già in uso. Continuare su ogni uscita con D+ significativo.
   Kilian non li ha allenati per UTMB — ma lui scia tutto l'inverno. Per noi i bastoncini
   si allenano attivamente nelle uscite trail da ottobre.
-- **Pila frontale:** testata su almeno 1-2 uscite notturne nei blocchi Picco (aprile-maggio).
-  La Lavaredo parte alle 23:00 — correre la prima ora di notte non deve essere
-  una novità il giorno della gara.
+- **Pila frontale:** necessaria per la Lavaredo 120K (futura, 2029), non per la 80K.
+  La 80K parte alle 07:00 — gara completamente diurna. La pila serve per le uscite
+  notturne che alleniamo in vista della 120K.
 
 ### Nutrizione in corsa (da ottobre in poi)
 
@@ -344,8 +344,8 @@ durante 6-8-10 ore di corsa in condizioni di vera fatica.
 
 ### Gestione del caldo (maggio 2027)
 
-**Principio:** la Lavaredo è il 26 giugno. La parte più calda è la mattina del 27 in quota,
-quando sei già a 12-15 ore di gara. Il corpo deve essere adattato.
+**Principio:** la Lavaredo 80K parte alle 07:00. Il momento più caldo è nelle ore 11:00-17:00
+quando sei già a 4-10 ore di gara in quota a giugno. Il corpo deve essere adattato.
 
 - **Ultime 3 settimane di maggio:** 2-3 sessioni nella fascia oraria più calda della giornata
   (12:00-15:00). Basta una corsa easy da 8-10 km nel caldo — l'adattamento plasma avviene
@@ -443,16 +443,68 @@ Ogni uscita notturna è un test con domande specifiche.
 - Scegli un percorso conosciuto per la prima uscita notturna
 - Non farlo mai da solo su terreno tecnico sconosciuto
 
+### Protocollo Sweat Test — quando e come
+
+**Come fare il test:** pesati nudo prima dell'uscita · corri senza bere ·
+ripesati nudo subito dopo · ogni 100g persi = ~100ml di sudore perso.
+Annota sempre: temperatura, umidità, durata, km, D+.
+
+| Settimana | Condizioni | Durata test | Obiettivo |
+|---|---|---|---|
+| S2 (10 set) | Fresco ~20°C | 1h easy | Baseline |
+| S8 (ott) | Fresco ~15°C | 2h long trail | Sforzo prolungato |
+| S29 (mar) | Tiepido ~18°C | 2h long trail | Pre-caldo |
+| S33 (apr) | Caldo ~25°C | 2h long trail | Condizioni gara simulate |
+| S35 GR60 | Gara reale | Pesa pre/post gara | Verifica strategia |
+
+**Target:** perdere meno del 3% del peso corporeo (per Leonardo: max 2.3 kg su 78 kg).
+Se perdi di più → aumenta fluidi e sodio nella sessione successiva.
+
+### Protocollo Gel e Nutrizione — quanto mangiare per uscita
+
+**Progressione CHO per blocco (obiettivo gut training):**
+
+| Blocco | CHO/ora target | In pratica |
+|---|---|---|
+| Base (ott-nov) | 30-40g/ora | 1 gel ogni 45 min sulle uscite >90 min |
+| Aerobico (dic-gen) | 40-50g/ora | 1 gel ogni 40 min + barretta ogni 2h |
+| Specifico (feb-mar) | 50-60g/ora | 1 gel ogni 35 min + cibo solido ai ristori simulati |
+| Picco (apr-mag) | 60-80g/ora | 1 gel ogni 30 min + barretta ogni 1.5h + cibo solido |
+
+**Per durata di uscita:**
+- Uscite < 1h: niente gel necessario
+- Uscite 1-2h: 1-2 gel (primo gel dopo 40-45 min)
+- Uscite 2-3h: 2-3 gel + 1 barretta
+- Long trail 3-5h: gel ogni 35-40 min + barretta ogni 1.5h + cibo solido (banana, datteri)
+- Long trail > 5h: aggiungi sale (300-500mg sodio/ora) e alterna gel con cibo solido
+
+**Regola d'oro:** mangia prima della fame, bevi prima della sete. A orologio, non a sensazione.
+
+### Protocollo Caldo — uscite nelle ore calde
+
+La Lavaredo 80K parte alle 07:00. Il caldo colpisce nelle ore 11:00-17:00 quando sei
+già a 4-10 ore di gara. L'acclimatamento richiede 10-14 giorni di esposizione continuativa.
+
+**Nelle settimane S33-S36 (aprile-maggio 2027):**
+Le uscite easy infrasettimanali (martedì e/o giovedì) vanno fatte nelle ore 11:00-14:00
+almeno 2-3 volte a settimana per 3-4 settimane. Non serve correre veloce — basta esporsi.
+
+Durante queste uscite calde, testa anche la strategia di idratazione con il caldo:
+cappellino, maglietta bagnata sul collo, sorseggia ogni 15-20 min anche se non hai sete.
+
+**Settimane S33-S35:** 2-3 uscite easy a settimana ore 11-14 (mattino tardi)
+**Settimana S36:** 3-4 sessioni brevi di sauna (15-20 min) come alternativa/aggiunta
+
 ### Integrazione nel piano per blocco
 
-| Blocco | Cosa aggiungere |
-|---|---|
-| **Restart** (set 2026) | Niente — focus su ITB e test AeT/AnT |
-| **Base** (ott-nov 2026) | Vest + scarpe gara su ogni long trail · protocollo nutrizione attivo |
-| **Aerobico** (dic-gen 2027) | Continua vest + nutrizione · test bastoncini su neve/skimo |
-| **Specifico** (feb-mar 2027) | Simula ristori nelle uscite lunghe · test marche gel definitivi |
-| **Picco** (apr-mag 2027) | 1-2 uscite notturne · heat training 2-3 settimane · test tutto insieme |
-| **Taper** (giu 2027) | Solo ripasso mentale — niente di nuovo |
+| Blocco | Sweat test | Gel/nutrizione | Caldo |
+|---|---|---|---|
+| Restart (set) | Test S2 baseline | Niente — focus ITB | — |
+| Base (ott-nov) | Test S8 fresco | 30-40g CHO/ora sui long trail | — |
+| Aerobico (dic-gen) | — | 40-50g CHO/ora · alterna gel e cibo solido | — |
+| Specifico (feb-mar) | Test S29 tiepido | 50-60g CHO/ora · simula ristori | — |
+| Picco (apr-mag) | Test S33 caldo | 60-80g CHO/ora · test completo | Uscite ore 11-14 · S33-S36 |
+| Taper (giu) | Pesa pre/post GR60 | Ripassa strategia definitiva | Solo ripasso mentale |
 
 
 ---
