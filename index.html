@@ -119,6 +119,7 @@
   .week-title { font-size: 14px; font-weight: 800; color: var(--text); }
   .week-badge { font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
   .week-dates { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .week-done-count { font-weight: 700; }
   .week-chevron { font-size: 12px; color: var(--muted); }
   .week-body { border-top: 1px solid var(--border); }
   .week-note { margin: 10px 12px 0; background: var(--card2); border: 1px solid var(--border); border-radius: 10px; padding: 9px 11px; font-size: 12px; color: #a0a0a0; line-height: 1.5; }
@@ -191,7 +192,7 @@
 <script>
 "use strict";
 
-var DATA = {"generated_at": "01/09/2026 10:45", "wellness": {"date": "2026-08-30", "rhr": 48, "bb": 83, "stress": 16, "tr": 64, "hrv": 55, "sleep_h": 6.8, "sleep_score": 78}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "15/06", "planned": null, "actual": 26.2, "is_current": false}, {"label": "22/06", "planned": null, "actual": 21.6, "is_current": false}, {"label": "29/06", "planned": null, "actual": 34.4, "is_current": false}, {"label": "06/07", "planned": null, "actual": 19.9, "is_current": false}, {"label": "13/07", "planned": null, "actual": 16.4, "is_current": false}, {"label": "20/07", "planned": null, "actual": 14.6, "is_current": false}, {"label": "27/07", "planned": null, "actual": 0.0, "is_current": false}, {"label": "03/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "10/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "17/08", "planned": null, "actual": 4.5, "is_current": false}, {"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 0.0, "is_current": true}], "weekly_actual_km": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "19960707854", "name": "Morning Hike", "sport_type": "Hike", "start_local": "2026-08-30T10:22:31", "summary": {"distance": 8422.1, "moving_time": 6779, "elapsed_time": 6961, "elevation_gain": 253.0, "avg_speed": 1.242, "max_speed": 1.817, "relative_effort": 15.0, "total_calories": 485.0, "avg_cadence": 51.6, "kudos_count": 2, "achievement_count": 0, "pr_count": 0}, "polyline": "ipmtG{kxbAM??ICKKMCULu@Bw@?s@Ii@QiA_@gBUyAcAwC?e@Po@L[Wi@i@yB]aAKe@@a@CN@Nt@zBXzAXp@FBp@IZA^OjA[TCd@?j@HlAd@h@PvAX\\DvA?v@GrCM@MM_CEU]uAG]Ca@QwAAs@OkA?SHYHEJ@FFVl@b@f@VRVJH?VKz@Gf@S\\Ur@w@Ru@JqBNi@JKz@m@FKTKNOLQn@{BPwAJm@B[h@sEf@wBYmBQy@Qi@Ou@OKWBGG?BKdBCpAEZ@LKHQBKEaAk@MU}@c@S?a@ISMWKy@KY?SBIABCGH_@HqAl@sAb@_Bd@c@DYHQ?MBy@V[NUFmBVgADo@FmB^e@Pc@@yCb@k@Dc@FcAFaALeAV}@Ha@?wA_@oCa@s@LwAt@_C|@y@t@u@j@_@b@UPKBaABuAA_AQ{Aa@I?cB@s@C}@HUEe@OYEw@HiA`@u@`@cBpA{@b@y@TcD|A@?FMY{AAS[sBr@zE@LCDq@TqAj@aAr@OPk@v@q@nAGTMR]b@k@dAUZ]`@s@r@aA|@{DjFa@b@i@`@mAhAa@d@]t@Un@ETq@nCO`@gBvCSX]j@{@jAGLF?JHD?tA?ZBLHd@v@PT`@PNBRADJDd@JVJDR?VUh@q@PMTKRETOj@k@P@BCZ_@b@_AHa@Na@He@BY@k@CiA@OFMPGh@Uh@ObAQj@Qn@Ej@_@b@IP@f@[R?XIj@ILEFEZINIXET@ZEZLR?VDCD@GHBPTVh@PRj@PDJHDd@r@@?R^DPN`B?p@Fd@DBCBLMPJRAFIH]BADB?DAXEJ?d@HJZFRNL?HJd@VZXr@Jb@Bb@IJHT`@FH^?NDZLj@^T?l@GVEJ@Z\\DGAa@Fq@Pa@\\g@\\s@PHHChAk@|AaAjAUd@YR?\\IhAMVIdCsAxAeAfAi@lBy@h@M^AV?ZFt@@fA]xAm@p@_@l@Qt@_@JJP\\h@fBbAxFHr@Bd@?d@OtA@NHRPbB", "performance": {"average_heartrate": 91.5, "max_heartrate": 121.0, "average_cadence": 51.6, "calories": 485.0}, "hr_stream": {"time": [1, 69, 135, 200, 269, 340, 418, 487, 548, 609, 679, 737, 806, 872, 943, 1011, 1080, 1165, 1240, 1318, 1386, 1458, 1530, 1598, 1672, 1741, 1835, 1915, 1978, 2056, 2122, 2193, 2253, 2322, 2390, 2457, 2521, 2583, 2637, 2704, 2767, 2828, 2917, 2981, 3051, 3115, 3187, 3250, 3309, 3374, 3437, 3519, 3589, 3722, 3791, 3859, 3916, 4046, 4121, 4184, 4255, 4320, 4381, 4451, 4513, 4579, 4665, 4730, 4811, 4874, 4950, 5015, 5080, 5144, 5212, 5279, 5352, 5472, 5549, 5635, 5747, 5811, 5879, 5941, 6006, 6081, 6147, 6213, 6278, 6339, 6406, 6468, 6531, 6594, 6653, 6716, 6779, 6839, 6896, 6961], "heart_rate": [75, 79, 74, 83, 86, 88, 89, 80, 79, 80, 78, 76, 81, 82, 94, 97, 102, 107, 107, 105, 101, 105, 103, 96, 117, 102, 86, 104, 90, 90, 88, 85, 86, 96, 99, 106, 105, 101, 88, 86, 81, 85, 88, 108, 113, 116, 103, 110, 109, 116, 104, 95, 100, 90, 86, 98, 103, 93, 85, 92, 81, 88, 92, 81, 81, 80, 99, 110, 101, 98, 83, 82, 83, 86, 85, 83, 89, 84, 84, 87, 81, 85, 86, 84, 84, 93, 96, 86, 88, 78, 74, 85, 83, 91, 85, 87, 81, 88, 93, 88]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 153}, {"min": 154, "max": 156}, {"min": 157, "max": 161}, {"min": 162, "max": 170}], "thresholds": {"aet": 153, "ant": 161, "fcmax": 170, "aet_pace": "5:43/km", "ant_pace": "5:05/km"}, "latest_activity_zone_seconds": [6779, 0, 0, 0, 0], "latest_activity_comment": "È stata un'escursione prevalentemente aerobica — FC quasi sempre in Z1/Z2 (100% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 15.0 (carico basso).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}], "zone_agg_all": {"zone_seconds": [0, 0, 0, 0, 0], "n_activities": 0, "z1z2_pct": null, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [0, 0, 0, 0, 0], "n_activities": 0, "z1z2_pct": null, "low_aerobic_flag": false}, "completed_dates": [], "current_block": {"name": "Restart", "start": "2026-08-31", "end": "2026-09-27", "planned_total": 58}, "block_daily_km": [{"date": "31/08", "cumulative_km": 0.0}, {"date": "01/09", "cumulative_km": 0.0}]};
+var DATA = {"generated_at": "01/09/2026 10:58", "wellness": {"date": "2026-08-30", "rhr": 48, "bb": 83, "stress": 16, "tr": 64, "hrv": 55, "sleep_h": 6.8, "sleep_score": 78}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "15/06", "planned": null, "actual": 26.2, "is_current": false}, {"label": "22/06", "planned": null, "actual": 21.6, "is_current": false}, {"label": "29/06", "planned": null, "actual": 34.4, "is_current": false}, {"label": "06/07", "planned": null, "actual": 19.9, "is_current": false}, {"label": "13/07", "planned": null, "actual": 16.4, "is_current": false}, {"label": "20/07", "planned": null, "actual": 14.6, "is_current": false}, {"label": "27/07", "planned": null, "actual": 0.0, "is_current": false}, {"label": "03/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "10/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "17/08", "planned": null, "actual": 4.5, "is_current": false}, {"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 0.0, "is_current": true}], "weekly_actual_km": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "19960707854", "name": "Morning Hike", "sport_type": "Hike", "start_local": "2026-08-30T10:22:31", "summary": {"distance": 8422.1, "moving_time": 6779, "elapsed_time": 6961, "elevation_gain": 253.0, "avg_speed": 1.242, "max_speed": 1.817, "relative_effort": 15.0, "total_calories": 485.0, "avg_cadence": 51.6, "kudos_count": 2, "achievement_count": 0, "pr_count": 0}, "polyline": "ipmtG{kxbAM??ICKKMCULu@Bw@?s@Ii@QiA_@gBUyAcAwC?e@Po@L[Wi@i@yB]aAKe@@a@CN@Nt@zBXzAXp@FBp@IZA^OjA[TCd@?j@HlAd@h@PvAX\\DvA?v@GrCM@MM_CEU]uAG]Ca@QwAAs@OkA?SHYHEJ@FFVl@b@f@VRVJH?VKz@Gf@S\\Ur@w@Ru@JqBNi@JKz@m@FKTKNOLQn@{BPwAJm@B[h@sEf@wBYmBQy@Qi@Ou@OKWBGG?BKdBCpAEZ@LKHQBKEaAk@MU}@c@S?a@ISMWKy@KY?SBIABCGH_@HqAl@sAb@_Bd@c@DYHQ?MBy@V[NUFmBVgADo@FmB^e@Pc@@yCb@k@Dc@FcAFaALeAV}@Ha@?wA_@oCa@s@LwAt@_C|@y@t@u@j@_@b@UPKBaABuAA_AQ{Aa@I?cB@s@C}@HUEe@OYEw@HiA`@u@`@cBpA{@b@y@TcD|A@?FMY{AAS[sBr@zE@LCDq@TqAj@aAr@OPk@v@q@nAGTMR]b@k@dAUZ]`@s@r@aA|@{DjFa@b@i@`@mAhAa@d@]t@Un@ETq@nCO`@gBvCSX]j@{@jAGLF?JHD?tA?ZBLHd@v@PT`@PNBRADJDd@JVJDR?VUh@q@PMTKRETOj@k@P@BCZ_@b@_AHa@Na@He@BY@k@CiA@OFMPGh@Uh@ObAQj@Qn@Ej@_@b@IP@f@[R?XIj@ILEFEZINIXET@ZEZLR?VDCD@GHBPTVh@PRj@PDJHDd@r@@?R^DPN`B?p@Fd@DBCBLMPJRAFIH]BADB?DAXEJ?d@HJZFRNL?HJd@VZXr@Jb@Bb@IJHT`@FH^?NDZLj@^T?l@GVEJ@Z\\DGAa@Fq@Pa@\\g@\\s@PHHChAk@|AaAjAUd@YR?\\IhAMVIdCsAxAeAfAi@lBy@h@M^AV?ZFt@@fA]xAm@p@_@l@Qt@_@JJP\\h@fBbAxFHr@Bd@?d@OtA@NHRPbB", "performance": {"average_heartrate": 91.5, "max_heartrate": 121.0, "average_cadence": 51.6, "calories": 485.0}, "hr_stream": {"time": [1, 69, 135, 200, 269, 340, 418, 487, 548, 609, 679, 737, 806, 872, 943, 1011, 1080, 1165, 1240, 1318, 1386, 1458, 1530, 1598, 1672, 1741, 1835, 1915, 1978, 2056, 2122, 2193, 2253, 2322, 2390, 2457, 2521, 2583, 2637, 2704, 2767, 2828, 2917, 2981, 3051, 3115, 3187, 3250, 3309, 3374, 3437, 3519, 3589, 3722, 3791, 3859, 3916, 4046, 4121, 4184, 4255, 4320, 4381, 4451, 4513, 4579, 4665, 4730, 4811, 4874, 4950, 5015, 5080, 5144, 5212, 5279, 5352, 5472, 5549, 5635, 5747, 5811, 5879, 5941, 6006, 6081, 6147, 6213, 6278, 6339, 6406, 6468, 6531, 6594, 6653, 6716, 6779, 6839, 6896, 6961], "heart_rate": [75, 79, 74, 83, 86, 88, 89, 80, 79, 80, 78, 76, 81, 82, 94, 97, 102, 107, 107, 105, 101, 105, 103, 96, 117, 102, 86, 104, 90, 90, 88, 85, 86, 96, 99, 106, 105, 101, 88, 86, 81, 85, 88, 108, 113, 116, 103, 110, 109, 116, 104, 95, 100, 90, 86, 98, 103, 93, 85, 92, 81, 88, 92, 81, 81, 80, 99, 110, 101, 98, 83, 82, 83, 86, 85, 83, 89, 84, 84, 87, 81, 85, 86, 84, 84, 93, 96, 86, 88, 78, 74, 85, 83, 91, 85, 87, 81, 88, 93, 88]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 153}, {"min": 154, "max": 156}, {"min": 157, "max": 161}, {"min": 162, "max": 170}], "thresholds": {"aet": 153, "ant": 161, "fcmax": 170, "aet_pace": "5:43/km", "ant_pace": "5:05/km"}, "latest_activity_zone_seconds": [6779, 0, 0, 0, 0], "latest_activity_comment": "È stata un'escursione prevalentemente aerobica — FC quasi sempre in Z1/Z2 (100% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 15.0 (carico basso).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}], "zone_agg_all": {"zone_seconds": [0, 0, 0, 0, 0], "n_activities": 0, "z1z2_pct": null, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [0, 0, 0, 0, 0], "n_activities": 0, "z1z2_pct": null, "low_aerobic_flag": false}, "completed_dates": [], "current_block": {"name": "Restart", "start": "2026-08-31", "end": "2026-09-27", "planned_total": 58}, "block_daily_km": [{"date": "31/08", "cumulative_km": 0.0}, {"date": "01/09", "cumulative_km": 0.0}]};
 
 var C = { p1:"#4ade80", p2:"#60a5fa", p3:"#f97316", p4:"#a78bfa", p5:"#f43f5e", p6:"#fbbf24", muted:"#6b6560" };
 var ZONE_COLORS = ["#6b7280", "#60a5fa", "#4ade80", "#f97316", "#f43f5e"];
@@ -804,20 +805,12 @@ function computeWeekMetrics(week) {
     }
   });
 
-  var doneCount = 0, plannedCount = 0;
-  week.days.forEach(function(d, i) {
-    if (d.t === "rest") return;
-    plannedCount++;
-    if (DATA.completed_dates.indexOf(dateForWeekDay(week.w, i)) !== -1) doneCount++;
-  });
-
   return {
     phase: phase, plannedKm: PLANNED_KM[week.w - 1],
     easy: easy, quality: quality,
     trailKmMax: trailKmMax, trailKmTotal: trailKmTotal,
     runKm: runKm, bikeMin: bikeMin,
     bikeEquivKm: bikeMin / 3, gymDays: gymDays, skimo: skimo, testType: testType, raceName: raceName,
-    doneCount: doneCount, plannedCount: plannedCount,
   };
 }
 
@@ -859,18 +852,12 @@ function heatmapCell(key, m, weekNum, maxTrail, maxBike, isCur) {
   if (key === "race") {
     return '<td class="hm-cell' + curClass + '" style="color:#fbbf24;font-weight:700;font-size:8px">' + esc(m.raceName || "") + '</td>';
   }
-  if (key === "done") {
-    if (!m.plannedCount) return '<td class="hm-cell' + curClass + '"></td>';
-    var ratio = m.doneCount / m.plannedCount;
-    var opD = m.doneCount ? Math.max(0.15, ratio) : 0;
-    return '<td class="hm-cell' + curClass + '" style="background:rgba(74,222,128,' + opD.toFixed(2) + ');font-weight:700">' + m.doneCount + '/' + m.plannedCount + '</td>';
-  }
   return '<td class="hm-cell' + curClass + '"></td>';
 }
 
 function renderHeatmap(metrics) {
   var rows = [
-    ["phase", "Fase"], ["done", "Fatti"], ["volume", "Volume km"], ["easy", "Easy Z2"], ["quality", "Qualità"],
+    ["phase", "Fase"], ["volume", "Volume km"], ["easy", "Easy Z2"], ["quality", "Qualità"],
     ["trail", "Trail lungo"], ["bike", "Bici (min)"], ["gym", "Palestra"],
     ["skimo", "Skimo"], ["test", "Test"], ["race", "Gara"],
   ];
@@ -1049,6 +1036,15 @@ function renderWeekCard(week) {
   else if (hasTest) badge = '<span class="week-badge" style="background:#1c0808;color:#fca5a5">🔬</span>';
   else if (week.sp) badge = '<span class="week-badge" style="background:#1e0a3c;color:#c4b5fd">' + esc(week.sp) + '</span>';
 
+  var doneCount = 0, plannedCount = 0;
+  week.days.forEach(function(d, i) {
+    if (d.t === "rest") return;
+    plannedCount++;
+    if (DATA.completed_dates.indexOf(dateForWeekDay(week.w, i)) !== -1) doneCount++;
+  });
+  var doneColor = plannedCount && doneCount === plannedCount ? C.p1 : "var(--muted)";
+  var doneCounter = '<span class="week-done-count" style="color:' + doneColor + '">' + doneCount + '/' + plannedCount + ' fatti</span>';
+
   var body = "";
   if (isOpen) {
     var note = week.note ? '<div class="week-note">' + esc(week.note) + '</div>' : "";
@@ -1061,7 +1057,7 @@ function renderWeekCard(week) {
       '<button class="week-head" data-week="' + week.w + '">' +
         '<div>' +
           '<div class="week-title-row"><span class="week-title">Settimana ' + week.w + '</span>' + badge + '</div>' +
-          '<div class="week-dates">' + esc(week.d) + '</div>' +
+          '<div class="week-dates">' + esc(week.d) + ' · ' + doneCounter + '</div>' +
         '</div>' +
         '<span class="week-chevron">' + (isOpen ? "▲" : "▼") + '</span>' +
       '</button>' + body +
