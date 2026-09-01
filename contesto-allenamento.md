@@ -355,93 +355,25 @@ quando sei già a 4-10 ore di gara in quota a giugno. Il corpo deve essere adatt
 - **Strategia in gara:** cappellino + maglietta bagnata + acqua su collo e spalle ai ristori.
   Testa questa routine già al Gran Raid GR60 di maggio.
 
-### Corsa notturna (aprile-maggio 2027)
+### Corsa notturna e gestione del sonno — RINVIATO alla 120K (2029)
 
-**Principio:** la Lavaredo parte alle 23:00. Le prime 1-2 ore sono di notte, poi l'alba arriva
-intorno alle 5:00. Non è il momento di scoprire come funziona la pila frontale.
+**Correzione (01/09/2026):** la Lavaredo **80K parte alle 07:00**, gara
+completamente diurna — non alle 23:00 come scritto qui in una versione
+precedente di questo file (contraddiceva la sezione Gear training e il
+Protocollo Caldo, che già davano l'orario corretto). Tutto il blocco di
+lavoro su corsa notturna, finestra critica 01:00-05:00, privazione di
+sonno e strategia anti-sonno **non serve per il 2027** — restava pensato
+per la **Lavaredo 120K (2029)**, quella con partenza serale/notturna.
+Da riprendere e sviluppare nel blocco Picco che precederà quella gara,
+non questo. Contenuto rimosso da qui per evitare di programmare uscite
+notturne inutili nel 2026-2027 — recuperabile dalla storia del file se
+serve come base di partenza nel 2028-2029.
 
-- **Blocco Picco (aprile-maggio):** almeno 1 uscita notturna vera da 2-3 ore
-  (partenza ore 22:00 o 23:00) con la pila che userai in gara
-- Testa: intensità luminosa, durata batteria, come cambia la percezione del terreno,
-  come gestisci il ritmo di notte
-- Se possibile, fai l'uscita notturna sullo stesso tipo di terreno della Lavaredo (sentiero
-  tecnico, non solo strada)
-
-
-### Gestione del sonno e corsa notturna (approfondimento)
-
-**Contesto personale:** Leonardo è una persona che ha bisogno di dormire bene.
-La mancanza di sonno lo impatta significativamente. Alla Lavaredo (partenza 23:00,
-arrivo stimato ore 13:00-15:00 del giorno dopo) attraversa tutta la notte senza dormire
-dopo una giornata di viaggio e preparazione. Questo è uno dei fattori di rischio più
-importanti da preparare, non solo tecnicamente ma anche fisiologicamente e mentalmente.
-
-**La finestra critica: 01:00-05:00**
-In quella fascia il corpo è programmato per dormire — la temperatura corporea scende
-al minimo, il cervello rallenta, la pressione del sonno è al picco. Non è stanchezza
-muscolare, è neurofisiologia. Molti atleti fisicamente allenati cedono proprio lì.
-
-**Tre preparazioni specifiche da inserire nel Blocco Picco (aprile-maggio 2027):**
-
-1. **Uscita notturna completa attraverso la finestra critica**
-   Partenza ore 22:00, corsa fino alle 5:00-6:00 di mattina.
-   Almeno una volta nel blocco Picco.
-   Obiettivo: capire come reagisce il corpo nelle ore 01:00-05:00, testare la pila,
-   testare la nutrizione notturna, capire quando arriva la pressione del sonno.
-
-2. **Simulazione privazione sonno pre-long trail**
-   Una volta in aprile-maggio: vai a dormire tardi (23:30-mezzanotte),
-   svegliati alle 4:30-5:00, fai il long trail senza aver dormito abbastanza.
-   Non per martoriarsi — per capire il proprio funzionamento: ritmo, fame,
-   concentrazione, umore. Quello che scopri lì è oro per gestire la Lavaredo.
-
-3. **Costruire la strategia anti-sonno personale**
-   Da testare nelle uscite notturne, non da inventare in gara:
-   - Timing caffeina (gel con caffeina, caffè ai ristori) — quando prenderla
-   - Musica o no — alcune persone si svegliano con la musica, altre si isolano
-   - Compagnia — valutare se correre con qualcuno nella fascia notturna
-   - Movimento continuo — non fermarsi mai nei momenti peggiori (il fermo peggiora tutto)
-   - Temperature — vestirsi leggermente più caldo di notte per non avere freddo
-     che amplifica la sonnolenza
-
-**Integrazione nel piano — approccio iterativo:**
-
-Una sola uscita non basta. Come i test AeT/AnT, la gestione del sonno si impara
-per tentativi successivi: provi, scopri come reagisci, aggiusti, riprovi.
-Ogni uscita notturna è un test con domande specifiche.
-
-| Blocco | Uscita | Obiettivo |
-|---|---|---|
-| Picco apr S29-32 | 1ª uscita notturna (22:00-05:00) | Esplorazione — scopri quando arriva la sonnolenza, cosa la peggiora. Non aspettarti di gestirla bene. Registra tutto. |
-| Picco mag S33-35 | 2ª uscita notturna (22:00-05:00) | Applica quello che hai imparato: aggiusta timing caffeina, alimentazione notturna, abbigliamento, compagnia. Vedi se migliora. |
-| S35 Gran Raid GR60 | Gara reale (non notturna) | Prima ultra vera in condizioni di gara. Osserva come gestisci le ultime ore sotto fatica accumulata. |
-| Taper giu | Nessuna sessione nuova | Con 2 uscite notturne + 1 gara hai dati reali. Costruisci la strategia definitiva per la Lavaredo. |
-
-**Domande da rispondere dopo ogni uscita notturna:**
-- A che ora è arrivata la sonnolenza più forte?
-- Cosa l'ha alleviata e cosa l'ha peggiorata?
-- La caffeina ha funzionato? Quando e quanto?
-- Come era la fame di notte? Riuscivi a mangiare?
-- Musica sì o no — ha aiutato o distratto?
-- Fermarsi ha peggiorato la sonnolenza?
-- Come ti sei sentito fisicamente la mattina dopo?
-
-**Contromisure da testare e raffinare:**
-- **Caffeina:** zero fino a mezzanotte, poi gel con caffeina ogni 45-60 min tra 01:00-05:00.
-  Dopo un certo punto smette di funzionare — trova il tuo limite.
-- **Freddo:** acqua fredda su nuca e collo ai ristori notturni. Abbassa la sonnolenza momentaneamente.
-- **Alimentazione:** mantenere il ritmo anche di notte quando non hai fame.
-  L'ipoglicemia amplifica enormemente la sonnolenza.
-- **Movimento continuo:** non sedersi mai nella finestra critica. Stai in piedi ai ristori.
-- **Compagnia:** correre con qualcuno tra 01:00-05:00 cambia tutto. Valuta se organizzarlo.
-- **Musica/podcast:** da testare — per alcuni ricarica, per altri isola troppo dal terreno.
-- **Mantra o focus:** un pensiero fisso per quando la mente vacilla. Decidilo prima.
-
-**Note operative:**
-- Avvisa qualcuno quando fai l'uscita notturna (sicurezza)
-- Porta sempre il telefono carico
-- Scegli un percorso conosciuto per la prima uscita notturna
-- Non farlo mai da solo su terreno tecnico sconosciuto
+**Unica cosa da tenere a mente per la 80K:** partenza 07:00 + tempo
+obiettivo 14-15h porta l'arrivo verso le 21:00-22:00, cioè già al
+crepuscolo/buio a fine giugno in montagna — probabile che serva comunque
+una pila frontale leggera per le ultime 1-2 ore, da confermare più avanti
+col piano orario reale del percorso, non da escludere a priori.
 
 ### Protocollo Sweat Test — quando e come
 
