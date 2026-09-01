@@ -73,14 +73,14 @@ Tipo: corsa easy
 Distanza: 6 km
 FC target: < 145 bpm
 Note: pre-test AeT
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303573, automatico il 01/09/2026)
 
 Data: 2026-09-09
 Blocco: Restart
 Tipo: forza
 Durata: 50 min
 Note: Palestra Giorno 3 — Leg Curl Prono · Affondi · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303576, automatico il 01/09/2026)
 
 Data: 2026-09-10
 Blocco: Restart
@@ -89,14 +89,14 @@ Riscaldamento: 15 min FC 110-130 bpm
 Ripetute: 60 min FC 135-148 bpm (TEST AeT — nota passo medio e FC media)
 Defaticamento: 10 min FC < 125 bpm
 Note: usa file test_AeT.fit su Garmin · riporta risultato a Claude Chat
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303580, automatico il 01/09/2026)
 
 Data: 2026-09-12
 Blocco: Restart
 Tipo: corsa easy
 Distanza: 8 km
 FC target: < AeT misurata il 10/09
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303606, automatico il 01/09/2026)
 
 Data: 2026-09-13
 Blocco: Restart
@@ -104,7 +104,7 @@ Tipo: bici
 Durata: 45 min
 FC target: < 140 bpm
 Note: recupero attivo post-test
-Stato: da importare
+Stato: ✅ importata (workout_id 1684303619, automatico il 01/09/2026)
 
 ---
 
