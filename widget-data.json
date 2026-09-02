@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-01T14:31:26",
+  "generated_at": "2026-09-02T10:53:08",
   "phase_label": "Restart · sett. 1/4",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-01",
-    "day_label": "Mar",
-    "type": "gym",
-    "label": "💪 Giorno 1",
-    "extra": "Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS — prima di correre"
+    "date": "2026-09-02",
+    "day_label": "Mer",
+    "type": "run",
+    "label": "6 km easy",
+    "extra": "FC < 145 bpm · 6:30–7:00/km"
   },
   "key_workout": {
     "date": "2026-09-10",
@@ -18,11 +18,11 @@
   },
   "week": {
     "planned_km": 14,
-    "actual_km": 0.0
+    "actual_km": 6.2
   },
   "next_race": {
     "date": "2027-03-06",
     "label": "🏁 ULTRABERICUS",
-    "days_until": 186
+    "days_until": 185
   }
 }
