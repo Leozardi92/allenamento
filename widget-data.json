@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-02T10:53:08",
+  "generated_at": "2026-09-03T10:45:08",
   "phase_label": "Restart · sett. 1/4",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-02",
-    "day_label": "Mer",
-    "type": "run",
-    "label": "6 km easy",
-    "extra": "FC < 145 bpm · 6:30–7:00/km"
+    "date": "2026-09-04",
+    "day_label": "Ven",
+    "type": "bike",
+    "label": "Bici Z2 · 45 min",
+    "extra": "FC < 145 bpm · sera · benvenuta di ritorno 🚴"
   },
   "key_workout": {
     "date": "2026-09-10",
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2027-03-06",
     "label": "🏁 ULTRABERICUS",
-    "days_until": 185
+    "days_until": 184
   }
 }
