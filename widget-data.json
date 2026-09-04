@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:04:42",
+  "generated_at": "2026-09-04T22:07:57",
   "phase_label": "Restart · sett. 1/4",
   "plan_status": "active",
   "next_workout": {
@@ -18,11 +18,11 @@
   },
   "week": {
     "planned_km": 14,
-    "actual_km": 6.2
+    "actual_km": 14.3
   },
   "next_race": {
     "date": "2027-03-06",
     "label": "🏁 ULTRABERICUS",
-    "days_until": 184
+    "days_until": 183
   }
 }
