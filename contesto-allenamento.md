@@ -117,28 +117,58 @@ Dashboard: https://leozardi92.github.io/allenamento/
 ---
 
 ## Programma Settimanale Tipo
-### Struttura settimana B (Base) — secondo il libro
+### 4-5 giorni di allenamento — non tutti i giorni
 
-| Giorno | Orario | Attività | Note libro |
-|---|---|---|---|
-| Lunedì | — | Riposo attivo (stretching, foam roll) | Recovery almeno 3x/sett |
-| Martedì | 06:00 | **Hill Sprints** + easy run (8 km tot) | 1x/sett da S5 in poi · potenza pura |
-| Mercoledì | 06:30 o sera | **Palestra** (forza generale) + **Core** #1 | 1 dei 2 workout forza settimanali |
-| Giovedì | 06:00 | Easy Z1 run + pick-up discesa | FC < 141 bpm · 3-4 × 150m DH veloci alla fine |
-| Venerdì | 06:30 o sera | **ME workout** + **Core** #2 | Muscular Endurance 1x/sett (S5-S24) |
-| Sabato | Mattina presto | Long trail Z1 (30-40% volume sett) | Ultimi 20-30 min opzionali Z2 |
-| Domenica | Mattina | Easy hiking o recovery run + pick-up DH | Secondo run con discese veloci |
+Leonardo non può allenarsi tutti i giorni per lavoro e recupero.
+Il libro richiede **minimo 4 sessioni aerobiche a settimana** — questo è il vincolo.
+La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero.
 
-**Nella settimana S (Specifico):**
-- Sabato + Domenica = back-to-back long runs (60-80% volume settimanale su 2 giorni)
-- Venerdì: 1 sessione Zone 3-4 (sostituisce ME)
-- Hill Sprints restano il martedì
+**Sessioni OBBLIGATORIE (4 — il minimo del libro):**
+- **Martedì 06:00** — Hill Sprints (da S5) o corsa qualità (S1-4)
+- **Mercoledì** — Palestra + Core #1
+- **Venerdì sera** — ME workout o Bici Z2
+- **Sabato mattina** — Long trail (sessione chiave)
 
-**Nella settimana R (Recupero):**
+**Sessioni OPZIONALI (0-2 — in base a recupero e lavoro):**
+- **Giovedì 06:00** — Easy Z1 + DH pick-up (fai solo se il semaforo è verde)
+- **Domenica mattina** — Hiking leggero o recovery run (fai solo se ci sono energie)
+
+**Lunedì: sempre riposo.**
+
+**Se il lavoro è intenso in una settimana:**
+→ Mantieni martedì + mercoledì + sabato come minimo assoluto.
+→ Venerdì puoi abbassare a bici easy 45 min invece del ME.
+→ Non forzare mai giovedì e domenica.
+
+### Struttura per tipo di settimana (libro)
+
+**Settimana B (Base):**
+- Mar: Hill Sprints (8 km tot incl. warm-up/cool-down)
+- Mer: Palestra + Core #1
+- Gio (opzionale): Easy Z1 7-9 km + 3×150m DH pick-up
+- Ven: ME workout (zaino 5-8 kg su salita) + Core #2
+- Sab: Long trail Z1 (30-40% km sett) + DH pick-up nell'ultimo km
+- Dom (opzionale): Hiking 45-60 min
+
+**Settimana S (Specifico — da S25):**
+- Mar: Hill Sprints (mantieni per tutta la preparazione)
+- Mer: Palestra + Core #1
+- Ven: 1 sessione Z3-4 (sostituisce ME) + Core #2
+- Sab: Long trail 1 (35-40 km nel picco) ← back-to-back giorno 1
+- Dom: Long trail 2 (20-25 km stanco) ← back-to-back giorno 2
+  I due giorni insieme = 60-80% del volume settimanale
+
+**Settimana R (Recupero — ogni 4a settimana):**
 - Volume -40/60% rispetto alla settimana di picco
-- 1 sola sessione forza (palestra) + 1 core
-- Hill Sprints dimezzati (3-4 × 8-10 sec)
-- No ME, no intensity
+- Hill Sprints dimezzati (3-4 × 8 sec) oppure saltati
+- 1 sola sessione palestra + 1 core
+- No ME, no Zone 3-4
+- Giovedì e domenica: entrambi riposo
+
+**Settimana T (Taper — S39-40):**
+- -25% volume rispetto alla settimana precedente
+- Mantieni qualità ma riduci volume
+- Niente nuovi stimoli
 
 **Palestra — scheda Emma — rotazione:**
 - Giorno 1: Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS
@@ -480,6 +510,37 @@ Da affrontare insieme dopo l'Ultrabericus (marzo 2027) e il Gran Raid GR60 (magg
 Da affrontare insieme 4-6 settimane prima della Lavaredo.
 
 ---
+
+---
+
+## Istruzioni per Claude Code — Gestione Allenamenti Garmin
+
+### Come funziona il ciclo prossimi-allenamenti.md → Garmin
+
+1. Claude Chat aggiorna `prossimi-allenamenti.md` su GitHub con le sessioni pianificate
+2. Leonardo dice a Claude Code "importa il blocco [Nome]"
+3. Claude Code legge il file, chiede conferma, poi importa su Garmin calendar
+4. Dopo ogni sessione completata, Claude Code aggiorna lo stato a "✅ completata" nel file
+5. Ogni settimana Claude Code rimuove le sessioni completate e archivia solo quelle future
+
+### Sessioni completate (da rimuovere da prossimi-allenamenti.md)
+
+- 2026-08-29: Evening Run 8 km ✅ completata (Strava)
+- 2026-09-01: Easy run 6 km ✅ completata (martedì)
+- 2026-09-02: Palestra Giorno 1 ✅ completata (mercoledì recuperata)
+- 2026-09-04: Easy run 8 km ✅ completata (venerdì)
+- 2026-09-05: Matrimonio — nessuna sessione
+- 2026-09-06: Lunch Ride 25.6 km 589m D+ ✅ completata (Strava · Schio)
+
+→ Claude Code: al prossimo avvio rimuovi queste da prossimi-allenamenti.md
+   e lascia solo le sessioni dal 2026-09-08 in poi.
+
+### Regola: sessioni da cancellare prima di importare
+
+Prima di ogni import su Garmin, verificare che le sessioni già completate
+(visibili su Strava o segnate "✅ completata") siano state rimosse dal file.
+Non importare sessioni passate — Garmin non le mostrerebbe comunque.
+
 
 ## Note
 
