@@ -221,6 +221,16 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 
 ## Piano Allenamento — 40 Settimane
 
+**Stato porting nuova struttura ("il libro" — 4-5gg/sett, tipi B/S/R/T,
+hill sprints, ME workout) — aggiornato 07/09/2026:** Settimane 1-4
+(Restart) restano nel formato precedente, non toccate dalla nuova
+struttura. Settimane 5-8 (Base) **portate** nel dettaglio giorno-per-giorno
+della dashboard (`dashboard_template.html`), coerenti con quanto scritto
+qui sotto e in `prossimi-allenamenti.md`. **Settimane 9-40 non ancora
+scritte nel nuovo formato** — quando Claude Chat le prepara (Aerobico,
+Specifico, Picco, Taper), Claude Code le porta nella dashboard allo stesso
+modo.
+
 **Fasi:**
 - S1-4: Restart set 2026 — max 8km
 - S5-12: Base ott-nov 2026 — 35-45 km/sett
@@ -230,7 +240,7 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 - S37-40: Taper+Gara giu 2027
 
 **Km pianificati:**
-S1=14, S2=14, S3=14, S4=16, S5=31, S6=34, S7=20, S8=36, S9=38, S10=41,
+S1=14, S2=14, S3=14, S4=16, S5=30, S6=33, S7=36, S8=20, S9=38, S10=41,
 S11=20, S12=44, S13=47, S14=49, S15=23, S16=49, S17=20, S18=50, S19=51,
 S20=24, S21=53, S22=57, S23=58, S24=26, S25=60, S26=44, S27=12, S28=33,
 S29=61, S30=66, S31=28, S32=71, S33=71, S34=20, S35=12, S36=38,
