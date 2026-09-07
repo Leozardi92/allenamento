@@ -529,6 +529,61 @@ Da affrontare insieme 4-6 settimane prima della Lavaredo.
 
 ---
 
+## Gerarchia Sessioni — Cosa Saltare se Non Hai Tempo
+
+Il libro distingue sessioni ad alto stimolo specifico (non saltabili) da sessioni
+di volume accessorio (saltabili). La gerarchia è per fase.
+
+### RESTART (S1-4)
+
+| Sessione | Priorità | Motivo |
+|---|---|---|
+| Test AeT (S2) | 🔴 MAI | Calibra tutto il piano — senza non hai le zone |
+| Test AnT (S3) | 🔴 MAI | Idem |
+| Palestra mercoledì | 🟡 Quasi mai | Max 1 salto — fondamenta forza |
+| Corsa martedì | 🟡 Quasi mai | Unica sessione principale della settimana |
+| Easy run giovedì | 🟢 Saltabile | Recuperi il volume col sabato |
+| Bici venerdì | 🟢 Saltabile | Solo mantenimento aerobico in questa fase |
+| Hiking domenica | 🟢 Saltabile | Recovery — zero stimolo specifico |
+
+### BASE (S5-24)
+
+| Sessione | Priorità | Motivo |
+|---|---|---|
+| Long trail sabato | 🔴 MAI | 30-40% volume sett · saltarlo invalida la settimana secondo il libro |
+| Hill Sprints martedì | 🔴 MAI | Adattamento neurale richiede continuità. Salti = perdi l'effetto cumulativo |
+| ME workout venerdì | 🟡 Max 1 ogni 3-4 sett | Libro richiede 8 settimane consecutive. Se salti → fai almeno 20 min salita con zaino il giorno dopo |
+| Palestra mercoledì | 🟡 Quasi mai | 2x/sett è il minimo libro. Se salti mercoledì → sposta a giovedì, non eliminare |
+| Easy run giovedì | 🟢 Saltabile | Serve al volume ma non produce stimolo specifico. Se < 5h sonno o lavoro intenso → riposo |
+| Hiking domenica | 🟢 Saltabile | In Base è solo recovery — back-to-back diventa obbligatorio solo dal Specifico |
+
+### SPECIFICO (S25-38)
+
+| Sessione | Priorità | Motivo |
+|---|---|---|
+| Long trail sabato | 🔴 MAI | Sessione chiave — prima giornata back-to-back |
+| Long trail domenica | 🔴 MAI | Il secondo giorno stanco è l'effetto principale. Saltarlo = metà dell'adattamento perso |
+| Hill Sprints martedì | 🔴 MAI | Ancora più importanti con i km alti |
+| Sessione Z3-4 venerdì | 🟡 Max 1 ogni 3-4 sett | Unico lavoro intensità della settimana |
+| Palestra mercoledì | 🟡 1x/sett obbligatoria | Nel Specifico il libro prevede riduzione — ma non eliminazione |
+| Easy run giovedì | 🟢 Saltabile | Come in Base |
+
+### Regola pratica — ordine di taglio per settimana complicata
+
+Quando il lavoro non lascia tempo, taglia in questo ordine:
+
+1. **Prima:** elimina hiking domenica (in Base) o accorcia il secondo long (in Specifico)
+2. **Poi:** elimina easy run giovedì
+3. **Poi:** accorcia ME venerdì (20 min invece di 35) o sostituisci con bici Z1 40 min
+4. **MAI toccare:** sabato long trail · martedì Hill Sprints · mercoledì Palestra
+
+Se una settimana elimini sia giovedì che domenica, stai comunque rispettando il minimo
+del libro (4 sessioni: mar + mer + ven + sab). Va bene.
+Se elimini anche venerdì, sei a 3 sessioni — accettabile max 1 volta al mese, mai 2 volte consecutive.
+
+
+---
+
 ## Istruzioni per Claude Code — Gestione Allenamenti Garmin
 
 ### Pulizia settimana 1 — fatta il 07/09/2026
