@@ -188,3 +188,198 @@ Tipo: hiking
 Durata: 60 min
 Note: back-to-back leggero
 Stato: ✅ importata (workout_id 1678952042, verificato via API il 28/08/2026)
+---
+
+### BLOCCO: Base — Settimana 5 (29 set–4 ott 2026) · 30 km · Tipo: B
+
+> ⚡ INIZIANO HILL SPRINTS + ME ogni settimana da ora in poi
+
+Data: 2026-09-29
+Blocco: Base
+Tipo: corsa easy + hill sprints
+Distanza: 8 km tot (15 min warm-up + 6×8 sec max + 10 min cool-down)
+FC target: warm-up/cool-down < 141 bpm · sprint: MAX sforzo 8-10 sec
+Note: Hill Sprints S1 — trova una salita ≥20% di pendenza · 6 ripetute · 2-3 min recupero tra ognuna · stop se non riesci a mantenere la distanza delle prime
+Stato: da importare
+
+Data: 2026-09-30
+Blocco: Base
+Tipo: forza
+Durata: 60 min
+Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate · ABS + Core #1: plank 3×45sec · bird-dog 3×10 per lato
+Stato: da importare
+
+Data: 2026-10-01
+Blocco: Base
+Tipo: corsa easy
+Distanza: 7 km
+FC target: < 141 bpm (Z1)
+Note: Easy Z1 · alla fine: 3×150m discesa veloce controllata (pick-up DH) · recupero salendo piano in 2 min
+Stato: da importare
+
+Data: 2026-10-02
+Blocco: Base
+Tipo: corsa qualità
+Durata: 45 min
+FC target: < 141 bpm cardiovascolare (la fatica sarà muscolare locale)
+Note: ME Workout #1 — zaino 5 kg · salita con 25-35% pendenza · cammina/corri su per 20 min continuativi · le gambe devono bruciare, il cuore no · Core #2 dopo: plank + crunch obliqui
+Stato: da importare
+
+Data: 2026-10-03
+Blocco: Base
+Tipo: long trail
+Distanza: 9 km
+FC target: < 141 bpm (Z1) · ultimi 15 min opzionali fino a 153 bpm (Z2)
+Note: Prima uscita trail con zaino gara + bastoncini · 400-500m D+ · mangia ogni 40-45 min (30-40g CHO/ora) · pesa prima e dopo (sweat test baseline)
+Stato: da importare
+
+Data: 2026-10-04
+Blocco: Base
+Tipo: hiking
+Durata: 60 min
+FC target: < 130 bpm
+Note: Recovery · alla fine: 3×150m discesa veloce (secondo DH pick-up della settimana)
+Stato: da importare
+
+---
+
+### BLOCCO: Base — Settimana 6 (6–11 ott 2026) · 33 km · Tipo: B
+
+Data: 2026-10-06
+Blocco: Base
+Tipo: corsa easy + hill sprints
+Distanza: 8 km tot
+FC target: MAX negli sprint · < 141 nei tratti easy
+Note: Hill Sprints S2 — 7×8 sec · 2-3 min recupero · stessa salita della settimana scorsa per confrontare la distanza
+Stato: da importare
+
+Data: 2026-10-07
+Blocco: Base
+Tipo: forza
+Durata: 60 min
+Note: Palestra Giorno 3 — Leg Curl Prono · Affondi camminata · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS + Core #1
+Stato: da importare
+
+Data: 2026-10-08
+Blocco: Base
+Tipo: corsa easy
+Distanza: 8 km
+FC target: < 141 bpm
+Note: Easy Z1 · 3×150m DH pick-up alla fine
+Stato: da importare
+
+Data: 2026-10-09
+Blocco: Base
+Tipo: corsa qualità
+Durata: 50 min
+Note: ME Workout #2 — zaino 6 kg · salita 25-35% · 22 min continuativi · Core #2 dopo
+Stato: da importare
+
+Data: 2026-10-10
+Blocco: Base
+Tipo: long trail
+Distanza: 11 km
+FC target: < 141 bpm (Z1) · ultimi 15 min Z2
+Note: ~550m D+ · bastoncini + vest · CHO ogni 40 min · pesa prima/dopo
+Stato: da importare
+
+Data: 2026-10-11
+Blocco: Base
+Tipo: hiking
+Durata: 75 min
+Note: 3×150m DH pick-up · Recovery
+Stato: da importare
+
+---
+
+### BLOCCO: Base — Settimana 7 (13–18 ott 2026) · 36 km · Tipo: B
+
+Data: 2026-10-13
+Blocco: Base
+Tipo: corsa easy + hill sprints
+Distanza: 8 km tot
+Note: Hill Sprints S3 — 7×10 sec · 2-3 min rec · inizia a sentire le gambe più potenti rispetto a S5
+Stato: da importare
+
+Data: 2026-10-14
+Blocco: Base
+Tipo: forza
+Durata: 60 min
+Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension · Calf · ABS + Core #1 · incrementa pesi rispetto a S5
+Stato: da importare
+
+Data: 2026-10-15
+Blocco: Base
+Tipo: corsa easy
+Distanza: 9 km
+FC target: < 141 bpm
+Note: Easy Z1 · 4×150m DH pick-up alla fine
+Stato: da importare
+
+Data: 2026-10-16
+Blocco: Base
+Tipo: corsa qualità
+Durata: 55 min
+Note: ME Workout #3 — zaino 6 kg · 25 min su salita · oppure: 5×6 min Z3 (FC 153-158) con 3 min recupero · Core #2 dopo
+Stato: da importare
+
+Data: 2026-10-17
+Blocco: Base
+Tipo: bici
+Durata: 75 min
+FC target: < 145 bpm
+Note: Z2 bassa · sera · recupero attivo
+Stato: da importare
+
+Data: 2026-10-18
+Blocco: Base
+Tipo: long trail
+Distanza: 13 km
+FC target: < 141 bpm · ultimi 20 min Z2
+Note: ~650m D+ · bastoncini + vest · CHO ogni 40 min · 40g/ora
+Stato: da importare
+
+---
+
+### BLOCCO: Base — Settimana 8 (20–25 ott 2026) · 20 km · Tipo: R (SCARICO)
+### + Test AeT
+
+Data: 2026-10-20
+Blocco: Base
+Tipo: corsa easy
+Distanza: 5 km
+FC target: < 135 bpm
+Note: Recupero leggero · niente hill sprints questa settimana (scarico)
+Stato: da importare
+
+Data: 2026-10-21
+Blocco: Base
+Tipo: forza
+Durata: 40 min
+Note: Palestra Giorno 2 RIDOTTA · solo 2 esercizi principali + Core #1 · carichi ridotti del 30%
+Stato: da importare
+
+Data: 2026-10-22
+Blocco: Base
+Tipo: corsa easy
+Distanza: 5 km
+FC target: < 135 bpm
+Note: Pre-test · gambe leggere
+Stato: da importare
+
+Data: 2026-10-23
+Blocco: Test
+Tipo: corsa qualità
+Riscaldamento: 15 min FC 110-130 bpm
+Ripetute: 60 min FC 135-148 bpm (Test AeT #2 — stesso percorso del 10 set · confronta passo medio)
+Defaticamento: 10 min FC < 125 bpm
+Note: Annota passo medio dei 60 min e FC media · confronta con test settembre · il passo deve essere migliorato a parità di FC
+Stato: da importare
+
+Data: 2026-10-25
+Blocco: Base
+Tipo: long trail
+Distanza: 6 km
+FC target: < 135 bpm
+Note: Uscita leggera di fine scarico · niente D+ significativo
+Stato: da importare
