@@ -515,6 +515,18 @@ Da affrontare insieme 4-6 settimane prima della Lavaredo.
 
 ## Istruzioni per Claude Code — Gestione Allenamenti Garmin
 
+### Pulizia automatica calendario Garmin — esegui ad ogni avvio
+
+Ad ogni avvio Claude Code deve:
+1. Leggere le attività recenti da Strava (ultime 14 giorni)
+2. Confrontare con gli allenamenti importati su Garmin delle settimane PASSATE
+3. Cancellare dal calendario Garmin tutti gli allenamenti delle settimane già trascorse
+   che risultano completati su Strava (o che la data è già passata)
+4. NON cancellare mai gli allenamenti futuri (data >= oggi)
+
+**Motivazione:** il calendario Garmin non deve accumulare sessioni vecchie.
+Solo la settimana corrente e quelle future devono essere visibili.
+
 ### Come funziona il ciclo prossimi-allenamenti.md → Garmin
 
 1. Claude Chat aggiorna `prossimi-allenamenti.md` su GitHub con le sessioni pianificate
