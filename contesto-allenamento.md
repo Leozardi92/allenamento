@@ -106,6 +106,12 @@ Dashboard: https://leozardi92.github.io/allenamento/
 - AnT: ogni 8-10 settimane · 30 min all-out percorso fisso
 - Percorso fisso 11 km: ogni 3-4 settimane
 
+**Regola (07/09/2026): i test AeT/AnT non vanno mai in una settimana di
+scarico/recupero.** Vanno nella settimana piena immediatamente prima —
+test quando ancora carichi, poi scarico per recuperare dallo sforzo del
+test, non il contrario. Da rispettare quando si scrive Aerobico/Specifico/
+Picco/Taper nel nuovo formato.
+
 ---
 
 ## Vulnerabilità e Vincoli
@@ -248,7 +254,7 @@ S37=39, S38=30, S39=21, S40=8
 
 **Marker:**
 S2: Test AeT · S3: Test AnT · S4: Pre-iscriviti Lavaredo
-S8: Test AeT · S15: Test AeT · S24: Test AnT
+S7: Test AeT · S14: Test AeT · S23: Test AnT (spostati dalle rispettive settimane di scarico S8/S15/S24 — i test non vanno mai in scarico)
 S27: Ultrabericus 45K · S35: Gran Raid GR60 · S40: LAVAREDO 80K
 
 ---
