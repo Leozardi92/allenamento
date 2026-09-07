@@ -117,16 +117,28 @@ Dashboard: https://leozardi92.github.io/allenamento/
 ---
 
 ## Programma Settimanale Tipo
+### Struttura settimana B (Base) — secondo il libro
 
-| Giorno | Orario | Attività |
-|---|---|---|
-| Lunedì | — | Riposo |
-| Martedì | 06:00 (1h15) | Corsa qualità |
-| Mercoledì | 06:30 o sera | Palestra (1x set-ott e feb-giu · 2x nov-gen) |
-| Giovedì | 06:00 (1h15) | Corsa easy Z2 |
-| Venerdì | 19:00+ | Bici Z2 (progressiva per stagione) |
-| Sabato | Mattina presto | Long trail o bici lunga |
-| Domenica | Mattina | Easy run o hiking |
+| Giorno | Orario | Attività | Note libro |
+|---|---|---|---|
+| Lunedì | — | Riposo attivo (stretching, foam roll) | Recovery almeno 3x/sett |
+| Martedì | 06:00 | **Hill Sprints** + easy run (8 km tot) | 1x/sett da S5 in poi · potenza pura |
+| Mercoledì | 06:30 o sera | **Palestra** (forza generale) + **Core** #1 | 1 dei 2 workout forza settimanali |
+| Giovedì | 06:00 | Easy Z1 run + pick-up discesa | FC < 141 bpm · 3-4 × 150m DH veloci alla fine |
+| Venerdì | 06:30 o sera | **ME workout** + **Core** #2 | Muscular Endurance 1x/sett (S5-S24) |
+| Sabato | Mattina presto | Long trail Z1 (30-40% volume sett) | Ultimi 20-30 min opzionali Z2 |
+| Domenica | Mattina | Easy hiking o recovery run + pick-up DH | Secondo run con discese veloci |
+
+**Nella settimana S (Specifico):**
+- Sabato + Domenica = back-to-back long runs (60-80% volume settimanale su 2 giorni)
+- Venerdì: 1 sessione Zone 3-4 (sostituisce ME)
+- Hill Sprints restano il martedì
+
+**Nella settimana R (Recupero):**
+- Volume -40/60% rispetto alla settimana di picco
+- 1 sola sessione forza (palestra) + 1 core
+- Hill Sprints dimezzati (3-4 × 8-10 sec)
+- No ME, no intensity
 
 **Palestra — scheda Emma — rotazione:**
 - Giorno 1: Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS
