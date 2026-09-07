@@ -271,10 +271,12 @@ Note: Easy Z1 · 4×150m DH pick-up alla fine
 Stato: da importare
 
 Data: 2026-10-16
-Blocco: Base
+Blocco: Test
 Tipo: corsa qualità
-Durata: 55 min
-Note: ME Workout #3 — zaino 6 kg · 25 min su salita · oppure: 5×6 min Z3 (FC 153-158) con 3 min recupero · Core #2 dopo
+Riscaldamento: 15 min FC 110-130 bpm
+Ripetute: 60 min FC 135-148 bpm (Test AeT #2 — stesso percorso del 10 set · confronta passo medio)
+Defaticamento: 10 min FC < 125 bpm
+Note: Spostato qui da S8 (i test non vanno in settimana di scarico) · annota passo medio dei 60 min e FC media
 Stato: da importare
 
 Data: 2026-10-17
@@ -322,12 +324,11 @@ Note: Pre-test · gambe leggere
 Stato: da importare
 
 Data: 2026-10-23
-Blocco: Test
-Tipo: corsa qualità
-Riscaldamento: 15 min FC 110-130 bpm
-Ripetute: 60 min FC 135-148 bpm (Test AeT #2 — stesso percorso del 10 set · confronta passo medio)
-Defaticamento: 10 min FC < 125 bpm
-Note: Annota passo medio dei 60 min e FC media · confronta con test settembre · il passo deve essere migliorato a parità di FC
+Blocco: Base
+Tipo: corsa easy
+Distanza: 5 km
+FC target: < 135 bpm
+Note: Recupero leggero — niente test qui, spostato a S7 (16/10)
 Stato: da importare
 
 Data: 2026-10-25
