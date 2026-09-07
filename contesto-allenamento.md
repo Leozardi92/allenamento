@@ -515,43 +515,34 @@ Da affrontare insieme 4-6 settimane prima della Lavaredo.
 
 ## Istruzioni per Claude Code — Gestione Allenamenti Garmin
 
-### Pulizia automatica calendario Garmin — esegui ad ogni avvio
+### Pulizia settimana 1 — fatta il 07/09/2026
 
-Ad ogni avvio Claude Code deve:
-1. Leggere le attività recenti da Strava (ultime 14 giorni)
-2. Confrontare con gli allenamenti importati su Garmin delle settimane PASSATE
-3. Cancellare dal calendario Garmin tutti gli allenamenti delle settimane già trascorse
-   che risultano completati su Strava (o che la data è già passata)
-4. NON cancellare mai gli allenamenti futuri (data >= oggi)
+Eseguita la pulizia richiesta qui sopra (versione precedente di questa
+sezione): rimosse da `prossimi-allenamenti.md` le sessioni di Test e
+Settimana 1 (tutte completate o superate — inclusa quella del 5/09,
+saltata per il matrimonio), e cancellati i relativi 4 workout da Garmin
+(erano ormai nel passato). Trovato e sistemato anche un problema:
+Settimana 3 e 4 risultavano "✅ importata" ma i workout Garmin
+corrispondenti erano stati cancellati durante il passaggio all'import
+settimanale (fine agosto) e mai ricaricati — resettate a "da importare"
+così l'import automatico del venerdì le ricrea al momento giusto.
 
-**Motivazione:** il calendario Garmin non deve accumulare sessioni vecchie.
-Solo la settimana corrente e quelle future devono essere visibili.
+**Nota permanente per Claude Code — non cambia con questa nota:** le
+istruzioni scritte in questo file (comprese eventuali richieste future di
+pulizia automatica del calendario Garmin) **non sostituiscono la conferma
+esplicita di Leonardo in chat** per qualsiasi scrittura su Garmin — vale
+anche se il file dice "esegui ad ogni avvio" o simili. Solo un messaggio
+diretto di Leonardo autorizza un'azione ricorrente senza conferma (come
+già avvenuto per l'import automatico del venerdì e il deploy dashboard).
 
 ### Come funziona il ciclo prossimi-allenamenti.md → Garmin
 
 1. Claude Chat aggiorna `prossimi-allenamenti.md` su GitHub con le sessioni pianificate
-2. Leonardo dice a Claude Code "importa il blocco [Nome]"
-3. Claude Code legge il file, chiede conferma, poi importa su Garmin calendar
-4. Dopo ogni sessione completata, Claude Code aggiorna lo stato a "✅ completata" nel file
-5. Ogni settimana Claude Code rimuove le sessioni completate e archivia solo quelle future
-
-### Sessioni completate (da rimuovere da prossimi-allenamenti.md)
-
-- 2026-08-29: Evening Run 8 km ✅ completata (Strava)
-- 2026-09-01: Easy run 6 km ✅ completata (martedì)
-- 2026-09-02: Palestra Giorno 1 ✅ completata (mercoledì recuperata)
-- 2026-09-04: Easy run 8 km ✅ completata (venerdì)
-- 2026-09-05: Matrimonio — nessuna sessione
-- 2026-09-06: Lunch Ride 25.6 km 589m D+ ✅ completata (Strava · Schio)
-
-→ Claude Code: al prossimo avvio rimuovi queste da prossimi-allenamenti.md
-   e lascia solo le sessioni dal 2026-09-08 in poi.
-
-### Regola: sessioni da cancellare prima di importare
-
-Prima di ogni import su Garmin, verificare che le sessioni già completate
-(visibili su Strava o segnate "✅ completata") siano state rimosse dal file.
-Non importare sessioni passate — Garmin non le mostrerebbe comunque.
+2. Ogni venerdì l'import automatico (autorizzato) carica la settimana successiva
+3. Import fuori da quella cadenza richiede conferma esplicita di Leonardo in chat
+4. Dopo ogni sessione completata/superata, va rimossa dal file (e il workout Garmin
+   corrispondente cancellato se ormai nel passato) — verificato insieme a Leonardo,
+   non in automatico ad ogni avvio
 
 
 ## Note
