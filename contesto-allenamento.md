@@ -158,9 +158,9 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - Gio (opzionale): Easy Z1 7-9 km + 3×150m DH pick-up
 - Ven: ME workout (zaino 5-8 kg su salita) + Core #2
 - Sab: Long trail Z1 (30-40% km sett) + **ultimi 20-30 min ME su sezione ≥ 25%** + DH pick-up
-- Dom: **Hiking leggero** 45-60 min (recovery attivo) — nel Specifico S25+ diventa long trail 2 (back-to-back)
+- Dom: **Hiking leggero** 45-60 min (recovery attivo) — nel Specifico S21+ diventa long trail 2 (back-to-back)
 
-**Settimana S (Specifico — da S25):**
+**Settimana S (Specifico — da S21):**
 - Mar: Hill Sprints (mantieni per tutta la preparazione)
 - Mer: Palestra + Core #1
 - Ven: 1 sessione Z3-4 (sostituisce ME) + Core #2
