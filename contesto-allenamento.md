@@ -54,7 +54,7 @@ Dashboard: https://leozardi92.github.io/allenamento/
 **Ultrabericus Trail Vicenza · marzo 2027**
 - **45km** (non 65km) · UTMB Index 50K · 30 min da Verona
 
-**Gran Raid GR60 Treviso · maggio 2027**
+**ASICS Malcesine Baldo Trail 52K · inizio maggio 2027**
 - 60km · ~3500m D+ · simulazione Lavaredo · gestire conservativo
 
 ### Gare di sentimento
@@ -259,7 +259,7 @@ S37=39, S38=30, S39=21, S40=8
 **Marker:**
 S2: Test AeT · S3: Test AnT · S4: Pre-iscriviti Lavaredo
 S7: Test AeT · S14: Test AeT · S23: Test AnT (spostati dalle rispettive settimane di scarico S8/S15/S24 — i test non vanno mai in scarico)
-S27: Ultrabericus 45K · S35: Gran Raid GR60 · S40: LAVAREDO 80K
+S27: Ultrabericus 45K · S35: Malcesine Baldo Trail 52K · S40: LAVAREDO 80K
 
 ---
 
@@ -415,7 +415,7 @@ quando sei già a 4-10 ore di gara in quota a giugno. Il corpo deve essere adatt
 - **Alternativa/aggiunta:** 3-4 sessioni brevi di sauna (15-20 min) nelle ultime 2 settimane
   prima della gara (protocollo heat acclimation da atleti endurance).
 - **Strategia in gara:** cappellino + maglietta bagnata + acqua su collo e spalle ai ristori.
-  Testa questa routine già al Gran Raid GR60 di maggio.
+  Testa questa routine già al Malcesine Baldo Trail di inizio maggio.
 
 ### Corsa notturna e gestione del sonno — RINVIATO alla 120K (2029)
 
@@ -520,13 +520,13 @@ costruire una strategia di pacing specifica per la Lavaredo:
 - Ritmo target per i primi 20 km (imbarazzantemente lento)
 - Gestione delle salite principali (FC target, non passo)
 - Quando iniziare a spingere (mai prima del km 50)
-Da affrontare insieme dopo l'Ultrabericus (marzo 2027) e il Gran Raid GR60 (maggio 2027).
+Da affrontare insieme dopo l'Ultrabericus (marzo 2027) e il Malcesine Baldo Trail 52K (inizio maggio 2027).
 
 **Drop bag e gestione ristori (da definire a maggio 2027)**
 - Cosa mettere nella drop bag e dove posizionarla
 - Tempo massimo da passare ad ogni ristoro (target: max 5 min)
 - Routine automatica al ristoro: mangia, bevi, riparti — senza indecisioni
-- Testare la routine ai ristori già durante il Gran Raid GR60
+- Testare la routine ai ristori già durante il Malcesine Baldo Trail 52K
 Da affrontare insieme 4-6 settimane prima della Lavaredo.
 
 ---
