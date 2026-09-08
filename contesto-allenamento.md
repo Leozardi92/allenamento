@@ -75,7 +75,7 @@ Dashboard: https://leozardi92.github.io/allenamento/
 
 | Anno | Gara principale | Altre gare |
 |---|---|---|
-| 2027 | Lavaredo 80K (o Eiger E101) | Ultrabericus 45K · Gran Raid GR60 · Maratona Alpina |
+| 2027 | Lavaredo 80K (o Eiger E101) | Ultrabericus 45K · Malcesine Baldo Trail 52K · Maratona Alpina |
 | 2028 | Gara WS 100K | Lessinia o Maratona Alpina · Adamello |
 | 2029 | Lavaredo 120K o WS 100M | Ultra Puglia |
 | 2030 | Gara WS 100M | — |
@@ -628,4 +628,6 @@ già avvenuto per l'import automatico del venerdì e il deploy dashboard).
 - Backup Lavaredo: Trail Verbier St-Bernard X-Traversée 77K (9-11 lug 2027) o gara italiana ~80K
 - Ultrabericus: **45km** non 65km
 - Scialpinismo: invernale occasionale, comunicato da Leonardo
+- **Dolomiti Beer Trail Ultra (55K, 3000m D+):** gara di sentimento da inserire dal 2028 in poi
+  (in 2027 troppo vicina a Ultrabericus e Malcesine — piano già pieno)
 - Tempo obiettivo Lavaredo 80K: 14-15h (realistico) · 12-13h (ottimistico)
