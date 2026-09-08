@@ -157,8 +157,8 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - Mer: Palestra + Core #1
 - Gio (opzionale): Easy Z1 7-9 km + 3×150m DH pick-up
 - Ven: ME workout (zaino 5-8 kg su salita) + Core #2
-- Sab: Long trail Z1 (30-40% km sett) + DH pick-up nell'ultimo km
-- Dom: **ME workout in bici** (Lessinia ≥ 25%, 20-30 min sezione ripida + recovery) — non opzionale in Base
+- Sab: Long trail Z1 (30-40% km sett) + **ultimi 20-30 min ME su sezione ≥ 25%** + DH pick-up
+- Dom: **Hiking leggero** 45-60 min (recovery attivo) — nel Specifico S25+ diventa long trail 2 (back-to-back)
 
 **Settimana S (Specifico — da S25):**
 - Mar: Hill Sprints (mantieni per tutta la preparazione)
