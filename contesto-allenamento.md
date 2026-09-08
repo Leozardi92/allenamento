@@ -130,10 +130,14 @@ Il libro richiede **minimo 4 sessioni aerobiche a settimana** — questo è il v
 La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero.
 
 **Sessioni OBBLIGATORIE (4 — il minimo del libro):**
-- **Martedì 06:00** — Hill Sprints (da S5) o corsa qualità (S1-4)
+- **Martedì 06:00** — Hill Sprints su 12% (da S5) o corsa qualità (S1-4)
 - **Mercoledì** — Palestra + Core #1
-- **Venerdì sera** — ME workout o Bici Z2
 - **Sabato mattina** — Long trail (sessione chiave)
+- **Domenica** — ME workout in bici Lessinia ≥ 25% (da S5) o hiking leggero (S1-4)
+
+**Sessioni OPZIONALI (0-2):**
+- **Giovedì 06:00** — Easy Z1 run + DH pick-up
+- **Venerdì sera** — Bici Z2 max 2 ore (aerobico di base, non ME specifico)
 
 **Sessioni OPZIONALI (0-2 — in base a recupero e lavoro):**
 - **Giovedì 06:00** — Easy Z1 + DH pick-up (fai solo se il semaforo è verde)
@@ -154,7 +158,7 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - Gio (opzionale): Easy Z1 7-9 km + 3×150m DH pick-up
 - Ven: ME workout (zaino 5-8 kg su salita) + Core #2
 - Sab: Long trail Z1 (30-40% km sett) + DH pick-up nell'ultimo km
-- Dom (opzionale): Hiking 45-60 min
+- Dom: **ME workout in bici** (Lessinia ≥ 25%, 20-30 min sezione ripida + recovery) — non opzionale in Base
 
 **Settimana S (Specifico — da S25):**
 - Mar: Hill Sprints (mantieni per tutta la preparazione)
