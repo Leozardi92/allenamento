@@ -70,7 +70,7 @@ Riscaldamento: 15 min facile
 Ripetute: 30 min al massimo sforzo sostenibile (TEST AnT — FC media = AnT)
 Defaticamento: 10 min facile
 Note: riporta FC media dei 30 min a Claude Chat
-Stato: da importare
+Stato: ✅ importata (workout_id 1693529278, automatico il 10/09/2026)
 
 Data: 2026-09-17
 Blocco: Restart
@@ -78,21 +78,21 @@ Tipo: corsa easy
 Distanza: 6 km
 FC target: < AeT misurata
 Note: scarico post-AnT
-Stato: da importare
+Stato: ✅ importata (workout_id 1693529294, automatico il 10/09/2026)
 
 Data: 2026-09-19
 Blocco: Restart
 Tipo: corsa easy
 Distanza: 8 km
 FC target: < AeT misurata
-Stato: da importare
+Stato: ✅ importata (workout_id 1693529296, automatico il 10/09/2026)
 
 Data: 2026-09-20
 Blocco: Restart
 Tipo: bici
 Durata: 30 min
 FC target: < 135 bpm
-Stato: da importare
+Stato: ✅ importata (workout_id 1693529299, automatico il 10/09/2026)
 
 ---
 
