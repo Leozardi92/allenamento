@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-09T15:40:51",
+  "generated_at": "2026-09-11T12:28:02",
   "phase_label": "Restart · sett. 2/4",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-09",
-    "day_label": "Mer",
-    "type": "gym",
-    "label": "💪 Giorno 3",
-    "extra": "Leg Curl Prono · Affondi camminata · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS"
+    "date": "2026-09-12",
+    "day_label": "Sab",
+    "type": "run",
+    "label": "8 km easy",
+    "extra": "FC sotto AeT misurata"
   },
   "key_workout": {
-    "date": "2026-09-10",
-    "day_label": "Gio",
+    "date": "2026-09-15",
+    "day_label": "Mar",
     "type": "test",
-    "label": "🔬 Test AeT",
-    "extra": "85 min: 15 riscald. + 60 min FC 135–148 bpm + 10 cool · file: test_AeT.fit"
+    "label": "🔬 Test AnT",
+    "extra": "15 min warm-up + 30 min all-out · media FC = AnT"
   },
   "week": {
     "planned_km": 14,
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2027-03-06",
     "label": "🏁 ULTRABERICUS",
-    "days_until": 178
+    "days_until": 176
   }
 }
