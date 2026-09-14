@@ -386,14 +386,51 @@ modo.
 - S29-36: Picco apr-mag 2027 — 65-80 km equiv
 - S37-40: Taper+Gara giu 2027
 
-**Km pianificati:**
-S1=14, S2=14, S3=14, S4=16, S5=30, S6=33, S7=36, S8=20, S9=38, S10=41,
-S11=20, S12=44, S13=47, S14=49, S15=23, S16=49, S17=20, S18=50, S19=51,
-S20=24, S21=53, S22=57, S23=58, S24=26, S25=60, S26=44, S27=12, S28=33,
-S29=61, S30=66, S31=28, S32=71, S33=71, S34=20, S35=12, S36=38,
-S37=39, S38=30, S39=21, S40=8
+**Km pianificati (aggiornati 14/09/2026 — libro Uphill Athlete + C-race 31ott):**
 
-**Marker:**
+| Settimana | Km | Tipo | Note |
+|---|---|---|---|
+| S1 | 14 | T | Restart |
+| S2 | 14 | T | Test AeT ✅ 147 bpm |
+| S3 | 14 | T | Test AnT 15/09 |
+| S4 | 22 | B | **Base inizia** · Hill Sprints · 22 set |
+| S5 | 30 | B | |
+| S6 | 33 | B | |
+| S7 | 36 | B | |
+| S8 | 20 | R | Scarico |
+| S9 | 38 | G | **C-RACE 35K/1789mD+ 31 ott** + easy around |
+| S10 | 25 | R | Recovery post-gara |
+| S11 | 44 | B | Piano riprende normale |
+| S12 | 48 | B | |
+| S13 | 26 | R | Scarico |
+| S14 | 52 | B | |
+| S15 | 57 | B | |
+| S16 | 62 | B | |
+| S17 | 34 | R | Scarico + Test AeT |
+| S18 | 64 | B | |
+| S19 | 70 | B | |
+| S20 | 76 | B | |
+| S21 | 42 | R | Scarico |
+| S22 | 78 | S | **Specifico inizia** · back-to-back |
+| S23 | 82 | S | |
+| S24 | 86 | S | |
+| S25 | 48 | R | Scarico + Test AnT |
+| S26 | 80 | S | |
+| S27 | 40 | S | Pre-Ultrabericus |
+| S28 | 12 | G | **ULTRABERICUS 45K** |
+| S29 | 32 | R | Recovery post-gara |
+| S30 | 76 | S | |
+| S31 | 82 | S | |
+| S32 | 88 | S | **PICCO** |
+| S33 | 50 | R | Scarico |
+| S34 | 84 | S | |
+| S35 | 68 | S | Pre-Malcesine |
+| S36 | 65 | G | **MALCESINE BALDO TRAIL 52K** |
+| S37 | 28 | R | Recovery post-gara |
+| S38 | 62 | S | |
+| S39 | 68 | T | Taper inizio |
+| S40 | 8 | G | **LAVAREDO 80K · 26 giugno 2027** |
+
 **Marker:**
 S2: Test AeT ✅ (147 bpm · 11/09) · S3: Test AnT (15/09) · S4: Pre-iscriviti Lavaredo lotteria
 S8: R · S9: G — C-race 35km/1789mD+ 31 ott · S10: R post-gara
