@@ -37,6 +37,16 @@ Dashboard: https://leozardi92.github.io/allenamento/
 
 ## Gare — Roadmap e Dettagli
 
+### 2026 — C-race di sentimento
+
+**C-race 35K · 1789m D+ · 31 ottobre 2026**
+- Gara di sentimento · non nel piano originale · inserita come C-race
+- Coincide con S9 — 5 settimane di Base strutturata nelle gambe
+- Profilo quasi identico alla Tzimbar 2025 (34km · 1828mD+) → terreno noto
+- **Strategia:** FC < 147 bpm in salita per i primi 20 km · gel ogni 40 min
+  Prima applicazione protocollo nutrizione in gara · nessun taper
+- Piano riprende normalmente da S10 (settimana post-gara · volume ridotto recovery)
+
 ### 2027 — Anno chiave
 
 **Lavaredo Ultra Trail 80K · 26 giugno 2027**
