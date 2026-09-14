@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-11T12:28:02",
-  "phase_label": "Restart · sett. 2/4",
+  "generated_at": "2026-09-14T10:45:10",
+  "phase_label": "Restart · sett. 3/4",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-12",
-    "day_label": "Sab",
-    "type": "run",
-    "label": "8 km easy",
-    "extra": "FC sotto AeT misurata"
-  },
-  "key_workout": {
     "date": "2026-09-15",
     "day_label": "Mar",
     "type": "test",
     "label": "🔬 Test AnT",
     "extra": "15 min warm-up + 30 min all-out · media FC = AnT"
   },
+  "key_workout": {
+    "date": "2026-09-26",
+    "day_label": "Sab",
+    "type": "trail",
+    "label": "Trail 10 km",
+    "extra": "~400m D+ · FC conversazione · bastoncini · benvenuto sentiero"
+  },
   "week": {
     "planned_km": 14,
-    "actual_km": 6.0
+    "actual_km": 0.0
   },
   "next_race": {
     "date": "2027-03-06",
     "label": "🏁 ULTRABERICUS",
-    "days_until": 176
+    "days_until": 173
   }
 }
