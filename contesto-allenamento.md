@@ -133,15 +133,11 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - **Martedì 06:00** — Hill Sprints su 12% (da S5) o corsa qualità (S1-4)
 - **Mercoledì** — Palestra + Core #1
 - **Sabato mattina** — Long trail (sessione chiave)
-- **Domenica** — ME workout in bici Lessinia ≥ 25% (da S5) o hiking leggero (S1-4)
+- **Domenica** — Hiking leggero 45-60 min (recovery) — nel Specifico S21+ diventa long trail 2 (back-to-back)
 
 **Sessioni OPZIONALI (0-2):**
 - **Giovedì 06:00** — Easy Z1 run + DH pick-up
 - **Venerdì sera** — Bici Z2 max 2 ore (aerobico di base, non ME specifico)
-
-**Sessioni OPZIONALI (0-2 — in base a recupero e lavoro):**
-- **Giovedì 06:00** — Easy Z1 + DH pick-up (fai solo se il semaforo è verde)
-- **Domenica mattina** — Hiking leggero o recovery run (fai solo se ci sono energie)
 
 **Lunedì: sempre riposo.**
 
@@ -192,6 +188,133 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - Feb–Mar: 1x/sett — riduzione
 - Apr–Mag: 1x/sett leggera — mantenimento
 - Giu: solo mobilità
+
+---
+
+## Hill Sprints — Protocollo (da S5, ogni martedì)
+
+**Massimo stimolo di potenza per il trail runner — libro pag. 179-183**
+
+Situazione Leonardo: pendenza max vicino casa = 12%. Adattamento: sprint più lunghi + più reps.
+
+- **Dove:** salita 12% vicino casa · buon fondo · 80-120m disponibili
+- **Riscaldamento:** 15 min corsa leggera Z1 (< 141 bpm)
+- **Ripetute:** 8-10 × 15-20 sec al MASSIMO sforzo assoluto
+  Su 12% servono più secondi per raggiungere il reclutamento muscolare del 20%+
+- **Recupero:** 2-3 min di camminata/riposo completo tra ogni ripetuta
+- **Stop:** quando non raggiungi più la stessa distanza delle prime reps
+- **Defaticamento:** 10 min corsa leggera
+- **Totale:** 40-50 min · 8-10 km
+
+**Progressione:**
+- S5-12: 8 × 15 sec
+- S13-24: 10 × 18 sec
+- S25-38: 10 × 20 sec
+- S39-40 (Taper): 5 × 15 sec
+
+---
+
+## Muscular Endurance (ME) — Protocollo (S5-S24)
+
+**Qualità specifica per la velocità sostenibile in salita — libro pag. 240**
+
+1x/sett nel Base (S5-S24). Si ABBANDONA a S21+ (Specifico) — sostituito da back-to-back e Z3-4.
+
+### Dove si colloca nella settimana
+
+**Base (S5-20):** ME integrato negli **ultimi 20-30 min del long trail del sabato**
+su sezione ≥ 25%. La domenica resta hiking leggero (recovery).
+
+**Specifico (S21+):** ME nella domenica del back-to-back, a gambe stanche dopo il sabato.
+
+### Come fare il ME — istruzioni complete
+
+**Dove:** salita ≥ 25%. Se non sai la pendenza: è ripida se le gambe bruciano dopo 2-3 min di camminata veloce.
+
+**Lo stimolo corretto:** NON è cardiovascolare. FC resterà bassa (130-150 bpm) anche quando le gambe bruciano. Se ansimi forte, stai facendo Z3, non ME.
+Segnale giusto: **gambe che bruciano · respiro controllato.**
+
+**Protocollo:**
+- Riscaldamento: 10-15 min camminata su pendenza moderata
+- Sessione: 20-30 min **continui** su salita ≥ 25%
+  Cammina veloce, trotta, o alterna — non fermarti mai
+  Primi 5 min: sembra facile. Minuti 10-15: inizi a sentire i quadricipiti.
+  Minuti 20-25: bruciano davvero — quella è la zona utile.
+- Salita corta: scendi lento 2-3 min, risali subito. Conta solo il tempo in salita.
+- Defaticamento: 10 min camminata leggera
+
+**Mezzo:** libero — bici, trail con zaino, trail senza zaino, hiking aggressivo.
+Tutto funziona su ≥ 25%. Il principio è la fatica muscolare locale, non il mezzo.
+
+**Zaino:** non necessario su pendenza ≥ 25%. Aggiungilo (5-8 kg) solo se dopo 15 min le gambe non bruciano ancora abbastanza.
+
+**FC controllo:** 130-150 bpm. Se supera 155 → rallenta o cerca sezione più ripida.
+
+**Errori comuni:**
+- Partire troppo forte → gambe finite in 10 min. Serve ritmo basso e costante.
+- Fermarsi quando brucia → quel bruciore È lo stimolo cercato.
+- FC alta + affanno → stai facendo Z3, non ME.
+
+### Alternative inverno (dicembre-febbraio, senza bici)
+1. **Scialpinismo** — comunicarlo a Claude Chat · conta come ME
+2. **Scale con zaino** — 8-10 kg · 20-30 min continui su rampe
+3. **Tapis roulant 15% + zaino 6-8 kg** — 25-30 min
+
+### Progressione ME
+- S5-8: 20 min su sezione ≥ 25% (nel long trail sabato)
+- S9-16: 25 min · aumenta velocità mantenendo pendenza
+- S17-20: 30 min · oppure Z3 intervals in salita
+- S21+: STOP ME → back-to-back domenica + Z3-4 intensity
+
+---
+
+## Back-to-Back — Cos'è e Perché (da S21)
+
+Due uscite lunghe consecutive — sabato e domenica — con le gambe già stanche il secondo giorno.
+
+**Perché funziona:** simula le ultime 4-5 ore della Lavaredo 80K — riserve di glicogeno calate, gambe pesanti, mente sotto pressione. Un long trail fatto riposato non prepara a quello stato. Il back-to-back sì.
+
+**Struttura:**
+- Sabato: long trail principale (25-35 km nel picco)
+- Domenica: secondo long a gambe stanche (15-20 km)
+- Insieme = 60-80% del volume settimanale su 2 giorni
+
+**Nel Base (S5-20):** domenica = hiking leggero. Non è back-to-back vero — è abituare le gambe a muoversi il giorno dopo.
+**Nel Specifico (S21+):** back-to-back vero. Domenica è allenamento, non recovery.
+
+---
+
+## Discesa — Pick-up Veloci (da S5, 2 volte/sett)
+
+Su 2 uscite settimanali (giovedì + domenica o nel long trail), alla fine:
+3-4 × 150-200m di corsa veloce in discesa moderata · recupero salendo piano 2-3 min.
+
+Non serve essere rapidi — allena il pattern neurale e i quadricipiti (catena anteriore).
+
+**Progressione:**
+- S5-12: 3 × 150m · pendenza 8-12%
+- S13-24: 4 × 200m · pendenza 10-15%
+- S25+: 4 × 200m · pendenza 15-20% · più veloce
+
+---
+
+## Test Soglie — Storico e Prossimi
+
+| Test | Data | FC risultato | Metodo | Note |
+|---|---|---|---|---|
+| AeT | 11/09/2026 | **147 bpm** | Ventilatorio (respiro nasale) | Passo ~6:50-7:00/km |
+| AnT | 15/09/2026 | **da fare** | 30 min all-out | Protocollo Uphill Athlete |
+| AeT #2 | S8 (ott 2026) | — | Ventilatorio | Stessa salita/percorso |
+| AnT #2 | S24 (gen 2027) | — | 30 min all-out | Confronta con baseline |
+
+**Protocollo Test AnT (30 min all-out — Uphill Athlete):**
+- Riposo: almeno 3 giorni da sforzi intensi
+- Pre-test: 100 kcal carboidrati 30-45 min prima (banana, gel, datteri)
+- Riscaldamento: 15-20 min sotto AeT (< 147 bpm)
+- Test: 30 min al massimo sforzo sostenibile (pensa ritmo 10K in gara)
+  Non partire troppo forte — inizia conservativo, aumenta dopo min 10
+- Dato chiave: FC media dei 30 minuti = AnT
+- Percorso: piano o leggera salita · niente salite ripide che distorcono la FC
 
 ---
 
