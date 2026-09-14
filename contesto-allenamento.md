@@ -97,19 +97,23 @@ Dashboard: https://leozardi92.github.io/allenamento/
 
 > Aggiornare dopo ogni test. Le zone cardiache si ricalcolano automaticamente.
 
-| Soglia | FC | Passo piano |
-|---|---|---|
-| AeT (LT1) | ~153 bpm | ~5:43/km |
-| AnT (LT2) | ~161 bpm | ~5:05/km |
-| FC massima | ~170 bpm | ~4:37/km |
-| MAF stimato | 146 bpm | — |
+| Soglia | FC | Passo piano | Data | Metodo |
+|---|---|---|---|---|
+| AeT (LT1) | **147 bpm** | ~6:50-7:00/km | 11/09/2026 | Ventilatorio (respiro nasale) |
+| AnT (LT2) | ~161 bpm | ~5:05/km | stima | Test 30min all-out: 15/09/2026 |
+| FC massima | ~170 bpm | — | stima | — |
+| MAF | 146 bpm | — | 180-34 | Coincide con AeT ✅ |
 
-**Zone cardiache:**
-- Z1: 60–141 bpm
-- Z2: 141–153 bpm (fino ad AeT)
-- Z3: 153–156 bpm
-- Z4: 156–161 bpm (fino ad AnT)
-- Z5+: 161–170 bpm (fino a FC max)
+**Zone cardiache aggiornate (post-test AeT 11/09/2026):**
+- Z1: < 141 bpm — easy run · target quotidiano
+- Z2: 141–147 bpm — intorno AeT · max 15% volume settimanale
+- Z3: 147–161 bpm — tra AeT e AnT (stima) · solo sessioni qualità
+- Z4: intorno AnT — da definire dopo test AnT 15/09
+- Z5+: > 161 bpm
+
+**10% Test ADS:** gap AeT-AnT = 161-147 = 14 bpm = **8.7%** → NO ADS
+Più vicino al 10% rispetto alla stima iniziale. Enfasi su Z1 corretta.
+⚠️ Aggiornare Z3/Z4 dopo test AnT del 15/09/2026.
 
 **Test periodici:**
 - AeT: ogni 4-6 settimane · file Garmin test_AeT.fit
@@ -390,9 +394,11 @@ S29=61, S30=66, S31=28, S32=71, S33=71, S34=20, S35=12, S36=38,
 S37=39, S38=30, S39=21, S40=8
 
 **Marker:**
-S2: Test AeT · S3: Test AnT · S4: Pre-iscriviti Lavaredo
-S7: Test AeT · S14: Test AeT · S23: Test AnT (spostati dalle rispettive settimane di scarico S8/S15/S24 — i test non vanno mai in scarico)
-S27: Ultrabericus 45K · S35: Malcesine Baldo Trail 52K · S40: LAVAREDO 80K
+**Marker:**
+S2: Test AeT ✅ (147 bpm · 11/09) · S3: Test AnT (15/09) · S4: Pre-iscriviti Lavaredo lotteria
+S8: R · S9: G — C-race 35km/1789mD+ 31 ott · S10: R post-gara
+S17: Test AeT + R · S25: Test AnT + R
+S28: G — Ultrabericus 45K Vicenza · S36: G — ASICS Malcesine Baldo Trail 52K · S40: G — LAVAREDO 80K
 
 ---
 
