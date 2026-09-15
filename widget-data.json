@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-15T15:10:50",
+  "generated_at": "2026-09-15T15:12:09",
   "phase_label": "Restart · sett. 3/4",
   "plan_status": "active",
   "next_workout": {
     "date": "2026-09-15",
     "day_label": "Mar",
     "type": "test",
-    "label": "🔬 Test AnT",
-    "extra": "15 min warm-up + 30 min all-out · media FC = AnT"
+    "label": "✅ Test AnT — 159 bpm",
+    "extra": "15 min warm-up + 30 min all-out · risultato: 159 bpm, ~5:17/km (Sommacampagna)"
   },
   "key_workout": {
     "date": "2026-09-26",
