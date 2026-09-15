@@ -105,11 +105,20 @@ Dashboard: https://leozardi92.github.io/allenamento/
 | MAF | 146 bpm | — | 180-34 | Coincide con AeT ✅ |
 
 **Zone cardiache DEFINITIVE (post-test AeT+AnT settembre 2026):**
-- Z1: < 141 bpm — easy run · target quotidiano
-- Z2: 141–147 bpm — intorno AeT · max 15% volume settimanale
-- Z3: 147–159 bpm — tra AeT e AnT · ME workout e sessioni qualità
-- Z4: 159–166 bpm — intorno AnT · interval sessions
-- Z5+: > 166 bpm — massimo sforzo · Hill Sprints
+
+| Zona | Range FC | Confine | Utilizzo |
+|---|---|---|---|
+| Z1 | < 141 bpm | — | Easy run · target quotidiano |
+| Z2 | 141–147 bpm | **limite sup = AeT (147)** | Intorno AeT · max 15% volume |
+| Z3 | 147–159 bpm | **limite inf = AeT (147) · limite sup = AnT (159)** | ME workout · sessioni qualità |
+| Z4 | 159–166 bpm | **limite inf = AnT (159)** · limite sup = FC max vista (166) | Interval sessions · qualità hard |
+| Z5+ | > 166 bpm | — | Massimo sforzo · Hill Sprints |
+
+**Regola per la dashboard e Claude Code:**
+- AeT = 147 bpm → confine Z2/Z3 (limite superiore Z2, limite inferiore Z3)
+- AnT = 159 bpm → confine Z3/Z4 (limite superiore Z3, limite inferiore Z4)
+- FC max vista = 166 bpm → confine Z4/Z5+
+- NON usare valori hardcodati vecchi (141/153/156/161/170) — quelli erano stime pre-test
 
 **10% Test ADS:** gap AeT-AnT = 159-147 = 12 bpm = **7.5%** → NO ADS confermato ✅
 Da rifare: test AeT S17 (dic 2026) · test AnT S25 (gen 2027)
