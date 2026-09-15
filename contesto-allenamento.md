@@ -379,7 +379,7 @@ modo.
 
 **Fasi:**
 - S1-3: Restart set 2026 — max 8km (chiuso 15/09/2026)
-- S4: Prima settimana Base (22-28 set 2026)
+- S4: Prima settimana Base (22-27 set 2026)
 - S5-12: Base ott-nov 2026 — 30-48 km/sett
 - S13-20: Aerobico dic-gen 2027 — 45-60 km/sett
 - S21-28: Specifico feb-mar 2027 — 55-70 km equiv
