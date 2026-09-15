@@ -100,20 +100,19 @@ Dashboard: https://leozardi92.github.io/allenamento/
 | Soglia | FC | Passo piano | Data | Metodo |
 |---|---|---|---|---|
 | AeT (LT1) | **147 bpm** | ~6:50-7:00/km | 11/09/2026 | Ventilatorio (respiro nasale) |
-| AnT (LT2) | ~161 bpm | ~5:05/km | stima | Test 30min all-out: 15/09/2026 |
-| FC massima | ~170 bpm | — | stima | — |
+| AnT (LT2) | **159 bpm** | ~5:17/km | 15/09/2026 | 30 min all-out · Sommacampagna |
+| FC massima | ~170 bpm | — | stima | Max vista in test: 166 bpm |
 | MAF | 146 bpm | — | 180-34 | Coincide con AeT ✅ |
 
-**Zone cardiache aggiornate (post-test AeT 11/09/2026):**
+**Zone cardiache DEFINITIVE (post-test AeT+AnT settembre 2026):**
 - Z1: < 141 bpm — easy run · target quotidiano
 - Z2: 141–147 bpm — intorno AeT · max 15% volume settimanale
-- Z3: 147–161 bpm — tra AeT e AnT (stima) · solo sessioni qualità
-- Z4: intorno AnT — da definire dopo test AnT 15/09
-- Z5+: > 161 bpm
+- Z3: 147–159 bpm — tra AeT e AnT · ME workout e sessioni qualità
+- Z4: 159–166 bpm — intorno AnT · interval sessions
+- Z5+: > 166 bpm — massimo sforzo · Hill Sprints
 
-**10% Test ADS:** gap AeT-AnT = 161-147 = 14 bpm = **8.7%** → NO ADS
-Più vicino al 10% rispetto alla stima iniziale. Enfasi su Z1 corretta.
-⚠️ Aggiornare Z3/Z4 dopo test AnT del 15/09/2026.
+**10% Test ADS:** gap AeT-AnT = 159-147 = 12 bpm = **7.5%** → NO ADS confermato ✅
+Da rifare: test AeT S17 (dic 2026) · test AnT S25 (gen 2027)
 
 **Test periodici:**
 - AeT: ogni 4-6 settimane · file Garmin test_AeT.fit
@@ -317,7 +316,7 @@ Non serve essere rapidi — allena il pattern neurale e i quadricipiti (catena a
 | Test | Data | FC risultato | Metodo | Note |
 |---|---|---|---|---|
 | AeT | 11/09/2026 | **147 bpm** | Ventilatorio (respiro nasale) | Passo ~6:50-7:00/km |
-| AnT | 15/09/2026 | **da fare** | 30 min all-out | Protocollo Uphill Athlete |
+| AnT | 15/09/2026 | **159 bpm** | 30 min all-out · Sommacampagna | Passo 5:17/km · Max 166 bpm |
 | AeT #2 | S8 (ott 2026) | — | Ventilatorio | Stessa salita/percorso |
 | AnT #2 | S24 (gen 2027) | — | 30 min all-out | Confronta con baseline |
 
