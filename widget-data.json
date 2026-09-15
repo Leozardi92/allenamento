@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T10:45:08",
+  "generated_at": "2026-09-15T15:10:50",
   "phase_label": "Restart · sett. 3/4",
   "plan_status": "active",
   "next_workout": {
@@ -18,7 +18,7 @@
   },
   "week": {
     "planned_km": 14,
-    "actual_km": 0.0
+    "actual_km": 9.1
   },
   "next_race": {
     "date": "2026-10-31",
