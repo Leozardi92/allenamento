@@ -143,7 +143,7 @@ Il libro richiede **minimo 4 sessioni aerobiche a settimana** — questo è il v
 La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero.
 
 **Sessioni OBBLIGATORIE (4 — il minimo del libro):**
-- **Martedì 06:00** — Hill Sprints su 12% (da S5) o corsa qualità (S1-4)
+- **Martedì 06:00** — Hill Sprints su 12% (da S5) o corsa qualità (S1-3)
 - **Mercoledì** — Palestra + Core #1
 - **Sabato mattina** — Long trail (sessione chiave)
 - **Domenica** — Hiking leggero 45-60 min (recovery) — nel Specifico S21+ diventa long trail 2 (back-to-back)
@@ -378,8 +378,9 @@ Specifico, Picco, Taper), Claude Code le porta nella dashboard allo stesso
 modo.
 
 **Fasi:**
-- S1-4: Restart set 2026 — max 8km
-- S5-12: Base ott-nov 2026 — 35-45 km/sett
+- S1-3: Restart set 2026 — max 8km (chiuso 15/09/2026)
+- S4: Prima settimana Base (22-28 set 2026)
+- S5-12: Base ott-nov 2026 — 30-48 km/sett
 - S13-20: Aerobico dic-gen 2027 — 45-60 km/sett
 - S21-28: Specifico feb-mar 2027 — 55-70 km equiv
 - S29-36: Picco apr-mag 2027 — 65-80 km equiv
@@ -713,7 +714,7 @@ Da affrontare insieme 4-6 settimane prima della Lavaredo.
 Il libro distingue sessioni ad alto stimolo specifico (non saltabili) da sessioni
 di volume accessorio (saltabili). La gerarchia è per fase.
 
-### RESTART (S1-4)
+### RESTART (S1-3)
 
 | Sessione | Priorità | Motivo |
 |---|---|---|
