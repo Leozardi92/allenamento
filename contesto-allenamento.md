@@ -481,29 +481,33 @@ modo.
 | S40 | 50 | R | Scarico |
 | S41 | 82 | S | |
 | S42 | 86 | S | |
-| S43 | 86 | S | |
-| S44 | 50 | T | Taper 1 |
-| S44 | 50 | T | Taper 1 |
-| S45 | 35 | T | Taper 2 |
-| S46 | 25 | R | Recovery post-Monte Rosa |
-| S47 | 50 | B | Rebuild per Puglia |
-| S48 | 58 | B | |
-| S49 | 65 | B | |
-| S50 | 38 | R | Scarico |
-| S51 | 62 | B | |
-| S52 | 68 | B | |
-| S53 | 25 | G | **Maratona Alpina GES Schio** · non-competitiva · sentimento |
-| S54 | 55 | B | |
-| S55 | 65 | B | |
-| S56 | 42 | T | Taper pre-Puglia |
-| S57 | 87 | G | **PUGLIA 100K Le Maioliche 85K/2000mD+ 🏆 A-RACE autunno 2027** |
+| S43 | 88 | S | **PICCO 2** |
+| S44 | 50 | R | Scarico |
+| S45 | 35 | T | Taper 1 |
+| S46 | 90 | G | **MONTE ROSA TRAIL 82K/6300mD+ 🏆 A-RACE 2027 (15-18 lug)** |
+| S47 | 25 | R | Recovery post-Monte Rosa |
+| S48 | 52 | B | Rebuild per Puglia |
+| S49 | 60 | B | |
+| S50 | 66 | B | |
+| S51 | 38 | R | Scarico |
+| S52 | 62 | B | |
+| S53 | 68 | B | |
+| S54 | 28 | G | **Maratona Alpina GES Schio** · non-competitiva (metà set) |
+| S55 | 58 | B | |
+| S56 | 65 | B | |
+| S57 | 40 | R | Scarico |
+| S58 | 62 | B | |
+| S59 | 68 | B | |
+| S60 | 38 | R | Scarico |
+| S61 | 50 | T | Taper pre-Puglia |
+| S62 | 87 | G | **PUGLIA 100K Le Maioliche 85K/2000mD+ 🏆 A-RACE autunno 2027 (nov)** |
 
 **Marker:**
 S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
 S9: G — Trail Sciamano 35K (C-race) · S10: R
 S17: Test AeT + R · S25: Test AnT + R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
-S39: PICCO 2 (88 km) · S44-45: Taper · S46: G — MONTE ROSA 82K 🏆 A-RACE luglio 2027
+S39: PICCO 2 (88 km) · S45: Taper · S46: G — MONTE ROSA 82K 🏆 A-RACE luglio 2027
 S54: G — Maratona Alpina GES Schio (sentimento) · S62: G — PUGLIA 100K 🏆 A-RACE autunno
 
 ---
