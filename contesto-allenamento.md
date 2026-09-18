@@ -839,6 +839,13 @@ Se elimini anche venerdì, sei a 3 sessioni — accettabile max 1 volta al mese,
 
 ## Istruzioni per Claude Code — Gestione Allenamenti Garmin
 
+### Pulizia automatica calendario Garmin — regola permanente
+
+Ad ogni avvio Claude Code deve:
+1. Leggere attività recenti da Strava (ultime 14 giorni)
+2. Cancellare dal calendario Garmin tutti gli allenamenti delle settimane passate già completati su Strava
+3. NON cancellare mai allenamenti futuri (data >= oggi)
+
 ### Pulizia settimana 1 — fatta il 07/09/2026
 
 Eseguita la pulizia richiesta qui sopra (versione precedente di questa
