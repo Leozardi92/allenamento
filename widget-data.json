@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-17T17:39:12",
+  "generated_at": "2026-09-18T18:17:31",
   "phase_label": "Restart · sett. 3/3",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-17",
-    "day_label": "Gio",
+    "date": "2026-09-19",
+    "day_label": "Sab",
     "type": "run",
-    "label": "6 km easy",
-    "extra": "FC ben sotto AeT — scarico vero"
+    "label": "8 km easy",
+    "extra": "FC sotto AeT"
   },
   "key_workout": {
     "date": "2026-09-26",
@@ -18,11 +18,11 @@
   },
   "week": {
     "planned_km": 14,
-    "actual_km": 9.1
+    "actual_km": 15.7
   },
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 C-RACE 35K",
-    "days_until": 44
+    "days_until": 43
   }
 }
