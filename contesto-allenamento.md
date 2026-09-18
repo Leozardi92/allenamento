@@ -435,7 +435,7 @@ modo.
 - S29-36: Picco apr-mag 2027 — 65-80 km equiv
 - S37-40: Taper+Gara giu 2027
 
-**Km pianificati — 57 settimane · A-race 2027: Monte Rosa 82K (luglio) + Puglia 100K (novembre):**
+**Km pianificati — 62 settimane · A-race: Monte Rosa 82K (S46, luglio) + Puglia 100K (S62, novembre):**
 
 | Settimana | Km | Tipo | Note |
 |---|---|---|---|
@@ -481,9 +481,10 @@ modo.
 | S40 | 50 | R | Scarico |
 | S41 | 82 | S | |
 | S42 | 86 | S | |
-| S43 | 50 | T | Taper 1 |
-| S44 | 35 | T | Taper 2 |
-| S45 | 90 | G | **MONTE ROSA TRAIL 82K/6300mD+ 🏆 A-RACE luglio 2027** |
+| S43 | 86 | S | |
+| S44 | 50 | T | Taper 1 |
+| S44 | 50 | T | Taper 1 |
+| S45 | 35 | T | Taper 2 |
 | S46 | 25 | R | Recovery post-Monte Rosa |
 | S47 | 50 | B | Rebuild per Puglia |
 | S48 | 58 | B | |
@@ -502,8 +503,8 @@ S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
 S9: G — Trail Sciamano 35K (C-race) · S10: R
 S17: Test AeT + R · S25: Test AnT + R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
-S39: PICCO 2 (88 km) · S43-44: Taper · S45: G — MONTE ROSA 82K 🏆 A-RACE 2027
-S53: G — Maratona Alpina GES Schio (sentimento) · S57: G — PUGLIA 100K 🏆 A-RACE autunno
+S39: PICCO 2 (88 km) · S44-45: Taper · S46: G — MONTE ROSA 82K 🏆 A-RACE luglio 2027
+S54: G — Maratona Alpina GES Schio (sentimento) · S62: G — PUGLIA 100K 🏆 A-RACE autunno
 
 ---
 
