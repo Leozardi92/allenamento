@@ -103,14 +103,14 @@ Blocco: Restart
 Tipo: corsa easy
 Distanza: 8 km
 FC target: < AeT misurata
-Stato: da importare
+Stato: ✅ importata (workout_id 1701884895, automatico il 18/09/2026)
 
 Data: 2026-09-23
 Blocco: Restart
 Tipo: forza
 Durata: 50 min
 Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate · ABS
-Stato: da importare
+Stato: ✅ importata (workout_id 1701884899, automatico il 18/09/2026)
 
 Data: 2026-09-24
 Blocco: Restart
@@ -118,14 +118,14 @@ Tipo: corsa easy
 Distanza: 8 km
 FC target: < AeT misurata
 Note: ultimi 15 min a AeT bpm
-Stato: da importare
+Stato: ✅ importata (workout_id 1701884903, automatico il 18/09/2026)
 
 Data: 2026-09-25
 Blocco: Restart
 Tipo: bici
 Durata: 50 min
 FC target: < 145 bpm
-Stato: da importare
+Stato: ✅ importata (workout_id 1701884906, automatico il 18/09/2026)
 
 Data: 2026-09-26
 Blocco: Restart
@@ -133,14 +133,14 @@ Tipo: long trail
 Distanza: 10 km
 FC target: < AeT misurata
 Note: ~400m D+ · bastoncini · mangia ogni 45 min · ISCRIVITI LAVAREDO 80K 2027
-Stato: da importare
+Stato: ✅ importata (workout_id 1701884909, automatico il 18/09/2026)
 
 Data: 2026-09-27
 Blocco: Restart
 Tipo: hiking
 Durata: 60 min
 Note: back-to-back leggero
-Stato: da importare
+Stato: ✅ importata (workout_id 1701884913, automatico il 18/09/2026)
 
 ---
 
