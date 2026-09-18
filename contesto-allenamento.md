@@ -37,15 +37,55 @@ Dashboard: https://leozardi92.github.io/allenamento/
 
 ## Gare — Roadmap e Dettagli
 
+### Roadmap UTMB 2032 — Stones e obiettivi fisici
+
+**Obiettivo fisico:** essere pronti per finire una 100M entro il **2030 (LUT 120K)**.
+La preparazione fisica punta al 2030. Le stones e la lotteria si completano nel 2031-2032.
+
+| Anno | Gara WS | Cat. | +Stones | Cumulo | Note |
+|---|---|---|---|---|---|
+| 2027 | Monte Rosa 82K (lug) | 100K | +3 | 3 | Index 100K · A-race 2027 |
+| 2027 | Puglia 100K (nov) | 100K | +3 | **6** | A-race autunno 2027 |
+| 2028 | LUT 80K (garantita, giu) | 100K | +3 | **9** | Primo vero 80K+ |
+| 2029 | WS 100K gara 1 (tbd) | 100K | +3 | 12 | |
+| 2029 | WS 100K gara 2 (tbd) | 100K | +3 | **15** | |
+| **2030** | **LUT 120K (giu)** | **100M** | **+5** | **20** | **INDEX 100M sbloccato 🏆** |
+| 2031 | Val d'Aran Major (lug) | 100K Major | +6 | 26 | Doppio stones |
+| 2031 | Grossglockner 110K (lug) | 100M | +5 | **31** | Seconda 100M |
+| **2032** | **UTMB Mont-Blanc** | Finale | — | **31** | **Età 40 🏆** |
+
+Probabilità estrazione 2032 con 31 stones: **~65-67%**
+
+**LUT 120K lottery strategy:**
+- 2028: LUT 80K garantita → non si compete per la 120K
+- 2029: 1° tentativo lotteria LUT 120K
+- 2030: 2° tentativo lotteria LUT 120K (se non estratto → guaranteed 2031)
+- 2030/2031: LUT 120K → Index 100M → lotteria UTMB 2032
+
 ### 2026 — C-race di sentimento
 
-**C-race 35K · 1789m D+ · 31 ottobre 2026**
+**C-race Trail Sciamano 35K · 1789m D+ · 31 ottobre 2026**
 - Gara di sentimento · non nel piano originale · inserita come C-race
 - Coincide con S9 — 5 settimane di Base strutturata nelle gambe
 - Profilo quasi identico alla Tzimbar 2025 (34km · 1828mD+) → terreno noto
 - **Strategia:** FC < 147 bpm in salita per i primi 20 km · gel ogni 40 min
   Prima applicazione protocollo nutrizione in gara · nessun taper
 - Piano riprende normalmente da S10 (settimana post-gara · volume ridotto recovery)
+
+### 2027 — Anno di costruzione
+
+**Calendario gare 2027:**
+
+| Mese | Gara | WS | Cat. | Stones | Note |
+|---|---|---|---|---|---|
+| Aprile | DBT 24K con fidanzata | ❌ | — | 0 | Sentimento · C-race · train through |
+| Maggio | ASICS Malcesine Baldo Trail 52K | ❌ | Index | 0 | Index refresh · B-race · terreno casa |
+| Luglio | Monte Rosa Trail 82K · Valle d'Aosta | ✅ | 100K | +3 | **A-race principale** · 6300mD+ |
+| Settembre | Maratona Alpina GES Schio 42K | ❌ | — | 0 | Non-competitiva · sentimento |
+| Novembre | Puglia 100K Le Maioliche 85K | ✅ | 100K | +3 | **A-race autunno** |
+
+DBT 24K scelta rispetto al 55K per la prossimità con Malcesine (4 settimane) —
+fare 55K comprometterebbe entrambe le gare. Il 24K è un long trail con la fidanzata.
 
 ### 2027 — Anno chiave
 
@@ -395,19 +435,19 @@ modo.
 - S29-36: Picco apr-mag 2027 — 65-80 km equiv
 - S37-40: Taper+Gara giu 2027
 
-**Km pianificati (aggiornati 14/09/2026 — libro Uphill Athlete + C-race 31ott):**
+**Km pianificati — 57 settimane · A-race 2027: Monte Rosa 82K (luglio) + Puglia 100K (novembre):**
 
 | Settimana | Km | Tipo | Note |
 |---|---|---|---|
-| S1 | 14 | T | Restart |
+| S1 | 14 | T | Restart ✅ |
 | S2 | 14 | T | Test AeT ✅ 147 bpm |
-| S3 | 14 | T | Test AnT 15/09 |
+| S3 | 14 | T | Test AnT ✅ 159 bpm |
 | S4 | 22 | B | **Base inizia** · Hill Sprints · 22 set |
 | S5 | 30 | B | |
 | S6 | 33 | B | |
 | S7 | 36 | B | |
 | S8 | 20 | R | Scarico |
-| S9 | 38 | G | **C-RACE 35K/1789mD+ 31 ott** + easy around |
+| S9 | 38 | G | **C-RACE Trail Sciamano 35K/1789mD+ 31 ott** |
 | S10 | 25 | R | Recovery post-gara |
 | S11 | 44 | B | Piano riprende normale |
 | S12 | 48 | B | |
@@ -420,31 +460,50 @@ modo.
 | S19 | 70 | B | |
 | S20 | 76 | B | |
 | S21 | 42 | R | Scarico |
-| S22 | 78 | S | **Specifico inizia** · back-to-back |
+| S22 | 78 | S | **Specifico inizia** · back-to-back dom |
 | S23 | 82 | S | |
 | S24 | 86 | S | |
 | S25 | 48 | R | Scarico + Test AnT |
 | S26 | 80 | S | |
-| S27 | 40 | S | Pre-Ultrabericus |
-| S28 | 12 | G | **ULTRABERICUS 45K** |
-| S29 | 32 | R | Recovery post-gara |
-| S30 | 76 | S | |
-| S31 | 82 | S | |
-| S32 | 88 | S | **PICCO** |
-| S33 | 50 | R | Scarico |
-| S34 | 84 | S | |
-| S35 | 68 | S | Pre-Malcesine |
-| S36 | 65 | G | **MALCESINE BALDO TRAIL 52K** |
-| S37 | 28 | R | Recovery post-gara |
-| S38 | 62 | S | |
-| S39 | 68 | T | Taper inizio |
-| S40 | 8 | G | **LAVAREDO 80K · 26 giugno 2027** |
+| S27 | 84 | S | |
+| S28 | 88 | S | **PICCO 1** |
+| S29 | 50 | R | Scarico |
+| S30 | 75 | S | |
+| S31 | 45 | G | **DBT 24K con fidanzata** · C-race · train through |
+| S32 | 68 | S | |
+| S33 | 82 | S | |
+| S34 | 65 | S | Pre-Malcesine taper |
+| S35 | 55 | G | **MALCESINE BALDO TRAIL 52K** · B-race · Index refresh |
+| S36 | 30 | R | Recovery post-Malcesine |
+| S37 | 72 | S | |
+| S38 | 80 | S | |
+| S39 | 88 | S | **PICCO 2** |
+| S40 | 50 | R | Scarico |
+| S41 | 82 | S | |
+| S42 | 86 | S | |
+| S43 | 50 | T | Taper 1 |
+| S44 | 35 | T | Taper 2 |
+| S45 | 90 | G | **MONTE ROSA TRAIL 82K/6300mD+ 🏆 A-RACE luglio 2027** |
+| S46 | 25 | R | Recovery post-Monte Rosa |
+| S47 | 50 | B | Rebuild per Puglia |
+| S48 | 58 | B | |
+| S49 | 65 | B | |
+| S50 | 38 | R | Scarico |
+| S51 | 62 | B | |
+| S52 | 68 | B | |
+| S53 | 25 | G | **Maratona Alpina GES Schio** · non-competitiva · sentimento |
+| S54 | 55 | B | |
+| S55 | 65 | B | |
+| S56 | 42 | T | Taper pre-Puglia |
+| S57 | 87 | G | **PUGLIA 100K Le Maioliche 85K/2000mD+ 🏆 A-RACE autunno 2027** |
 
 **Marker:**
-S2: Test AeT ✅ (147 bpm · 11/09) · S3: Test AnT (15/09) · S4: Pre-iscriviti Lavaredo lotteria
-S8: R · S9: G — C-race 35km/1789mD+ 31 ott · S10: R post-gara
+S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
+S9: G — Trail Sciamano 35K (C-race) · S10: R
 S17: Test AeT + R · S25: Test AnT + R
-S28: G — Ultrabericus 45K Vicenza · S36: G — ASICS Malcesine Baldo Trail 52K · S40: G — LAVAREDO 80K
+S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
+S39: PICCO 2 (88 km) · S43-44: Taper · S45: G — MONTE ROSA 82K 🏆 A-RACE 2027
+S53: G — Maratona Alpina GES Schio (sentimento) · S57: G — PUGLIA 100K 🏆 A-RACE autunno
 
 ---
 
