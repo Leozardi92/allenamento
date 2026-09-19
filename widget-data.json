@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-19T14:09:32",
+  "generated_at": "2026-09-19T14:14:32",
   "phase_label": "Restart · sett. 3/3",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-19",
-    "day_label": "Sab",
-    "type": "run",
-    "label": "8 km easy",
-    "extra": "FC sotto AeT"
+    "date": "2026-09-20",
+    "day_label": "Dom",
+    "type": "bike",
+    "label": "Bici 30 min",
+    "extra": "Solo recupero"
   },
   "key_workout": {
     "date": "2026-09-26",
