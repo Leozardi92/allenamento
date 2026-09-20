@@ -253,6 +253,66 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 
 ---
 
+## Progressione Long Trail — da S4 a S46 (Monte Rosa)
+
+Il long trail del sabato parte da 15 km (S4) e arriva al picco back-to-back di
+**40+25 km = 65 km** (S43) — 74% del volume settimanale, dentro il range 60-80% del libro.
+
+**BASE (S4-S21): solo sabato**
+
+| Sett | Sab | Note |
+|---|---|---|
+| S4 | 15 km | Primo long trail Base |
+| S5 | 18 km | |
+| S6 | 21 km | |
+| S7 | 24 km | |
+| S8 R | 13 km | Scarico |
+| S9 | **Gara 35K** | Trail Sciamano C-race |
+| S10 R | 18 km | Recovery |
+| S11 | 22 km | |
+| S12 | 25 km | |
+| S13 R | 14 km | Scarico |
+| S14 | 26 km | |
+| S15 | 28 km | |
+| S16 | 30 km | |
+| S17 R | 17 km | Scarico |
+| S18 | 30 km | |
+| S19 | 32 km | |
+| S20 | 34 km | |
+| S21 R | 20 km | Scarico |
+
+**SPECIFICO (S22-S45): back-to-back sab + dom**
+
+| Sett | Sab | Dom | B2B tot | % vol sett | Note |
+|---|---|---|---|---|---|
+| S22 | 28 km | 14 km | 42 km | 54% | Primo b2b |
+| S23 | 30 km | 16 km | 46 km | 56% | |
+| S24 | 33 km | 18 km | 51 km | 59% | |
+| S25 R | 18 km | 10 km | 28 km | — | Scarico |
+| S26 | 33 km | 18 km | 51 km | 64% | |
+| S27 | 35 km | 20 km | 55 km | 65% | |
+| S28 PICCO 1 | 37 km | 22 km | **59 km** | 67% | |
+| S29 R | 22 km | 12 km | 34 km | — | Scarico |
+| S30 | 33 km | 18 km | 51 km | 68% | |
+| S31 | **DBT 24K** | — | C-race | — | Train through |
+| S32 | 30 km | 16 km | 46 km | 68% | |
+| S33 | 34 km | 19 km | 53 km | 65% | |
+| S34 taper | **20 km solo** | — | — | — | No b2b pre-Malcesine |
+| S35 | **Malcesine 52K** | — | B-race | — | |
+| S36 R | 18 km solo | — | — | — | Recovery |
+| S37 | 30 km | 17 km | 47 km | 65% | |
+| S38 | 35 km | 20 km | 55 km | 69% | |
+| S39 | 38 km | 22 km | 60 km | 68% | Picco intermedio |
+| S40 R | 22 km | 13 km | 35 km | — | Scarico |
+| S41 | 36 km | 20 km | 56 km | 68% | |
+| S42 | 38 km | 22 km | 60 km | 70% | |
+| S43 **PICCO 2** | **40 km** | **25 km** | **65 km** | 74% ✅ | Max back-to-back |
+| S44 R | 22 km | 13 km | 35 km | — | Scarico |
+| S45 taper | 18 km solo | — | — | — | Taper pre-Monte Rosa |
+| **S46** | **MONTE ROSA 82K** 🏔️ | | | | |
+
+---
+
 ## Hill Sprints — Protocollo (da S5, ogni martedì)
 
 **Massimo stimolo di potenza per il trail runner — libro pag. 179-183**
@@ -472,16 +532,16 @@ modo.
 | S31 | 45 | G | **DBT 24K con fidanzata** · C-race · train through |
 | S32 | 68 | S | |
 | S33 | 82 | S | |
-| S34 | 65 | S | Pre-Malcesine taper |
+| S34 | 52 | S | Pre-Malcesine taper · no back-to-back · 20 km long solo |
 | S35 | 55 | G | **MALCESINE BALDO TRAIL 52K** · B-race · Index refresh |
 | S36 | 30 | R | Recovery post-Malcesine |
 | S37 | 72 | S | |
 | S38 | 80 | S | |
-| S39 | 88 | S | **PICCO 2** |
+| S39 | 88 | S | Picco intermedio · b2b 38+22=60 km |
 | S40 | 50 | R | Scarico |
 | S41 | 82 | S | |
 | S42 | 86 | S | |
-| S43 | 88 | S | **PICCO 2** |
+| S43 | 90 | S | **PICCO 2** · b2b sab 40 km + dom 25 km = **65 km** 🏔️ |
 | S44 | 50 | R | Scarico |
 | S45 | 35 | T | Taper 1 |
 | S46 | 90 | G | **MONTE ROSA TRAIL 82K/6300mD+ 🏆 A-RACE 2027 (15-18 lug)** |
