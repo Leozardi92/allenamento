@@ -710,19 +710,19 @@ A fine di ogni blocco generare un Verdict con:
 
 **Struttura secondo Training for the Uphill Athlete (House & Johnston) · Categoria 1**
 
-**Fasi (nomenclatura libro):**
-- S1-3: Transizione/Restart (set 2026) — test soglie ✅
-- S4-21: Base Period (ott 2026 – gen 2027) — volume + hill sprints + ME + forza
-- S22-44: Specific Period (feb–lug 2027) — back-to-back + Zone 3-4 + hill sprints
-  → S31: DBT 24K (C-race) · S35: Malcesine 52K (B-race, Index refresh)
-  → S43: PICCO 2 (b2b 40+25=65 km) · S45: Taper
-- S46: EIGER E51 51K 🏆 A-RACE luglio 2027
-- S47-60: Rebuild + prep Puglia
-  → S54: Maratona Alpina GES Schio (sentimento)
-- S61: Taper pre-Puglia
-- S62: PUGLIA 100K 🏆 A-RACE autunno 2027
+**Struttura blocchi — 5 blocchi:**
 
-**Km pianificati — 62 settimane · A-race: Monte Rosa 82K (S46, luglio) + Puglia 100K (S62, novembre):**
+| Blocco | Settimane | Periodo | Gare integrate |
+|---|---|---|---|
+| **RESTART** | S1-S3 | set 2026 | — · solo test soglie |
+| **BASE** | S4-S21 | ott 2026–gen 2027 | C-race Trail Cinghiale 35K (S9) |
+| **SPECIFICO** | S22-S43 | feb–giu 2027 | B-race Malcesine 52K (S35) |
+| **TAPER** | S44-S46 | lug 2027 | **A-race Eiger E51 51K (S46) — fine blocco** |
+| **REBUILD** | S47-S52 | ago-set 2027 | Maratona Alpina GES Schio (S51) |
+
+Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separati per la gara.
+
+**Km pianificati — 52 settimane · struttura 5 blocchi:**
 
 | Settimana | Km | Tipo | Note |
 |---|---|---|---|
