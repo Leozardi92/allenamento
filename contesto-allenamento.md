@@ -28,7 +28,7 @@ Dashboard: https://leozardi92.github.io/allenamento/
 | Giu 2028 | **Lavaredo 80K garantita** (2 anni non estratto → priority registration) |
 | 2029 | 2 gare WS 100K · accumulo stones |
 | Giu 2030 | **Lavaredo 120K** → Index 100M sbloccato · obiettivo fisico |
-| 2031 | Val d'Aran Major + Grossglockner · portare stones a 31 |
+| 2031 | Val d'Aran Major 100M + Grossglockner · portare stones a 27 |
 | Ago **2032** | **UTMB Mont-Blanc · età 40** · ~65-67% probabilità con 31 stones |
 
 **UTMB Index:** 504 generale · **503 categoria 50K** · Scadenza: 1 agosto 2027
@@ -51,7 +51,7 @@ La preparazione fisica punta al 2030. Le stones e la lotteria si completano nel 
 | 2029 | Monte Rosa 82K (lug) | **100K** WS | +3 | **8** | |
 | 2029 | WS 100K gara 2 (tbd) | **100K** WS | +3 | **11** | |
 | **2030** | **LUT 120K (giu)** | **100M** 🔑 WS | **+4** | **15** | **INDEX 100M sbloccato 🏆** |
-| 2031 | Val d'Aran Major · 100M (lug) | **100M Major** | **+8** | 23 | Major = doppio |
+| 2031 | Val d'Aran Major 100M (lug) | **100M Major** | **+8** | 23 | Major = doppio |
 | 2031 | Grossglockner 110K (lug) | **100M** WS | **+4** | **27** | Seconda 100M |
 | **2032** | **UTMB Mont-Blanc** | Finale | — | **27** | **Età 40 🏆** |
 
@@ -552,7 +552,7 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 
 **Marker:**
 S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
-S9: G — Trail Sciamano 35K (C-race) · S10: R
+S9: G — Trail del Cinghiale 35K (C-race, Palazzuolo sul Senio) · S10: R
 S7: Test AeT #2 · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
 S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
