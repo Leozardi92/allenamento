@@ -563,8 +563,13 @@ Formula: (AnT - AeT) / AnT × 100.
 ### Struttura dei 5 blocchi
 
 ```
-RESTART → BASE → SPECIFICO → TAPER → GARA → REBUILD
+RESTART → BASE → SPECIFICO → TAPER[→gara A] → REBUILD
 ```
+
+Le gare A, B e C sono TUTTE integrate dentro i blocchi:
+- **C-race** → dentro BASE (train through, no taper)
+- **B-race** → dentro SPECIFICO (small taper 1 sett + recovery 1 sett, poi riprende)
+- **A-race** → ULTIMA settimana del blocco TAPER (il taper costruisce fino alla gara)
 
 **RESTART (2-6 settimane):**
 - Max 20-25 km/sett · solo Z1 (< AeT)
@@ -594,11 +599,12 @@ RESTART → BASE → SPECIFICO → TAPER → GARA → REBUILD
   poi riprende il Specifico
 - Fine blocco: Test AnT di verifica
 
-**TAPER (2 settimane):**
-- Settimana 1: -25% dal picco Specifico · mantieni qualità, riduci volume
-- Settimana 2: ulteriore -25% · solo Z1 e qualità leggera
-- Niente di nuovo: no nuove scarpe, no nuovi gel, no nuove strategie
-- La settimana di gara: 8-15 km easy + gara
+**TAPER (2-3 settimane, include la gara A):**
+- Settimana T1: -25% dal picco Specifico · mantieni qualità, riduci volume
+- Settimana T2: ulteriore -25% · solo Z1 e qualità leggera
+- **Ultima settimana del TAPER = gara A** (8-15 km easy + gara A)
+- Niente di nuovo in gara: no scarpe nuove, no gel nuovi, no strategie nuove
+- La gara chiude il blocco TAPER — il REBUILD inizia la settimana dopo
 
 **REBUILD (4-8 settimane):**
 - Recovery 1-2 settimane: 20-30 km, tutto Z1
@@ -765,7 +771,7 @@ A fine di ogni blocco generare un Verdict con:
 | S43 | 90 | S | **PICCO 2** · b2b sab 40 km + dom 25 km = **65 km** 🏔️ |
 | S44 | 50 | T | **TAPER 1** pre-Eiger (dal picco 90km: -44%) |
 | S45 | 35 | T | **TAPER 2** pre-Eiger (-30% da T1) |
-| S46 | 55 | G | **EIGER E51 51K/3450mD+ 🏆 A-RACE 2027 (lug) · Grindelwald** |
+| S46 | 55 | T | **EIGER E51 51K 🏆 A-RACE 2027 · fine blocco TAPER (lug · Grindelwald)** |
 | S47 | 25 | R | Recovery post-Eiger |
 | S48 | 42 | B | Rebuild |
 | S49 | 50 | B | |
