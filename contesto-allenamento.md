@@ -32,7 +32,7 @@ Dashboard: https://leozardi92.github.io/allenamento/
 | Ago **2032** | **UTMB Mont-Blanc · età 40** · ~65-67% probabilità con 31 stones |
 
 **UTMB Index:** 504 generale · **503 categoria 50K** · Scadenza: 1 agosto 2027
-**Running Stones:** 0 → target **28** entro 2031 (~55-58% probabilità UTMB 2032)
+**Running Stones:** 0 → target **27** entro 2031 (~52-55% probabilità UTMB 2032)
 **Gare profilo:** Tzimbar Race 2025 · Dolomiti Beer Trail 2023
 
 ---
@@ -46,18 +46,17 @@ La preparazione fisica punta al 2030. Le stones e la lotteria si completano nel 
 
 | Anno | Gara WS | Cat. | +Stones | Cumulo | Note |
 |---|---|---|---|---|---|
-| 2027 | Eiger E51 51K (lug) | 50K WS | +2 | **2** | A-race 2027 |
+| 2027 | Eiger E51 · 51K (lug) | **50K** WS | +2 | **2** | A-race 2027 |
+| 2028 | LUT 80K garantita (giu) | **100K** WS | +3 | **5** | Primo vero 80K+ |
+| 2029 | Monte Rosa 82K (lug) | **100K** WS | +3 | **8** | |
+| 2029 | WS 100K gara 2 (tbd) | **100K** WS | +3 | **11** | |
+| **2030** | **LUT 120K (giu)** | **100M** 🔑 WS | **+4** | **15** | **INDEX 100M sbloccato 🏆** |
+| 2031 | Val d'Aran Major · 100M (lug) | **100M Major** | **+8** | 23 | Major = doppio |
+| 2031 | Grossglockner 110K (lug) | **100M** WS | **+4** | **27** | Seconda 100M |
+| **2032** | **UTMB Mont-Blanc** | Finale | — | **27** | **Età 40 🏆** |
 
-| 2028 | LUT 80K (garantita, giu) | 100K | +3 | **9** | Primo vero 80K+ |
-| 2029 | WS 100K gara 1 (tbd) | 100K | +3 | 12 | |
-| 2029 | WS 100K gara 2 (tbd) | 100K | +3 | **15** | |
-| **2030** | **LUT 120K (giu)** | **100M** | **+5** | **20** | **INDEX 100M sbloccato 🏆** |
-| 2031 | Val d'Aran Major (lug) | 100K Major | +6 | 26 | Doppio stones |
-| 2031 | Grossglockner 110K (lug) | 100M | +5 | **31** | Seconda 100M |
-| **2032** | **UTMB Mont-Blanc** | Finale | — | **31** | **Età 40 🏆** |
-
-Probabilità estrazione 2032 con 28 stones: **~55-58%**
-Con doppio tentativo 2032+2033: **~73-76%**
+Probabilità estrazione 2032 con **27 stones: ~52-55%**
+Con doppio tentativo 2032+2033: **~72-75%**
 
 **LUT 120K lottery strategy:**
 - 2028: LUT 80K garantita → non si compete per la 120K
@@ -243,7 +242,7 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 ## Progressione Long Trail — da S4 a S46 (Monte Rosa)
 
 **Tre checkpoint al 75%:**
-- Pre-Sciamano (S7): sabato **26 km / 1200m D+** = 74% di 35K ✅
+- Pre-Cinghiale (S7): sabato **26 km / 1200m D+** = 74% di 35K ✅
 - Pre-Malcesine (S33): sabato **39 km / 2400m D+** = 75% di 52K ✅
 - Pre-Monte Rosa (S43): b2b **40+25=65 km / 4600m D+** = 79% di 82K ✅
 
@@ -534,6 +533,12 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 | S44 | 50 | R | Scarico |
 | S45 | 35 | T | Taper 1 |
 | S46 | 55 | G | **EIGER E51 51K/3450mD+ 🏆 A-RACE 2027 (lug) · Grindelwald** |
+| S47 | 25 | R | Recovery post-Eiger |
+| S48 | 42 | B | Rebuild |
+| S49 | 50 | B | |
+| S50 | 30 | R | Scarico |
+| S51 | 22 | G | **Maratona Alpina GES Schio** · non-competitiva (metà set) |
+| S52 | 40 | B | Fine stagione 2027 |
 | S47 | 25 | R | Recovery post-Monte Rosa |
 | S48 | 52 | B | Rebuild per Puglia |
 | S49 | 60 | B | |
