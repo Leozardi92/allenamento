@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T08:34:29",
+  "generated_at": "2026-09-21T08:48:44",
   "phase_label": "Base · sett. 1/9",
   "plan_status": "active",
   "next_workout": {
@@ -13,8 +13,8 @@
     "date": "2026-09-26",
     "day_label": "Sab",
     "type": "trail",
-    "label": "Trail 10 km",
-    "extra": "~400m D+ · FC conversazione · bastoncini · benvenuto sentiero"
+    "label": "Trail 15 km",
+    "extra": "~700m D+ · FC conversazione · bastoncini · benvenuto sentiero"
   },
   "week": {
     "planned_km": 22,
