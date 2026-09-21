@@ -119,6 +119,77 @@ fare 55K comprometterebbe entrambe le gare. Il 24K è un long trail con la fidan
 
 ---
 
+
+---
+
+## Verdict — RESTART (S1-S3 · 1-21 settembre 2026)
+
+### Dati del blocco
+
+| Metrica | Valore | Target | Esito |
+|---|---|---|---|
+| Settimane completate | 3 | 3-4 | ✅ |
+| Volume totale | ~42 km | 40-50 km | ✅ |
+| AeT misurata | **147 bpm** | da misurare | ✅ completato |
+| AnT misurata | **159 bpm** | da misurare | ✅ completato |
+| Gap AeT-AnT | 12 bpm (7.5%) | < 10% = no ADS | ✅ NO ADS |
+| ITB | nessun problema | nessun problema | ✅ |
+| FC media easy run | 132-142 bpm | < AeT (147 bpm) | ✅ |
+| FC media bici | 131-133 bpm | < 145 bpm | ✅ |
+
+### Easy-day discipline
+
+Eccellente. Le 4 sessioni easy del Restart mostrano FC media ben sotto la AeT:
+- 29/08 Evening Run: 142 bpm (Z1)
+- 08/09 Corsa serale: 135.7 bpm (Z1 profonda)
+- 11/09 Test AeT: 139 bpm media (corretto per il test)
+- 13/09 Morning Ride: 132.8 bpm (Z1)
+- 15/09 Test AnT: 151 bpm media (corretto per il test)
+
+Nessuna sessione above Z1 fuori dai test. Disciplina aerobica solida.
+
+### Test fisiologici
+
+**AeT = 147 bpm** — era stimata 153 bpm. Trovata per via ventilatoria
+(respiro nasale): il respiro cambia a ~146-147 bpm. Coincide con la MAF
+(180-34=146). Questo è un dato positivo: l'AeT di un atleta aerobicamente
+sviluppato tende a coincidere con la MAF. Passo a AeT: ~6:50-7:00/km.
+
+**AnT = 159 bpm** — era stimata 161 bpm. Test 30 min all-out su terreno piano
+(Sommacampagna). FC media 30 min = 159 bpm. Passo a AnT: 5:17/km.
+La progressione FC durante il test era lineare (154→164 bpm) — buona gestione.
+
+**Gap AeT-AnT = 12 bpm (7.5%):** NO ADS confermato. Significa che la base
+aerobica è sufficientemente sviluppata per il piano polarizzato.
+Implicazione: Z1 per le easy (< 141 bpm), Z2 max 15% del volume.
+
+### Osservazioni chiave
+
+- L'AeT più bassa del previsto (147 vs 153 stima) è normale dopo una pausa estiva.
+  Con 3-4 mesi di Base, l'AeT tornerà a salire — il progresso si misura dal passo
+  a AeT: se a dicembre a 147 bpm corri a 6:20/km invece di 6:50/km, la Base sta
+  funzionando.
+- L'AnT a 159 bpm su terreno piano è nella media bassa per 34 anni.
+  Con il lavoro di qualità del Specifico (Z3-4), può arrivare a 163-165 bpm.
+- La bici mostra buona capacità aerobica: 25.6 km a 131 bpm media e 35.7 km
+  a 132.8 bpm — il sistema cardiovascolare risponde bene.
+
+### Verdetto
+
+**✅ PROMOSSO → Base inizia S4 (22 settembre 2026)**
+
+Il Restart ha fatto quello che doveva fare:
+- Zone calibrate su dati reali
+- ADS escluso
+- ITB monitorato e ok
+- Disciplina Z1 rispettata sin dal primo giorno
+
+**Cosa monitorare nel Base:**
+- Il passo a 147 bpm deve migliorare di 10-20 sec/km entro dicembre
+- RHR target: scendere sotto 46 bpm entro fine Base (ora: 48 bpm)
+- HRV: tendenza al rialzo nelle settimane di build
+- ITB: monitorare sulle discese dei long trail
+
 ## Soglie Fisiologiche
 
 > Aggiornare dopo ogni test. Le zone cardiache si ricalcolano automaticamente.
@@ -467,6 +538,168 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 
 ---
 
+---
+
+## Metodologia — Regole Universali del Piano
+
+Queste regole sono state usate per costruire questo piano.
+Un coach futuro può usarle per costruire un piano equivalente
+per un atleta diverso con gare e caratteristiche diverse.
+
+### Definizione dell'atleta
+
+**Categoria 1:** meno di 400 ore/anno di allenamento strutturato, nessuna ultra
+alla distanza target completata nei 12 mesi precedenti. Priorità assoluta: volume.
+L'intensità è supplementare.
+
+**Categoria 2:** più di 400 ore/anno, ha già completato gare alla distanza target.
+
+### 10% Test — Aerobic Deficiency Syndrome (ADS)
+
+Formula: (AnT - AeT) / AnT × 100.
+- < 10%: NO ADS → easy run in Z1, Z2 max 15% del volume settimanale
+- ≥ 10%: ADS → quasi tutto in Z2 finché il gap si chiude, poi rivalutare
+
+### Struttura dei 5 blocchi
+
+```
+RESTART → BASE → SPECIFICO → TAPER → GARA → REBUILD
+```
+
+**RESTART (2-6 settimane):**
+- Max 20-25 km/sett · solo Z1 (< AeT)
+- Eseguire Test AeT e Test AnT (nelle settimane piene, MAI in quelle di scarico)
+- Calibrare zone e verificare ADS
+- Ripartenza dopo pausa stagionale o primo approccio strutturato
+- Fine blocco: Verdict + zone aggiornate
+
+**BASE (12-22 settimane):**
+- Cicli 3:1 (3 settimane build + 1 recovery al 40-60% del picco)
+- Long trail del sabato: progressione da 15-20% a ~75% della distanza A-race
+- Hill Sprints: 1x/settimana il martedì
+- ME: integrato negli ultimi 20-30 min del long trail del sabato, su ≥ 25%
+- DH pick-up: 2x/settimana alla fine di uscite easy
+- Palestra: 2x/settimana + 2 sessioni core
+- Volume max per 50K: 80-88 km/sett · per 100K: 90-100 km/sett
+- Fine blocco: Test AeT di verifica
+
+**SPECIFICO (8-16 settimane):**
+- Back-to-back sab + dom: 60-80% del volume settimanale su 2 giorni
+- ME si sposta alla domenica (gambe stanche = stimolo maggiore)
+- Z3-4 intervals: 1x/settimana (sostituisce ME infrasettimanale)
+- Hill Sprints: mantenuti il martedì
+- Palestra: 1x/settimana (mantenimento)
+- Picco back-to-back: 75-80% della distanza A-race totale
+- Se c'è una B-race: small taper 1 sett prima + 1 sett recovery dopo,
+  poi riprende il Specifico
+- Fine blocco: Test AnT di verifica
+
+**TAPER (2 settimane):**
+- Settimana 1: -25% dal picco Specifico · mantieni qualità, riduci volume
+- Settimana 2: ulteriore -25% · solo Z1 e qualità leggera
+- Niente di nuovo: no nuove scarpe, no nuovi gel, no nuove strategie
+- La settimana di gara: 8-15 km easy + gara
+
+**REBUILD (4-8 settimane):**
+- Recovery 1-2 settimane: 20-30 km, tutto Z1
+- Poi rebuild graduale verso la stagione successiva o fine anno
+- Se c'è una gara sentiment: trattarla come C-race, no taper, train through
+- Fine stagione: valutare gli obiettivi dell'anno successivo
+
+### Progressione del volume
+
+- Aumento max 10% per settimana nelle settimane di build
+- Mai aumentare più di 3 settimane consecutive
+- Settimana di recovery: 40-60% del picco della settimana più alta
+- Non aumentare volume E intensità nella stessa settimana
+
+### Long trail — progressione e checkpoint 75%
+
+- Prima settimana Base: 15-20% della distanza A-race
+- Checkpoint 75%: il sabato (o b2b) deve raggiungere il 75% della distanza A-race
+  almeno 2-3 settimane prima della gara
+- Back-to-back nel Specifico: 60-80% del volume settimanale su sab+dom
+
+### Selezione e pianificazione delle gare
+
+- **A-race:** la gara principale, costruisce il piano intorno ad essa
+- **B-race:** 60-80% distanza A-race, 4-8 settimane prima. Small taper + recovery.
+  Serve per testare gear, nutrizione, strategia.
+- **C-race:** trattata come allenamento con bib. No taper. Max distanza
+  gestibile senza impatto sul piano.
+- Non inserire A-race a meno di 8 settimane una dall'altra
+- Primo 80K+: solo dopo aver completato almeno una 50K+ con preparazione strutturata
+- Progressione distanza ideale anno per anno (Categoria 1):
+  Anno 1 → 35-55K / Anno 2 → 80K / Anno 3 → 100K / Anno 4+ → 100M
+
+### Sessioni settimanali
+
+**Obbligatorie (min 4):**
+- Martedì: Hill Sprints (Base) o qualità Z3-4 (Specifico)
+- Mercoledì: Palestra + Core
+- Sabato: Long trail (sessione chiave)
+- Domenica: Hiking (Base) o Long trail 2 (Specifico back-to-back)
+
+**Opzionali:**
+- Giovedì: Easy Z1 + DH pick-up
+- Venerdì: Bici Z2 max 2h o ME aggiuntivo
+
+**Ordine di taglio se manca il tempo:**
+1. Domenica (Base: hiking · Specifico: accorcia long 2)
+2. Giovedì easy
+3. Venerdì bici/ME
+4. MAI toccare: martedì · mercoledì · sabato
+
+### Hill Sprints
+
+- Pendenza ideale: ≥ 20%. Se meno: aumenta durata (15-20 sec) e reps (8-10).
+- Protocollo: 15 min warm-up · 6-10 × 8-20 sec MAX · 2-3 min rec · 10 min cool-down
+- Base: 6-8 × 8-10 sec · Specifico avanzato: 8-10 × 15-20 sec
+- Mantenere per tutto il piano. Dimezzare nel Taper.
+- Effetto: reclutamento fibre rapide, lunghezza del passo
+
+### Muscular Endurance (ME)
+
+- **Base:** ultimi 20-30 min del long trail sab su salita ≥ 25%
+  Fatica muscolare locale (gambe bruciano), FC bassa (130-150 bpm)
+- **Specifico:** domenica del back-to-back (gambe stanche = stimolo maggiore)
+- **Stop:** dal Specifico avanzato, sostituito da Z3-4 intervals
+- Alternative: zaino 5-8 kg su salita, scale con zaino, tapis 15%+ con zaino
+- Inverno: scialpinismo conta come ME
+
+### Test fisiologici
+
+- **Test AeT:** respiro nasale durante corsa progressiva. FC alla prima difficoltà
+  respiratoria nasale = AeT. Solo in settimane piene (mai in scarico).
+  Alternativa: 60 min a FC stabile, nota passo medio.
+- **Test AnT:** 30 min all-out. FC media dei 30 min = AnT.
+  Solo in settimane piene (mai in scarico).
+- **Ripetere:** Test AeT ogni 3-4 mesi · Test AnT ogni 4-6 mesi
+- **Sweat test:** pesarsi nudo prima e dopo 1h senza bere. Ripetere in condizioni
+  diverse (fresco, caldo). Target: perdita < 3% peso corporeo.
+
+### Nutrizione in allenamento (CHO progressivo)
+
+| Blocco | CHO/ora | Note |
+|---|---|---|
+| Base | 30-40g | 1 gel ogni 45 min sulle uscite >90 min |
+| Specifico early | 40-50g | 1 gel ogni 40 min + barretta |
+| Specifico peak | 50-60g | 1 gel ogni 35 min + cibo solido ai ristori |
+| Taper + Gara | 60-80g | 1 gel ogni 30 min + barretta + cibo solido |
+
+Gut training: l'intestino si allena come i muscoli. Progressione obbligatoria.
+
+### Verdict di blocco
+
+A fine di ogni blocco generare un Verdict con:
+1. **Easy-day discipline:** % tempo in Z1+Z2 sulle sessioni easy (target ≥ 85%)
+2. **Hard-day separation:** le sessioni dure erano davvero in Z3-4?
+3. **Volume progressione:** rispettato il 10% max/settimana?
+4. **RHR trend:** in calo (positivo) o in aumento (sovraccarico)?
+5. **Test fisiologici:** risultati vs attesi
+6. **Verdetto:** PROMOSSO / DA RIFARE / ATTENZIONE — con motivazione
+7. **Prossimo blocco:** cosa cambia, cosa monitorare
+
 ## Piano Allenamento — 62 Settimane (set 2026 → nov 2027)
 
 **Struttura secondo Training for the Uphill Athlete (House & Johnston) · Categoria 1**
@@ -530,8 +763,8 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 | S41 | 82 | S | |
 | S42 | 86 | S | |
 | S43 | 90 | S | **PICCO 2** · b2b sab 40 km + dom 25 km = **65 km** 🏔️ |
-| S44 | 50 | R | Scarico |
-| S45 | 35 | T | Taper 1 |
+| S44 | 50 | T | **TAPER 1** pre-Eiger (dal picco 90km: -44%) |
+| S45 | 35 | T | **TAPER 2** pre-Eiger (-30% da T1) |
 | S46 | 55 | G | **EIGER E51 51K/3450mD+ 🏆 A-RACE 2027 (lug) · Grindelwald** |
 | S47 | 25 | R | Recovery post-Eiger |
 | S48 | 42 | B | Rebuild |
