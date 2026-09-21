@@ -23,8 +23,8 @@ Dashboard: https://leozardi92.github.io/allenamento/
 | Timeframe | Obiettivo |
 |---|---|
 | Set 2026 | Restart · Test AeT/AnT ✅ · Lotteria Lavaredo 2027 (non estratto) |
-| Lug 2027 | **Monte Rosa Trail 82K** · A-race principale 2027 |
-| Nov 2027 | **Puglia 100K** · A-race autunnale 2027 |
+| Lug 2027 | **Eiger Ultra Trail E51 51K** · A-race WS 2027 (+2 stones) |
+
 | Giu 2028 | **Lavaredo 80K garantita** (2 anni non estratto → priority registration) |
 | 2029 | 2 gare WS 100K · accumulo stones |
 | Giu 2030 | **Lavaredo 120K** → Index 100M sbloccato · obiettivo fisico |
@@ -32,7 +32,7 @@ Dashboard: https://leozardi92.github.io/allenamento/
 | Ago **2032** | **UTMB Mont-Blanc · età 40** · ~65-67% probabilità con 31 stones |
 
 **UTMB Index:** 504 generale · **503 categoria 50K** · Scadenza: 1 agosto 2027
-**Running Stones:** 0 → target 31 entro 2031
+**Running Stones:** 0 → target **28** entro 2031 (~55-58% probabilità UTMB 2032)
 **Gare profilo:** Tzimbar Race 2025 · Dolomiti Beer Trail 2023
 
 ---
@@ -46,8 +46,8 @@ La preparazione fisica punta al 2030. Le stones e la lotteria si completano nel 
 
 | Anno | Gara WS | Cat. | +Stones | Cumulo | Note |
 |---|---|---|---|---|---|
-| 2027 | Monte Rosa 82K (lug) | 100K | +3 | 3 | Index 100K · A-race 2027 |
-| 2027 | Puglia 100K (nov) | 100K | +3 | **6** | A-race autunno 2027 |
+| 2027 | Eiger E51 51K (lug) | 50K WS | +2 | **2** | A-race 2027 |
+
 | 2028 | LUT 80K (garantita, giu) | 100K | +3 | **9** | Primo vero 80K+ |
 | 2029 | WS 100K gara 1 (tbd) | 100K | +3 | 12 | |
 | 2029 | WS 100K gara 2 (tbd) | 100K | +3 | **15** | |
@@ -56,7 +56,8 @@ La preparazione fisica punta al 2030. Le stones e la lotteria si completano nel 
 | 2031 | Grossglockner 110K (lug) | 100M | +5 | **31** | Seconda 100M |
 | **2032** | **UTMB Mont-Blanc** | Finale | — | **31** | **Età 40 🏆** |
 
-Probabilità estrazione 2032 con 31 stones: **~65-67%**
+Probabilità estrazione 2032 con 28 stones: **~55-58%**
+Con doppio tentativo 2032+2033: **~73-76%**
 
 **LUT 120K lottery strategy:**
 - 2028: LUT 80K garantita → non si compete per la 120K
@@ -66,13 +67,13 @@ Probabilità estrazione 2032 con 31 stones: **~65-67%**
 
 ### 2026 — C-race di sentimento
 
-**C-race Trail Sciamano 35K · 1789m D+ · 31 ottobre 2026**
-- Gara di sentimento · non nel piano originale · inserita come C-race
-- Coincide con S9 — 5 settimane di Base strutturata nelle gambe
-- Profilo quasi identico alla Tzimbar 2025 (34km · 1828mD+) → terreno noto
-- **Strategia:** FC < 147 bpm in salita per i primi 20 km · gel ogni 40 min
-  Prima applicazione protocollo nutrizione in gara · nessun taper
-- Piano riprende normalmente da S10 (settimana post-gara · volume ridotto recovery)
+**C-race Trail del Cinghiale 35K · 2301m D+ · 30-31 ottobre 2026**
+- Palazzuolo sul Senio (FI) · Appennino Tosco-Romagnolo · ~2h30m da Verona
+- 34.6 km / 2.301m D+ · quasi-loop · quota max 1.163m · terreno forestale
+- UTMB Index race — no Running Stones
+- **Strategia:** FC < 147 bpm · gel ogni 40 min · porta bastoncini e cerata
+  Meteo ottobre: neve/pioggia/fango probabile. Prima applicazione protocollo nutrizione.
+- Piano riprende normalmente da S10 (recovery post-gara)
 
 ### 2027 — Anno di costruzione
 
@@ -82,7 +83,7 @@ Probabilità estrazione 2032 con 31 stones: **~65-67%**
 |---|---|---|---|---|---|
 | Aprile | DBT 24K con fidanzata | ❌ | — | 0 | Sentimento · C-race · train through |
 | Maggio | ASICS Malcesine Baldo Trail 52K | ❌ | Index | 0 | Index refresh · B-race · terreno casa |
-| Luglio | Monte Rosa Trail 82K · Valle d'Aosta | ✅ | 100K | +3 | **A-race principale** · 6300mD+ |
+| Luglio | **Eiger Ultra Trail E51 · 51K · Grindelwald CH** | ✅ | 50K WS | +2 | **A-race principale** · 3450mD+ · loop |
 | Settembre | Maratona Alpina GES Schio 42K | ❌ | — | 0 | Non-competitiva · sentimento |
 | Novembre | Puglia 100K Le Maioliche 85K | ✅ | 100K | +3 | **A-race autunno** |
 
@@ -110,12 +111,12 @@ fare 55K comprometterebbe entrambe le gare. Il 24K è un long trail con la fidan
 
 | Anno | Gara principale | Altre gare | WS Stones |
 |---|---|---|---|
-| 2027 | **Monte Rosa 82K** (lug) · **Puglia 100K** (nov) | DBT 24K · Malcesine 52K · Maratona Alpina | +6 → tot 6 |
+| 2027 | **Eiger E51 51K** (lug) | DBT 24K · Malcesine 52K · Maratona Alpina | +2 → tot 2 |
 | 2028 | **LUT 80K garantita** (giu) | Lessinia LR o altra WS | +3 → tot 9 |
 | 2029 | 2 gare WS 100K | tbd | +6 → tot 15 |
 | 2030 | **LUT 120K** → INDEX 100M 🏆 | — | +5 → tot 20 |
-| 2031 | **Val d'Aran Major** + **Grossglockner 110K** | — | +11 → tot 31 |
-| **2032** | **UTMB Mont-Blanc · età 40** | — | lotteria 31 stones |
+| 2031 | **Val d'Aran Major 100M** + **Grossglockner 110K** | — | +8+4=+12 → tot **28** |
+| **2032** | **UTMB Mont-Blanc · età 40** | — | lotteria **28 stones** · ~55-58% |
 
 ---
 
@@ -257,9 +258,9 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S4 | 15 km | 500m | **Primo long trail · domenica 22 set** |
 | S5 | 18 km | 700m | |
 | S6 | 21 km | 900m | |
-| S7 | 26 km | 1200m | ≈75% Sciamano ✅ |
+| S7 | 26 km | 1200m | ≈75% Cinghiale ✅ |
 | S8 R | 14 km | 500m | Scarico |
-| S9 | **GARA 35K** | **1789m** | **Trail Sciamano 31 ott** |
+| S9 | **GARA 35K** | **2301m** | **Trail del Cinghiale 30-31 ott** |
 | S10 R | 18 km | 700m | Recovery |
 | S11 | 22 km | 900m | |
 | S12 | 25 km | 1000m | |
@@ -301,7 +302,7 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S43 PICCO2 | **40 km** | **3200m** | **25 km** | **1400m** | **65 km / 4600m** | **79% Monte Rosa ✅** |
 | S44 R | 22 km | 1000m | 13 km | 500m | 35 km | Scarico |
 | S45 taper | 18 km | 800m | — | — | solo sab | Taper |
-| **S46** | **MONTE ROSA 82K** | **6300m** 🏔️ | | | | |
+| **S46** | **EIGER E51 51K** | **3450m** 🏔️ | | | | |
 
 ---
 
@@ -477,7 +478,7 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 - S22-44: Specific Period (feb–lug 2027) — back-to-back + Zone 3-4 + hill sprints
   → S31: DBT 24K (C-race) · S35: Malcesine 52K (B-race, Index refresh)
   → S43: PICCO 2 (b2b 40+25=65 km) · S45: Taper
-- S46: MONTE ROSA 82K 🏆 A-RACE luglio 2027
+- S46: EIGER E51 51K 🏆 A-RACE luglio 2027
 - S47-60: Rebuild + prep Puglia
   → S54: Maratona Alpina GES Schio (sentimento)
 - S61: Taper pre-Puglia
@@ -495,7 +496,7 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 | S6 | 33 | B | |
 | S7 | 36 | B | Test AeT #2 (stesso percorso settembre · confronta passo) |
 | S8 | 20 | R | Scarico |
-| S9 | 38 | G | **C-RACE Trail Sciamano 35K/1789mD+ 31 ott** |
+| S9 | 38 | G | **C-RACE Trail del Cinghiale 35K/2301mD+ 30-31 ott (Palazzuolo sul Senio FI)** |
 | S10 | 25 | R | Recovery post-gara |
 | S11 | 44 | B | Piano riprende normale |
 | S12 | 48 | B | |
@@ -532,7 +533,7 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 | S43 | 90 | S | **PICCO 2** · b2b sab 40 km + dom 25 km = **65 km** 🏔️ |
 | S44 | 50 | R | Scarico |
 | S45 | 35 | T | Taper 1 |
-| S46 | 90 | G | **MONTE ROSA TRAIL 82K/6300mD+ 🏆 A-RACE 2027 (15-18 lug)** |
+| S46 | 55 | G | **EIGER E51 51K/3450mD+ 🏆 A-RACE 2027 (lug) · Grindelwald** |
 | S47 | 25 | R | Recovery post-Monte Rosa |
 | S48 | 52 | B | Rebuild per Puglia |
 | S49 | 60 | B | |
@@ -542,12 +543,6 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 | S53 | 68 | B | |
 | S54 | 28 | G | **Maratona Alpina GES Schio** · non-competitiva (metà set) |
 | S55 | 58 | B | |
-| S56 | 65 | B | |
-| S57 | 40 | R | Scarico |
-| S58 | 62 | B | |
-| S59 | 68 | B | |
-| S60 | 38 | R | Scarico |
-| S61 | 50 | T | Taper pre-Puglia |
 | S62 | 87 | G | **PUGLIA 100K Le Maioliche 85K/2000mD+ 🏆 A-RACE autunno 2027 (nov)** |
 
 **Marker:**
@@ -555,7 +550,7 @@ S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
 S9: G — Trail Sciamano 35K (C-race) · S10: R
 S7: Test AeT #2 · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
-S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — MONTE ROSA 82K 🏆 A-RACE luglio 2027
+S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
 S54: G — Maratona Alpina GES Schio (sentimento) · S62: G — PUGLIA 100K 🏆 A-RACE autunno
 
 ---
@@ -595,8 +590,9 @@ Verdetto in una frase. Max 3 cose da cambiare. Se va bene, lo dice.
 Queste non sono cose da élite — sono requisiti base per finire una ultra.
 Il giorno della gara non è il momento di testare niente.
 
-**Gare A 2027:** Monte Rosa 82K (luglio) · Puglia 100K (novembre)
-**Gara B 2027:** Malcesine 52K (maggio) — terreno di test per gear e nutrizione
+**Gare A 2027:** Eiger E51 51K (luglio · Grindelwald) — unica WS dell'anno
+**Gara B 2027:** Malcesine 52K (maggio) — Index refresh + terreno di test
+**C-races 2027:** DBT 24K (aprile) · Maratona Alpina GES Schio (settembre)
 
 ### Gear training (da ottobre in poi)
 
@@ -640,34 +636,29 @@ Target: perdita < 3% peso corporeo (max 2.3 kg su 78 kg).
 | S29 (mar) | Tiepido ~18°C | 2h long trail | Pre-caldo |
 | S33 (apr) | Caldo ~25°C | 2h long trail | Condizioni simulate estate |
 | S35 Malcesine | Gara reale | Pesa pre/post | Prima verifica in gara |
-| S46 Monte Rosa | Gara reale | Pesa pre/post | Verifica condizioni luglio |
+| S46 Eiger E51 | Gara reale | Pesa pre/post | Verifica condizioni luglio in quota |
 
 ### Gestione del caldo (giugno 2027, pre-Monte Rosa)
 
-Monte Rosa è a luglio — il caldo è rilevante nelle sezioni a bassa quota.
+L'Eiger E51 rimane quasi interamente sopra i 1000m (min ~900m) — caldo gestibile.
+Nessuna sezione a bassa quota come il Monte Rosa WalserWaeg (min 337m).
 L'acclimatamento richiede 10-14 giorni di esposizione continuativa.
 
-**Settimane S37-S42 (giugno 2027):**
-2-3 uscite easy nelle ore più calde (11:00-14:00). Cappellino, maglietta
-bagnata al collo, bevi ogni 15-20 min anche senza sete.
-
-**Settimana S44 (2 settimane prima Monte Rosa):**
-3-4 sessioni brevi di sauna (15-20 min) come alternativa/aggiunta.
-
-Puglia è in novembre — temperature miti. Nessuna acclimatazione al caldo.
+**Settimane S37-S42 (giugno 2027):** acclimatazione al caldo per prudenza —
+2-3 uscite easy nelle ore più calde (11:00-14:00). Non strettamente necessario
+per l'Eiger (quota alta) ma utile per la LUT 80K 2028 (giugno, Cortina).
 
 ### Altitudine
 
-**Monte Rosa WalserWaeg 82K:** percorre quote elevate (fino a 3000m+).
-Allenarsi a Verona/Lessinia (600-1400m) non prepara a quelle quote.
+**Eiger E51 51K:** Grindelwald area · quota max ~2.680m, zone alpine.
+Allenarsi a Verona/Lessinia (600-1400m) non prepara alle sezioni più alte.
 In quota: VO2max cala, FC sale a parità di sforzo.
 
 **Prevedere 2-3 uscite sopra i 2000m nelle settimane S37-S42 (giugno 2027).**
 Mete raggiungibili: Stelvio, Tonale, Rolle, Pordoi, Passo Giau.
 Bastano 2-3h a ritmo facile per l'adattamento.
 
-**Malcesine 52K (S35):** Monte Baldo ~2000m — buona preparazione intermedia.
-Testa la risposta della FC in quota già qui.
+**Malcesine 52K (S35):** Monte Baldo ~2000m — preparazione intermedia per quota. ✅
 
 ### Integrazione nel piano per blocco
 
@@ -677,23 +668,23 @@ Testa la risposta della FC in quota già qui.
 | Base S4-21 | S7 fresco | 30-50g | — |
 | Specifico S22-35 | S29 tiepido · S35 Malcesine | 50-60g | — |
 | Specifico S36-45 | S33 caldo | 60-80g | S37-42: ore 11-14 + 2000m |
-| Monte Rosa S46 | Pesa pre/post | in gara | — |
+| Eiger E51 S46 | Pesa pre/post | in gara | — |
 | Rebuild S47-61 | — | 50-60g | — |
-| Puglia S62 | Pesa pre/post | 60-80g | — |
+
 
 ### Da definire man mano
 
-**Strategia di gara Monte Rosa (da costruire aprile-maggio 2027)**
-- Orario partenza ufficiale da verificare → impatto su gestione pila/notturna
-- Pacing per sezione · FC target, non passo · mai spingere prima km 50
+**Strategia di gara Eiger E51 (da costruire aprile-maggio 2027)**
+- Verificare orario partenza ufficiale e profilo altimetrico preciso
+- Pacing per sezione · FC target, non passo · mai spingere nei primi 20 km
+- Loop da Grindelwald: logistica semplice, drop bag unica
 - Da costruire dopo Malcesine 52K con dati di forma reale
 
-**Drop bag e ristori Monte Rosa (da definire maggio 2027)**
-- Punti ristoro del percorso · cosa tenere nella drop bag
+**Drop bag e ristori Eiger E51 (da definire aprile 2027)**
+- L'E51 è un loop da Grindelwald — verifica punti ristoro sul percorso
 - Testare routine ristoro a Malcesine (max 5 min per ristoro)
 
-**Strategia Puglia 100K (da definire settembre 2027)**
-- Post-Monte Rosa, con dati di forma aggiornati
+
 ---
 
 ## Gerarchia Sessioni — Cosa Saltare se Non Hai Tempo
