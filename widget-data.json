@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-19T14:14:32",
-  "phase_label": "Restart · sett. 3/3",
+  "generated_at": "2026-09-21T08:34:29",
+  "phase_label": "Base · sett. 1/9",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-20",
-    "day_label": "Dom",
-    "type": "bike",
-    "label": "Bici 30 min",
-    "extra": "Solo recupero"
+    "date": "2026-09-22",
+    "day_label": "Mar",
+    "type": "run",
+    "label": "8 km easy",
+    "extra": "FC < AeT misurata"
   },
   "key_workout": {
     "date": "2026-09-26",
@@ -17,12 +17,12 @@
     "extra": "~400m D+ · FC conversazione · bastoncini · benvenuto sentiero"
   },
   "week": {
-    "planned_km": 14,
-    "actual_km": 23.7
+    "planned_km": 22,
+    "actual_km": 0.0
   },
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL SCIAMANO 35K",
-    "days_until": 42
+    "days_until": 40
   }
 }
