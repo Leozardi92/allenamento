@@ -418,8 +418,9 @@ Non serve essere rapidi — allena il pattern neurale e i quadricipiti (catena a
 |---|---|---|---|---|
 | AeT | 11/09/2026 | **147 bpm** | Ventilatorio (respiro nasale) | Passo ~6:50-7:00/km |
 | AnT | 15/09/2026 | **159 bpm** | 30 min all-out · Sommacampagna | Passo 5:17/km · Max 166 bpm |
-| AeT #2 | S8 (ott 2026) | — | Ventilatorio | Stessa salita/percorso |
-| AnT #2 | S24 (gen 2027) | — | 30 min all-out | Confronta con baseline |
+| AeT #2 | S7 (ott 2026) | — | Ventilatorio | Stessa salita/percorso · SETTIMANA PIENA, non scarico |
+| AeT #3 | S16 (dic 2026) | — | Ventilatorio | Progressione passo · SETTIMANA PIENA |
+| AnT #2 | S24 (gen 2027) | — | 30 min all-out | Confronta baseline · SETTIMANA PIENA |
 
 **Protocollo Test AnT (30 min all-out — Uphill Athlete):**
 - Riposo: almeno 3 giorni da sforzi intensi
@@ -492,7 +493,7 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 | S4 | 22 | B | **Base inizia** · Hill Sprints · 22 set |
 | S5 | 30 | B | |
 | S6 | 33 | B | |
-| S7 | 36 | B | |
+| S7 | 36 | B | Test AeT #2 (stesso percorso settembre · confronta passo) |
 | S8 | 20 | R | Scarico |
 | S9 | 38 | G | **C-RACE Trail Sciamano 35K/1789mD+ 31 ott** |
 | S10 | 25 | R | Recovery post-gara |
@@ -501,16 +502,16 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 | S13 | 26 | R | Scarico |
 | S14 | 52 | B | |
 | S15 | 57 | B | |
-| S16 | 62 | B | |
-| S17 | 34 | R | Scarico + Test AeT |
+| S16 | 62 | B | Test AeT #3 · confronta progressione passo |
+| S17 | 34 | R | Scarico |
 | S18 | 64 | B | |
 | S19 | 70 | B | |
 | S20 | 76 | B | |
 | S21 | 42 | R | Scarico |
 | S22 | 78 | S | **Specifico inizia** · back-to-back dom |
 | S23 | 82 | S | |
-| S24 | 86 | S | |
-| S25 | 48 | R | Scarico + Test AnT |
+| S24 | 86 | S | Test AnT #2 · confronta con baseline settembre |
+| S25 | 48 | R | Scarico |
 | S26 | 80 | S | |
 | S27 | 84 | S | |
 | S28 | 88 | S | **PICCO 1** |
@@ -552,7 +553,7 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 **Marker:**
 S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
 S9: G — Trail Sciamano 35K (C-race) · S10: R
-S17: Test AeT + R · S25: Test AnT + R
+S7: Test AeT #2 · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
 S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — MONTE ROSA 82K 🏆 A-RACE luglio 2027
 S54: G — Maratona Alpina GES Schio (sentimento) · S62: G — PUGLIA 100K 🏆 A-RACE autunno
