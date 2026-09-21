@@ -22,15 +22,17 @@ Dashboard: https://leozardi92.github.io/allenamento/
 
 | Timeframe | Obiettivo |
 |---|---|
-| Settembre 2026 | Restart graduale · Test AeT/AnT · Lotteria Lavaredo 80K 2027 |
-| Giugno 2027 | **Lavaredo Ultra Trail 80K** (o Eiger E101 come backup) |
-| Settembre 2027 | Maratona Alpina GES Schio (sentiment) |
-| 2028-2029 | Gare WS 100K · accumulo Running Stones · Adamello o Ultra Puglia |
-| 2029-2030 | **Lavaredo Ultra Trail 120K** |
-| 2030-2031 | **UTMB Mont-Blanc** |
+| Set 2026 | Restart · Test AeT/AnT ✅ · Lotteria Lavaredo 2027 (non estratto) |
+| Lug 2027 | **Monte Rosa Trail 82K** · A-race principale 2027 |
+| Nov 2027 | **Puglia 100K** · A-race autunnale 2027 |
+| Giu 2028 | **Lavaredo 80K garantita** (2 anni non estratto → priority registration) |
+| 2029 | 2 gare WS 100K · accumulo stones |
+| Giu 2030 | **Lavaredo 120K** → Index 100M sbloccato · obiettivo fisico |
+| 2031 | Val d'Aran Major + Grossglockner · portare stones a 31 |
+| Ago **2032** | **UTMB Mont-Blanc · età 40** · ~65-67% probabilità con 31 stones |
 
 **UTMB Index:** 504 generale · **503 categoria 50K** · Scadenza: 1 agosto 2027
-**Running Stones:** 0
+**Running Stones:** 0 → target 31 entro 2031
 **Gare profilo:** Tzimbar Race 2025 · Dolomiti Beer Trail 2023
 
 ---
@@ -87,49 +89,33 @@ Probabilità estrazione 2032 con 31 stones: **~65-67%**
 DBT 24K scelta rispetto al 55K per la prossimità con Malcesine (4 settimane) —
 fare 55K comprometterebbe entrambe le gare. Il 24K è un long trail con la fidanzata.
 
-### 2027 — Anno chiave
-
-**Lavaredo Ultra Trail 80K · 26 giugno 2027**
-- 80km · 4600m D+ · Cortina d'Ampezzo · UTMB World Series
-- 3 Running Stones + UTMB Index 100K
-- Accesso: lotteria (tentato solo 2025, nessun diritto garantito)
-- Pre-registrazione: settembre 2026
-- Requisito: UTMB Index 50K valido (scade agosto 2027, gara a giugno → ok)
-
-**Eiger Ultra Trail E101 · 17 luglio 2027 — BACKUP**
-- ~100km · 6500m D+ · Grindelwald, Svizzera · UTMB World Series
-- Accesso: NO lotteria — Priority Registration con Index valido
-- Leonardo ha Index 50K 503 valido
-
-**Ultrabericus Trail Vicenza · marzo 2027**
-- **45km** (non 65km) · UTMB Index 50K · 30 min da Verona
-
-**ASICS Malcesine Baldo Trail 52K · inizio maggio 2027**
-- 60km · ~3500m D+ · simulazione Lavaredo · gestire conservativo
-
 ### Gare di sentimento
 
-**Maratona Alpina GES Schio · settembre**
-- 42km · 3150m D+ · Schio → Pian delle Fugazze · non competitiva
-- Prima edizione utile: settembre 2027
+**Maratona Alpina GES Schio · settembre 2027**
+- 42km · 3150m D+ · Schio → Pian delle Fugazze · non competitiva · zero costo
+- Piano: settembre 2027 (S54)
 
-**Lessinia Legend Run · settembre**
-- Negli anni senza Lavaredo a giugno
+**DBT Dolomiti Beer Trail 24K · aprile 2027**
+- Con la fidanzata · gara di cuore · C-race train through
+- Distanza 24K scelta invece del 55K per la prossimità con Malcesine (4 sett dopo)
 
-### Gare opzionali future
+### Gare future da valutare anno per anno
 
-- Adamello Ultra Trail: 2028-2029
-- Ultra Puglia: 2029-2030
+- **Lessinia Legend Run** (settembre, vicino Verona) — Run 45K o LUX 68K
+- **Chianti Marathon Trail** (marzo, Toscana) — 46K, WS 50K, +2 stones
+- **Adamello Ultra Trail** — 2028-2029
+- **Dolomiti Beer Trail 55K** — dal 2028 in poi
 
-### Roadmap pluriennale
+### Roadmap pluriennale aggiornata → UTMB 2032
 
-| Anno | Gara principale | Altre gare |
-|---|---|---|
-| 2027 | Lavaredo 80K (o Eiger E101) | Ultrabericus 45K · Malcesine Baldo Trail 52K · Maratona Alpina |
-| 2028 | Gara WS 100K | Lessinia o Maratona Alpina · Adamello |
-| 2029 | Lavaredo 120K o WS 100M | Ultra Puglia |
-| 2030 | Gara WS 100M | — |
-| 2031 | **UTMB Mont-Blanc** | — |
+| Anno | Gara principale | Altre gare | WS Stones |
+|---|---|---|---|
+| 2027 | **Monte Rosa 82K** (lug) · **Puglia 100K** (nov) | DBT 24K · Malcesine 52K · Maratona Alpina | +6 → tot 6 |
+| 2028 | **LUT 80K garantita** (giu) | Lessinia LR o altra WS | +3 → tot 9 |
+| 2029 | 2 gare WS 100K | tbd | +6 → tot 15 |
+| 2030 | **LUT 120K** → INDEX 100M 🏆 | — | +5 → tot 20 |
+| 2031 | **Val d'Aran Major** + **Grossglockner 110K** | — | +11 → tot 31 |
+| **2032** | **UTMB Mont-Blanc · età 40** | — | lotteria 31 stones |
 
 ---
 
@@ -233,7 +219,7 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - No ME, no Zone 3-4
 - Giovedì e domenica: entrambi riposo
 
-**Settimana T (Taper — S39-40):**
+**Settimana T (Taper — S45 pre-Monte Rosa · S61 pre-Puglia):**
 - -25% volume rispetto alla settimana precedente
 - Mantieni qualità ma riduci volume
 - Niente nuovi stimoli
@@ -480,26 +466,21 @@ Leggi ultimo file in garmin/daily/ su Google Drive.
 
 ---
 
-## Piano Allenamento — 40 Settimane
+## Piano Allenamento — 62 Settimane (set 2026 → nov 2027)
 
-**Stato porting nuova struttura ("il libro" — 4-5gg/sett, tipi B/S/R/T,
-hill sprints, ME workout) — aggiornato 07/09/2026:** Settimane 1-4
-(Restart) restano nel formato precedente, non toccate dalla nuova
-struttura. Settimane 5-8 (Base) **portate** nel dettaglio giorno-per-giorno
-della dashboard (`dashboard_template.html`), coerenti con quanto scritto
-qui sotto e in `prossimi-allenamenti.md`. **Settimane 9-40 non ancora
-scritte nel nuovo formato** — quando Claude Chat le prepara (Aerobico,
-Specifico, Picco, Taper), Claude Code le porta nella dashboard allo stesso
-modo.
+**Struttura secondo Training for the Uphill Athlete (House & Johnston) · Categoria 1**
 
-**Fasi:**
-- S1-3: Restart set 2026 — max 8km (chiuso 15/09/2026)
-- S4: Prima settimana Base (22-27 set 2026)
-- S5-12: Base ott-nov 2026 — 30-48 km/sett
-- S13-20: Aerobico dic-gen 2027 — 45-60 km/sett
-- S21-28: Specifico feb-mar 2027 — 55-70 km equiv
-- S29-36: Picco apr-mag 2027 — 65-80 km equiv
-- S37-40: Taper+Gara giu 2027
+**Fasi (nomenclatura libro):**
+- S1-3: Transizione/Restart (set 2026) — test soglie ✅
+- S4-21: Base Period (ott 2026 – gen 2027) — volume + hill sprints + ME + forza
+- S22-44: Specific Period (feb–lug 2027) — back-to-back + Zone 3-4 + hill sprints
+  → S31: DBT 24K (C-race) · S35: Malcesine 52K (B-race, Index refresh)
+  → S43: PICCO 2 (b2b 40+25=65 km) · S45: Taper
+- S46: MONTE ROSA 82K 🏆 A-RACE luglio 2027
+- S47-60: Rebuild + prep Puglia
+  → S54: Maratona Alpina GES Schio (sentimento)
+- S61: Taper pre-Puglia
+- S62: PUGLIA 100K 🏆 A-RACE autunno 2027
 
 **Km pianificati — 62 settimane · A-race: Monte Rosa 82K (S46, luglio) + Puglia 100K (S62, novembre):**
 
@@ -573,7 +554,7 @@ S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
 S9: G — Trail Sciamano 35K (C-race) · S10: R
 S17: Test AeT + R · S25: Test AnT + R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
-S39: PICCO 2 (88 km) · S45: Taper · S46: G — MONTE ROSA 82K 🏆 A-RACE luglio 2027
+S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — MONTE ROSA 82K 🏆 A-RACE luglio 2027
 S54: G — Maratona Alpina GES Schio (sentimento) · S62: G — PUGLIA 100K 🏆 A-RACE autunno
 
 ---
@@ -605,80 +586,6 @@ Card collassabile per ogni blocco. Generata da Claude Code a fine blocco.
 Analisi: easy-day discipline (HR/sec) · hard-day separation · volume sett/sett · RHR trend.
 Verdetto in una frase. Max 3 cose da cambiare. Se va bene, lo dice.
 
-
----
-
-## Percorso UTMB — Strategia Running Stones
-
-### Come funziona l'estrazione UTMB
-
-Servono due cose per entrare nella lotteria:
-- **UTMB Index 100M valido** (gara 100M completata negli ultimi 24 mesi)
-- **Running Stones** — più ne hai, più alta è la probabilità
-
-Stones per gara WS completata: 20K=1 · 50K=2 · **100K=3** · **100M=4**
-Non scadono mai. Serve almeno 1 stone negli ultimi 24 mesi per partecipare alla lotteria.
-
-### Probabilità di estrazione stimate
-
-| Stones | Probabilità |
-|---|---|
-| 1-3 | ~5-8% |
-| 4-7 | ~10-15% |
-| 8-12 | ~20-30% |
-| 13-17 | ~35-50% |
-| 18-22 | ~60-75% |
-| 23+ | ~80%+ |
-
-Target: **18-20 stones** per probabilità >60%.
-
-### Roadmap stones verso UTMB 2030-31
-
-| Anno | Gara/e | Stones | Totale | UTMB Index | Note |
-|---|---|---|---|---|---|
-| 2026 | — | 0 | 0 | 50K (scade ago 2027) | Anno di base |
-| 2027 | Lavaredo 80K | +3 | **3** | 100K (valido 2029) | Prima WS race |
-| 2028 | 2 gare WS 100K | +6 | **9** | 100K refresh | Accumulo serio |
-| 2029 | Lavaredo 120K + 1 WS 100K | +4+3 | **16** | **100M** (valido 2031) | Index 100M sbloccato |
-| 2030 | 1 gara WS 100M o 100K | +4 | **20** | 100M refresh | Lotteria con 20 stones |
-| **2031** | **UTMB** | — | 20 | 100M valido | ~65-75% estrazione |
-
-Se non estratto 2031: altra gara WS → 23-24 stones → **2032: ~80%+**
-
-### Punti critici
-
-- **2029 è l'anno chiave:** Lavaredo 120K dà il 100M Index — senza quello non si entra in lotteria
-- **2028 è l'anno di costruzione:** da 3 a 9 stones, base per la lotteria
-- **Backup Lavaredo 80K 2027:** Trail Verbier St-Bernard X-Traversée (77km · 5000m D+ · WS · 9-11 lug 2027)
-  → stesso profilo di gara, 2 settimane dopo, logistica valutare (Verbier ~5h da Verona)
-  → alternativa più vicina: cercare gara italiana ~80K non WS per esperienza pura
-
----
-
-## Specifica Tab UTMB — Dashboard
-
-Tab aggiuntiva "UTMB" nella dashboard (quinta tab dopo Oggi/Forma/Piano/Verdict).
-
-**1. Barra progresso stones**
-Running Stones accumulate / 20 target (%) con colore progressivo verde
-
-**2. UTMB Index tracker**
-Categoria attuale (50K → 100K → 100M) con data scadenza e prossima gara per refresh
-
-**3. Timeline percorso**
-Linea temporale 2026→2031 con:
-- Anno / Gara / Stones guadagnate / Totale progressivo
-- Evidenzia anno corrente
-- Segna gare future come placeholder
-
-**4. Probabilità di estrazione stimata**
-Gauge o barra con % basata sulle stones attuali (tabella probabilità sopra)
-Label: "Con X stones: ~Y% di probabilità di estrazione UTMB"
-
-**5. Stato attuale**
-- UTMB Index: 503 (50K) — scade agosto 2027
-- Running Stones: 0
-- Prossima gara WS: Lavaredo 80K giugno 2027
 
 ---
 
@@ -764,7 +671,7 @@ Annota sempre: temperatura, umidità, durata, km, D+.
 | S8 (ott) | Fresco ~15°C | 2h long trail | Sforzo prolungato |
 | S29 (mar) | Tiepido ~18°C | 2h long trail | Pre-caldo |
 | S33 (apr) | Caldo ~25°C | 2h long trail | Condizioni gara simulate |
-| S35 GR60 | Gara reale | Pesa pre/post gara | Verifica strategia |
+| S35 Malcesine | Gara reale | Pesa pre/post gara | Verifica strategia idratazione |
 
 **Target:** perdere meno del 3% del peso corporeo (per Leonardo: max 2.3 kg su 78 kg).
 Se perdi di più → aumenta fluidi e sodio nella sessione successiva.
@@ -843,8 +750,6 @@ Da affrontare insieme dopo l'Ultrabericus (marzo 2027) e il Malcesine Baldo Trai
 - Routine automatica al ristoro: mangia, bevi, riparti — senza indecisioni
 - Testare la routine ai ristori già durante il Malcesine Baldo Trail 52K
 Da affrontare insieme 4-6 settimane prima della Lavaredo.
-
----
 
 ---
 
