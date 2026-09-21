@@ -255,61 +255,67 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 
 ## Progressione Long Trail — da S4 a S46 (Monte Rosa)
 
-Il long trail del sabato parte da 15 km (S4) e arriva al picco back-to-back di
-**40+25 km = 65 km** (S43) — 74% del volume settimanale, dentro il range 60-80% del libro.
+**Tre checkpoint al 75%:**
+- Pre-Sciamano (S7): sabato **26 km / 1200m D+** = 74% di 35K ✅
+- Pre-Malcesine (S33): sabato **39 km / 2400m D+** = 75% di 52K ✅
+- Pre-Monte Rosa (S43): b2b **40+25=65 km / 4600m D+** = 79% di 82K ✅
+
+Il long trail del sabato parte da **15 km / 500m D+ (S4, domenica 22 set)**
+e arriva al picco back-to-back di 40+25 km = 65 km (S43).
+Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 
 **BASE (S4-S21): solo sabato**
 
-| Sett | Sab | Note |
-|---|---|---|
-| S4 | 15 km | Primo long trail Base |
-| S5 | 18 km | |
-| S6 | 21 km | |
-| S7 | 24 km | |
-| S8 R | 13 km | Scarico |
-| S9 | **Gara 35K** | Trail Sciamano C-race |
-| S10 R | 18 km | Recovery |
-| S11 | 22 km | |
-| S12 | 25 km | |
-| S13 R | 14 km | Scarico |
-| S14 | 26 km | |
-| S15 | 28 km | |
-| S16 | 30 km | |
-| S17 R | 17 km | Scarico |
-| S18 | 30 km | |
-| S19 | 32 km | |
-| S20 | 34 km | |
-| S21 R | 20 km | Scarico |
+| Sett | Sab km | D+ | Note |
+|---|---|---|---|
+| S4 | 15 km | 500m | **Primo long trail · domenica 22 set** |
+| S5 | 18 km | 700m | |
+| S6 | 21 km | 900m | |
+| S7 | 26 km | 1200m | ≈75% Sciamano ✅ |
+| S8 R | 14 km | 500m | Scarico |
+| S9 | **GARA 35K** | **1789m** | **Trail Sciamano 31 ott** |
+| S10 R | 18 km | 700m | Recovery |
+| S11 | 22 km | 900m | |
+| S12 | 25 km | 1000m | |
+| S13 R | 14 km | 500m | Scarico |
+| S14 | 26 km | 1000m | |
+| S15 | 28 km | 1200m | |
+| S16 | 30 km | 1400m | |
+| S17 R | 17 km | 700m | Scarico + Test AeT |
+| S18 | 30 km | 1400m | |
+| S19 | 32 km | 1600m | |
+| S20 | 34 km | 1800m | |
+| S21 R | 20 km | 800m | Scarico |
 
 **SPECIFICO (S22-S45): back-to-back sab + dom**
 
-| Sett | Sab | Dom | B2B tot | % vol sett | Note |
-|---|---|---|---|---|---|
-| S22 | 28 km | 14 km | 42 km | 54% | Primo b2b |
-| S23 | 30 km | 16 km | 46 km | 56% | |
-| S24 | 33 km | 18 km | 51 km | 59% | |
-| S25 R | 18 km | 10 km | 28 km | — | Scarico |
-| S26 | 33 km | 18 km | 51 km | 64% | |
-| S27 | 35 km | 20 km | 55 km | 65% | |
-| S28 PICCO 1 | 37 km | 22 km | **59 km** | 67% | |
-| S29 R | 22 km | 12 km | 34 km | — | Scarico |
-| S30 | 33 km | 18 km | 51 km | 68% | |
-| S31 | **DBT 24K** | — | C-race | — | Train through |
-| S32 | 30 km | 16 km | 46 km | 68% | |
-| S33 | 34 km | 19 km | 53 km | 65% | |
-| S34 taper | **20 km solo** | — | — | — | No b2b pre-Malcesine |
-| S35 | **Malcesine 52K** | — | B-race | — | |
-| S36 R | 18 km solo | — | — | — | Recovery |
-| S37 | 30 km | 17 km | 47 km | 65% | |
-| S38 | 35 km | 20 km | 55 km | 69% | |
-| S39 | 38 km | 22 km | 60 km | 68% | Picco intermedio |
-| S40 R | 22 km | 13 km | 35 km | — | Scarico |
-| S41 | 36 km | 20 km | 56 km | 68% | |
-| S42 | 38 km | 22 km | 60 km | 70% | |
-| S43 **PICCO 2** | **40 km** | **25 km** | **65 km** | 74% ✅ | Max back-to-back |
-| S44 R | 22 km | 13 km | 35 km | — | Scarico |
-| S45 taper | 18 km solo | — | — | — | Taper pre-Monte Rosa |
-| **S46** | **MONTE ROSA 82K** 🏔️ | | | | |
+| Sett | Sab | D+ sab | Dom | D+ dom | B2B tot | Note |
+|---|---|---|---|---|---|---|
+| S22 | 28 km | 1200m | 14 km | 500m | 42 km | Primo b2b |
+| S23 | 30 km | 1400m | 16 km | 600m | 46 km | |
+| S24 | 33 km | 1600m | 18 km | 700m | 51 km | |
+| S25 R | 18 km | 700m | 10 km | 400m | 28 km | Scarico |
+| S26 | 33 km | 1800m | 18 km | 700m | 51 km | |
+| S27 | 35 km | 2000m | 20 km | 800m | 55 km | |
+| S28 PICCO1 | 37 km | 2200m | 22 km | 900m | **59 km** | |
+| S29 R | 22 km | 900m | 12 km | 500m | 34 km | Scarico |
+| S30 | 33 km | 2000m | 18 km | 800m | 51 km | |
+| S31 | **DBT 24K** | 1400m | — | — | C-race | Train through |
+| S32 | 30 km | 1800m | 16 km | 700m | 46 km | |
+| S33 | **39 km** | **2400m** | 19 km | 900m | 58 km | **75% Malcesine ✅** |
+| S34 taper | 20 km | 900m | — | — | solo sab | No b2b pre-gara |
+| S35 | **GARA 52K** | **3541m** | — | — | **Malcesine** | |
+| S36 R | 18 km | 700m | — | — | solo sab | Recovery |
+| S37 | 30 km | 2000m | 17 km | 800m | 47 km | |
+| S38 | 35 km | 2400m | 20 km | 900m | 55 km | |
+| S39 | 38 km | 2800m | 22 km | 1100m | 60 km | Picco intermedio |
+| S40 R | 22 km | 1000m | 13 km | 500m | 35 km | Scarico |
+| S41 | 36 km | 2800m | 20 km | 1100m | 56 km | |
+| S42 | 38 km | 3000m | 22 km | 1200m | 60 km | |
+| S43 PICCO2 | **40 km** | **3200m** | **25 km** | **1400m** | **65 km / 4600m** | **79% Monte Rosa ✅** |
+| S44 R | 22 km | 1000m | 13 km | 500m | 35 km | Scarico |
+| S45 taper | 18 km | 800m | — | — | solo sab | Taper |
+| **S46** | **MONTE ROSA 82K** | **6300m** 🏔️ | | | | |
 
 ---
 
