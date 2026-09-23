@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-22T12:20:03",
+  "generated_at": "2026-09-23T10:45:09",
   "phase_label": "Base Period · sett. 1/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-22",
-    "day_label": "Mar",
-    "type": "run",
-    "label": "8 km easy",
-    "extra": "FC < AeT misurata"
+    "date": "2026-09-23",
+    "day_label": "Mer",
+    "type": "gym",
+    "label": "💪 Giorno 2",
+    "extra": "Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS"
   },
   "key_workout": {
     "date": "2026-09-26",
@@ -18,11 +18,11 @@
   },
   "week": {
     "planned_km": 22,
-    "actual_km": 0.0
+    "actual_km": 8.2
   },
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL SCIAMANO 35K",
-    "days_until": 39
+    "days_until": 38
   }
 }
