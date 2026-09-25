@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T10:45:07",
-  "phase_label": "Base Period · sett. 1/18",
+  "generated_at": "2026-09-25T11:27:16",
+  "phase_label": "Base · sett. 1/18",
   "plan_status": "active",
   "next_workout": {
     "date": "2026-09-25",
@@ -22,7 +22,7 @@
   },
   "next_race": {
     "date": "2026-10-31",
-    "label": "🏁 TRAIL SCIAMANO 35K",
+    "label": "🏁 TRAIL DEL CINGHIALE 35K",
     "days_until": 36
   }
 }
