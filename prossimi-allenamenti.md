@@ -161,7 +161,7 @@ Blocco: Base
 Tipo: forza
 Durata: 60 min
 Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate · ABS + Core #1: plank 3×45sec · bird-dog 3×10 per lato
-Stato: da importare
+Stato: ✅ importata (workout_id 1708926412, automatico il 25/09/2026)
 
 Data: 2026-10-01
 Blocco: Base
@@ -169,7 +169,7 @@ Tipo: corsa easy
 Distanza: 7 km
 FC target: < 141 bpm (Z1)
 Note: Easy Z1 · alla fine: 3×150m discesa veloce controllata (pick-up DH) · recupero salendo piano in 2 min
-Stato: da importare
+Stato: ✅ importata (workout_id 1708926420, automatico il 25/09/2026)
 
 Data: 2026-10-02
 Blocco: Base
@@ -177,7 +177,7 @@ Tipo: corsa qualità
 Durata: 45 min
 FC target: < 141 bpm cardiovascolare (la fatica sarà muscolare locale)
 Note: ME Workout #1 — zaino 5 kg · salita con 25-35% pendenza · cammina/corri su per 20 min continuativi · le gambe devono bruciare, il cuore no · Core #2 dopo: plank + crunch obliqui
-Stato: da importare
+Stato: ✅ importata (workout_id 1708926428, automatico il 25/09/2026)
 
 Data: 2026-10-03
 Blocco: Base
@@ -185,7 +185,7 @@ Tipo: long trail
 Distanza: 9 km
 FC target: < 141 bpm (Z1) · ultimi 15 min opzionali fino a 153 bpm (Z2)
 Note: Prima uscita trail con zaino gara + bastoncini · 400-500m D+ · mangia ogni 40-45 min (30-40g CHO/ora) · pesa prima e dopo (sweat test baseline)
-Stato: da importare
+Stato: ✅ importata (workout_id 1708926434, automatico il 25/09/2026)
 
 Data: 2026-10-04
 Blocco: Base
@@ -193,7 +193,7 @@ Tipo: hiking
 Durata: 60 min
 FC target: < 130 bpm
 Note: Recovery · alla fine: 3×150m discesa veloce (secondo DH pick-up della settimana)
-Stato: da importare
+Stato: ✅ importata (workout_id 1708926439, automatico il 25/09/2026)
 
 ---
 
