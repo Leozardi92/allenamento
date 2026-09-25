@@ -186,6 +186,17 @@
   .verdict-title { font-size: 14px; font-weight: 800; }
   .verdict-dates { font-size: 11px; color: var(--muted); margin-top: 2px; }
   .verdict-status { font-size: 10px; font-weight: 700; padding: 3px 9px; border-radius: 99px; white-space: nowrap; }
+  .verdict-card.has-body { cursor: pointer; }
+  .verdict-body { display: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 12.5px; line-height: 1.5; }
+  .verdict-card.open .verdict-body { display: block; }
+  .verdict-headline { font-size: 14px; font-weight: 800; margin-bottom: 6px; }
+  .verdict-body h4 { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 14px 0 6px; }
+  .verdict-body p { margin: 6px 0; }
+  .verdict-body ul { margin: 6px 0; padding-left: 18px; }
+  .verdict-body li { margin: 3px 0; }
+  .vtable { width: 100%; border-collapse: collapse; font-size: 11.5px; margin: 6px 0; }
+  .vtable th { text-align: left; color: var(--muted); font-weight: 700; padding: 4px 6px; border-bottom: 1px solid var(--border); }
+  .vtable td { padding: 5px 6px; border-bottom: 1px solid var(--border); vertical-align: top; }
 </style>
 </head>
 <body>
@@ -216,7 +227,7 @@
 <script>
 "use strict";
 
-var DATA = {"generated_at": "25/09/2026 10:45", "wellness": {"date": "2026-09-24", "rhr": 47, "bb": 95, "stress": 28, "tr": 54, "hrv": 73, "sleep_h": 6.3, "sleep_score": 78}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "06/07", "planned": null, "actual": 19.9, "is_current": false}, {"label": "13/07", "planned": null, "actual": 16.4, "is_current": false}, {"label": "20/07", "planned": null, "actual": 14.6, "is_current": false}, {"label": "27/07", "planned": null, "actual": 0.0, "is_current": false}, {"label": "03/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "10/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "17/08", "planned": null, "actual": 4.5, "is_current": false}, {"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 14.3, "is_current": false}, {"label": "07/09", "planned": 14, "actual": 17.3, "is_current": false}, {"label": "14/09", "planned": 14, "actual": 23.7, "is_current": false}, {"label": "21/09", "planned": 22, "actual": 17.2, "is_current": true}], "weekly_actual_km": [14.3, 17.3, 23.7, 17.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "20313661844", "name": "Evening Run", "sport_type": "Run", "start_local": "2026-09-24T18:31:08", "summary": {"distance": 8998.3, "moving_time": 3480, "elapsed_time": 3495, "elevation_gain": 124.0, "avg_speed": 2.586, "max_speed": 3.74, "relative_effort": 60.0, "total_calories": 659.0, "avg_cadence": 80.8, "kudos_count": 2, "achievement_count": 4, "pr_count": 1}, "polyline": "ytftGeoxbAEBCCCc@M_@Y]QgAKIOISUSGCGFgBAQEg@GKMIK[E{@AmADoDBm@AOYYK?SJc@?}@GuAEOCICCO@W?w@FcCCQ@e@KI[i@_@gAUoAO_@AWHW@w@AKCCGASBMm@@ShA_@\\Gt@@^Ap@SZCTETWZ{@Ta@DQBSAiBEgABe@C_AFe@E_@Sg@}@u@iAaB[USK_@GyC?w@I[G_@QgCqAg@Gk@Cm@MK@wAIS?c@C_@@g@CMFI@]CKBQAMBc@E]IWOMCKUy@]s@Uq@Yi@QE@WIo@ESM}@WYOKIKQ_BgB_C{Bi@Ym@OgBq@{@u@MQGEy@y@WSs@a@QGo@Ei@@UEqCeAOCKKg@Sc@Cc@BeA\\{@Pc@Lc@BWAs@YWAYBMBgA^u@BYHk@t@[X[Pk@RGP?LBHNRXZ`@j@Nj@NnAN~BHn@?l@F~@?^KR}A|AULILMb@[~AGx@?j@JdBERMT}@r@g@f@g@`@SH[V[`@]BIFYrASd@Of@GLOLgAfBKd@?p@CPO\\GDKBIH_@l@i@j@ODOJQVqA~AEHg@l@c@r@e@h@[d@MJc@Tc@JGPOLMFUDe@?CBg@BU?wAMKD_@b@OFSB[IOIa@_@KS[c@GQc@s@AGUg@e@uAMg@CGEAE@CB@ZEj@JbBGVOLU@_@MUCg@My@KUKs@Mc@MQCSDIHERArBBp@Fd@b@|ANv@j@|Bj@nCL`@JPZZr@ZPPFRB\\?j@?nCBVVBt@Bt@HjB`@jARp@PZFT@dARx@TjAN~@V^DXHPB|@Z|@Tb@Tr@Vn@PVJPD|Bz@H?PJrA`@`@Pd@N`Af@|@ZbAb@LDBAn@VTNTHh@\\ZLLAB@?JMjEAtAB`@HVHF@XBBL@bDOFC^?fBKlBGh@EF@d@AVEbAEhCCFCdBCh@EzEIlAGpDCd@Dd@LD?DQIu@BaAGsAHmDLaCH_@Ve@Fm@bAo@f@e@h@gATm@`A_BV[j@_AbBgDbA_Cd@{@RQj@Uj@_@p@_@RMTWNGHAVLv@p@ZZRN|@`Ax@p@l@t@z@r@JLLFTZxBhBZ^p@h@XPf@j@l@d@`AjAJDFATW\\aAXq@FKNBPT", "performance": {"average_heartrate": 140.7, "max_heartrate": 156.0, "average_cadence": 80.8, "calories": 659.0}, "hr_stream": {"time": [0, 34, 67, 103, 137, 172, 207, 242, 276, 312, 346, 382, 419, 454, 492, 536, 579, 620, 667, 715, 765, 810, 853, 896, 941, 983, 1022, 1059, 1094, 1128, 1160, 1193, 1228, 1261, 1296, 1325, 1362, 1400, 1434, 1465, 1496, 1529, 1562, 1595, 1634, 1670, 1708, 1742, 1775, 1810, 1846, 1879, 1909, 1939, 1968, 1997, 2028, 2056, 2084, 2110, 2140, 2172, 2205, 2238, 2272, 2307, 2342, 2377, 2412, 2445, 2480, 2514, 2549, 2601, 2635, 2673, 2709, 2745, 2781, 2816, 2852, 2887, 2922, 2957, 2990, 3024, 3058, 3092, 3127, 3161, 3195, 3230, 3264, 3296, 3329, 3362, 3395, 3428, 3461, 3495], "heart_rate": [80, 120, 130, 129, 130, 133, 131, 131, 137, 138, 140, 140, 140, 140, 142, 145, 142, 143, 145, 146, 153, 154, 152, 152, 154, 152, 155, 151, 142, 143, 142, 141, 141, 140, 138, 138, 145, 147, 142, 140, 140, 140, 141, 138, 146, 148, 147, 146, 144, 141, 142, 145, 140, 138, 137, 136, 138, 137, 137, 137, 139, 143, 139, 141, 139, 136, 136, 140, 143, 142, 144, 141, 143, 135, 136, 137, 139, 139, 139, 136, 137, 139, 138, 140, 138, 138, 137, 138, 139, 139, 140, 143, 140, 142, 142, 140, 142, 143, 142, 141]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 147}, {"min": 148, "max": 159}, {"min": 160, "max": 166}, {"min": 167, "max": 220}], "thresholds": {"aet": 147, "ant": 159, "fcmax": 166, "aet_pace": "6:50/km", "ant_pace": "5:17/km"}, "latest_activity_zone_seconds": [1914, 1253, 313, 0, 0], "latest_activity_comment": "È stata una corsa prevalentemente aerobica — FC quasi sempre in Z1/Z2 (91% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 60.0 (carico moderato).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-09-11", "type": "AeT", "hr": 147, "pace_sec_per_km": 410, "note": "Test reale — respiro nasale (ventilatorio). Primo test vero su questo piano, sostituisce la stima storica."}, {"date": "2026-09-15", "type": "AnT", "hr": 159, "pace_sec_per_km": 317, "note": "Test reale — 30 min all-out a Sommacampagna. Sostituisce la stima storica (161 bpm)."}], "nutrition_tests": [], "nutrition_status": {"phase_name": "Base Period", "cho_target": "30-50g/ora", "cho_detail": "1 gel ogni 45 min sulle uscite oltre 90 min · progressione 30→50g durante la fase.", "next_sweat_test": {"week": 7, "when": "ott 2026", "desc": "Sforzo prolungato (fresco ~15°C, 2h long trail) — settimana piena, non scarico"}}, "zone_agg_all": {"zone_seconds": [22183, 8932, 2789, 1232, 0], "n_activities": 10, "z1z2_pct": 89, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [3177, 3039, 344, 0, 0], "n_activities": 2, "z1z2_pct": 95, "low_aerobic_flag": false}, "completed_dates": ["2026-09-02", "2026-09-04", "2026-09-05", "2026-09-08", "2026-09-10", "2026-09-13", "2026-09-15", "2026-09-17", "2026-09-19", "2026-09-22", "2026-09-24"], "next_workout": {"date": "2026-09-25", "day_label": "Ven", "type": "bike", "label": "Bici Z2 · 50 min", "extra": ""}, "current_block": {"name": "Base Period", "start": "2026-09-21", "end": "2027-01-24", "planned_total": 779}, "block_daily_km": [{"date": "21/09", "cumulative_km": 0.0}, {"date": "22/09", "cumulative_km": 8.2}, {"date": "23/09", "cumulative_km": 8.2}, {"date": "24/09", "cumulative_km": 17.2}, {"date": "25/09", "cumulative_km": 17.2}]};
+var DATA = {"generated_at": "25/09/2026 11:27", "wellness": {"date": "2026-09-24", "rhr": 47, "bb": 95, "stress": 28, "tr": 54, "hrv": 73, "sleep_h": 6.3, "sleep_score": 78}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "06/07", "planned": null, "actual": 19.9, "is_current": false}, {"label": "13/07", "planned": null, "actual": 16.4, "is_current": false}, {"label": "20/07", "planned": null, "actual": 14.6, "is_current": false}, {"label": "27/07", "planned": null, "actual": 0.0, "is_current": false}, {"label": "03/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "10/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "17/08", "planned": null, "actual": 4.5, "is_current": false}, {"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 14.3, "is_current": false}, {"label": "07/09", "planned": 14, "actual": 17.3, "is_current": false}, {"label": "14/09", "planned": 14, "actual": 23.7, "is_current": false}, {"label": "21/09", "planned": 22, "actual": 17.2, "is_current": true}], "weekly_actual_km": [14.3, 17.3, 23.7, 17.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "20313661844", "name": "Evening Run", "sport_type": "Run", "start_local": "2026-09-24T18:31:08", "summary": {"distance": 8998.3, "moving_time": 3480, "elapsed_time": 3495, "elevation_gain": 124.0, "avg_speed": 2.586, "max_speed": 3.74, "relative_effort": 60.0, "total_calories": 659.0, "avg_cadence": 80.8, "kudos_count": 2, "achievement_count": 4, "pr_count": 1}, "polyline": "ytftGeoxbAEBCCCc@M_@Y]QgAKIOISUSGCGFgBAQEg@GKMIK[E{@AmADoDBm@AOYYK?SJc@?}@GuAEOCICCO@W?w@FcCCQ@e@KI[i@_@gAUoAO_@AWHW@w@AKCCGASBMm@@ShA_@\\Gt@@^Ap@SZCTETWZ{@Ta@DQBSAiBEgABe@C_AFe@E_@Sg@}@u@iAaB[USK_@GyC?w@I[G_@QgCqAg@Gk@Cm@MK@wAIS?c@C_@@g@CMFI@]CKBQAMBc@E]IWOMCKUy@]s@Uq@Yi@QE@WIo@ESM}@WYOKIKQ_BgB_C{Bi@Ym@OgBq@{@u@MQGEy@y@WSs@a@QGo@Ei@@UEqCeAOCKKg@Sc@Cc@BeA\\{@Pc@Lc@BWAs@YWAYBMBgA^u@BYHk@t@[X[Pk@RGP?LBHNRXZ`@j@Nj@NnAN~BHn@?l@F~@?^KR}A|AULILMb@[~AGx@?j@JdBERMT}@r@g@f@g@`@SH[V[`@]BIFYrASd@Of@GLOLgAfBKd@?p@CPO\\GDKBIH_@l@i@j@ODOJQVqA~AEHg@l@c@r@e@h@[d@MJc@Tc@JGPOLMFUDe@?CBg@BU?wAMKD_@b@OFSB[IOIa@_@KS[c@GQc@s@AGUg@e@uAMg@CGEAE@CB@ZEj@JbBGVOLU@_@MUCg@My@KUKs@Mc@MQCSDIHERArBBp@Fd@b@|ANv@j@|Bj@nCL`@JPZZr@ZPPFRB\\?j@?nCBVVBt@Bt@HjB`@jARp@PZFT@dARx@TjAN~@V^DXHPB|@Z|@Tb@Tr@Vn@PVJPD|Bz@H?PJrA`@`@Pd@N`Af@|@ZbAb@LDBAn@VTNTHh@\\ZLLAB@?JMjEAtAB`@HVHF@XBBL@bDOFC^?fBKlBGh@EF@d@AVEbAEhCCFCdBCh@EzEIlAGpDCd@Dd@LD?DQIu@BaAGsAHmDLaCH_@Ve@Fm@bAo@f@e@h@gATm@`A_BV[j@_AbBgDbA_Cd@{@RQj@Uj@_@p@_@RMTWNGHAVLv@p@ZZRN|@`Ax@p@l@t@z@r@JLLFTZxBhBZ^p@h@XPf@j@l@d@`AjAJDFATW\\aAXq@FKNBPT", "performance": {"average_heartrate": 140.7, "max_heartrate": 156.0, "average_cadence": 80.8, "calories": 659.0}, "hr_stream": {"time": [0, 34, 67, 103, 137, 172, 207, 242, 276, 312, 346, 382, 419, 454, 492, 536, 579, 620, 667, 715, 765, 810, 853, 896, 941, 983, 1022, 1059, 1094, 1128, 1160, 1193, 1228, 1261, 1296, 1325, 1362, 1400, 1434, 1465, 1496, 1529, 1562, 1595, 1634, 1670, 1708, 1742, 1775, 1810, 1846, 1879, 1909, 1939, 1968, 1997, 2028, 2056, 2084, 2110, 2140, 2172, 2205, 2238, 2272, 2307, 2342, 2377, 2412, 2445, 2480, 2514, 2549, 2601, 2635, 2673, 2709, 2745, 2781, 2816, 2852, 2887, 2922, 2957, 2990, 3024, 3058, 3092, 3127, 3161, 3195, 3230, 3264, 3296, 3329, 3362, 3395, 3428, 3461, 3495], "heart_rate": [80, 120, 130, 129, 130, 133, 131, 131, 137, 138, 140, 140, 140, 140, 142, 145, 142, 143, 145, 146, 153, 154, 152, 152, 154, 152, 155, 151, 142, 143, 142, 141, 141, 140, 138, 138, 145, 147, 142, 140, 140, 140, 141, 138, 146, 148, 147, 146, 144, 141, 142, 145, 140, 138, 137, 136, 138, 137, 137, 137, 139, 143, 139, 141, 139, 136, 136, 140, 143, 142, 144, 141, 143, 135, 136, 137, 139, 139, 139, 136, 137, 139, 138, 140, 138, 138, 137, 138, 139, 139, 140, 143, 140, 142, 142, 140, 142, 143, 142, 141]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 147}, {"min": 148, "max": 159}, {"min": 160, "max": 166}, {"min": 167, "max": 220}], "thresholds": {"aet": 147, "ant": 159, "fcmax": 166, "aet_pace": "6:50/km", "ant_pace": "5:17/km"}, "verdicts": {"restart": {"title": "RESTART (S1-S3 · 1-21 settembre 2026)", "outcome": "promosso", "headline": "✅ PROMOSSO → Base inizia S4 (22 settembre 2026)", "html": "<h4>Dati del blocco</h4><table class=\"vtable\"><thead><tr><th>Metrica</th><th>Valore</th><th>Target</th><th>Esito</th></tr></thead><tbody><tr><td>Settimane completate</td><td>3</td><td>3-4</td><td>✅</td></tr><tr><td>Volume totale</td><td>~42 km</td><td>40-50 km</td><td>✅</td></tr><tr><td>AeT misurata</td><td><strong>147 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>AnT misurata</td><td><strong>159 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>Gap AeT-AnT</td><td>12 bpm (7.5%)</td><td>&lt; 10% = no ADS</td><td>✅ NO ADS</td></tr><tr><td>ITB</td><td>nessun problema</td><td>nessun problema</td><td>✅</td></tr><tr><td>FC media easy run</td><td>132-142 bpm</td><td>&lt; AeT (147 bpm)</td><td>✅</td></tr><tr><td>FC media bici</td><td>131-133 bpm</td><td>&lt; 145 bpm</td><td>✅</td></tr></tbody></table><h4>Easy-day discipline</h4><p>Eccellente. Le 4 sessioni easy del Restart mostrano FC media ben sotto la AeT:</p><ul><li>29/08 Evening Run: 142 bpm (Z1)</li><li>08/09 Corsa serale: 135.7 bpm (Z1 profonda)</li><li>11/09 Test AeT: 139 bpm media (corretto per il test)</li><li>13/09 Morning Ride: 132.8 bpm (Z1)</li><li>15/09 Test AnT: 151 bpm media (corretto per il test)</li></ul><p>Nessuna sessione above Z1 fuori dai test. Disciplina aerobica solida.</p><h4>Test fisiologici</h4><p><strong>AeT = 147 bpm</strong> — era stimata 153 bpm. Trovata per via ventilatoria (respiro nasale): il respiro cambia a ~146-147 bpm. Coincide con la MAF (180-34=146). Questo è un dato positivo: l&#x27;AeT di un atleta aerobicamente sviluppato tende a coincidere con la MAF. Passo a AeT: ~6:50-7:00/km.</p><p><strong>AnT = 159 bpm</strong> — era stimata 161 bpm. Test 30 min all-out su terreno piano (Sommacampagna). FC media 30 min = 159 bpm. Passo a AnT: 5:17/km. La progressione FC durante il test era lineare (154→164 bpm) — buona gestione.</p><p><strong>Gap AeT-AnT = 12 bpm (7.5%):</strong> NO ADS confermato. Significa che la base aerobica è sufficientemente sviluppata per il piano polarizzato. Implicazione: Z1 per le easy (&lt; 141 bpm), Z2 max 15% del volume.</p><h4>Osservazioni chiave</h4><ul><li>L&#x27;AeT più bassa del previsto (147 vs 153 stima) è normale dopo una pausa estiva. Con 3-4 mesi di Base, l&#x27;AeT tornerà a salire — il progresso si misura dal passo a AeT: se a dicembre a 147 bpm corri a 6:20/km invece di 6:50/km, la Base sta funzionando.</li><li>L&#x27;AnT a 159 bpm su terreno piano è nella media bassa per 34 anni. Con il lavoro di qualità del Specifico (Z3-4), può arrivare a 163-165 bpm.</li><li>La bici mostra buona capacità aerobica: 25.6 km a 131 bpm media e 35.7 km a 132.8 bpm — il sistema cardiovascolare risponde bene.</li></ul><h4>Verdetto</h4><p><strong>✅ PROMOSSO → Base inizia S4 (22 settembre 2026)</strong></p><p>Il Restart ha fatto quello che doveva fare:</p><ul><li>Zone calibrate su dati reali</li><li>ADS escluso</li><li>ITB monitorato e ok</li><li>Disciplina Z1 rispettata sin dal primo giorno</li></ul><p><strong>Cosa monitorare nel Base:</strong></p><ul><li>Il passo a 147 bpm deve migliorare di 10-20 sec/km entro dicembre</li><li>RHR target: scendere sotto 46 bpm entro fine Base (ora: 48 bpm)</li><li>HRV: tendenza al rialzo nelle settimane di build</li><li>ITB: monitorare sulle discese dei long trail</li></ul>"}}, "latest_activity_zone_seconds": [1914, 1253, 313, 0, 0], "latest_activity_comment": "È stata una corsa prevalentemente aerobica — FC quasi sempre in Z1/Z2 (91% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 60.0 (carico moderato).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-09-11", "type": "AeT", "hr": 147, "pace_sec_per_km": 410, "note": "Test reale — respiro nasale (ventilatorio). Primo test vero su questo piano, sostituisce la stima storica."}, {"date": "2026-09-15", "type": "AnT", "hr": 159, "pace_sec_per_km": 317, "note": "Test reale — 30 min all-out a Sommacampagna. Sostituisce la stima storica (161 bpm)."}], "nutrition_tests": [], "nutrition_status": {"phase_name": "Base", "cho_target": "30-40g/ora", "cho_detail": "1 gel ogni 45 min sulle uscite oltre 90 min.", "next_sweat_test": {"week": 7, "when": "ott 2026", "desc": "Sforzo prolungato (fresco ~15°C, 2h long trail) — settimana piena, non scarico"}}, "zone_agg_all": {"zone_seconds": [22183, 8932, 2789, 1232, 0], "n_activities": 10, "z1z2_pct": 89, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [3177, 3039, 344, 0, 0], "n_activities": 2, "z1z2_pct": 95, "low_aerobic_flag": false}, "completed_dates": ["2026-09-02", "2026-09-04", "2026-09-05", "2026-09-08", "2026-09-10", "2026-09-13", "2026-09-15", "2026-09-17", "2026-09-19", "2026-09-22", "2026-09-24"], "next_workout": {"date": "2026-09-25", "day_label": "Ven", "type": "bike", "label": "Bici Z2 · 50 min", "extra": ""}, "current_block": {"name": "Base", "start": "2026-09-21", "end": "2027-01-24", "planned_total": 779}, "block_daily_km": [{"date": "21/09", "cumulative_km": 0.0}, {"date": "22/09", "cumulative_km": 8.2}, {"date": "23/09", "cumulative_km": 8.2}, {"date": "24/09", "cumulative_km": 17.2}, {"date": "25/09", "cumulative_km": 17.2}]};
 
 var C = { p1:"#4ade80", p2:"#60a5fa", p3:"#f97316", p4:"#a78bfa", p5:"#f43f5e", p6:"#fbbf24", muted:"#6b6560" };
 var ZONE_COLORS = ["#6b7280", "#60a5fa", "#4ade80", "#f97316", "#f43f5e"];
@@ -557,7 +568,7 @@ function renderForma() {
 }
 
 // ============================================================
-// TAB PIANO — dati statici piano 40 settimane (stesso contenuto
+// TAB PIANO — dati statici piano 52 settimane (stesso contenuto
 // di piano-lavaredo-2027.html)
 // ============================================================
 
@@ -583,18 +594,15 @@ var Gl = "Mobilità leggera · Leg Curl bodyweight · Affondi · Core · ABS —
 
 // Aggiornato 15/09/2026: Restart accorciato a S1-3 (fine 20/09), Base
 // parte subito da S4 (21/09) senza settimana di restart aggiuntiva.
-// Aggiornato 21/09/2026 — il file di contesto ha finalmente una sezione
-// "Fasi" ufficiale per tutte le 62 settimane (prima l'avevo indovinata
-// dai marker per S41-62): 7 fasi, non più 9. Nomenclatura presa dal libro
-// "Training for the Uphill Athlete" (House & Johnston) come citato lì.
+// Aggiornato 25/09/2026 — 5 blocchi come da sezione "Struttura blocchi" del
+// file di contesto (metodologia Training for the Uphill Athlete): le gare
+// A/B/C sono integrate nei blocchi, la gara A chiude il blocco TAPER.
 var PHASES = [
   {id:1,name:"Restart",col:"#4ade80",meta:"Sett. 1–3 · Set 2026 · Transizione, test soglie ✅"},
-  {id:2,name:"Base Period",col:"#60a5fa",meta:"Sett. 4–21 · Set 2026–Gen 2027 · Volume + hill sprints + ME + forza · Trail Sciamano 35K (S9)"},
-  {id:3,name:"Specific Period",col:"#a78bfa",meta:"Sett. 22–45 · Feb–Lug 2027 · Back-to-back + Z3-4 · DBT 24K (S31) · Malcesine 52K (S35) · Picco 2 (S43)"},
-  {id:4,name:"Monte Rosa",col:"#fbbf24",meta:"Sett. 46 · Lug 2027 · 🏆 Monte Rosa Trail 82K — A-race 2027"},
-  {id:5,name:"Rebuild",col:"#22d3ee",meta:"Sett. 47–60 · Lug–Ott 2027 · Ricostruzione volume · Maratona Alpina GES Schio (S54)"},
-  {id:6,name:"Taper Puglia",col:"#f97316",meta:"Sett. 61 · Ott 2027 · Taper pre-Puglia"},
-  {id:7,name:"Puglia",col:"#ec4899",meta:"Sett. 62 · Nov 2027 · 🏆 Puglia 100K Le Maioliche — A-race autunno 2027"},
+  {id:2,name:"Base",col:"#60a5fa",meta:"Sett. 4–21 · Set 2026–Gen 2027 · Volume + hill sprints + ME + forza · C-race Trail del Cinghiale 35K (S9)"},
+  {id:3,name:"Specifico",col:"#a78bfa",meta:"Sett. 22–43 · Gen–Giu 2027 · Back-to-back + Z3-4 · DBT 24K (S31) · B-race Malcesine 52K (S35) · Picco 2 (S43)"},
+  {id:4,name:"Taper",col:"#fbbf24",meta:"Sett. 44–46 · Giu–Lug 2027 · Taper 1-2 → 🏆 A-race Eiger E51 51K (S46, fine blocco)"},
+  {id:5,name:"Rebuild",col:"#22d3ee",meta:"Sett. 47–52 · Lug–Ago 2027 · Recupero + ricostruzione · Maratona Alpina GES Schio (S51)"},
 ];
 
 var W = [
@@ -645,7 +653,7 @@ var W = [
     {t:"gym",l:"💪 Giorno 1",x:G1+" + Core #1 · incrementa i pesi rispetto a S5"},
     {t:"test",l:"🔬 Test AeT #2",x:"85 min: 15 riscald. + 60 min FC 135-148 bpm + 10 cool · stesso percorso di settembre, confronta passo medio a parità FC"},
     {t:"run",l:"Qualità · ME Workout #3 · 55 min",x:"Zaino 7 kg · salita 25-35% pendenza · 24 min continuativi cammina/corri · gambe brucianti, cuore no (FC<141) · Core #2 dopo"},
-    {t:"trail",l:"Trail 26 km",x:"~1200m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2 · ≈75% Trail Sciamano"},
+    {t:"trail",l:"Trail 26 km",x:"~1200m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2 · ≈75% Trail del Cinghiale"},
     {t:"hike",l:"Hiking 90 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
   {w:8,p:2,d:"20–25 ott",note:"⚡ Scarico (Tipo R) — recupero prima della C-race del 31 ottobre (S9).",days:[
@@ -657,10 +665,10 @@ var W = [
     {t:"rest",l:"Riposo",x:""},
     {t:"trail",l:"Trail 14 km",x:"~500m D+ · FC < 135 bpm · uscita leggera di fine scarico"},
   ]},
-  {w:9,p:2,d:"27 ott–1 nov",note:"C-race di sentimento — profilo quasi identico alla Tzimbar 2025, terreno noto. Nessun taper: piano riprende normale da S10.",sp:"🏁 Trail Sciamano 35K",days:[
+  {w:9,p:2,d:"27 ott–1 nov",note:"C-race Trail del Cinghiale 35K — Palazzuolo sul Senio (FI), Appennino Tosco-Romagnolo, ~2h30 da Verona. Gara UTMB Index (nessuna Running Stone). Nessun taper: piano riprende normale da S10. Meteo di fine ottobre: neve/pioggia/fango probabili.",sp:"🏁 Trail del Cinghiale 35K",days:[
     {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km facilissimi",x:""},{t:"gym",l:"💪 Giorno 3 leggera",x:"Solo mobilità/attivazione — niente carichi pesanti a 3 giorni dalla gara"},
     {t:"run",l:"5 km easy",x:"FC < AeT"},{t:"rest",l:"Riposo",x:"Prepara materiale gara"},
-    {t:"race",l:"🏁 TRAIL SCIAMANO 35K",x:"1789m D+ · FC < 147 bpm in salita nei primi 20 km · gel ogni 40 min · prima applicazione protocollo nutrizione in gara · nessun taper"},
+    {t:"race",l:"🏁 TRAIL DEL CINGHIALE 35K",x:"34.6 km · 2301m D+ · quasi-loop · quota max 1163m · terreno forestale · FC < 147 bpm · gel ogni 40 min · porta bastoncini e cerata · prima applicazione protocollo nutrizione in gara · nessun taper (gara 30-31 ott)"},
     {t:"rest",l:"Riposo",x:"Recupero post-gara"},
   ]},
   {w:10,p:2,d:"3–8 nov",note:"⚡ Recovery post-C-race (Tipo R) — volume ridotto, gambe prima di tutto.",days:[
@@ -679,7 +687,7 @@ var W = [
     {t:"gym",l:"💪 Giorno 2",x:G2},{t:"run",l:"10 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},
     {t:"trail",l:"Trail 25 km",x:"~1000m D+ · simula nutrizione · ogni 40 min"},{t:"hike",l:"Hiking 1.5h",x:""},
   ]},
-  {w:13,p:2,d:"24–29 nov",note:"⚡ Scarico (Tipo R) — inizia il ciclo Aerobico. Da qui: bici notturna e scialpinismo diventano strumenti chiave, palestra 2x/sett fino a gennaio (fase di forza).",days:[
+  {w:13,p:2,d:"24–29 nov",note:"⚡ Scarico (Tipo R) — inizia la seconda parte del Base. Da qui: bici notturna e scialpinismo diventano strumenti chiave, palestra 2x/sett fino a gennaio (fase di forza).",days:[
     {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"No palestra",x:""},
     {t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici 40 min",x:""},{t:"trail",l:"Trail 14 km",x:"~500m D+ · scarico"},
     {t:"rest",l:"Riposo",x:""},
@@ -716,7 +724,7 @@ var W = [
     {t:"skimo",l:"Scialpinismo o Trail 32km",x:"Se neve: skimo giornata lunga. Se no: 32km ~1600m D+"},
     {t:"run",l:"10 km easy",x:""},
   ]},
-  {w:20,p:2,d:"12–17 gen",note:"Fine ciclo Aerobico — ultima settimana piena prima dello scarico.",days:[
+  {w:20,p:2,d:"12–17 gen",note:"Ultima settimana piena del Base prima dello scarico (S21).",days:[
     {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale"},{t:"run",l:"13 km qualità",x:""},{t:"gym",l:"💪 Giorno 2",x:G2},
     {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 75 min",x:""},{t:"trail",l:"Trail 34 km",x:"~1800m D+"},
     {t:"run",l:"10 km easy",x:""},
@@ -809,7 +817,7 @@ var W = [
     {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici 50 min",x:""},{t:"trail",l:"Trail 18 km",x:"~700m D+"},
     {t:"hike",l:"Hiking 1.5h",x:""},
   ]},
-  {w:37,p:3,d:"11–16 mag",note:"Specifico 2 — verso Monte Rosa (lug 2027). Back-to-back riprende dopo Malcesine.",days:[
+  {w:37,p:3,d:"11–16 mag",note:"Specifico — verso Eiger E51 (lug 2027). Back-to-back riprende dopo Malcesine.",days:[
     {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 1",x:G1},
     {t:"run",l:"12 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 55 min",x:""},
     {t:"trail",l:"Trail 30 km",x:"~2000m D+"},{t:"trail",l:"Trail easy 17 km",x:"~800m D+ · Back-to-back · 47 km tot (65%)"},
@@ -844,136 +852,83 @@ var W = [
     {t:"run",l:"13 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 60 min",x:""},
     {t:"trail",l:"Trail 40 km",x:"~3200m D+ · ultimo long prima del taper"},{t:"trail",l:"Trail easy 25 km",x:"~1400m D+ · Back-to-back · 65 km tot (74%) · il tuo weekend più lungo"},
   ]},
-  {w:44,p:3,d:"29 giu–4 lug",note:"⚡ Scarico (Tipo R) — inizia la discesa verso il taper di Monte Rosa.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"8 km easy",x:""},{t:"rest",l:"Riposo",x:""},{t:"trail",l:"Trail 22 km",x:"~1000m D+ · scarico"},
+  {w:44,p:4,d:"29 giu–4 lug",note:"🔋 TAPER 1 pre-Eiger (−44% dal picco di 90 km). Mantieni qualità, riduci volume. Hill Sprints dimezzati.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×15 sec MAX · 2-3 min recupero · nel Taper si dimezzano"},
+    {t:"gym",l:"💪 Giorno 1 light",x:Gl},{t:"run",l:"8 km easy",x:""},
+    {t:"run",l:"Qualità leggera Z3 · 30 min",x:"Ritmo gara per tenere le gambe vive, senza stancarle"},
+    {t:"trail",l:"Trail 22 km",x:"~1000m D+ · ultimo long con vest da gara completo"},
     {t:"trail",l:"Trail easy 13 km",x:"~500m D+ · Back-to-back ridotto · 35 km tot"},
   ]},
-  {w:45,p:3,d:"6–11 lug",note:"🔋 Taper Monte Rosa. Volume in calo — mantieni qualità, niente nuovi stimoli. Solo, no back-to-back.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km + 3×1 km",x:"Ritmo gara per sbloccare le gambe"},
-    {t:"gym",l:"💪 Giorno 1 light",x:Gl},{t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 40 min",x:""},
-    {t:"trail",l:"Trail 18 km",x:"~800m D+ · ultima uscita di volume"},{t:"rest",l:"Riposo",x:""},
+  {w:45,p:4,d:"6–11 lug",note:"🔋 TAPER 2 pre-Eiger (−30% da T1). Solo Z1 e qualità leggera, niente nuovi stimoli. Solo sabato, no back-to-back.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km + 3×1 km",x:"Ritmo gara per sbloccare le gambe"},
+    {t:"gym",l:"💪 Giorno 2 light",x:Gl},{t:"run",l:"6 km easy",x:"Z1"},
+    {t:"rest",l:"Riposo",x:""},
+    {t:"trail",l:"Trail 18 km",x:"~800m D+ · ultima uscita lunga, Z1"},{t:"rest",l:"Riposo",x:""},
   ]},
-  {w:46,p:4,d:"13–19 lug",note:"🏆 Monte Rosa Trail 82K — A-race 2027. Materiale pronto mercoledì, dormi presto prima della partenza.",sp:"🏆 Monte Rosa Trail 82K",days:[
-    {t:"rest",l:"Camminata 20 min",x:""},{t:"rest",l:"Camminata 20 min",x:""},
-    {t:"rest",l:"Riposo",x:"Prepara zaino e materiale obbligatorio"},
-    {t:"run",l:"4 km facilissimi",x:"Solo per sentire le gambe"},{t:"rest",l:"Riposo",x:"Dormi presto"},
-    {t:"race",l:"🏆 MONTE ROSA TRAIL 82K",x:"82km · 6300m D+ · Valle d'Aosta · 15-18 lug · A-race 2027 · parti piano · ogni 35 min mangia · +3 Running Stones"},
+  {w:46,p:4,d:"13–18 lug",note:"🏆 EIGER ULTRA TRAIL E51 51K — A-race 2027, ultima settimana del blocco TAPER. Data esatta della gara da verificare. Niente di nuovo in gara: no scarpe nuove, no gel nuovi, no strategie nuove.",sp:"🏆 Eiger E51 51K",days:[
+    {t:"rest",l:"Camminata 20 min",x:""},{t:"run",l:"4 km facilissimi",x:"Solo per sentire le gambe · 4 allunghi brevi"},
+    {t:"rest",l:"Riposo",x:"Prepara zaino, drop bag (unica) e materiale obbligatorio"},
+    {t:"rest",l:"Riposo",x:"Verifica meteo e cerata"},{t:"rest",l:"Riposo",x:"Dormi presto"},
+    {t:"race",l:"🏆 EIGER E51 51K",x:"51km · 3450m D+ · Grindelwald (CH) · loop · quota max ~2680m · A-race 2027 · parti piano (mai spingere nei primi 20 km) · FC target, non passo · 60-80g CHO/ora · +2 Running Stones (Index 50K)"},
     {t:"rest",l:"Riposo",x:"Recupero post-gara"},
   ]},
-  {w:47,p:5,d:"20–25 lug",note:"⚡ Recovery post-Monte Rosa (Tipo R). Gambe prima di tutto.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km easy",x:"Solo se le gambe sono ok"},{t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 40 min",x:"Recupero attivo"},{t:"trail",l:"Trail 10 km",x:"~400m D+ · leggero"},
+  {w:47,p:5,d:"20–25 lug",note:"⚡ Recovery post-Eiger (Tipo R) — 20-30 km, tutto Z1. Gambe prima di tutto.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km easy",x:"Solo se le gambe sono ok · Z1"},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"7 km easy",x:"Z1"},{t:"bike",l:"Bici 40 min",x:"Recupero attivo"},{t:"trail",l:"Trail 10 km",x:"~400m D+ · leggero"},
     {t:"hike",l:"Hiking 1h",x:""},
   ]},
-  {w:48,p:5,d:"27 lug–1 ago",note:"Rebuild — si ricomincia a costruire volume in vista di Puglia (nov 2027).",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"gym",l:"💪 Giorno 2",x:G2},
-    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 20 km",x:"~1000m D+"},
+  {w:48,p:5,d:"27 lug–1 ago",note:"Rebuild — ricostruzione graduale del volume dopo la gara A. Tutto Z1, niente qualità.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:"Z1"},{t:"gym",l:"💪 Giorno 2",x:G2},
+    {t:"run",l:"8 km easy",x:"Z1"},{t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 18 km",x:"~800m D+"},
     {t:"hike",l:"Hiking 1.5h",x:""},
   ]},
   {w:49,p:5,d:"3–8 ago",days:[
     {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km easy",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
-    {t:"run",l:"10 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 23 km",x:"~1150m D+"},
+    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 22 km",x:"~1000m D+"},
     {t:"hike",l:"Hiking 1.5h",x:""},
   ]},
-  {w:50,p:5,d:"10–15 ago",note:"⚠️ Piena estate — caldo molto limitante (vedi Vulnerabilità e Vincoli). Uscite nelle ore fresche.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"11 km easy",x:"Presto mattina, prima del caldo"},{t:"gym",l:"💪 Giorno 1",x:G1},
-    {t:"run",l:"10 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 25 km",x:"~1250m D+"},
-    {t:"hike",l:"Hiking 1.5h",x:""},
-  ]},
-  {w:51,p:5,d:"17–22 ago",note:"⚡ Scarico (Tipo R).",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 35 min",x:""},{t:"trail",l:"Trail 14 km",x:"~700m D+ · scarico"},
+  {w:50,p:5,d:"10–15 ago",note:"⚡ Scarico (Tipo R). ⚠️ Piena estate — caldo molto limitante (vedi Vulnerabilità e Vincoli): uscite nelle ore fresche.",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:"Presto mattina, prima del caldo"},{t:"rest",l:"No palestra",x:""},
+    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 35 min",x:""},{t:"trail",l:"Trail 14 km",x:"~600m D+ · scarico"},
     {t:"rest",l:"Riposo",x:""},
   ]},
-  {w:52,p:5,d:"24–29 ago",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"11 km easy",x:""},{t:"gym",l:"💪 Giorno 2",x:G2},
-    {t:"run",l:"10 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 24 km",x:"~1200m D+"},
-    {t:"hike",l:"Hiking 1.5h",x:""},
-  ]},
-  {w:53,p:5,d:"31 ago–5 set",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"12 km easy",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
-    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 70 min",x:""},{t:"trail",l:"Trail 27 km",x:"~1350m D+"},
-    {t:"hike",l:"Hiking 2h",x:""},
-  ]},
-  {w:54,p:5,d:"7–12 set",note:"Maratona Alpina GES Schio — gara di sentimento, non competitiva. Corrila per il piacere di correre.",sp:"🎗️ Maratona Alpina GES Schio",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km facilissimi",x:""},{t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"5 km easy",x:""},{t:"rest",l:"Riposo",x:""},
-    {t:"race",l:"🎗️ Maratona Alpina GES Schio",x:"42km · 3150m D+ · Schio→Pian delle Fugazze · non competitiva, sentimento"},
+  {w:51,p:5,d:"17–22 ago",note:"Maratona Alpina GES Schio — C-race di sentimento, non competitiva: train through, niente taper. ⚠️ Il file la colloca a S51 ma dice \"metà settembre\" — S51 cade a metà agosto (17-22): data da chiarire.",sp:"🎗️ Maratona Alpina GES Schio",days:[
+    {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km easy",x:"Z1"},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"5 km easy",x:"Z1"},{t:"rest",l:"Riposo",x:"Prepara materiale"},
+    {t:"race",l:"🎗️ Maratona Alpina GES Schio",x:"42km · 3150m D+ · Schio→Pian delle Fugazze · non competitiva, sentimento · zero costo · C-race, train through"},
     {t:"rest",l:"Riposo",x:"Recupero post-gara"},
   ]},
-  {w:55,p:5,d:"14–19 set",note:"⚡ Recovery post-Maratona Alpina.",days:[
+  {w:52,p:5,d:"24–29 ago",note:"Fine stagione 2027 — valuta gli obiettivi del 2028 (LUT 80K garantita, giugno).",days:[
     {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"gym",l:"💪 Giorno 1",x:G1},
-    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 22 km",x:"~1100m D+"},
-    {t:"hike",l:"Hiking 1.5h",x:""},
-  ]},
-  {w:56,p:5,d:"21–26 set",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"11 km easy",x:""},{t:"gym",l:"💪 Giorno 2",x:G2},
-    {t:"run",l:"10 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 25 km",x:"~1250m D+"},
-    {t:"hike",l:"Hiking 1.5h",x:""},
-  ]},
-  {w:57,p:5,d:"28 set–3 ott",note:"⚡ Scarico (Tipo R).",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 40 min",x:""},{t:"trail",l:"Trail 15 km",x:"~750m D+ · scarico"},
-    {t:"rest",l:"Riposo",x:""},
-  ]},
-  {w:58,p:5,d:"5–10 ott",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"11 km easy",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
-    {t:"run",l:"10 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 24 km",x:"~1200m D+"},
-    {t:"hike",l:"Hiking 1.5h",x:""},
-  ]},
-  {w:59,p:5,d:"12–17 ott",note:"Ultima settimana piena prima del taper verso Puglia.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"12 km easy",x:""},{t:"gym",l:"💪 Giorno 1",x:G1},
-    {t:"run",l:"11 km easy",x:""},{t:"bike",l:"Bici Z2 · 70 min",x:""},{t:"trail",l:"Trail 27 km",x:"~1350m D+"},
-    {t:"hike",l:"Hiking 2h",x:""},
-  ]},
-  {w:60,p:5,d:"19–24 ott",note:"⚡ Scarico (Tipo R) — prima del taper finale.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 35 min",x:""},{t:"trail",l:"Trail 15 km",x:"~750m D+ · scarico"},
-    {t:"rest",l:"Riposo",x:""},
-  ]},
-  {w:61,p:6,d:"26–31 ott",note:"🔋 Taper pre-Puglia. Volume in calo — mantieni qualità.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km + 3×1 km",x:"Ritmo gara per sbloccare le gambe"},
-    {t:"gym",l:"💪 Giorno 2 light",x:Gl},{t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 40 min",x:""},
-    {t:"trail",l:"Trail 16 km",x:"~800m D+ · ultima uscita di volume"},{t:"rest",l:"Riposo",x:""},
-  ]},
-  {w:62,p:7,d:"2–7 nov",note:"🏆 Puglia 100K Le Maioliche — A-race autunno 2027, chiusura dell'anno di costruzione.",sp:"🏆 Puglia 100K",days:[
-    {t:"rest",l:"Camminata 20 min",x:""},{t:"rest",l:"Camminata 20 min",x:""},
-    {t:"rest",l:"Riposo",x:"Prepara zaino e materiale obbligatorio"},
-    {t:"run",l:"4 km facilissimi",x:"Solo per sentire le gambe"},{t:"rest",l:"Riposo",x:"Dormi presto"},
-    {t:"race",l:"🏆 PUGLIA 100K LE MAIOLICHE",x:"85km · 2000m D+ · A-race autunno 2027 · parti piano · ogni 35 min mangia · +3 Running Stones"},
-    {t:"rest",l:"Riposo",x:"Fine dell'anno di costruzione 🎉"},
+    {t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 15 km",x:"~700m D+"},
+    {t:"hike",l:"Hiking 1h",x:""},
   ]},
 ];
 
-// Aggiornato 19/09/2026 — obiettivo 2027 cambiato da Lavaredo 80K a Monte
-// Rosa Trail 82K + Puglia 100K, piano esteso a 62 settimane.
+// Aggiornato 25/09/2026 — A-race 2027 = Eiger Ultra Trail E51 51K (luglio),
+// piano di 52 settimane su 5 blocchi (Monte Rosa e Puglia non sono più nel 2027).
 var ROADMAP = [
-  {col:"#4ade80", date:"Settembre 2026", name:"Restart + Test AeT/AnT", detail:"Base aerobica, ITB check, calibrazione zone FC"},
-  {col:"#60a5fa", date:"Ottobre–Novembre 2026", name:"Base Building", detail:"25–48 km/sett · C-race Trail Sciamano 35K (31 ott)"},
-  {col:"#f97316", date:"Dicembre 2026–Gennaio 2027", name:"Sviluppo Aerobico", detail:"45–76 km/sett · Scialpinismo · Long trail in crescita"},
-  {col:"#a78bfa", date:"Febbraio–Marzo 2027", name:"Specifico — Picco 1", detail:"42–88 km equiv · qualità trail"},
-  {col:"#f43f5e", date:"Aprile–Maggio 2027", name:"DBT 24K + Malcesine Baldo Trail 52K", detail:"C-race con la fidanzata (apr) · B-race Index refresh (mag)"},
-  {col:"#c084fc", date:"Maggio–Luglio 2027", name:"Specifico 2 — Picco 2", detail:"30–88 km equiv · verso Monte Rosa"},
-  {col:"#fbbf24", date:"15-18 Luglio 2027", name:"🏆 Monte Rosa Trail 82K", detail:"82km · 6300m D+ · Valle d'Aosta · A-race 2027 · +3 Running Stones · Index 100K", gold:true},
-  {col:"#22d3ee", date:"Luglio–Settembre 2027", name:"Rebuild post Monte Rosa", detail:"25–66 km/sett · ricostruzione volume + Maratona Alpina GES Schio (sentimento, metà set)"},
-  {col:"#ec4899", date:"Novembre 2027", name:"🏆 Puglia 100K Le Maioliche 85K", detail:"85km · 2000m D+ · A-race autunno · +3 Running Stones · Index 100K", gold:true},
+  {col:"#4ade80", date:"Settembre 2026", name:"Restart ✅ + Test AeT/AnT", detail:"AeT 147 · AnT 159 · gap 7.5% → no ADS · verdict: PROMOSSO"},
+  {col:"#60a5fa", date:"Ottobre 2026–Gennaio 2027", name:"Base", detail:"22–76 km/sett · C-race Trail del Cinghiale 35K (30-31 ott) · Test AeT #2 (S7) e #3 (S16)"},
+  {col:"#a78bfa", date:"Gennaio–Giugno 2027", name:"Specifico", detail:"42–90 km/sett · back-to-back · DBT 24K (apr) · B-race Malcesine 52K (mag) · Picco 2: 65 km b2b (S43)"},
+  {col:"#fbbf24", date:"Luglio 2027", name:"🏆 Eiger Ultra Trail E51 51K", detail:"51km · 3450m D+ · Grindelwald (CH) · A-race 2027 · +2 Running Stones · Index 50K · chiude il blocco Taper", gold:true},
+  {col:"#22d3ee", date:"Luglio–Agosto 2027", name:"Rebuild", detail:"22–50 km/sett · recovery + ricostruzione · Maratona Alpina GES Schio (sentimento)"},
+  {col:"#f97316", date:"Giugno 2028", name:"Lavaredo 80K (garantita)", detail:"Priority registration dopo 2 anni non estratto · +3 Running Stones · primo vero 80K+"},
 ];
 
 var planState = { phase: 1, openWeek: null };
 
 // ============================================================
-// TAB PANORAMICA — heatmap 40 settimane + grafico impilato
+// TAB PANORAMICA — heatmap 52 settimane + grafico impilato
 // ============================================================
 
-// Km pianificati per settimana (S1..S62) — stessa fonte di generate_dashboard.py
-// aggiornato 19/09/2026: piano esteso 40→62 settimane, obiettivo Monte Rosa
-// Trail 82K (S46) + Puglia 100K (S62), confermato da Leonardo in chat.
+// Km pianificati per settimana (S1..S52) — stessa fonte di generate_dashboard.py
+// aggiornato 25/09/2026: piano ridotto 62→52 settimane, A-race 2027 = Eiger
+// Ultra Trail E51 51K (S46), struttura a 5 blocchi.
 var PLANNED_KM = [
   14,14,14,22,30,33,36,20,38,25,44,48,26,52,57,62,34,64,70,76,
   42,78,82,86,48,80,84,88,50,75,45,68,82,52,55,30,72,80,88,50,
-  82,86,90,50,35,90,25,52,60,66,38,62,68,28,58,65,40,62,68,38,
-  50,87
+  82,86,90,50,35,55,25,42,50,30,22,40
 ];
 
 function mondayOnOrBefore(d) {
@@ -1220,9 +1175,9 @@ function timelineMilestonesSVG() {
 function panoramicaHTML(metrics) {
   return (
     '<div class="card">' +
-      '<div class="card-head"><span class="label">📅 Heatmap 40 settimane</span></div>' +
+      '<div class="card-head"><span class="label">📅 Heatmap 52 settimane</span></div>' +
       '<div class="card-body" style="padding:8px">' + renderHeatmap(metrics) + '</div>' +
-      '<div class="note">Scorri lateralmente per vedere tutte le 40 settimane. Settimana corrente evidenziata in oro.</div>' +
+      '<div class="note">Scorri lateralmente per vedere tutte le 52 settimane. Settimana corrente evidenziata in oro.</div>' +
     '</div>'
   );
 }
@@ -1231,13 +1186,12 @@ function panoramicaHTML(metrics) {
 // solo il "cosa" e "quando", il contenuto vero (numeri, routine precise)
 // arriva insieme a Claude chat nelle finestre indicate. Fonte:
 // contesto-allenamento.md § "Da definire man mano".
-// Aggiornato 19/09/2026 — target gara ora Monte Rosa Trail 82K (lug 2027),
-// non più Lavaredo 80K.
+// Aggiornato 25/09/2026 — target gara 2027 = Eiger Ultra Trail E51 51K.
 var RACE_REMINDERS = [
-  {icon:"⏱️", title:"Gestione del ritmo in gara", when:"Da costruire dopo Malcesine Baldo Trail (mag 2027)",
-   detail:"Ritmo per i primi 20km, gestione FC in salita, quando iniziare a spingere — sulla base della forma reale accumulata, in vista di Monte Rosa Trail 82K."},
-  {icon:"🎒", title:"Drop bag e gestione ristori", when:"Da definire 4-6 settimane prima di Monte Rosa (giu 2027)",
-   detail:"Cosa mettere nella drop bag, tempo massimo per ristoro (target 5 min), routine automatica mangia-bevi-riparti — testata già al Malcesine Baldo Trail."},
+  {icon:"⏱️", title:"Strategia di gara Eiger E51", when:"Da costruire aprile-maggio 2027, dopo Malcesine 52K",
+   detail:"Verificare orario di partenza e profilo altimetrico preciso · pacing per sezione · FC target, non passo · mai spingere nei primi 20 km — sulla base della forma reale."},
+  {icon:"🎒", title:"Drop bag e ristori Eiger E51", when:"Da definire aprile 2027",
+   detail:"L'E51 è un loop da Grindelwald: logistica semplice, drop bag unica. Verificare i punti ristoro e testare la routine (max 5 min per ristoro) già a Malcesine."},
 ];
 
 function raceRemindersHTML() {
@@ -1265,33 +1219,35 @@ function raceRemindersHTML() {
 function daysTo(dateStr) {
   return Math.max(0, Math.ceil((new Date(dateStr) - new Date()) / 86400000));
 }
-// Soglie allineate alle settimane reali di PHASES/W (lunedì di inizio fase),
-// non più mesi di calendario a spanne. Aggiornato 21/09/2026: 7 fasi
-// ufficiali dalla sezione "Fasi" del file di contesto.
+// Soglie allineate alle settimane reali di PHASES/W (lunedì di inizio blocco),
+// non più mesi di calendario a spanne. Aggiornato 25/09/2026: 5 blocchi.
 function currentPhase() {
   var n = new Date();
   if (n < new Date("2026-09-01")) return "Pre";
   if (n < new Date("2026-09-21")) return "Restart";
-  if (n < new Date("2027-01-25")) return "Base Period";
-  if (n < new Date("2027-07-12")) return "Specific Period";
-  if (n < new Date("2027-07-19")) return "Monte Rosa";
-  if (n < new Date("2027-10-25")) return "Rebuild";
-  if (n < new Date("2027-11-01")) return "Taper Puglia";
-  return "Puglia";
+  if (n < new Date("2027-01-25")) return "Base";
+  if (n < new Date("2027-06-28")) return "Specifico";
+  if (n < new Date("2027-07-19")) return "Taper";
+  if (n < new Date("2027-08-30")) return "Rebuild";
+  return "Fine piano";
 }
 
 // Gerarchia priorità sessioni — da contesto-allenamento.md §"Gerarchia
 // Sessioni - Cosa Saltare se Non Hai Tempo" (3 livelli, non solo
 // obbligatorio/opzionale): 🔴 mai saltare, 🟡 quasi mai, 🟢 saltabile.
-// Le tabelle del libro raggruppano le fasi in 3 blocchi: Restart (S1-4),
-// Base (S5-24, include anche Aerobico), Specifico (S25-38, include anche
-// Picco/inizio Taper) — i confini usati qui riprendono esattamente quelli.
+// Le tabelle del libro hanno 3 gruppi (Restart / Base / Specifico); qui sono
+// applicati ai blocchi UFFICIALI del piano (25/09/2026): Restart S1-3, Base
+// S4-21, Specifico S22-43. Taper (S44-46) e Rebuild (S47-52) non hanno una
+// gerarchia scritta: il Taper eredita quella dello Specifico (le sessioni
+// restano le stesse, solo ridotte), il Rebuild quella del Base.
+// NB: il file riporta ancora i vecchi confini (Base S5-24, Specifico S25-38)
+// nelle intestazioni della sezione — vanno riallineati alla struttura a 5 blocchi.
 function sessionPriority(day, dayLabel, weekNum) {
   if (day.t === "rest") return null;
   if (day.t === "test") return { sym: "🔴", cls: "never", label: "Mai saltare — calibra tutto il piano" };
   if (day.t === "race") return { sym: "🔴", cls: "never", label: "Gara" };
 
-  var group = weekNum <= 4 ? "restart" : weekNum <= 24 ? "base" : "specifico";
+  var group = weekNum <= 3 ? "restart" : weekNum <= 21 ? "base" : weekNum <= 46 ? "specifico" : "base";
 
   if (group === "restart") {
     if (dayLabel === "Mar" || dayLabel === "Mer") return { sym: "🟡", cls: "rare", label: "Quasi mai saltare" };
@@ -1403,7 +1359,17 @@ function renderPhaseTabs() {
 }
 
 function renderPiano() {
-  var days = daysTo("2027-06-26");
+  // Countdown alla gara A: la prima settimana con badge 🏆 in W (oggi Eiger
+  // E51, S46) — prima era una data fissa 26/06/2027 (Lavaredo), rimasta
+  // sbagliata dopo il cambio di obiettivo.
+  var aRace = null;
+  W.forEach(function(wk) {
+    if (aRace || !wk.sp || wk.sp.indexOf("🏆") !== 0) return;
+    for (var i = 0; i < wk.days.length; i++) {
+      if (wk.days[i].t === "race") { aRace = dateForWeekDay(wk.w, i); return; }
+    }
+  });
+  var days = daysTo(aRace || "2027-07-17");
   var countdown = [
     {v:days,l:"giorni"},{v:Math.ceil(days/7),l:"settimane"},{v:currentPhase(),l:"fase"}
   ].map(function(item){
@@ -1452,47 +1418,32 @@ function renderBlocchi() {
 // Running Stones", aggiornare qui a mano quando cambia la roadmap).
 // ============================================================
 
-// Aggiornato 19/09/2026 — roadmap sostituita per intero: obiettivo non più
-// Lavaredo 80K/120K → UTMB 2030-31, ma Monte Rosa 82K + Puglia 100K (2027)
-// → LUT 120K (2030, sblocca Index 100M) → UTMB 2032. Confermato da
-// Leonardo in chat dopo che il file conteneva due roadmap incompatibili.
-var UTMB_STONES_TARGET = 31;
+// Aggiornato 25/09/2026 — roadmap dal file di contesto § "Roadmap UTMB 2032":
+// 2027 Eiger E51 (unica WS dell'anno) → 2028 LUT 80K garantita → 2029 Monte
+// Rosa 82K + una 100K → 2030 LUT 120K (sblocca Index 100M) → 2031 Val d'Aran
+// Major 100M + Grossglockner → UTMB 2032 con 27 stones (~52-55%).
+// Il file NON ha più la vecchia tabella generica "stones → probabilità"
+// (rimossa nella pulizia del 21/09): restano solo le cifre esplicite.
+var UTMB_STONES_TARGET = 27;
 var UTMB_STONES_CURRENT = 0;
 var UTMB_CURRENT_YEAR = 2026;
+var UTMB_PROB_TARGET = "~52-55%";
+var UTMB_PROB_DOUBLE = "~72-75%";
 
 var UTMB_ROADMAP = [
   {year: 2026, race: "—", gained: "0", total: 0, index: "50K (scade ago 2027)", note: "Anno di base"},
-  {year: 2027, race: "Monte Rosa 82K (lug)", gained: "+3", total: 3, index: "100K · A-race 2027", note: "Prima WS race"},
-  {year: 2027, race: "Puglia 100K (nov)", gained: "+3", total: 6, index: "100K", note: "A-race autunno 2027"},
-  {year: 2028, race: "LUT 80K (garantita, giu)", gained: "+3", total: 9, index: "100K refresh", note: "Primo vero 80K+"},
-  {year: 2029, race: "WS 100K gara 1 (tbd)", gained: "+3", total: 12, index: "100K", note: ""},
-  {year: 2029, race: "WS 100K gara 2 (tbd)", gained: "+3", total: 15, index: "100K", note: ""},
-  {year: 2030, race: "LUT 120K (giu)", gained: "+5", total: 20, index: "100M sbloccato 🏆", note: "Index 100M sbloccato"},
-  {year: 2031, race: "Val d'Aran Major (lug)", gained: "+6", total: 26, index: "100K Major", note: "Doppio stones"},
-  {year: 2031, race: "Grossglockner 110K (lug)", gained: "+5", total: 31, index: "100M", note: "Seconda 100M"},
-  {year: 2032, race: "UTMB Mont-Blanc", gained: "—", total: 31, index: "100M valido", note: "Età 40 🏆 · ~65-67% estrazione"},
+  {year: 2027, race: "Eiger E51 · 51K (lug)", gained: "+2", total: 2, index: "50K WS", note: "A-race 2027"},
+  {year: 2028, race: "LUT 80K garantita (giu)", gained: "+3", total: 5, index: "100K WS", note: "Primo vero 80K+"},
+  {year: 2029, race: "Monte Rosa 82K (lug)", gained: "+3", total: 8, index: "100K WS", note: ""},
+  {year: 2029, race: "WS 100K gara 2 (tbd)", gained: "+3", total: 11, index: "100K WS", note: ""},
+  {year: 2030, race: "LUT 120K (giu)", gained: "+4", total: 15, index: "100M 🔑 WS", note: "Index 100M sbloccato 🏆"},
+  {year: 2031, race: "Val d'Aran Major 100M (lug)", gained: "+8", total: 23, index: "100M Major", note: "Major = doppio"},
+  {year: 2031, race: "Grossglockner 110K (lug)", gained: "+4", total: 27, index: "100M WS", note: "Seconda 100M"},
+  {year: 2032, race: "UTMB Mont-Blanc", gained: "—", total: 27, index: "Finale", note: "Età 40 🏆 · " + UTMB_PROB_TARGET + " estrazione"},
 ];
-
-var UTMB_PROB_TABLE = [
-  {min: 1, max: 3, label: "1-3", prob: "~5-8%"},
-  {min: 4, max: 7, label: "4-7", prob: "~10-15%"},
-  {min: 8, max: 12, label: "8-12", prob: "~20-30%"},
-  {min: 13, max: 17, label: "13-17", prob: "~35-50%"},
-  {min: 18, max: 22, label: "18-22", prob: "~60-75%"},
-  {min: 23, max: Infinity, label: "23+", prob: "~80%+"},
-];
-
-function utmbProbabilityFor(stones) {
-  if (stones < 1) return null; // serve almeno 1 stone negli ultimi 24 mesi
-  for (var i = 0; i < UTMB_PROB_TABLE.length; i++) {
-    if (stones >= UTMB_PROB_TABLE[i].min && stones <= UTMB_PROB_TABLE[i].max) return UTMB_PROB_TABLE[i];
-  }
-  return null;
-}
 
 function renderUtmb() {
   var pct = Math.round((UTMB_STONES_CURRENT / UTMB_STONES_TARGET) * 100);
-  var prob = utmbProbabilityFor(UTMB_STONES_CURRENT);
 
   var years = UTMB_ROADMAP.map(function(r) {
     var isCurrent = r.year === UTMB_CURRENT_YEAR;
@@ -1501,21 +1452,9 @@ function renderUtmb() {
         '<div class="utmb-year-dot">' + r.year + '</div>' +
         '<div>' +
           '<div class="utmb-year-race">' + esc(r.race) + '</div>' +
-          '<div class="utmb-year-detail">Index: ' + esc(r.index) + ' · ' + esc(r.note) + '</div>' +
+          '<div class="utmb-year-detail">Categoria: ' + esc(r.index) + (r.note ? ' · ' + esc(r.note) : '') + '</div>' +
           '<div class="utmb-year-stones">' + esc(r.gained) + ' stones → totale ' + r.total + '</div>' +
         '</div>' +
-      '</div>'
-    );
-  }).join("");
-
-  // barra probabilità: posiziona un marcatore sulla fascia corrente del target 20
-  var probBarSegs = UTMB_PROB_TABLE.map(function(band, i) {
-    var isTargetBand = UTMB_STONES_TARGET >= band.min && UTMB_STONES_TARGET <= band.max;
-    return (
-      '<div style="flex:1;background:' + (isTargetBand ? C.p1 : "#242424") + ';padding:8px 2px;text-align:center;' +
-        (i > 0 ? "border-left:2px solid var(--bg);" : "") + '">' +
-        '<div style="font-size:10px;font-weight:800;color:' + (isTargetBand ? "#0009" : "var(--muted)") + '">' + band.label + '</div>' +
-        '<div style="font-size:9px;font-weight:700;color:' + (isTargetBand ? "#0008" : "var(--muted)") + '">' + band.prob + '</div>' +
       '</div>'
     );
   }).join("");
@@ -1524,24 +1463,26 @@ function renderUtmb() {
     '<div class="card"><div class="card-body">' +
       '<div class="param-l" style="margin-bottom:2px">RUNNING STONES</div>' +
       '<div class="progress-track"><div class="progress-fill" style="width:' + pct + '%"></div></div>' +
-      '<div class="progress-label"><span>' + UTMB_STONES_CURRENT + ' accumulate</span><span>target ' + UTMB_STONES_TARGET + ' (' + pct + '%)</span></div>' +
-      '<div class="note" style="padding:8px 0 0">Stones per gara WS completata: 20K=1 · 50K=2 · 100K=3 · 100M=4. Non scadono mai.</div>' +
+      '<div class="progress-label"><span>' + UTMB_STONES_CURRENT + ' accumulate</span><span>target ' + UTMB_STONES_TARGET + ' entro il 2031 (' + pct + '%)</span></div>' +
+      '<div class="note" style="padding:8px 0 0">Stones per gara WS completata: 20K=1 · 50K=2 · 100K=3 · 100M=4 (le Major contano doppio). Non scadono mai.</div>' +
     '</div></div>' +
 
     '<div class="card"><div class="card-body" style="text-align:center;padding:14px">' +
       '<div class="param-l" style="margin-bottom:4px">UTMB INDEX</div>' +
       '<div style="font-size:26px;font-weight:900;color:' + C.p6 + '">503</div>' +
       '<div class="param-sub">categoria 50K · scade 1 agosto 2027</div>' +
-      '<div class="note" style="padding:6px 0 0">Prossimo refresh con Monte Rosa Trail 82K (lug 2027) → sblocca categoria 100K.</div>' +
+      '<div class="note" style="padding:6px 0 0">Prossimo refresh con Eiger E51 51K (lug 2027, +2 stones). La categoria 100K arriva con la LUT 80K (giu 2028), la 100M con la LUT 120K (giu 2030).</div>' +
     '</div></div>' +
 
     '<div class="card">' +
       '<div class="card-head"><span class="label">🎯 Probabilità di estrazione</span></div>' +
-      '<div class="card-body" style="padding-top:12px">' +
-        '<div style="display:flex;border-radius:10px;overflow:hidden;margin-bottom:8px">' + probBarSegs + '</div>' +
-        '<div class="note" style="padding:0">' + (prob
-          ? "Con " + UTMB_STONES_CURRENT + " stones: " + prob.prob + " di probabilità di estrazione UTMB."
-          : "Con " + UTMB_STONES_CURRENT + " stones non sei ancora idoneo alla lotteria — serve almeno 1 stone (una gara World Series completata) negli ultimi 24 mesi. La fascia evidenziata sopra (" + UTMB_STONES_TARGET + ") è il target roadmap.") +
+      '<div class="card-body" style="padding-top:12px;text-align:center">' +
+        '<div style="font-size:26px;font-weight:900;color:' + C.p1 + '">' + UTMB_PROB_TARGET + '</div>' +
+        '<div class="param-sub">con ' + UTMB_STONES_TARGET + ' stones nel 2032</div>' +
+        '<div class="note" style="padding:8px 0 0">Con doppio tentativo (2032 + 2033): ' + UTMB_PROB_DOUBLE + '. ' +
+        (UTMB_STONES_CURRENT < 1
+          ? 'Oggi (' + UTMB_STONES_CURRENT + ' stones) non sei ancora idoneo alla lotteria — serve almeno 1 stone (una gara World Series completata) negli ultimi 24 mesi.'
+          : 'Stones attuali: ' + UTMB_STONES_CURRENT + '.') +
         '</div>' +
       '</div>' +
     '</div>' +
@@ -1552,8 +1493,8 @@ function renderUtmb() {
     '</div>' +
 
     '<div class="note" style="padding:0 0 12px">' +
-      'Con 31 stones nel 2032: ~65-67% di probabilità stimata (valore specifico da roadmap, leggermente sotto la fascia generica "23+" della tabella sopra). ' +
-      'Punto critico: il 2030 sblocca l\'Index 100M (via LUT 120K), senza il quale non si entra in lotteria per UTMB.' +
+      'Punto critico: il 2030 (LUT 120K) sblocca l\'Index 100M, senza il quale non si entra in lotteria per UTMB. ' +
+      'Lotteria LUT 120K: 2029 primo tentativo, 2030 secondo (se non estratto → garantita 2031).' +
     '</div>';
 }
 
@@ -1571,35 +1512,59 @@ function phaseEndDateLabel(phaseId) {
 
 function renderVerdict() {
   var curWeek = currentWeekNumber();
+  var verdicts = DATA.verdicts || {};
+  var OUTCOME = {
+    promosso:  { label: "✅ Promosso",  bg: "#0a1f12", col: "#4ade80" },
+    da_rifare: { label: "🔁 Da rifare", bg: "#1f0a0a", col: "#f87171" },
+    attenzione:{ label: "⚠️ Attenzione", bg: "#1c1004", col: "#fbbf24" }
+  };
   var cards = PHASES.map(function(ph) {
     var weeks = W.filter(function(w){ return w.p === ph.id; });
     var firstW = weeks[0].w, lastW = weeks[weeks.length - 1].w;
+    var v = verdicts[ph.name.toLowerCase()];
     var status, statusBg, statusCol;
-    if (curWeek > lastW) { status = "Da generare"; statusBg = "#1c1004"; statusCol = C.p6; }
+    if (v) {
+      var o = OUTCOME[v.outcome] || { label: "Completato", bg: "#0a1628", col: C.p2 };
+      status = o.label; statusBg = o.bg; statusCol = o.col;
+    }
+    else if (curWeek > lastW) { status = "Da generare"; statusBg = "#1c1004"; statusCol = C.p6; }
     else if (curWeek >= firstW && curWeek <= lastW) { status = "In corso"; statusBg = "#0a1628"; statusCol = C.p2; }
     else { status = "In attesa"; statusBg = "#1f2937"; statusCol = C.muted; }
+
+    var body = "";
+    if (v) {
+      body =
+        '<div class="verdict-body">' +
+          (v.headline ? '<div class="verdict-headline">' + esc(v.headline) + '</div>' : '') +
+          v.html +  // già escapato lato Python (generate_dashboard.parse_verdicts)
+        '</div>';
+    }
     return (
-      '<div class="verdict-card">' +
+      '<div class="verdict-card' + (v ? " has-body" : "") + '">' +
         '<div class="verdict-title-row">' +
           '<div>' +
             '<div class="verdict-title" style="color:' + ph.col + '">' + esc(ph.name) + '</div>' +
-            '<div class="verdict-dates">Settimane ' + firstW + '–' + lastW + ' · fino al ' + esc(phaseEndDateLabel(ph.id)) + '</div>' +
+            '<div class="verdict-dates">Settimane ' + firstW + '–' + lastW + ' · fino al ' + esc(phaseEndDateLabel(ph.id)) + (v ? ' · tocca per leggere' : '') + '</div>' +
           '</div>' +
           '<span class="verdict-status" style="background:' + statusBg + ';color:' + statusCol + '">' + status + '</span>' +
         '</div>' +
+        body +
       '</div>'
     );
   }).join("");
 
   document.getElementById("page-verdict").innerHTML =
     '<div class="note" style="padding:0 0 12px">' +
-      'Analisi automatica generata da Claude Code a fine di ogni blocco: disciplina nelle uscite easy ' +
-      '(% tempo sopra AeT), separazione qualità/easy, progressione del volume, andamento FC a riposo. ' +
-      'Basata sulle metriche descritte in contesto-allenamento.md — nessun documento di riferimento ' +
-      'esterno collegato al momento. Non c&apos;è ancora nessun blocco completato: il primo verdetto ' +
-      'reale arriva dopo la fine del blocco Restart (20 settembre 2026).' +
+      'A fine di ogni blocco Claude Chat scrive il verdetto in contesto-allenamento.md ' +
+      '(sezione &quot;Verdict — BLOCCO&quot;): disciplina nelle easy, separazione qualità/easy, ' +
+      'progressione del volume, RHR, test fisiologici, esito e cosa cambia nel blocco successivo. ' +
+      'Appare qui appena è nel file — tocca una card completata per aprirlo.' +
     '</div>' +
     cards;
+
+  document.querySelectorAll("#page-verdict .verdict-card.has-body").forEach(function(card) {
+    card.addEventListener("click", function() { card.classList.toggle("open"); });
+  });
 }
 
 function initTabs() {
