@@ -155,7 +155,7 @@ Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 6x8sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
 Note: Hill Sprints S1 — trova una salita ≥20% di pendenza · sforzo MASSIMO in ogni ripetuta · stop se non riesci a mantenere la distanza delle prime
-Stato: da importare
+Stato: ✅ importata (workout_id 1714403604, confermato in chat 29/09/2026)
 
 Data: 2026-09-30
 Blocco: Base
@@ -207,7 +207,7 @@ Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 7x8sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
 Note: Hill Sprints S2 — stessa salita della settimana scorsa per confrontare la distanza
-Stato: da importare
+Stato: ✅ importata (workout_id 1714403612, confermato in chat 29/09/2026)
 
 Data: 2026-10-07
 Blocco: Base
@@ -257,7 +257,7 @@ Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 7x10sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
 Note: Hill Sprints S3 — inizia a sentire le gambe più potenti rispetto a S5
-Stato: da importare
+Stato: ✅ importata (workout_id 1714403620, confermato in chat 29/09/2026)
 
 Data: 2026-10-14
 Blocco: Base
