@@ -150,10 +150,11 @@ Stato: ✅ importata (workout_id 1701884913, automatico il 18/09/2026)
 
 Data: 2026-09-29
 Blocco: Base
-Tipo: corsa easy + hill sprints
-Distanza: 8 km tot (15 min warm-up + 6×8 sec max + 10 min cool-down)
-FC target: warm-up/cool-down < 141 bpm · sprint: MAX sforzo 8-10 sec
-Note: Hill Sprints S1 — trova una salita ≥20% di pendenza · 6 ripetute · 2-3 min recupero tra ognuna · stop se non riesci a mantenere la distanza delle prime
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 6x8sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints S1 — trova una salita ≥20% di pendenza · sforzo MASSIMO in ogni ripetuta · stop se non riesci a mantenere la distanza delle prime
 Stato: da importare
 
 Data: 2026-09-30
@@ -201,10 +202,11 @@ Stato: ✅ importata (workout_id 1708926439, automatico il 25/09/2026)
 
 Data: 2026-10-06
 Blocco: Base
-Tipo: corsa easy + hill sprints
-Distanza: 8 km tot
-FC target: MAX negli sprint · < 141 nei tratti easy
-Note: Hill Sprints S2 — 7×8 sec · 2-3 min recupero · stessa salita della settimana scorsa per confrontare la distanza
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 7x8sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints S2 — stessa salita della settimana scorsa per confrontare la distanza
 Stato: da importare
 
 Data: 2026-10-07
@@ -250,9 +252,11 @@ Stato: da importare
 
 Data: 2026-10-13
 Blocco: Base
-Tipo: corsa easy + hill sprints
-Distanza: 8 km tot
-Note: Hill Sprints S3 — 7×10 sec · 2-3 min rec · inizia a sentire le gambe più potenti rispetto a S5
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 7x10sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints S3 — inizia a sentire le gambe più potenti rispetto a S5
 Stato: da importare
 
 Data: 2026-10-14
