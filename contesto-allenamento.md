@@ -93,7 +93,7 @@ fare 55K comprometterebbe entrambe le gare. Il 24K è un long trail con la fidan
 
 **Maratona Alpina GES Schio · settembre 2027**
 - 42km · 3150m D+ · Schio → Pian delle Fugazze · non competitiva · zero costo
-- Piano: settembre 2027 (S54)
+- Piano: settembre 2027 (S52)
 
 **DBT Dolomiti Beer Trail 24K · aprile 2027**
 - Con la fidanzata · gara di cuore · C-race train through
@@ -706,7 +706,7 @@ A fine di ogni blocco generare un Verdict con:
 6. **Verdetto:** PROMOSSO / DA RIFARE / ATTENZIONE — con motivazione
 7. **Prossimo blocco:** cosa cambia, cosa monitorare
 
-## Piano Allenamento — 62 Settimane (set 2026 → nov 2027)
+## Piano Allenamento — 52 Settimane (ago 2026 → ago 2027)
 
 **Struttura secondo Training for the Uphill Athlete (House & Johnston) · Categoria 1**
 
@@ -718,7 +718,7 @@ A fine di ogni blocco generare un Verdict con:
 | **BASE** | S4-S21 | ott 2026–gen 2027 | C-race Trail Cinghiale 35K (S9) |
 | **SPECIFICO** | S22-S43 | feb–giu 2027 | B-race Malcesine 52K (S35) |
 | **TAPER** | S44-S46 | lug 2027 | **A-race Eiger E51 51K (S46) — fine blocco** |
-| **REBUILD** | S47-S52 | ago-set 2027 | Maratona Alpina GES Schio (S51) |
+| **REBUILD** | S47-S52 | lug-ago 2027 | Maratona Alpina GES Schio (S52 — fine piano) |
 
 Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separati per la gara.
 
@@ -776,18 +776,8 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S48 | 42 | B | Rebuild |
 | S49 | 50 | B | |
 | S50 | 30 | R | Scarico |
-| S51 | 22 | G | **Maratona Alpina GES Schio** · non-competitiva (metà set) |
-| S52 | 40 | B | Fine stagione 2027 |
-| S47 | 25 | R | Recovery post-Monte Rosa |
-| S48 | 52 | B | Rebuild per Puglia |
-| S49 | 60 | B | |
-| S50 | 66 | B | |
-| S51 | 38 | R | Scarico |
-| S52 | 62 | B | |
-| S53 | 68 | B | |
-| S54 | 28 | G | **Maratona Alpina GES Schio** · non-competitiva (metà set) |
-| S55 | 58 | B | |
-| S62 | 87 | G | **PUGLIA 100K Le Maioliche 85K/2000mD+ 🏆 A-RACE autunno 2027 (nov)** |
+| S51 | 40 | B | Ultima settimana di carico prima della gara di sentimento |
+| S52 | 22 | G | **Maratona Alpina GES Schio** · non-competitiva · **fine piano** (⚠️ cade fine agosto per numero settimana, ma il calendario gara la colloca a metà settembre — data da verificare) |
 
 **Marker:**
 S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
@@ -795,7 +785,7 @@ S9: G — Trail del Cinghiale 35K (C-race, Palazzuolo sul Senio) · S10: R
 S7: Test AeT #2 · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
 S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
-S54: G — Maratona Alpina GES Schio (sentimento) · S62: G — PUGLIA 100K 🏆 A-RACE autunno
+S52: G — Maratona Alpina GES Schio (sentimento, fine piano)
 
 ---
 
