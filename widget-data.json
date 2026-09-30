@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-29T10:45:15",
+  "generated_at": "2026-09-30T10:45:11",
   "phase_label": "Base · sett. 2/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-29",
-    "day_label": "Mar",
-    "type": "run",
-    "label": "Hill Sprints S1 · 8 km tot",
-    "extra": "15 min warm-up + 6×8 sec MAX su salita ≥20% + 10 min cool-down · 2-3 min recupero tra ripetute · FC<141 fuori dagli sprint"
+    "date": "2026-09-30",
+    "day_label": "Mer",
+    "type": "gym",
+    "label": "💪 Giorno 2",
+    "extra": "Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1: plank 3×45sec · bird-dog 3×10 per lato"
   },
   "key_workout": {
     "date": "2026-10-02",
@@ -18,11 +18,11 @@
   },
   "week": {
     "planned_km": 30,
-    "actual_km": 0.0
+    "actual_km": 6.0
   },
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL DEL CINGHIALE 35K",
-    "days_until": 32
+    "days_until": 31
   }
 }
