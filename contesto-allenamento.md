@@ -290,7 +290,7 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - No ME, no Zone 3-4
 - Giovedì e domenica: entrambi riposo
 
-**Settimana T (Taper — S45 pre-Monte Rosa · S61 pre-Puglia):**
+**Settimana T (Taper — S45 pre-Eiger):**
 - -25% volume rispetto alla settimana precedente
 - Mantieni qualità ma riduci volume
 - Niente nuovi stimoli
@@ -310,12 +310,12 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 
 ---
 
-## Progressione Long Trail — da S4 a S46 (Monte Rosa)
+## Progressione Long Trail — da S4 a S46 (Eiger)
 
 **Tre checkpoint al 75%:**
 - Pre-Cinghiale (S7): sabato **26 km / 1200m D+** = 74% di 35K ✅
 - Pre-Malcesine (S33): sabato **39 km / 2400m D+** = 75% di 52K ✅
-- Pre-Monte Rosa (S43): b2b **40+25=65 km / 4600m D+** = 79% di 82K ✅
+- Pre-Eiger (S43): sabato **40 km** (b2b con 25 km domenica = **65 km / 4600m D+** totali) = 78% di 51K (Eiger) ✅ — checkpoint sul solo sabato, il back-to-back è la modalità con cui si accumula volume in sicurezza (stesso metodo usato per Malcesine)
 
 Il long trail del sabato parte da **15 km / 500m D+ (S4, domenica 22 set)**
 e arriva al picco back-to-back di 40+25 km = 65 km (S43).
@@ -369,7 +369,7 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S40 R | 22 km | 1000m | 13 km | 500m | 35 km | Scarico |
 | S41 | 36 km | 2800m | 20 km | 1100m | 56 km | |
 | S42 | 38 km | 3000m | 22 km | 1200m | 60 km | |
-| S43 PICCO2 | **40 km** | **3200m** | **25 km** | **1400m** | **65 km / 4600m** | **79% Monte Rosa ✅** |
+| S43 PICCO2 | **40 km** | **3200m** | **25 km** | **1400m** | **65 km / 4600m** | **78% Eiger (sabato) ✅** |
 | S44 R | 22 km | 1000m | 13 km | 500m | 35 km | Scarico |
 | S45 taper | 18 km | 800m | — | — | solo sab | Taper |
 | **S46** | **EIGER E51 51K** | **3450m** 🏔️ | | | | |
@@ -835,7 +835,7 @@ Da ogni long trail di ottobre in poi: attrezzatura esatta di gara.
 - **Scarpe:** scarpe da gara su ogni long trail. Mai scarpe nuove in gara.
 - **Vest/zaino:** sempre carico come in gara (soft flask, gel, cerata, coperta termica).
 - **Bastoncini:** su ogni uscita con D+ significativo.
-- **Pila frontale:** ⚠️ verificare orario partenza Monte Rosa WalserWaeg 2027.
+- **Pila frontale:** ⚠️ verificare orario partenza Eiger E51 2027.
   Se partenza serale → pila necessaria. Se mattutina → solo ultime ore.
 
 ### Nutrizione in corsa (da ottobre in poi)
@@ -872,10 +872,9 @@ Target: perdita < 3% peso corporeo (max 2.3 kg su 78 kg).
 | S35 Malcesine | Gara reale | Pesa pre/post | Prima verifica in gara |
 | S46 Eiger E51 | Gara reale | Pesa pre/post | Verifica condizioni luglio in quota |
 
-### Gestione del caldo (giugno 2027, pre-Monte Rosa)
+### Gestione del caldo (giugno 2027, pre-Eiger)
 
-L'Eiger E51 rimane quasi interamente sopra i 1000m (min ~900m) — caldo gestibile.
-Nessuna sezione a bassa quota come il Monte Rosa WalserWaeg (min 337m).
+L'Eiger E51 rimane quasi interamente sopra i 1000m (min ~900m) — caldo gestibile, nessun tratto lungo a bassa quota.
 L'acclimatamento richiede 10-14 giorni di esposizione continuativa.
 
 **Settimane S37-S42 (giugno 2027):** acclimatazione al caldo per prudenza —
