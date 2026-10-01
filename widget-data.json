@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-30T12:39:33",
+  "generated_at": "2026-10-01T10:45:11",
   "phase_label": "Base · sett. 2/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-09-30",
-    "day_label": "Mer",
-    "type": "gym",
-    "label": "💪 Giorno 2",
-    "extra": "Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1: plank 3×45sec · bird-dog 3×10 per lato"
+    "date": "2026-10-01",
+    "day_label": "Gio",
+    "type": "run",
+    "label": "7 km easy",
+    "extra": "FC < 141 bpm (Z1) · 3×150m discesa veloce controllata (DH pick-up) alla fine, recupero 2 min salendo piano"
   },
   "key_workout": {
     "date": "2026-10-02",
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL DEL CINGHIALE 35K",
-    "days_until": 31
+    "days_until": 30
   }
 }
