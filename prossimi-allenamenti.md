@@ -214,7 +214,7 @@ Blocco: Base
 Tipo: forza
 Durata: 60 min
 Note: Palestra Giorno 3 — Leg Curl Prono · Affondi camminata · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS + Core #1
-Stato: da importare
+Stato: ✅ importata (workout_id 1716511843, automatico il 02/10/2026)
 
 Data: 2026-10-08
 Blocco: Base
@@ -222,14 +222,14 @@ Tipo: corsa easy
 Distanza: 8 km
 FC target: < 141 bpm
 Note: Easy Z1 · 3×150m DH pick-up alla fine
-Stato: da importare
+Stato: ✅ importata (workout_id 1716511857, automatico il 02/10/2026)
 
 Data: 2026-10-09
 Blocco: Base
 Tipo: corsa qualità
 Durata: 50 min
 Note: ME Workout #2 — zaino 6 kg · salita 25-35% · 22 min continuativi · Core #2 dopo
-Stato: da importare
+Stato: ✅ importata (workout_id 1716511874, automatico il 02/10/2026)
 
 Data: 2026-10-10
 Blocco: Base
@@ -237,14 +237,14 @@ Tipo: long trail
 Distanza: 11 km
 FC target: < 141 bpm (Z1) · ultimi 15 min Z2
 Note: ~550m D+ · bastoncini + vest · CHO ogni 40 min · pesa prima/dopo
-Stato: da importare
+Stato: ✅ importata (workout_id 1716511880, automatico il 02/10/2026)
 
 Data: 2026-10-11
 Blocco: Base
 Tipo: hiking
 Durata: 75 min
 Note: 3×150m DH pick-up · Recovery
-Stato: da importare
+Stato: ✅ importata (workout_id 1716511887, automatico il 02/10/2026)
 
 ---
 
