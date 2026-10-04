@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-02T15:41:58",
+  "generated_at": "2026-10-04T09:23:31",
   "phase_label": "Base · sett. 2/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-10-02",
-    "day_label": "Ven",
-    "type": "run",
-    "label": "Qualità · ME Workout #1 · 45 min",
-    "extra": "Zaino 5 kg · salita 25-35% pendenza · 20 min continuativi cammina/corri · gambe brucianti, cuore no (FC<141) · Core #2 dopo"
+    "date": "2026-10-04",
+    "day_label": "Dom",
+    "type": "hike",
+    "label": "Hiking 60 min",
+    "extra": "Recovery · FC<130 · 3×150m DH pick-up alla fine"
   },
   "key_workout": {
-    "date": "2026-10-03",
-    "day_label": "Sab",
-    "type": "trail",
-    "label": "Trail 18 km",
-    "extra": "~700m D+ · prima uscita con zaino gara + bastoncini · CHO ogni 40-45 min (30-40g/ora) · pesa prima/dopo (sweat test baseline)"
+    "date": "2026-10-09",
+    "day_label": "Ven",
+    "type": "run",
+    "label": "Qualità · ME Workout #2 · 50 min",
+    "extra": "Zaino 6 kg · salita 25-35% · 22 min continuativi · Core #2 dopo"
   },
   "week": {
     "planned_km": 30,
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL DEL CINGHIALE 35K",
-    "days_until": 29
+    "days_until": 27
   }
 }
