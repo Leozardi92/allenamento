@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-04T10:45:10",
-  "phase_label": "Base · sett. 2/18",
+  "generated_at": "2026-10-05T11:45:59",
+  "phase_label": "Base · sett. 3/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-10-04",
-    "day_label": "Dom",
-    "type": "hike",
-    "label": "Hiking 60 min",
-    "extra": "Recovery · FC<130 · 3×150m DH pick-up alla fine"
+    "date": "2026-10-06",
+    "day_label": "Mar",
+    "type": "run",
+    "label": "Hill Sprints S2 · 8 km tot",
+    "extra": "7×8 sec MAX · 2-3 min recupero · stessa salita di S5 per confrontare la distanza"
   },
   "key_workout": {
     "date": "2026-10-09",
@@ -17,12 +17,12 @@
     "extra": "Zaino 6 kg · salita 25-35% · 22 min continuativi · Core #2 dopo"
   },
   "week": {
-    "planned_km": 30,
-    "actual_km": 13.0
+    "planned_km": 33,
+    "actual_km": 0.0
   },
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL DEL CINGHIALE 35K",
-    "days_until": 27
+    "days_until": 26
   }
 }
