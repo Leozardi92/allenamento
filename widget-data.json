@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T11:45:59",
+  "generated_at": "2026-10-06T11:28:04",
   "phase_label": "Base · sett. 3/18",
   "plan_status": "active",
   "next_workout": {
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL DEL CINGHIALE 35K",
-    "days_until": 26
+    "days_until": 25
   }
 }
