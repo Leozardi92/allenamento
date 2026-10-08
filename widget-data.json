@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-07T11:45:09",
+  "generated_at": "2026-10-08T12:46:02",
   "phase_label": "Base · sett. 3/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-10-07",
-    "day_label": "Mer",
-    "type": "gym",
-    "label": "💪 Giorno 3",
-    "extra": "Leg Curl Prono · Affondi camminata · Nordic Curl · Spinte panca · Croci · Curl cavo · ABS + Core #1"
+    "date": "2026-10-08",
+    "day_label": "Gio",
+    "type": "run",
+    "label": "8 km easy",
+    "extra": "FC < 141 bpm · 3×150m DH pick-up alla fine"
   },
   "key_workout": {
     "date": "2026-10-09",
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL DEL CINGHIALE 35K",
-    "days_until": 24
+    "days_until": 23
   }
 }
