@@ -264,7 +264,7 @@ Blocco: Base
 Tipo: forza
 Durata: 60 min
 Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension · Calf · ABS + Core #1 · incrementa pesi rispetto a S5
-Stato: da importare
+Stato: ✅ importata (workout_id 1723911317, automatico il 09/10/2026)
 
 Data: 2026-10-15
 Blocco: Base
@@ -272,7 +272,7 @@ Tipo: corsa easy
 Distanza: 9 km
 FC target: < 141 bpm
 Note: Easy Z1 · 4×150m DH pick-up alla fine
-Stato: da importare
+Stato: ✅ importata (workout_id 1723911325, automatico il 09/10/2026)
 
 Data: 2026-10-16
 Blocco: Test
@@ -281,7 +281,7 @@ Riscaldamento: 15 min FC 110-130 bpm
 Ripetute: 60 min FC 135-148 bpm (Test AeT #2 — stesso percorso del 10 set · confronta passo medio)
 Defaticamento: 10 min FC < 125 bpm
 Note: Spostato qui da S8 (i test non vanno in settimana di scarico) · annota passo medio dei 60 min e FC media
-Stato: da importare
+Stato: ✅ importata (workout_id 1723911327, automatico il 09/10/2026)
 
 Data: 2026-10-17
 Blocco: Base
@@ -289,7 +289,7 @@ Tipo: bici
 Durata: 75 min
 FC target: < 145 bpm
 Note: Z2 bassa · sera · recupero attivo
-Stato: da importare
+Stato: ✅ importata (workout_id 1723911334, automatico il 09/10/2026)
 
 Data: 2026-10-18
 Blocco: Base
@@ -297,7 +297,7 @@ Tipo: long trail
 Distanza: 13 km
 FC target: < 141 bpm · ultimi 20 min Z2
 Note: ~650m D+ · bastoncini + vest · CHO ogni 40 min · 40g/ora
-Stato: da importare
+Stato: ✅ importata (workout_id 1723911341, automatico il 09/10/2026)
 
 ---
 
