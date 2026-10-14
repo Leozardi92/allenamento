@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-13T10:45:18",
+  "generated_at": "2026-10-14T10:45:10",
   "phase_label": "Base · sett. 4/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-10-13",
-    "day_label": "Mar",
-    "type": "run",
-    "label": "Hill Sprints S3 · 8 km tot",
-    "extra": "7×10 sec · 2-3 min recupero · le gambe iniziano a sentirsi più potenti rispetto a S5"
+    "date": "2026-10-14",
+    "day_label": "Mer",
+    "type": "gym",
+    "label": "💪 Giorno 1",
+    "extra": "Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS + Core #1 · incrementa i pesi rispetto a S5"
   },
   "key_workout": {
     "date": "2026-10-15",
@@ -18,11 +18,11 @@
   },
   "week": {
     "planned_km": 36,
-    "actual_km": 0.0
+    "actual_km": 9.3
   },
   "next_race": {
     "date": "2026-10-31",
     "label": "🏁 TRAIL DEL CINGHIALE 35K",
-    "days_until": 18
+    "days_until": 17
   }
 }
