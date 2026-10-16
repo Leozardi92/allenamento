@@ -310,14 +310,14 @@ Tipo: corsa easy
 Distanza: 5 km
 FC target: < 135 bpm
 Note: Recupero leggero · niente hill sprints questa settimana (scarico)
-Stato: da importare
+Stato: ✅ importata (workout_id 1731400090, automatico il 16/10/2026)
 
 Data: 2026-10-21
 Blocco: Base
 Tipo: forza
 Durata: 40 min
 Note: Palestra Giorno 2 RIDOTTA · solo 2 esercizi principali + Core #1 · carichi ridotti del 30%
-Stato: da importare
+Stato: ✅ importata (workout_id 1731400097, automatico il 16/10/2026)
 
 Data: 2026-10-22
 Blocco: Base
@@ -325,7 +325,7 @@ Tipo: corsa easy
 Distanza: 5 km
 FC target: < 135 bpm
 Note: Pre-test · gambe leggere
-Stato: da importare
+Stato: ✅ importata (workout_id 1731400103, automatico il 16/10/2026)
 
 Data: 2026-10-23
 Blocco: Base
@@ -333,7 +333,7 @@ Tipo: corsa easy
 Distanza: 5 km
 FC target: < 135 bpm
 Note: Recupero leggero — niente test qui, spostato a S7 (16/10)
-Stato: da importare
+Stato: ✅ importata (workout_id 1731400113, automatico il 16/10/2026)
 
 Data: 2026-10-25
 Blocco: Base
@@ -341,4 +341,4 @@ Tipo: long trail
 Distanza: 6 km
 FC target: < 135 bpm
 Note: Uscita leggera di fine scarico · niente D+ significativo
-Stato: da importare
+Stato: ✅ importata (workout_id 1731400117, automatico il 16/10/2026)
