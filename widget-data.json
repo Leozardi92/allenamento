@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T19:56:06",
+  "generated_at": "2026-10-18T00:11:53",
   "phase_label": "Base · sett. 4/18",
   "plan_status": "active",
   "next_workout": {
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2027-04-03",
     "label": "🏁 DBT 24K",
-    "days_until": 168
+    "days_until": 167
   }
 }
