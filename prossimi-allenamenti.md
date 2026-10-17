@@ -256,8 +256,8 @@ Tipo: corsa qualità
 Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 7x10sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
-Note: Hill Sprints S3 — inizia a sentire le gambe più potenti rispetto a S5
-Stato: ✅ importata (workout_id 1714403620, confermato in chat 29/09/2026)
+Note: Hill Sprints S3 — NON eseguiti: martedì 13/10 è stato fatto il Test AeT #2 (9.3 km · FC media 139 bpm · passo medio 6:11/km). Gli Hill Sprints S3 slittano a S8 (20/10)
+Stato: ⛔ non eseguita — sostituita dal Test AeT #2 del 13/10 (workout_id 1714403620, mai eseguito)
 
 Data: 2026-10-14
 Blocco: Base
@@ -280,8 +280,8 @@ Tipo: corsa qualità
 Riscaldamento: 15 min FC 110-130 bpm
 Ripetute: 60 min FC 135-148 bpm (Test AeT #2 — stesso percorso del 10 set · confronta passo medio)
 Defaticamento: 10 min FC < 125 bpm
-Note: Spostato qui da S8 (i test non vanno in settimana di scarico) · annota passo medio dei 60 min e FC media
-Stato: ✅ importata (workout_id 1723911327, automatico il 09/10/2026)
+Note: NON eseguito il 16/10: il Test AeT #2 è stato fatto martedì 13/10 (9.3 km · FC media 139 bpm · passo medio 6:11/km vs 6:56/km di settembre)
+Stato: ⛔ non eseguita — test già fatto il 13/10 (workout_id 1723911327, mai eseguito)
 
 Data: 2026-10-17
 Blocco: Base
@@ -301,44 +301,143 @@ Stato: ✅ importata (workout_id 1723911341, automatico il 09/10/2026)
 
 ---
 
-### BLOCCO: Base — Settimana 8 (20–25 ott 2026) · 20 km · Tipo: R (SCARICO)
-### + Test AeT
+### BLOCCO: Base — Settimana 8 (20–25 ott 2026) · 36 km · Tipo: B
+> Ripresa dopo lo scarico di fatto di S7 · Trail del Cinghiale rinunciato (17/10) · la progressione del Base prosegue
 
 Data: 2026-10-20
 Blocco: Base
-Tipo: corsa easy
-Distanza: 5 km
-FC target: < 135 bpm
-Note: Recupero leggero · niente hill sprints questa settimana (scarico)
-Stato: ✅ importata (workout_id 1731400090, automatico il 16/10/2026)
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 7x10sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints S3 — è il passo saltato in S7 (martedì scorso hai fatto il Test AeT) · sforzo MASSIMO · stessa salita delle settimane scorse
+Stato: da importare
 
 Data: 2026-10-21
 Blocco: Base
 Tipo: forza
-Durata: 40 min
-Note: Palestra Giorno 2 RIDOTTA · solo 2 esercizi principali + Core #1 · carichi ridotti del 30%
-Stato: ✅ importata (workout_id 1731400097, automatico il 16/10/2026)
+Durata: 60 min
+Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension · Calf · ABS + Core #1 (Giorno 1 saltato in S7)
+Stato: da importare
 
 Data: 2026-10-22
 Blocco: Base
 Tipo: corsa easy
-Distanza: 5 km
-FC target: < 135 bpm
-Note: Pre-test · gambe leggere
-Stato: ✅ importata (workout_id 1731400103, automatico il 16/10/2026)
+Distanza: 7 km
+FC target: < 141 bpm
+Note: Easy Z1 · 3×150m DH pick-up alla fine
+Stato: da importare
 
 Data: 2026-10-23
 Blocco: Base
-Tipo: corsa easy
-Distanza: 5 km
-FC target: < 135 bpm
-Note: Recupero leggero — niente test qui, spostato a S7 (16/10)
-Stato: ✅ importata (workout_id 1731400113, automatico il 16/10/2026)
+Tipo: corsa qualità
+Durata: 55 min
+FC target: < 141 bpm cardiovascolare (la fatica sarà muscolare locale)
+Note: ME Workout #3 — zaino 7 kg · salita 25-35% pendenza · 24 min continuativi · le gambe devono bruciare, il cuore no · Core #2 dopo
+Stato: da importare
+
+Data: 2026-10-24
+Blocco: Base
+Tipo: long trail
+Distanza: 16 km
+FC target: < 141 bpm (Z1) · ultimi 20 min Z2
+Note: ~650m D+ · bastoncini + vest · CHO ogni 40 min · 40g/ora
+Stato: da importare
 
 Data: 2026-10-25
 Blocco: Base
+Tipo: hiking
+Durata: 75 min
+FC target: < 130 bpm
+Note: Recovery · 3×150m DH pick-up alla fine
+Stato: da importare
+
+---
+
+### BLOCCO: Base — Settimana 9 (27 ott–1 nov 2026) · 40 km · Tipo: B
+> 2ª settimana di carico · nessuna gara · ME sale a 25 min
+
+Data: 2026-10-27
+Blocco: Base
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 8x12sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints S4 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
+Stato: da importare
+
+Data: 2026-10-28
+Blocco: Base
+Tipo: forza
+Durata: 60 min
+Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate · ABS + Core #1
+Stato: da importare
+
+Data: 2026-10-29
+Blocco: Base
+Tipo: corsa easy
+Distanza: 8 km
+FC target: < 141 bpm
+Note: Easy Z1 · 3×150m DH pick-up alla fine
+Stato: da importare
+
+Data: 2026-10-30
+Blocco: Base
+Tipo: corsa qualità
+Durata: 55 min
+FC target: < 141 bpm cardiovascolare (la fatica sarà muscolare locale)
+Note: ME Workout #4 — zaino 7 kg · salita ≥25% · 25 min continuativi · le gambe devono bruciare, il cuore no · Core #2 dopo
+Stato: da importare
+
+Data: 2026-10-31
+Blocco: Base
 Tipo: long trail
-Distanza: 6 km
+Distanza: 19 km
+FC target: < 141 bpm (Z1) · ultimi 20 min Z2
+Note: ~800m D+ · bastoncini + vest · CHO ogni 40 min · 40g/ora
+Stato: da importare
+
+Data: 2026-11-01
+Blocco: Base
+Tipo: hiking
+Durata: 90 min
+FC target: < 130 bpm
+Note: Recovery · 3×150m DH pick-up alla fine
+Stato: da importare
+
+---
+
+### BLOCCO: Base — Settimana 10 (3–8 nov 2026) · 22 km · Tipo: R (SCARICO)
+> Chiude il ciclo 2:1 (S8-S9) · metà reps, una sola palestra, niente ME né Z3-4 · giovedì e domenica riposo
+
+Data: 2026-11-03
+Blocco: Base
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 4x8sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints dimezzati (settimana di scarico) · sforzo massimo ma poche ripetute
+Stato: da importare
+
+Data: 2026-11-04
+Blocco: Base
+Tipo: forza
+Durata: 40 min
+Note: Palestra Giorno 3 RIDOTTA · solo 2 esercizi principali + Core #1 · carichi ridotti del 30%
+Stato: da importare
+
+Data: 2026-11-06
+Blocco: Base
+Tipo: corsa easy
+Distanza: 4 km
 FC target: < 135 bpm
-Note: Uscita leggera di fine scarico · niente D+ significativo
-Stato: ✅ importata (workout_id 1731400117, automatico il 16/10/2026)
+Note: Gambe leggere
+Stato: da importare
+
+Data: 2026-11-07
+Blocco: Base
+Tipo: long trail
+Distanza: 12 km
+FC target: < 135 bpm
+Note: ~450m D+ · uscita leggera · bastoncini + vest
+Stato: da importare
