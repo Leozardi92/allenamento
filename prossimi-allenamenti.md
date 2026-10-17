@@ -311,14 +311,14 @@ Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 7x10sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
 Note: Hill Sprints S3 — è il passo saltato in S7 (martedì scorso hai fatto il Test AeT) · sforzo MASSIMO · stessa salita delle settimane scorse
-Stato: da importare
+Stato: ✅ importata (workout_id 1732433378, automatico il 17/10/2026)
 
 Data: 2026-10-21
 Blocco: Base
 Tipo: forza
 Durata: 60 min
 Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension · Calf · ABS + Core #1 (Giorno 1 saltato in S7)
-Stato: da importare
+Stato: ✅ importata (workout_id 1732433382, automatico il 17/10/2026)
 
 Data: 2026-10-22
 Blocco: Base
@@ -326,7 +326,7 @@ Tipo: corsa easy
 Distanza: 7 km
 FC target: < 141 bpm
 Note: Easy Z1 · 3×150m DH pick-up alla fine
-Stato: da importare
+Stato: ✅ importata (workout_id 1732433383, automatico il 17/10/2026)
 
 Data: 2026-10-23
 Blocco: Base
@@ -334,7 +334,7 @@ Tipo: corsa qualità
 Durata: 55 min
 FC target: < 141 bpm cardiovascolare (la fatica sarà muscolare locale)
 Note: ME Workout #3 — zaino 7 kg · salita 25-35% pendenza · 24 min continuativi · le gambe devono bruciare, il cuore no · Core #2 dopo
-Stato: da importare
+Stato: ✅ importata (workout_id 1732433384, automatico il 17/10/2026)
 
 Data: 2026-10-24
 Blocco: Base
@@ -342,7 +342,7 @@ Tipo: long trail
 Distanza: 16 km
 FC target: < 141 bpm (Z1) · ultimi 20 min Z2
 Note: ~650m D+ · bastoncini + vest · CHO ogni 40 min · 40g/ora
-Stato: da importare
+Stato: ✅ importata (workout_id 1732433386, automatico il 17/10/2026)
 
 Data: 2026-10-25
 Blocco: Base
@@ -350,7 +350,7 @@ Tipo: hiking
 Durata: 75 min
 FC target: < 130 bpm
 Note: Recovery · 3×150m DH pick-up alla fine
-Stato: da importare
+Stato: ✅ importata (workout_id 1732433387, automatico il 17/10/2026)
 
 ---
 
