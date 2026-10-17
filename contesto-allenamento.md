@@ -763,8 +763,8 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S40 | 50 | R | Scarico |
 | S41 | 82 | S | |
 | S42 | 86 | S | |
-| S43 | 90 | S | **PICCO 2** · b2b sab 40 km + dom 25 km = **65 km** 🏔️ |
-| S44 | 50 | T | **TAPER 1** pre-Eiger (dal picco 90km: -44%) |
+| S43 | 88 | S | **PICCO 2** · b2b sab 40 km + dom 25 km = **65 km** 🏔️ |
+| S44 | 50 | T | **TAPER 1** pre-Eiger (dal picco 88km: -43%) |
 | S45 | 35 | T | **TAPER 2** pre-Eiger (-30% da T1) |
 | S46 | 55 | T | **EIGER E51 51K 🏆 A-RACE 2027 · fine blocco TAPER (lug · Grindelwald)** |
 | S47 | 25 | R | Recovery post-Eiger |
@@ -779,7 +779,7 @@ S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
 S10: R · S13: R
 S7: scarico di fatto + Test AeT #2 ✅ (13/10) · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
-S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
+S39: Picco intermedio (88 km) · S43: PICCO 2 (88 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
 S52: G — Maratona Alpina GES Schio (sentimento, fine piano)
 
 ---
