@@ -64,15 +64,11 @@ Con doppio tentativo 2032+2033: **~72-75%**
 - 2030: 2° tentativo lotteria LUT 120K (se non estratto → guaranteed 2031)
 - 2030/2031: LUT 120K → Index 100M → lotteria UTMB 2032
 
-### 2026 — C-race di sentimento
+### 2026 — C-race di sentimento (rinunciata)
 
-**C-race Trail del Cinghiale 35K · 2301m D+ · 30-31 ottobre 2026**
-- Palazzuolo sul Senio (FI) · Appennino Tosco-Romagnolo · ~2h30m da Verona
-- 34.6 km / 2.301m D+ · quasi-loop · quota max 1.163m · terreno forestale
-- UTMB Index race — no Running Stones
-- **Strategia:** FC < 147 bpm · gel ogni 40 min · porta bastoncini e cerata
-  Meteo ottobre: neve/pioggia/fango probabile. Prima applicazione protocollo nutrizione.
-- Piano riprende normalmente da S10 (recovery post-gara)
+**Trail del Cinghiale 35K · 2301m D+ · 30-31 ottobre 2026 — non disputata.**
+Decisione di Leonardo del 17/10/2026: niente gara, la progressione del Base prosegue senza interruzioni
+(S9 è una normale settimana di carico, vedi Piano Allenamento).
 
 ### 2027 — Anno di costruzione
 
@@ -312,8 +308,7 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 
 ## Progressione Long Trail — da S4 a S46 (Eiger)
 
-**Tre checkpoint al 75%:**
-- Pre-Cinghiale (S7): sabato **26 km / 1200m D+** = 74% di 35K ✅
+**Due checkpoint al 75%** (il checkpoint pre-Cinghiale è decaduto: gara rinunciata il 17/10/2026):
 - Pre-Malcesine (S33): sabato **39 km / 2400m D+** = 75% di 52K ✅
 - Pre-Eiger (S43): sabato **40 km** (b2b con 25 km domenica = **65 km / 4600m D+** totali) = 78% di 51K (Eiger) ✅ — checkpoint sul solo sabato, il back-to-back è la modalità con cui si accumula volume in sicurezza (stesso metodo usato per Malcesine)
 
@@ -328,12 +323,12 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S4 | 15 km | 500m | **Primo long trail · domenica 22 set** |
 | S5 | 18 km | 700m | |
 | S6 | 21 km | 900m | |
-| S7 | 26 km | 1200m | ≈75% Cinghiale ✅ |
-| S8 R | 14 km | 500m | Scarico |
-| S9 | **GARA 35K** | **2301m** | **Trail del Cinghiale 30-31 ott** |
-| S10 R | 18 km | 700m | Recovery |
-| S11 | 22 km | 900m | |
-| S12 | 25 km | 1000m | |
+| S7 R | — | — | Scarico di fatto (settimana saltata · solo Test AeT #2 il 13/10) |
+| S8 | 16 km | 650m | Ripresa · 1ª settimana di carico |
+| S9 | 19 km | 800m | |
+| S10 R | 12 km | 450m | Scarico |
+| S11 | 21 km | 900m | |
+| S12 | 24 km | 1000m | |
 | S13 R | 14 km | 500m | Scarico |
 | S14 | 26 km | 1000m | |
 | S15 | 28 km | 1200m | |
@@ -489,7 +484,7 @@ Non serve essere rapidi — allena il pattern neurale e i quadricipiti (catena a
 |---|---|---|---|---|
 | AeT | 11/09/2026 | **147 bpm** | Ventilatorio (respiro nasale) | Passo ~6:50-7:00/km |
 | AnT | 15/09/2026 | **159 bpm** | 30 min all-out · Sommacampagna | Passo 5:17/km · Max 166 bpm |
-| AeT #2 | S7 (ott 2026) | — | Ventilatorio | Stessa salita/percorso · SETTIMANA PIENA, non scarico |
+| AeT #2 | 13/10/2026 (S7) | FC media 139 bpm · passo ~6:11/km | 60 min a FC stabile (non ventilatorio) | Stesso tratto ciclabile (833 m): 6:48 → 6:11-6:16/km a FC simile (≈ −35 s/km vs 11/09). AeT 147 bpm non rimisurata → zone invariate. Eseguito in una settimana poi diventata scarico di fatto |
 | AeT #3 | S16 (dic 2026) | — | Ventilatorio | Progressione passo · SETTIMANA PIENA |
 | AnT #2 | S24 (gen 2027) | — | 30 min all-out | Confronta baseline · SETTIMANA PIENA |
 
@@ -715,7 +710,7 @@ A fine di ogni blocco generare un Verdict con:
 | Blocco | Settimane | Periodo | Gare integrate |
 |---|---|---|---|
 | **RESTART** | S1-S3 | set 2026 | — · solo test soglie |
-| **BASE** | S4-S21 | ott 2026–gen 2027 | C-race Trail Cinghiale 35K (S9) |
+| **BASE** | S4-S21 | ott 2026–gen 2027 | — · nessuna gara (Trail del Cinghiale rinunciato) |
 | **SPECIFICO** | S22-S43 | feb–giu 2027 | B-race Malcesine 52K (S35) |
 | **TAPER** | S44-S46 | lug 2027 | **A-race Eiger E51 51K (S46) — fine blocco** |
 | **REBUILD** | S47-S52 | lug-ago 2027 | Maratona Alpina GES Schio (S52 — fine piano) |
@@ -732,11 +727,11 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S4 | 22 | B | **Base inizia** · Hill Sprints · 22 set |
 | S5 | 30 | B | |
 | S6 | 33 | B | |
-| S7 | 36 | B | Test AeT #2 (stesso percorso settembre · confronta passo) |
-| S8 | 20 | R | Scarico |
-| S9 | 38 | G | **C-RACE Trail del Cinghiale 35K/2301mD+ 30-31 ott (Palazzuolo sul Senio FI)** |
-| S10 | 25 | R | Recovery post-gara |
-| S11 | 44 | B | Piano riprende normale |
+| S7 | 18 | R | **Scarico di fatto** (settimana saltata) · Test AeT #2 ✅ eseguito il 13/10 prima che diventasse scarico |
+| S8 | 36 | B | Ripresa · Cinghiale rinunciato (17/10) · 1ª settimana di carico |
+| S9 | 40 | B | |
+| S10 | 22 | R | Scarico (cicli 2:1 fino a S13, poi 3:1) |
+| S11 | 44 | B | |
 | S12 | 48 | B | |
 | S13 | 26 | R | Scarico |
 | S14 | 52 | B | |
@@ -777,12 +772,12 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S49 | 50 | B | |
 | S50 | 30 | R | Scarico |
 | S51 | 40 | B | Ultima settimana di carico prima della gara di sentimento |
-| S52 | 22 | G | **Maratona Alpina GES Schio** · non-competitiva · **fine piano** (⚠️ cade fine agosto per numero settimana, ma il calendario gara la colloca a metà settembre — data da verificare) |
+| S52 | 54 | G | **Maratona Alpina GES Schio** (42 km di gara + ~12 km di richiami) · non-competitiva · **fine piano** (⚠️ cade fine agosto per numero settimana, ma il calendario gara la colloca a metà settembre — data da verificare) |
 
 **Marker:**
 S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
-S9: G — Trail del Cinghiale 35K (C-race, Palazzuolo sul Senio) · S10: R
-S7: Test AeT #2 · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
+S10: R · S13: R
+S7: scarico di fatto + Test AeT #2 ✅ (13/10) · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
 S39: Picco intermedio (88 km) · S43: PICCO 2 (90 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
 S52: G — Maratona Alpina GES Schio (sentimento, fine piano)
