@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-18T00:11:53",
-  "phase_label": "Base · sett. 4/18",
+  "generated_at": "2026-10-19T10:45:10",
+  "phase_label": "Base · sett. 5/18",
   "plan_status": "active",
   "next_workout": {
     "date": "2026-10-20",
@@ -17,12 +17,12 @@
     "extra": "Zaino 7 kg · salita 25-35% pendenza · 24 min continuativi cammina/corri · gambe brucianti, cuore no (FC<141) · Core #2 dopo"
   },
   "week": {
-    "planned_km": 18,
-    "actual_km": 9.3
+    "planned_km": 36,
+    "actual_km": 0.0
   },
   "next_race": {
     "date": "2027-04-03",
     "label": "🏁 DBT 24K",
-    "days_until": 167
+    "days_until": 166
   }
 }
