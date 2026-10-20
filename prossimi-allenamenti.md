@@ -383,10 +383,9 @@ Stato: da importare
 
 Data: 2026-10-30
 Blocco: Base
-Tipo: corsa qualità
+Tipo: forza
 Durata: 55 min
-FC target: < 141 bpm cardiovascolare (la fatica sarà muscolare locale)
-Note: ME Workout #4 — zaino 7 kg · salita ≥25% · 25 min continuativi · le gambe devono bruciare, il cuore no · Core #2 dopo
+Note: ME Workout #4 su SCALA INFINITA in palestra — 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · le gambe devono bruciare, il cuore no · Core #2 dopo
 Stato: da importare
 
 Data: 2026-10-31
