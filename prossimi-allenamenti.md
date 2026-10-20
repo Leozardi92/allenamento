@@ -333,7 +333,7 @@ Blocco: Base
 Tipo: forza
 Durata: 55 min
 Note: ME Workout #3 su SCALA INFINITA in palestra — 10 min riscaldamento lento + 24 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · le gambe devono bruciare, il cuore no · Core #2 dopo
-Stato: da importare
+Stato: ✅ importata (workout_id 1736488810, automatico il 20/10/2026)
 
 Data: 2026-10-24
 Blocco: Base
