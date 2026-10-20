@@ -273,8 +273,8 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 
 **Settimana S (Specifico — da S21):**
 - Mar: Hill Sprints (mantieni per tutta la preparazione)
-- Mer: Palestra + Core #1
-- Ven: 1 sessione Z3-4 (sostituisce ME) + Core #2
+- Mer: Palestra + Core #1 + ME 30 min su scala infinita (in prova)
+- Ven: 1 sessione Z3-4 + Core #2
 - Sab: Long trail 1 (35-40 km nel picco) ← back-to-back giorno 1
 - Dom: Long trail 2 (20-25 km stanco) ← back-to-back giorno 2
   I due giorni insieme = 60-80% del volume settimanale
@@ -394,11 +394,13 @@ Situazione Leonardo: pendenza max vicino casa = 12%. Adattamento: sprint più lu
 
 ---
 
-## Muscular Endurance (ME) — Protocollo (S5-S24)
+## Muscular Endurance (ME) — Protocollo (S5-S43)
 
 **Qualità specifica per la velocità sostenibile in salita — libro pag. 240**
 
-1x/sett nel Base (S5-S24). Si ABBANDONA a S21+ (Specifico) — sostituito da back-to-back e Z3-4.
+1x/sett: Base (S5-S20, venerdì) e Specifico (S22-S43, mercoledì dopo la palestra).
+**Nel Specifico è IN PROVA** (decisione di Leonardo, 20/10/2026): se dopo averlo fatto non risulta utile, lo togliamo.
+Rivalutare al Verdict Base (S21) e dopo Malcesine (S36).
 
 **Dal 20/10/2026 tutti i ME si fanno in palestra sulla scala infinita (stair climber).**
 
@@ -407,7 +409,8 @@ Situazione Leonardo: pendenza max vicino casa = 12%. Adattamento: sprint più lu
 **Base (S5-20):** sessione dedicata del **venerdì in palestra sulla scala infinita** (+ Core #2).
 Il sabato resta long trail senza ME integrato; la domenica resta hiking leggero (recovery).
 
-**Specifico (S21+):** niente ME — sostituito da Z3-4 del venerdì e dal back-to-back (la domenica è già a gambe stanche).
+**Specifico (S22-S43):** **mercoledì subito dopo la palestra** (stessa uscita in palestra): 30 min sulla scala infinita con zaino 8 kg.
+Il venerdì è la sessione Z3-4. ME saltato nelle settimane R, nella settimana del test AnT, nella settimana di gara C (S31), in S34-S35 (B-race) e nel Taper (S44+).
 
 ### Come fare il ME — istruzioni complete
 
@@ -445,7 +448,8 @@ Segnale giusto: **gambe che bruciano · respiro controllato.**
 - S5-8: 20 min (zaino 5-7 kg · S5-S7 fatti all'aperto, da S8 sulla scala infinita)
 - S9-16: 25 min · zaino 7-8 kg · aumenta la velocità a pari FC
 - S17-20: 30 min · zaino 8 kg
-- S21+: STOP ME → back-to-back domenica + Z3-4 intensity
+- S22-S43: 30 min · zaino 8 kg · mercoledì dopo la palestra · IN PROVA (si toglie se non serve)
+- S44+ (Taper/Rebuild): niente ME
 
 ---
 
@@ -586,8 +590,8 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 
 **SPECIFICO (8-16 settimane):**
 - Back-to-back sab + dom: 60-80% del volume settimanale su 2 giorni
-- ME sospeso: la domenica del back-to-back è già a gambe stanche
-- Z3-4 intervals: 1x/settimana (sostituisce il ME del venerdì)
+- ME: mercoledì dopo la palestra, sulla scala infinita (in prova — Leonardo valuta l'utilità)
+- Z3-4 intervals: 1x/settimana il venerdì (prende il posto del ME del Base)
 - Hill Sprints: mantenuti il martedì
 - Palestra: 1x/settimana (mantenimento)
 - Picco back-to-back: 75-80% della distanza A-race totale
@@ -664,7 +668,7 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 
 - **Base:** sessione del venerdì su scala infinita in palestra (zaino 5-8 kg), 20-30 min continui
   Fatica muscolare locale (gambe bruciano), FC bassa (130-150 bpm)
-- **Specifico:** sospeso — sostituito da Z3-4 intervals; la domenica del back-to-back è già a gambe stanche
+- **Specifico:** mercoledì dopo la palestra, scala infinita (in prova — se non serve si toglie); Z3-4 il venerdì
 - Alternative se manca la palestra: zaino 5-8 kg su salita ≥ 25%, tapis 15%+ con zaino
 - Inverno: scialpinismo conta come ME
 
@@ -938,7 +942,7 @@ di volume accessorio (saltabili). La gerarchia è per fase.
 |---|---|---|
 | Long trail sabato | 🔴 MAI | 30-40% volume sett · saltarlo invalida la settimana secondo il libro |
 | Hill Sprints martedì | 🔴 MAI | Adattamento neurale richiede continuità. Salti = perdi l'effetto cumulativo |
-| ME workout venerdì | 🟡 Max 1 ogni 3-4 sett | Libro richiede 8 settimane consecutive. Se salti → fai almeno 20 min di scala infinita con zaino il giorno dopo |
+| ME workout (Base: venerdì · Specifico: mercoledì) | 🟡 Max 1 ogni 3-4 sett | Libro richiede 8 settimane consecutive. Se salti → fai almeno 20 min di scala infinita con zaino il giorno dopo |
 | Palestra mercoledì | 🟡 Quasi mai | 2x/sett è il minimo libro. Se salti mercoledì → sposta a giovedì, non eliminare |
 | Easy run giovedì | 🟢 Saltabile | Serve al volume ma non produce stimolo specifico. Se < 5h sonno o lavoro intenso → riposo |
 | Hiking domenica | 🟢 Saltabile | In Base è solo recovery — back-to-back diventa obbligatorio solo dal Specifico |
