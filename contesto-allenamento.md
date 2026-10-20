@@ -267,8 +267,8 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 - Mar: Hill Sprints (8 km tot incl. warm-up/cool-down)
 - Mer: Palestra + Core #1
 - Gio (opzionale): Easy Z1 7-9 km + 3×150m DH pick-up
-- Ven: ME workout (zaino 5-8 kg su salita) + Core #2
-- Sab: Long trail Z1 (30-40% km sett) + **ultimi 20-30 min ME su sezione ≥ 25%** + DH pick-up
+- Ven: ME workout su scala infinita in palestra (zaino 5-8 kg) + Core #2
+- Sab: Long trail Z1 (30-40% km sett) + DH pick-up
 - Dom: **Hiking leggero** 45-60 min (recovery attivo) — nel Specifico S21+ diventa long trail 2 (back-to-back)
 
 **Settimana S (Specifico — da S21):**
@@ -400,50 +400,51 @@ Situazione Leonardo: pendenza max vicino casa = 12%. Adattamento: sprint più lu
 
 1x/sett nel Base (S5-S24). Si ABBANDONA a S21+ (Specifico) — sostituito da back-to-back e Z3-4.
 
+**Dal 20/10/2026 tutti i ME si fanno in palestra sulla scala infinita (stair climber).**
+
 ### Dove si colloca nella settimana
 
-**Base (S5-20):** ME integrato negli **ultimi 20-30 min del long trail del sabato**
-su sezione ≥ 25%. La domenica resta hiking leggero (recovery).
+**Base (S5-20):** sessione dedicata del **venerdì in palestra sulla scala infinita** (+ Core #2).
+Il sabato resta long trail senza ME integrato; la domenica resta hiking leggero (recovery).
 
-**Specifico (S21+):** ME nella domenica del back-to-back, a gambe stanche dopo il sabato.
+**Specifico (S21+):** niente ME — sostituito da Z3-4 del venerdì e dal back-to-back (la domenica è già a gambe stanche).
 
 ### Come fare il ME — istruzioni complete
 
-**Dove:** salita ≥ 25%. Se non sai la pendenza: è ripida se le gambe bruciano dopo 2-3 min di camminata veloce.
+**Dove:** palestra, **scala infinita** (stair climber). Niente pendenza da cercare fuori: la macchina dà sempre lo stesso stimolo, anche d'inverno e col buio.
 
 **Lo stimolo corretto:** NON è cardiovascolare. FC resterà bassa (130-150 bpm) anche quando le gambe bruciano. Se ansimi forte, stai facendo Z3, non ME.
 Segnale giusto: **gambe che bruciano · respiro controllato.**
 
 **Protocollo:**
-- Riscaldamento: 10-15 min camminata su pendenza moderata
-- Sessione: 20-30 min **continui** su salita ≥ 25%
-  Cammina veloce, trotta, o alterna — non fermarti mai
+- Riscaldamento: 10 min a passo lento sulla macchina, senza zaino o con zaino leggero
+- Sessione: 20-30 min **continui** con zaino/vest, a gradini alternati, tronco eretto, mani sui corrimano solo per sfiorarli (non appoggiarti)
   Primi 5 min: sembra facile. Minuti 10-15: inizi a sentire i quadricipiti.
   Minuti 20-25: bruciano davvero — quella è la zona utile.
-- Salita corta: scendi lento 2-3 min, risali subito. Conta solo il tempo in salita.
-- Defaticamento: 10 min camminata leggera
+- Non fermarti mai: se devi rallentare, abbassa la velocità della macchina.
+- Defaticamento: 10 min a passo lento sulla macchina
 
-**Mezzo:** libero — bici, trail con zaino, trail senza zaino, hiking aggressivo.
-Tutto funziona su ≥ 25%. Il principio è la fatica muscolare locale, non il mezzo.
+**Mezzo:** scala infinita in palestra (scelta di Leonardo, 20/10/2026). Il principio resta la fatica muscolare locale.
 
-**Zaino:** non necessario su pendenza ≥ 25%. Aggiungilo (5-8 kg) solo se dopo 15 min le gambe non bruciano ancora abbastanza.
+**Zaino:** 5-8 kg. Parti da 5 kg e sali di 1 kg ogni ~2 settimane fino a 8. Aumenta il carico OPPURE la velocità, mai entrambi nella stessa settimana.
 
-**FC controllo:** 130-150 bpm. Se supera 155 → rallenta o cerca sezione più ripida.
+**FC controllo:** 130-150 bpm. Se supera 155 → rallenta la velocità.
 
 **Errori comuni:**
 - Partire troppo forte → gambe finite in 10 min. Serve ritmo basso e costante.
 - Fermarsi quando brucia → quel bruciore È lo stimolo cercato.
 - FC alta + affanno → stai facendo Z3, non ME.
+- Appoggiarsi ai corrimano → scarichi le gambe e perdi lo stimolo.
 
-### Alternative inverno (dicembre-febbraio, senza bici)
+### Alternative (solo se la palestra non è disponibile)
 1. **Scialpinismo** — comunicarlo a Claude Chat · conta come ME
 2. **Scale con zaino** — 8-10 kg · 20-30 min continui su rampe
 3. **Tapis roulant 15% + zaino 6-8 kg** — 25-30 min
 
 ### Progressione ME
-- S5-8: 20 min su sezione ≥ 25% (nel long trail sabato)
-- S9-16: 25 min · aumenta velocità mantenendo pendenza
-- S17-20: 30 min · oppure Z3 intervals in salita
+- S5-8: 20 min (zaino 5-7 kg · S5-S7 fatti all'aperto, da S8 sulla scala infinita)
+- S9-16: 25 min · zaino 7-8 kg · aumenta la velocità a pari FC
+- S17-20: 30 min · zaino 8 kg
 - S21+: STOP ME → back-to-back domenica + Z3-4 intensity
 
 ---
@@ -577,7 +578,7 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 - Cicli 3:1 (3 settimane build + 1 recovery al 40-60% del picco)
 - Long trail del sabato: progressione da 15-20% a ~75% della distanza A-race
 - Hill Sprints: 1x/settimana il martedì
-- ME: integrato negli ultimi 20-30 min del long trail del sabato, su ≥ 25%
+- ME: venerdì in palestra sulla scala infinita (zaino 5-8 kg), 20-30 min continui
 - DH pick-up: 2x/settimana alla fine di uscite easy
 - Palestra: 2x/settimana + 2 sessioni core
 - Volume max per 50K: 80-88 km/sett · per 100K: 90-100 km/sett
@@ -585,8 +586,8 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 
 **SPECIFICO (8-16 settimane):**
 - Back-to-back sab + dom: 60-80% del volume settimanale su 2 giorni
-- ME si sposta alla domenica (gambe stanche = stimolo maggiore)
-- Z3-4 intervals: 1x/settimana (sostituisce ME infrasettimanale)
+- ME sospeso: la domenica del back-to-back è già a gambe stanche
+- Z3-4 intervals: 1x/settimana (sostituisce il ME del venerdì)
 - Hill Sprints: mantenuti il martedì
 - Palestra: 1x/settimana (mantenimento)
 - Picco back-to-back: 75-80% della distanza A-race totale
@@ -661,11 +662,10 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 
 ### Muscular Endurance (ME)
 
-- **Base:** ultimi 20-30 min del long trail sab su salita ≥ 25%
+- **Base:** sessione del venerdì su scala infinita in palestra (zaino 5-8 kg), 20-30 min continui
   Fatica muscolare locale (gambe bruciano), FC bassa (130-150 bpm)
-- **Specifico:** domenica del back-to-back (gambe stanche = stimolo maggiore)
-- **Stop:** dal Specifico avanzato, sostituito da Z3-4 intervals
-- Alternative: zaino 5-8 kg su salita, scale con zaino, tapis 15%+ con zaino
+- **Specifico:** sospeso — sostituito da Z3-4 intervals; la domenica del back-to-back è già a gambe stanche
+- Alternative se manca la palestra: zaino 5-8 kg su salita ≥ 25%, tapis 15%+ con zaino
 - Inverno: scialpinismo conta come ME
 
 ### Test fisiologici
@@ -938,7 +938,7 @@ di volume accessorio (saltabili). La gerarchia è per fase.
 |---|---|---|
 | Long trail sabato | 🔴 MAI | 30-40% volume sett · saltarlo invalida la settimana secondo il libro |
 | Hill Sprints martedì | 🔴 MAI | Adattamento neurale richiede continuità. Salti = perdi l'effetto cumulativo |
-| ME workout venerdì | 🟡 Max 1 ogni 3-4 sett | Libro richiede 8 settimane consecutive. Se salti → fai almeno 20 min salita con zaino il giorno dopo |
+| ME workout venerdì | 🟡 Max 1 ogni 3-4 sett | Libro richiede 8 settimane consecutive. Se salti → fai almeno 20 min di scala infinita con zaino il giorno dopo |
 | Palestra mercoledì | 🟡 Quasi mai | 2x/sett è il minimo libro. Se salti mercoledì → sposta a giovedì, non eliminare |
 | Easy run giovedì | 🟢 Saltabile | Serve al volume ma non produce stimolo specifico. Se < 5h sonno o lavoro intenso → riposo |
 | Hiking domenica | 🟢 Saltabile | In Base è solo recovery — back-to-back diventa obbligatorio solo dal Specifico |
