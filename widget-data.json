@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T10:45:09",
+  "generated_at": "2026-10-20T20:46:07",
   "phase_label": "Base · sett. 5/18",
   "plan_status": "active",
   "next_workout": {
@@ -10,11 +10,11 @@
     "extra": "7×10 sec MAX · 2-3 min recupero · è il passo saltato in S7 · FC<141 fuori dagli sprint"
   },
   "key_workout": {
-    "date": "2026-10-23",
-    "day_label": "Ven",
-    "type": "run",
-    "label": "Qualità · ME Workout #3 · 55 min",
-    "extra": "Zaino 7 kg · salita 25-35% pendenza · 24 min continuativi cammina/corri · gambe brucianti, cuore no (FC<141) · Core #2 dopo"
+    "date": "2026-10-24",
+    "day_label": "Sab",
+    "type": "trail",
+    "label": "Trail 16 km",
+    "extra": "~650m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2"
   },
   "week": {
     "planned_km": 36,
