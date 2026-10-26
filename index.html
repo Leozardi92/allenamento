@@ -147,11 +147,16 @@
   .week-days { padding: 10px 12px 12px; }
   .day-row { display: flex; align-items: flex-start; gap: 10px; padding: 7px 9px; border-radius: 10px; margin-bottom: 4px; }
   .day-row.key { background: var(--card2); border: 1px solid var(--border); }
-  .day-label { font-size: 10px; font-weight: 700; color: var(--muted); width: 26px; flex-shrink: 0; padding-top: 2px; }
+  .day-label { font-size: 10px; font-weight: 700; color: var(--muted); width: 30px; flex-shrink: 0; padding-top: 2px; }
   .day-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
   .day-pill { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
   .day-detail { font-size: 11px; color: var(--muted); margin-top: 3px; line-height: 1.4; }
   .day-check { font-size: 13px; flex-shrink: 0; padding-top: 2px; }
+  .alt-box { margin-top: 6px; padding: 6px 8px; border: 1px dashed var(--border); border-radius: 8px; }
+  .alt-title { font-size: 9px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-bottom: 3px; }
+  .alt-item { font-size: 11px; line-height: 1.35; margin-top: 3px; }
+  .alt-name { font-weight: 700; }
+  .alt-x { color: var(--muted); }
   .req-mark { font-size: 11px; margin-left: 6px; vertical-align: middle; }
   .req-legend { display: flex; gap: 12px; padding: 8px 14px 0; font-size: 10px; color: var(--muted); flex-wrap: wrap; }
   .req-legend span { margin-right: 3px; }
@@ -227,7 +232,7 @@
 <script>
 "use strict";
 
-var DATA = {"generated_at": "20/10/2026 20:51", "wellness": {"date": "2026-10-13", "rhr": 48, "bb": 96, "stress": 27, "tr": 70, "hrv": 64, "sleep_h": 7.8, "sleep_score": 84}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "03/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "10/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "17/08", "planned": null, "actual": 4.5, "is_current": false}, {"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 14.3, "is_current": false}, {"label": "07/09", "planned": 14, "actual": 17.3, "is_current": false}, {"label": "14/09", "planned": 14, "actual": 23.7, "is_current": false}, {"label": "21/09", "planned": 22, "actual": 17.2, "is_current": false}, {"label": "28/09", "planned": 30, "actual": 13.0, "is_current": false}, {"label": "05/10", "planned": 33, "actual": 11.8, "is_current": false}, {"label": "12/10", "planned": 18, "actual": 9.3, "is_current": false}, {"label": "19/10", "planned": 36, "actual": 0.0, "is_current": true}], "weekly_actual_km": [14.3, 17.3, 23.7, 17.2, 13.0, 11.8, 9.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "20571594992", "name": "Evening Run", "sport_type": "Run", "start_local": "2026-10-13T19:06:07", "summary": {"distance": 9293.4, "moving_time": 3444, "elapsed_time": 3448, "elevation_gain": 13.0, "avg_speed": 2.698, "max_speed": 3.74, "relative_effort": 53.0, "total_calories": 670.0, "avg_cadence": 81.5, "kudos_count": 2, "achievement_count": 6, "pr_count": 1}, "polyline": "itftGynxbAUIC@GFOX[L{@K_AEGAEEKYOCK@MJq@dBa@^WFsANqA`@_@Ho@TGAGMMOI?OJKLEn@EHa@b@k@z@{@dAk@fAw@hBQRGAGF]dA?^HNAJM\\Qz@s@bBQj@QPBd@o@|CIPGDc@@MHILIB_@GcBu@_EuBu@e@GCeEcCoA[OBALEJe@KwAIeCDwDNgA?_ELmCDGBgAFgABk@DqEP[B_CHo@D_@?u@D`AMjCGRClDM~DSb@?PCx@ErEKvAAd@EdEGzAItAAp@BHAVBj@NB[G{@@u@GaA@mB@SDCD?`@BjBhA|@b@\\VXJf@ZlB~@JLFb@DHD@NQH?tAn@XHZNDHHDP@vB|@p@TDFANk@vCKTODQAMBIFKPO?q@M]WsAm@u@c@u@]kAu@cAg@eDqBoAYG@K\\I?a@Kq@EcFFoCLu@AwBHgA?mDL_AFqBHwCP]?WBS?iCLaA?u@DEBDCnCQrCGxAGn@GhBGfBKpBGnBC^C|EMpCEh@CnACjA?j@Db@PDCBUIu@Bs@EqA?{@Bw@@MDAd@FtDpBV`@HHpAp@f@ZVHJLDVHFJDRQN@NJVHVNbA^DJFDR@PFhBt@n@RBF?N_@fBGl@MTGD_@BMBWTI?YIG?eDaB[Ss@[oAu@eDkBs@c@{Au@Ga@IiB?a@?w@RyEJq@Vg@De@DKTSl@]^a@Xa@bBkDt@gA~@cBn@wAjA}BJ[Xg@TSv@_@fAo@\\WZ[NCRANEHIVi@HGj@[XWtA_A|A}@HGRq@Da@FWBOAYH_@XkH@kA@GJIHQJGvAMj@QHBBB@L?p@M\\?TbAtDV`@DJJDBDAzCGlBBJ`@J`@A`CNJCFIHAH?XTB\\Eb@Ah@BhBAtCD^\\d@Hl@Bb@ATQ|A?ZB`@H`@BD", "performance": {"average_heartrate": 138.6, "max_heartrate": 146.0, "average_cadence": 81.5, "calories": 670.0}, "hr_stream": {"time": [1, 38, 71, 104, 138, 171, 205, 236, 270, 302, 337, 371, 406, 441, 476, 515, 548, 583, 618, 653, 688, 723, 758, 794, 829, 866, 901, 936, 971, 1006, 1041, 1075, 1110, 1145, 1181, 1216, 1251, 1286, 1321, 1357, 1392, 1426, 1461, 1496, 1530, 1565, 1601, 1635, 1671, 1707, 1742, 1777, 1812, 1847, 1881, 1917, 1954, 1990, 2025, 2061, 2097, 2131, 2166, 2202, 2237, 2274, 2309, 2344, 2379, 2414, 2450, 2484, 2519, 2553, 2589, 2622, 2658, 2692, 2727, 2761, 2795, 2828, 2862, 2896, 2930, 2965, 2998, 3031, 3065, 3099, 3133, 3169, 3204, 3238, 3274, 3308, 3342, 3376, 3409, 3448], "heart_rate": [73, 112, 124, 127, 128, 132, 130, 131, 133, 135, 136, 131, 133, 133, 135, 135, 134, 134, 136, 135, 135, 135, 134, 138, 137, 133, 135, 135, 135, 135, 134, 138, 138, 139, 136, 137, 139, 140, 138, 139, 141, 141, 140, 142, 140, 140, 143, 143, 142, 142, 138, 139, 141, 140, 143, 141, 140, 141, 140, 140, 140, 139, 140, 140, 141, 139, 139, 143, 142, 141, 140, 142, 142, 141, 142, 144, 141, 144, 144, 145, 142, 143, 143, 144, 144, 145, 143, 144, 143, 143, 143, 143, 146, 142, 143, 146, 144, 143, 142, 139]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 147}, {"min": 148, "max": 159}, {"min": 160, "max": 166}, {"min": 167, "max": 220}], "thresholds": {"aet": 147, "ant": 159, "fcmax": 166, "aet_pace": "6:50/km", "ant_pace": "5:17/km"}, "verdicts": {"restart": {"title": "RESTART (S1-S3 · 1-21 settembre 2026)", "outcome": "promosso", "headline": "✅ PROMOSSO → Base inizia S4 (22 settembre 2026)", "html": "<h4>Dati del blocco</h4><table class=\"vtable\"><thead><tr><th>Metrica</th><th>Valore</th><th>Target</th><th>Esito</th></tr></thead><tbody><tr><td>Settimane completate</td><td>3</td><td>3-4</td><td>✅</td></tr><tr><td>Volume totale</td><td>~42 km</td><td>40-50 km</td><td>✅</td></tr><tr><td>AeT misurata</td><td><strong>147 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>AnT misurata</td><td><strong>159 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>Gap AeT-AnT</td><td>12 bpm (7.5%)</td><td>&lt; 10% = no ADS</td><td>✅ NO ADS</td></tr><tr><td>ITB</td><td>nessun problema</td><td>nessun problema</td><td>✅</td></tr><tr><td>FC media easy run</td><td>132-142 bpm</td><td>&lt; AeT (147 bpm)</td><td>✅</td></tr><tr><td>FC media bici</td><td>131-133 bpm</td><td>&lt; 145 bpm</td><td>✅</td></tr></tbody></table><h4>Easy-day discipline</h4><p>Eccellente. Le 4 sessioni easy del Restart mostrano FC media ben sotto la AeT:</p><ul><li>29/08 Evening Run: 142 bpm (Z1)</li><li>08/09 Corsa serale: 135.7 bpm (Z1 profonda)</li><li>11/09 Test AeT: 139 bpm media (corretto per il test)</li><li>13/09 Morning Ride: 132.8 bpm (Z1)</li><li>15/09 Test AnT: 151 bpm media (corretto per il test)</li></ul><p>Nessuna sessione above Z1 fuori dai test. Disciplina aerobica solida.</p><h4>Test fisiologici</h4><p><strong>AeT = 147 bpm</strong> — era stimata 153 bpm. Trovata per via ventilatoria (respiro nasale): il respiro cambia a ~146-147 bpm. Coincide con la MAF (180-34=146). Questo è un dato positivo: l&#x27;AeT di un atleta aerobicamente sviluppato tende a coincidere con la MAF. Passo a AeT: ~6:50-7:00/km.</p><p><strong>AnT = 159 bpm</strong> — era stimata 161 bpm. Test 30 min all-out su terreno piano (Sommacampagna). FC media 30 min = 159 bpm. Passo a AnT: 5:17/km. La progressione FC durante il test era lineare (154→164 bpm) — buona gestione.</p><p><strong>Gap AeT-AnT = 12 bpm (7.5%):</strong> NO ADS confermato. Significa che la base aerobica è sufficientemente sviluppata per il piano polarizzato. Implicazione: Z1 per le easy (&lt; 141 bpm), Z2 max 15% del volume.</p><h4>Osservazioni chiave</h4><ul><li>L&#x27;AeT più bassa del previsto (147 vs 153 stima) è normale dopo una pausa estiva. Con 3-4 mesi di Base, l&#x27;AeT tornerà a salire — il progresso si misura dal passo a AeT: se a dicembre a 147 bpm corri a 6:20/km invece di 6:50/km, la Base sta funzionando.</li><li>L&#x27;AnT a 159 bpm su terreno piano è nella media bassa per 34 anni. Con il lavoro di qualità del Specifico (Z3-4), può arrivare a 163-165 bpm.</li><li>La bici mostra buona capacità aerobica: 25.6 km a 131 bpm media e 35.7 km a 132.8 bpm — il sistema cardiovascolare risponde bene.</li></ul><h4>Verdetto</h4><p><strong>✅ PROMOSSO → Base inizia S4 (22 settembre 2026)</strong></p><p>Il Restart ha fatto quello che doveva fare:</p><ul><li>Zone calibrate su dati reali</li><li>ADS escluso</li><li>ITB monitorato e ok</li><li>Disciplina Z1 rispettata sin dal primo giorno</li></ul><p><strong>Cosa monitorare nel Base:</strong></p><ul><li>Il passo a 147 bpm deve migliorare di 10-20 sec/km entro dicembre</li><li>RHR target: scendere sotto 46 bpm entro fine Base (ora: 48 bpm)</li><li>HRV: tendenza al rialzo nelle settimane di build</li><li>ITB: monitorare sulle discese dei long trail</li></ul>"}}, "latest_activity_zone_seconds": [1963, 1481, 0, 0, 0], "latest_activity_comment": "È stata una corsa prevalentemente aerobica — FC quasi sempre in Z1/Z2 (100% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 53.0 (carico moderato).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-09-11", "type": "AeT", "hr": 147, "pace_sec_per_km": 410, "note": "Test reale — respiro nasale (ventilatorio). Primo test vero su questo piano, sostituisce la stima storica."}, {"date": "2026-09-15", "type": "AnT", "hr": 159, "pace_sec_per_km": 317, "note": "Test reale — 30 min all-out a Sommacampagna. Sostituisce la stima storica (161 bpm)."}], "nutrition_tests": [], "nutrition_status": {"phase_name": "Base", "cho_target": "30-40g/ora", "cho_detail": "1 gel ogni 45 min sulle uscite oltre 90 min.", "next_sweat_test": {"week": 29, "when": "mar 2027", "desc": "Pre-caldo (tiepido ~18°C, 2h long trail)"}}, "zone_agg_all": {"zone_seconds": [46943, 15714, 6697, 1455, 0], "n_activities": 18, "z1z2_pct": 88, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [27937, 9821, 4252, 223, 0], "n_activities": 10, "z1z2_pct": 89, "low_aerobic_flag": false}, "completed_dates": ["2026-09-02", "2026-09-04", "2026-09-05", "2026-09-08", "2026-09-10", "2026-09-13", "2026-09-15", "2026-09-17", "2026-09-19", "2026-09-22", "2026-09-24", "2026-09-26", "2026-09-27", "2026-09-29", "2026-10-01", "2026-10-03", "2026-10-06", "2026-10-10", "2026-10-11", "2026-10-13"], "next_workout": {"date": "2026-10-20", "day_label": "Mar", "type": "run", "label": "Hill Sprints S3 · 8 km tot", "extra": "7×10 sec MAX · 2-3 min recupero · è il passo saltato in S7 · FC<141 fuori dagli sprint"}, "current_block": {"name": "Base", "start": "2026-09-21", "end": "2027-01-24", "planned_total": 776, "week_start": 4, "week_end": 21}, "block_daily_km": [{"date": "21/09", "cumulative_km": 0.0}, {"date": "22/09", "cumulative_km": 8.2}, {"date": "23/09", "cumulative_km": 8.2}, {"date": "24/09", "cumulative_km": 17.2}, {"date": "25/09", "cumulative_km": 17.2}, {"date": "26/09", "cumulative_km": 17.2}, {"date": "27/09", "cumulative_km": 17.2}, {"date": "28/09", "cumulative_km": 17.2}, {"date": "29/09", "cumulative_km": 23.1}, {"date": "30/09", "cumulative_km": 23.1}, {"date": "01/10", "cumulative_km": 30.1}, {"date": "02/10", "cumulative_km": 30.1}, {"date": "03/10", "cumulative_km": 30.1}, {"date": "04/10", "cumulative_km": 30.1}, {"date": "05/10", "cumulative_km": 30.1}, {"date": "06/10", "cumulative_km": 36.5}, {"date": "07/10", "cumulative_km": 36.5}, {"date": "08/10", "cumulative_km": 36.5}, {"date": "09/10", "cumulative_km": 36.5}, {"date": "10/10", "cumulative_km": 36.5}, {"date": "11/10", "cumulative_km": 42.0}, {"date": "12/10", "cumulative_km": 42.0}, {"date": "13/10", "cumulative_km": 51.3}, {"date": "14/10", "cumulative_km": 51.3}, {"date": "15/10", "cumulative_km": 51.3}, {"date": "16/10", "cumulative_km": 51.3}, {"date": "17/10", "cumulative_km": 51.3}, {"date": "18/10", "cumulative_km": 51.3}, {"date": "19/10", "cumulative_km": 51.3}, {"date": "20/10", "cumulative_km": 51.3}]};
+var DATA = {"generated_at": "26/10/2026 09:49", "wellness": {"date": "2026-10-13", "rhr": 48, "bb": 96, "stress": 27, "tr": 70, "hrv": 64, "sleep_h": 7.8, "sleep_score": 84}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "10/08", "planned": null, "actual": 0.0, "is_current": false}, {"label": "17/08", "planned": null, "actual": 4.5, "is_current": false}, {"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 14.3, "is_current": false}, {"label": "07/09", "planned": 14, "actual": 17.3, "is_current": false}, {"label": "14/09", "planned": 14, "actual": 23.7, "is_current": false}, {"label": "21/09", "planned": 22, "actual": 37.9, "is_current": false}, {"label": "28/09", "planned": 30, "actual": 13.0, "is_current": false}, {"label": "05/10", "planned": 33, "actual": 35.7, "is_current": false}, {"label": "12/10", "planned": 18, "actual": 9.3, "is_current": false}, {"label": "19/10", "planned": 36, "actual": 0.0, "is_current": false}, {"label": "26/10", "planned": 40, "actual": 0.0, "is_current": true}], "weekly_actual_km": [14.3, 17.3, 23.7, 37.9, 13.0, 35.7, 9.3, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "20571594992", "name": "Evening Run", "sport_type": "Run", "start_local": "2026-10-13T19:06:07", "summary": {"distance": 9293.4, "moving_time": 3444, "elapsed_time": 3448, "elevation_gain": 13.0, "avg_speed": 2.698, "max_speed": 3.74, "relative_effort": 53.0, "total_calories": 670.0, "avg_cadence": 81.5, "kudos_count": 2, "achievement_count": 6, "pr_count": 1}, "polyline": "itftGynxbAUIC@GFOX[L{@K_AEGAEEKYOCK@MJq@dBa@^WFsANqA`@_@Ho@TGAGMMOI?OJKLEn@EHa@b@k@z@{@dAk@fAw@hBQRGAGF]dA?^HNAJM\\Qz@s@bBQj@QPBd@o@|CIPGDc@@MHILIB_@GcBu@_EuBu@e@GCeEcCoA[OBALEJe@KwAIeCDwDNgA?_ELmCDGBgAFgABk@DqEP[B_CHo@D_@?u@D`AMjCGRClDM~DSb@?PCx@ErEKvAAd@EdEGzAItAAp@BHAVBj@NB[G{@@u@GaA@mB@SDCD?`@BjBhA|@b@\\VXJf@ZlB~@JLFb@DHD@NQH?tAn@XHZNDHHDP@vB|@p@TDFANk@vCKTODQAMBIFKPO?q@M]WsAm@u@c@u@]kAu@cAg@eDqBoAYG@K\\I?a@Kq@EcFFoCLu@AwBHgA?mDL_AFqBHwCP]?WBS?iCLaA?u@DEBDCnCQrCGxAGn@GhBGfBKpBGnBC^C|EMpCEh@CnACjA?j@Db@PDCBUIu@Bs@EqA?{@Bw@@MDAd@FtDpBV`@HHpAp@f@ZVHJLDVHFJDRQN@NJVHVNbA^DJFDR@PFhBt@n@RBF?N_@fBGl@MTGD_@BMBWTI?YIG?eDaB[Ss@[oAu@eDkBs@c@{Au@Ga@IiB?a@?w@RyEJq@Vg@De@DKTSl@]^a@Xa@bBkDt@gA~@cBn@wAjA}BJ[Xg@TSv@_@fAo@\\WZ[NCRANEHIVi@HGj@[XWtA_A|A}@HGRq@Da@FWBOAYH_@XkH@kA@GJIHQJGvAMj@QHBBB@L?p@M\\?TbAtDV`@DJJDBDAzCGlBBJ`@J`@A`CNJCFIHAH?XTB\\Eb@Ah@BhBAtCD^\\d@Hl@Bb@ATQ|A?ZB`@H`@BD", "performance": {"average_heartrate": 138.6, "max_heartrate": 146.0, "average_cadence": 81.5, "calories": 670.0}, "hr_stream": {"time": [1, 38, 71, 104, 138, 171, 205, 236, 270, 302, 337, 371, 406, 441, 476, 515, 548, 583, 618, 653, 688, 723, 758, 794, 829, 866, 901, 936, 971, 1006, 1041, 1075, 1110, 1145, 1181, 1216, 1251, 1286, 1321, 1357, 1392, 1426, 1461, 1496, 1530, 1565, 1601, 1635, 1671, 1707, 1742, 1777, 1812, 1847, 1881, 1917, 1954, 1990, 2025, 2061, 2097, 2131, 2166, 2202, 2237, 2274, 2309, 2344, 2379, 2414, 2450, 2484, 2519, 2553, 2589, 2622, 2658, 2692, 2727, 2761, 2795, 2828, 2862, 2896, 2930, 2965, 2998, 3031, 3065, 3099, 3133, 3169, 3204, 3238, 3274, 3308, 3342, 3376, 3409, 3448], "heart_rate": [73, 112, 124, 127, 128, 132, 130, 131, 133, 135, 136, 131, 133, 133, 135, 135, 134, 134, 136, 135, 135, 135, 134, 138, 137, 133, 135, 135, 135, 135, 134, 138, 138, 139, 136, 137, 139, 140, 138, 139, 141, 141, 140, 142, 140, 140, 143, 143, 142, 142, 138, 139, 141, 140, 143, 141, 140, 141, 140, 140, 140, 139, 140, 140, 141, 139, 139, 143, 142, 141, 140, 142, 142, 141, 142, 144, 141, 144, 144, 145, 142, 143, 143, 144, 144, 145, 143, 144, 143, 143, 143, 143, 146, 142, 143, 146, 144, 143, 142, 139]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 147}, {"min": 148, "max": 159}, {"min": 160, "max": 166}, {"min": 167, "max": 220}], "thresholds": {"aet": 147, "ant": 159, "fcmax": 166, "aet_pace": "6:50/km", "ant_pace": "5:17/km"}, "verdicts": {"restart": {"title": "RESTART (S1-S3 · 1-21 settembre 2026)", "outcome": "promosso", "headline": "✅ PROMOSSO → Base inizia S4 (22 settembre 2026)", "html": "<h4>Dati del blocco</h4><table class=\"vtable\"><thead><tr><th>Metrica</th><th>Valore</th><th>Target</th><th>Esito</th></tr></thead><tbody><tr><td>Settimane completate</td><td>3</td><td>3-4</td><td>✅</td></tr><tr><td>Volume totale</td><td>~42 km</td><td>40-50 km</td><td>✅</td></tr><tr><td>AeT misurata</td><td><strong>147 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>AnT misurata</td><td><strong>159 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>Gap AeT-AnT</td><td>12 bpm (7.5%)</td><td>&lt; 10% = no ADS</td><td>✅ NO ADS</td></tr><tr><td>ITB</td><td>nessun problema</td><td>nessun problema</td><td>✅</td></tr><tr><td>FC media easy run</td><td>132-142 bpm</td><td>&lt; AeT (147 bpm)</td><td>✅</td></tr><tr><td>FC media bici</td><td>131-133 bpm</td><td>&lt; 145 bpm</td><td>✅</td></tr></tbody></table><h4>Easy-day discipline</h4><p>Eccellente. Le 4 sessioni easy del Restart mostrano FC media ben sotto la AeT:</p><ul><li>29/08 Evening Run: 142 bpm (Z1)</li><li>08/09 Corsa serale: 135.7 bpm (Z1 profonda)</li><li>11/09 Test AeT: 139 bpm media (corretto per il test)</li><li>13/09 Morning Ride: 132.8 bpm (Z1)</li><li>15/09 Test AnT: 151 bpm media (corretto per il test)</li></ul><p>Nessuna sessione above Z1 fuori dai test. Disciplina aerobica solida.</p><h4>Test fisiologici</h4><p><strong>AeT = 147 bpm</strong> — era stimata 153 bpm. Trovata per via ventilatoria (respiro nasale): il respiro cambia a ~146-147 bpm. Coincide con la MAF (180-34=146). Questo è un dato positivo: l&#x27;AeT di un atleta aerobicamente sviluppato tende a coincidere con la MAF. Passo a AeT: ~6:50-7:00/km.</p><p><strong>AnT = 159 bpm</strong> — era stimata 161 bpm. Test 30 min all-out su terreno piano (Sommacampagna). FC media 30 min = 159 bpm. Passo a AnT: 5:17/km. La progressione FC durante il test era lineare (154→164 bpm) — buona gestione.</p><p><strong>Gap AeT-AnT = 12 bpm (7.5%):</strong> NO ADS confermato. Significa che la base aerobica è sufficientemente sviluppata per il piano polarizzato. Implicazione: Z1 per le easy (&lt; 141 bpm), Z2 max 15% del volume.</p><h4>Osservazioni chiave</h4><ul><li>L&#x27;AeT più bassa del previsto (147 vs 153 stima) è normale dopo una pausa estiva. Con 3-4 mesi di Base, l&#x27;AeT tornerà a salire — il progresso si misura dal passo a AeT: se a dicembre a 147 bpm corri a 6:20/km invece di 6:50/km, la Base sta funzionando.</li><li>L&#x27;AnT a 159 bpm su terreno piano è nella media bassa per 34 anni. Con il lavoro di qualità del Specifico (Z3-4), può arrivare a 163-165 bpm.</li><li>La bici mostra buona capacità aerobica: 25.6 km a 131 bpm media e 35.7 km a 132.8 bpm — il sistema cardiovascolare risponde bene.</li></ul><h4>Verdetto</h4><p><strong>✅ PROMOSSO → Base inizia S4 (22 settembre 2026)</strong></p><p>Il Restart ha fatto quello che doveva fare:</p><ul><li>Zone calibrate su dati reali</li><li>ADS escluso</li><li>ITB monitorato e ok</li><li>Disciplina Z1 rispettata sin dal primo giorno</li></ul><p><strong>Cosa monitorare nel Base:</strong></p><ul><li>Il passo a 147 bpm deve migliorare di 10-20 sec/km entro dicembre</li><li>RHR target: scendere sotto 46 bpm entro fine Base (ora: 48 bpm)</li><li>HRV: tendenza al rialzo nelle settimane di build</li><li>ITB: monitorare sulle discese dei long trail</li></ul>"}}, "latest_activity_zone_seconds": [1963, 1481, 0, 0, 0], "latest_activity_comment": "È stata una corsa prevalentemente aerobica — FC quasi sempre in Z1/Z2 (100% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 53.0 (carico moderato).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-09-11", "type": "AeT", "hr": 147, "pace_sec_per_km": 410, "note": "Test reale — respiro nasale (ventilatorio). Primo test vero su questo piano, sostituisce la stima storica."}, {"date": "2026-09-15", "type": "AnT", "hr": 159, "pace_sec_per_km": 317, "note": "Test reale — 30 min all-out a Sommacampagna. Sostituisce la stima storica (161 bpm)."}], "nutrition_tests": [], "nutrition_status": {"phase_name": "Base", "cho_target": "30-40g/ora", "cho_detail": "1 gel ogni 45 min sulle uscite oltre 90 min.", "next_sweat_test": {"week": 29, "when": "mar 2027", "desc": "Pre-caldo (tiepido ~18°C, 2h long trail)"}}, "zone_agg_all": {"zone_seconds": [46943, 15714, 6697, 1455, 0], "n_activities": 18, "z1z2_pct": 88, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [27937, 9821, 4252, 223, 0], "n_activities": 10, "z1z2_pct": 89, "low_aerobic_flag": false}, "completed_sessions": ["1:1", "1:2", "1:3", "2:0", "2:2", "2:4", "3:0", "3:1", "3:2", "4:0", "4:2", "4:4", "5:0", "5:2", "6:0", "6:4", "6:5", "7:0"], "next_workout": {"date": "2026-10-26#0", "day_label": "S9", "type": "trail", "label": "Trail 19 km", "extra": "~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2"}, "current_block": {"name": "Base", "start": "2026-09-21", "end": "2027-01-24", "planned_total": 776, "week_start": 4, "week_end": 21}, "block_daily_km": [{"date": "21/09", "cumulative_km": 0.0}, {"date": "22/09", "cumulative_km": 8.2}, {"date": "23/09", "cumulative_km": 8.2}, {"date": "24/09", "cumulative_km": 17.2}, {"date": "25/09", "cumulative_km": 17.2}, {"date": "26/09", "cumulative_km": 29.2}, {"date": "27/09", "cumulative_km": 37.9}, {"date": "28/09", "cumulative_km": 37.9}, {"date": "29/09", "cumulative_km": 43.9}, {"date": "30/09", "cumulative_km": 43.9}, {"date": "01/10", "cumulative_km": 50.9}, {"date": "02/10", "cumulative_km": 50.9}, {"date": "03/10", "cumulative_km": 50.9}, {"date": "04/10", "cumulative_km": 50.9}, {"date": "05/10", "cumulative_km": 50.9}, {"date": "06/10", "cumulative_km": 57.2}, {"date": "07/10", "cumulative_km": 57.2}, {"date": "08/10", "cumulative_km": 57.2}, {"date": "09/10", "cumulative_km": 57.2}, {"date": "10/10", "cumulative_km": 81.1}, {"date": "11/10", "cumulative_km": 86.6}, {"date": "12/10", "cumulative_km": 86.6}, {"date": "13/10", "cumulative_km": 95.9}, {"date": "14/10", "cumulative_km": 95.9}, {"date": "15/10", "cumulative_km": 95.9}, {"date": "16/10", "cumulative_km": 95.9}, {"date": "17/10", "cumulative_km": 95.9}, {"date": "18/10", "cumulative_km": 95.9}, {"date": "19/10", "cumulative_km": 95.9}, {"date": "20/10", "cumulative_km": 95.9}, {"date": "21/10", "cumulative_km": 95.9}, {"date": "22/10", "cumulative_km": 95.9}, {"date": "23/10", "cumulative_km": 95.9}, {"date": "24/10", "cumulative_km": 95.9}, {"date": "25/10", "cumulative_km": 95.9}, {"date": "26/10", "cumulative_km": 95.9}]};
 
 var C = { p1:"#4ade80", p2:"#60a5fa", p3:"#f97316", p4:"#a78bfa", p5:"#f43f5e", p6:"#fbbf24", muted:"#6b6560" };
 var ZONE_COLORS = ["#6b7280", "#60a5fa", "#4ade80", "#f97316", "#f43f5e"];
@@ -338,7 +343,7 @@ function planWeeksChartSVG() {
   var cur = currentWeekNumber();
   var raceByWeek = {};
   W.forEach(function(wk) {
-    var hasRace = wk.days.some(function(d) { return d.t === "race"; });
+    var hasRace = wk.sessions.some(function(d) { return d.t === "race"; });
     if (hasRace) raceByWeek[wk.w] = (wk.sp || "🏁").split(" ")[0];
   });
 
@@ -694,38 +699,41 @@ var Gl = "Mobilità leggera · Leg Curl bodyweight · Affondi · Core · ABS —
 // A/B/C sono integrate nei blocchi, la gara A chiude il blocco TAPER.
 var PHASES = [
   {id:1,name:"Restart",col:"#4ade80",meta:"Sett. 1–3 · Set 2026 · Transizione, test soglie ✅"},
-  {id:2,name:"Base",col:"#60a5fa",meta:"Sett. 4–21 · Set 2026–Gen 2027 · Volume + hill sprints + ME + forza · Test AeT #2 ✅ (S7) e #3 (S16)"},
+  {id:2,name:"Base",col:"#60a5fa",meta:"Sett. 4–21 · Set 2026–Gen 2027 · Volume + hill sprints + ME + forza · C-race Bregonze 25K (S11) e Shamano 30K (S12) · Test AeT #2 ✅ (S7) e #3 (S16)"},
   {id:3,name:"Specifico",col:"#a78bfa",meta:"Sett. 22–43 · Gen–Giu 2027 · Back-to-back + Z3-4 · DBT 24K (S31) · B-race Malcesine 52K (S35) · Picco 2 (S43)"},
   {id:4,name:"Taper",col:"#fbbf24",meta:"Sett. 44–46 · Giu–Lug 2027 · Taper 1-2 → 🏆 A-race Eiger E51 51K (S46, fine blocco)"},
   {id:5,name:"Rebuild",col:"#22d3ee",meta:"Sett. 47–52 · Lug–Ago 2027 · Recupero + ricostruzione · Maratona Alpina GES Schio (S52, ultima settimana del piano)"},
 ];
 
 var W = [
-  {w:1,p:1,d:"1–6 set",note:"🔴 ITB: max 8km. Solo easy, zero qualità. Palestra prima di correre.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"gym",l:"💪 Giorno 1",x:G1+" — prima di correre"},
-    {t:"run",l:"6 km easy",x:"FC < 145 bpm · 6:30–7:00/km"},{t:"rest",l:"Riposo",x:""},
+  {w:1,p:1,d:"31 ago–6 set",note:"🔴 ITB: max 8km. Solo easy, zero qualità. Palestra prima di correre.",sessions:[
+    {t:"gym",l:"💪 Giorno 1",x:G1+" — prima di correre"},
+    {t:"run",l:"6 km easy",x:"FC < 145 bpm · 6:30–7:00/km"},
     {t:"bike",l:"Bici Z2 · 45 min",x:"FC < 145 bpm · sera · benvenuta di ritorno 🚴"},
-    {t:"run",l:"8 km easy",x:"FC < 145 bpm · stop immediato se dolore ITB"},{t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"8 km easy",x:"FC < 145 bpm · stop immediato se dolore ITB"},
   ]},
-  {w:2,p:1,d:"8–13 set",note:"✅ Test AeT completato l'11/09 — risultato: 147 bpm (~6:50-7:00/km).",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km easy",x:"FC < 145 bpm · pre-test"},{t:"gym",l:"💪 Giorno 3",x:G3},
+  {w:2,p:1,d:"7–13 set",note:"✅ Test AeT completato l'11/09 — risultato: 147 bpm (~6:50-7:00/km).",sessions:[
+    {t:"run",l:"6 km easy",x:"FC < 145 bpm · pre-test"},
+    {t:"gym",l:"💪 Giorno 3",x:G3},
     {t:"test",l:"✅ Test AeT — 147 bpm",x:"85 min: 15 riscald. + 60 min FC 135–148 bpm + 10 cool · risultato: 147 bpm, ~6:50-7:00/km"},
-    {t:"rest",l:"Riposo",x:"Recupero post-test"},{t:"run",l:"8 km easy",x:"FC sotto AeT (147 bpm)"},
+    {t:"run",l:"8 km easy",x:"FC sotto AeT (147 bpm)"},
     {t:"bike",l:"Bici 45 min",x:"Recupero attivo"},
   ]},
-  {w:3,p:1,d:"15–20 set",note:"✅ Test AnT completato il 15/09 — risultato: 159 bpm (~5:17/km, Sommacampagna). Gap AeT-AnT 7.5% → no ADS confermato.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"test",l:"✅ Test AnT — 159 bpm",x:"15 min warm-up + 30 min all-out · risultato: 159 bpm, ~5:17/km (Sommacampagna)"},
-    {t:"rest",l:"Riposo",x:"Recupero post-AnT"},{t:"run",l:"6 km easy",x:"FC ben sotto AeT — scarico vero"},
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:"FC sotto AeT"},{t:"bike",l:"Bici 30 min",x:"Solo recupero"},
+  {w:3,p:1,d:"14–20 set",note:"✅ Test AnT completato il 15/09 — risultato: 159 bpm (~5:17/km, Sommacampagna). Gap AeT-AnT 7.5% → no ADS confermato.",sessions:[
+    {t:"test",l:"✅ Test AnT — 159 bpm",x:"15 min warm-up + 30 min all-out · risultato: 159 bpm, ~5:17/km (Sommacampagna)"},
+    {t:"run",l:"6 km easy",x:"FC ben sotto AeT — scarico vero"},
+    {t:"run",l:"8 km easy",x:"FC sotto AeT"},
+    {t:"bike",l:"Bici 30 min",x:"Solo recupero"},
   ]},
-  {w:4,p:2,d:"22–27 set",note:"✅ Base inizia qui — niente settimana di restart aggiuntiva. Prime zone calibrate. Primo trail.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:"FC < AeT misurata"},{t:"gym",l:"💪 Giorno 2",x:G2},
-    {t:"run",l:"8 km progressivo",x:"Ultimi 15 min a AeT bpm"},{t:"bike",l:"Bici Z2 · 50 min",x:""},
+  {w:4,p:2,d:"21–27 set",note:"✅ Base inizia qui — niente settimana di restart aggiuntiva. Prime zone calibrate. Primo trail.",sessions:[
+    {t:"run",l:"8 km easy",x:"FC < AeT misurata"},
+    {t:"gym",l:"💪 Giorno 2",x:G2},
+    {t:"run",l:"8 km progressivo",x:"Ultimi 15 min a AeT bpm"},
+    {t:"bike",l:"Bici Z2 · 50 min",x:""},
     {t:"trail",l:"Trail 15 km",x:"~500m D+ · FC conversazione · bastoncini · benvenuto sentiero"},
     {t:"hike",l:"Hiking 1h",x:"Back-to-back leggero"},
   ]},
-  {w:5,p:2,d:"29 set–4 ott",note:"⚡ Da qui iniziano Hill Sprints + ME workout ogni settimana (nuova struttura).",days:[
-    {t:"rest",l:"Riposo",x:""},
+  {w:5,p:2,d:"28 set–4 ott",note:"⚡ Da qui iniziano Hill Sprints + ME workout ogni settimana (nuova struttura).",sessions:[
     {t:"run",l:"Hill Sprints S1 · 8 km tot",x:"15 min warm-up + 6×8 sec MAX su salita ≥20% + 10 min cool-down · 2-3 min recupero tra ripetute · FC<141 fuori dagli sprint"},
     {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1: plank 3×45sec · bird-dog 3×10 per lato"},
     {t:"run",l:"7 km easy",x:"FC < 141 bpm (Z1) · 3×150m discesa veloce controllata (DH pick-up) alla fine, recupero 2 min salendo piano"},
@@ -733,8 +741,7 @@ var W = [
     {t:"trail",l:"Trail 18 km",x:"~700m D+ · prima uscita con zaino gara + bastoncini · CHO ogni 40-45 min (30-40g/ora) · pesa prima/dopo (sweat test baseline)"},
     {t:"hike",l:"Hiking 60 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:6,p:2,d:"6–11 ott",days:[
-    {t:"rest",l:"Riposo",x:""},
+  {w:6,p:2,d:"5–11 ott",sessions:[
     {t:"run",l:"Hill Sprints S2 · 8 km tot",x:"7×8 sec MAX · 2-3 min recupero · stessa salita di S5 per confrontare la distanza"},
     {t:"gym",l:"💪 Giorno 3",x:G3+" + Core #1"},
     {t:"run",l:"8 km easy",x:"FC < 141 bpm · 3×150m DH pick-up alla fine"},
@@ -742,17 +749,10 @@ var W = [
     {t:"trail",l:"Trail 21 km",x:"~900m D+ · bastoncini + vest · CHO ogni 40 min · pesa prima/dopo"},
     {t:"hike",l:"Hiking 75 min",x:"Recovery · 3×150m DH pick-up"},
   ]},
-  {w:7,p:2,d:"13–18 ott",note:"⚡ Scarico di fatto (Tipo R) — settimana saltata per mancanza di tempo. Trail del Cinghiale rinunciato: il piano prosegue da S8 senza recuperare i km persi. Test AeT #2 eseguito martedì 13/10.",days:[
-    {t:"rest",l:"Riposo",x:""},
+  {w:7,p:2,d:"12–18 ott",note:"⚡ Scarico di fatto (Tipo R) — settimana saltata per mancanza di tempo. Trail del Cinghiale rinunciato: il piano prosegue da S8 senza recuperare i km persi. Test AeT #2 eseguito martedì 13/10.",sessions:[
     {t:"test",l:"🔬 Test AeT #2 ✅",x:"Eseguito martedì 13/10 al posto degli Hill Sprints · 9.3 km · FC media 139 bpm · passo medio 6:11/km (a settembre 6:56/km a pari FC, sullo stesso tratto ciclabile 6:48 → 6:11-6:16) · AeT 147 bpm invariata, zone invariate"},
-    {t:"rest",l:"Riposo",x:"Palestra saltata"},
-    {t:"rest",l:"Riposo",x:""},
-    {t:"rest",l:"Riposo",x:""},
-    {t:"rest",l:"Riposo",x:"Bici facoltativa, solo se hai voglia"},
-    {t:"rest",l:"Riposo",x:""},
   ]},
-  {w:8,p:2,d:"20–25 ott",note:"▶️ Ripresa — 1ª settimana di carico (36 km) dopo lo scarico di fatto di S7. Nessuna gara fino a S31: la progressione del Base prosegue.",days:[
-    {t:"rest",l:"Riposo",x:""},
+  {w:8,p:2,d:"19–25 ott",note:"▶️ Ripresa — 1ª settimana di carico (36 km) dopo lo scarico di fatto di S7. Nessuna gara fino a S31: la progressione del Base prosegue.",sessions:[
     {t:"run",l:"Hill Sprints S3 · 8 km tot",x:"7×10 sec MAX · 2-3 min recupero · è il passo saltato in S7 · FC<141 fuori dagli sprint"},
     {t:"gym",l:"💪 Giorno 1",x:G1+" + Core #1 · Giorno 1 saltato in S7"},
     {t:"run",l:"7 km easy",x:"FC < 141 bpm · 3×150m DH pick-up alla fine"},
@@ -760,261 +760,346 @@ var W = [
     {t:"trail",l:"Trail 16 km",x:"~650m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2"},
     {t:"hike",l:"Hiking 75 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:9,p:2,d:"27 ott–1 nov",note:"2ª settimana di carico (40 km) — nessuna gara. ME sale a 25 min da questa settimana (S9-16).",days:[
-    {t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"Hill Sprints S4 · 8 km tot",x:"8×12 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+  {w:9,p:2,d:"26 ott–1 nov",note:"2ª settimana di carico (40 km) — nessuna gara. ME sale a 25 min da questa settimana (S9-16). Il lungo ha tre alternative equivalenti: scegli tu quale fare.",sessions:[
+    {t:"trail",l:"Trail 19 km",x:"~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2",alt:[{i:"🚴",l:"Bici 3h40",x:"~1300m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h50",x:"~2250m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints #4 · 8 km tot",x:"8×12 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"🪜 ME Workout #4 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
     {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1"},
     {t:"run",l:"8 km easy",x:"FC < 141 bpm · 3×150m DH pick-up alla fine"},
-    {t:"gym",l:"🪜 ME Workout #4 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
-    {t:"trail",l:"Trail 19 km",x:"~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2"},
     {t:"hike",l:"Hiking 90 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:10,p:2,d:"3–8 nov",note:"⚡ Scarico (Tipo R) — metà reps, una sola palestra, niente ME né Z3-4, giovedì e domenica riposo. Chiude il ciclo 2:1 (S8-S9).",days:[
-    {t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"4×8 sec MAX · 2-3 min recupero · settimana di scarico"},
+  {w:10,p:2,d:"2–8 nov",note:"⚡ Scarico (Tipo R) — metà reps, una sola palestra ridotta, niente ME né Z3-4. Chiude il ciclo 2:1 (S8-S9).",sessions:[
+    {t:"trail",l:"Trail 12 km",x:"~450m D+ · FC<135 · uscita leggera",alt:[{i:"🚴",l:"Bici 2h15",x:"~800m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 1h45",x:"~1350m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"4×8 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"},
     {t:"gym",l:"💪 Giorno 3 ridotta",x:"Solo 2 esercizi principali + Core #1 · carichi ridotti del 30%"},
-    {t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"4 km easy",x:"FC < 135 bpm · gambe leggere"},
-    {t:"trail",l:"Trail 12 km",x:"~450m D+ · FC < 135 bpm · uscita leggera"},
-    {t:"rest",l:"Riposo",x:""},
+    {t:"run",l:"4 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:11,p:2,d:"10–15 nov",note:"3ª settimana di carico (44 km) — Hill Sprints a regime (8×15 sec, protocollo S5-12).",days:[
-    {t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"Hill Sprints S6 · 8 km tot",x:"8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
-    {t:"gym",l:"💪 Giorno 1",x:G1+" + Core #1"},
-    {t:"run",l:"9 km easy",x:"FC < 141 bpm · 3×150m DH pick-up alla fine"},
-    {t:"gym",l:"🪜 ME Workout #5 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · un po' più veloce di S9 a pari FC · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
-    {t:"trail",l:"Trail 21 km",x:"~900m D+ · simula nutrizione ogni 40 min · bastoncini + vest"},
-    {t:"hike",l:"Hiking 1.5h",x:"Recovery · FC<130"},
+  {w:11,p:2,d:"9–15 nov",note:"🏁 C-race Trail delle Bregonze 25K / 1100m D+ — domenica 15/11, train through, niente taper. La gara è il lungo della settimana. Hill Sprints e ME entro i primi giorni; nei 3 giorni prima della gara solo easy o riposo (palestra Giorno 2).",sp:"🏁 Trail delle Bregonze 25K",sessions:[
+    {t:"race",l:"🏁 TRAIL DELLE BREGONZE 25K",x:"25 km · 1100m D+ · domenica 15/11 · C-race: allenamento con pettorale, niente taper · FC < 147 · CHO 30-40g/ora (1 gel ogni 45 min) · pesa prima/dopo",date:"2026-11-15"},
+    {t:"run",l:"Hill Sprints #5 · 8 km tot",x:"8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"🪜 ME Workout #5 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
+    {t:"gym",l:"💪 Giorno 2 (pre-gara)",x:G2+" + Core #1 · niente gambe pesanti: è la palestra pre-gara"},
+    {t:"run",l:"5 km easy",x:"FC < 141 bpm · 3×150m DH pick-up alla fine"},
   ]},
-  {w:12,p:2,d:"17–22 nov",note:"4ª settimana di carico (48 km) — Trail 24 km: prima pietra miliare seria del Base.",days:[
-    {t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"Hill Sprints S7 · 8 km tot",x:"8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
-    {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1"},
+  {w:12,p:2,d:"16–22 nov",note:"🏁 C-race Trail dello Shamano 30K / 1400m D+ — domenica 22/11, 7 giorni dopo la Bregonze. Dopo la gara del 15/11: 2-3 giorni solo easy/riposo, poi Hill Sprints e palestra Giorno 2. Niente ME in questa settimana. Nei 3 giorni prima della gara solo easy o riposo.",sp:"🏁 Trail dello Shamano 30K",sessions:[
+    {t:"race",l:"🏁 TRAIL DELLO SHAMANO 30K",x:"30 km · 1400m D+ · domenica 22/11 · C-race: allenamento con pettorale, niente taper · FC < 147 · CHO 30-40g/ora (1 gel ogni 45 min) · pesa prima/dopo",date:"2026-11-22"},
+    {t:"run",l:"Hill Sprints #6 · 8 km tot",x:"8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"💪 Giorno 2 (pre-gara)",x:G2+" + Core #1 · niente gambe pesanti: è la palestra pre-gara"},
     {t:"run",l:"10 km easy",x:"FC < 141 bpm · 3×150m DH pick-up alla fine"},
-    {t:"gym",l:"🪜 ME Workout #6 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · stessa velocità di S11, zaino +1 kg · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
-    {t:"trail",l:"Trail 24 km",x:"~1000m D+ · simula nutrizione ogni 40 min · bastoncini + vest"},
-    {t:"hike",l:"Hiking 1.5h",x:"Recovery · FC<130"},
   ]},
-  {w:13,p:2,d:"24–29 nov",note:"⚡ Scarico (Tipo R) — inizia la seconda parte del Base. Da qui: bici notturna e scialpinismo diventano strumenti chiave, palestra 2x/sett fino a gennaio (fase di forza).",days:[
-    {t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×18 sec MAX (metà del protocollo S13-24) · 2-3 min recupero"},
-    {t:"rest",l:"No palestra",x:""},
-    {t:"rest",l:"Riposo",x:""},
+  {w:13,p:2,d:"23–29 nov",note:"⚡ Scarico (Tipo R) — recupero dopo le due gare. Inizia la seconda parte del Base. Da qui: bici notturna e scialpinismo diventano strumenti chiave, palestra 2x/sett fino a gennaio (fase di forza).",sessions:[
+    {t:"trail",l:"Trail 14 km",x:"~500m D+ · FC<135 · scarico",alt:[{i:"🚴",l:"Bici 2h35",x:"~900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h00",x:"~1600m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"},
+    {t:"gym",l:"💪 Giorno 1 ridotta",x:"Solo 2 esercizi principali + Core #1 · carichi ridotti del 30%"},
     {t:"run",l:"6 km easy",x:"FC < 141 bpm"},
-    {t:"trail",l:"Trail 14 km",x:"~500m D+ · scarico"},
-    {t:"rest",l:"Riposo",x:""},
   ]},
-  {w:14,p:2,d:"1–6 dic",days:[
-    {t:"gym",l:"💪 Giorno 3",x:G3+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:""},{t:"gym",l:"💪 Giorno 1",x:G1},
-    {t:"run",l:"11 km easy",x:"FC < AeT"},{t:"gym",l:"🪜 ME Workout #7 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · aumenta di poco la velocità a pari FC (mai carico e velocità insieme) · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
-    {t:"trail",l:"Trail 26 km",x:"~1000m D+"},{t:"run",l:"10 km easy",x:""},
+  {w:14,p:2,d:"30 nov–6 dic",note:"Da questa settimana palestra 2x/sett (fase di forza).",sessions:[
+    {t:"trail",l:"Trail 26 km",x:"~1000m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2",alt:[{i:"🚴",l:"Bici 4h50",x:"~1700m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 3h45",x:"~3000m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints #7 · 8 km tot",x:"9×16 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"🪜 ME Workout #6 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
+    {t:"gym",l:"💪 Giorno 3",x:G3+" + Core #1"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — 2ª sessione settimanale + Core #1"},
+    {t:"run",l:"6 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"6 km easy",x:"FC < 141 bpm"},
+    {t:"hike",l:"Hiking 75 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:15,p:2,d:"8–13 dic",days:[
-    {t:"gym",l:"💪 Giorno 2",x:G2+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
-    {t:"run",l:"11 km easy",x:""},{t:"gym",l:"🪜 ME Workout #8 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · aumenta di poco la velocità a pari FC (mai carico e velocità insieme) · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},{t:"trail",l:"Trail 28 km",x:"~1200m D+"},
-    {t:"hike",l:"Hiking 1.5h",x:""},
+  {w:15,p:2,d:"7–13 dic",sessions:[
+    {t:"trail",l:"Trail 28 km",x:"~1200m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2",alt:[{i:"🚴",l:"Bici 5h25",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 4h10",x:"~3300m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints #8 · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"🪜 ME Workout #7 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
+    {t:"gym",l:"💪 Giorno 1",x:G1+" + Core #1"},
+    {t:"gym",l:"💪 Giorno 3",x:G3+" — 2ª sessione settimanale + Core #1"},
+    {t:"run",l:"8 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"7 km easy",x:"FC < 141 bpm"},
+    {t:"hike",l:"Hiking 75 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:16,p:2,d:"15–20 dic",note:"🔬 Test AeT #3 questa settimana — confronta progressione del passo, settimana piena.",days:[
-    {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:""},{t:"gym",l:"💪 Giorno 2",x:G2},
+  {w:16,p:2,d:"14–20 dic",note:"🔬 Test AeT #3 questa settimana — confronta progressione del passo, settimana piena.",sessions:[
+    {t:"trail",l:"Trail 30 km",x:"~1400m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 4h35",x:"~3650m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints #9 · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
     {t:"test",l:"🔬 Test AeT #3",x:"85 min: 15 riscald. + 60 min FC 135-148 bpm + 10 cool · confronta progressione del passo vs settembre/ottobre"},
-    {t:"gym",l:"🪜 ME Workout #9 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · aumenta di poco la velocità a pari FC (mai carico e velocità insieme) · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},{t:"trail",l:"Trail 30 km",x:"~1400m D+"},
-    {t:"run",l:"10 km easy",x:""},
+    {t:"gym",l:"🪜 ME Workout #8 · Scala infinita · 55 min",x:"In palestra · 10 min riscaldamento lento + 25 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1"},
+    {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale + Core #1"},
+    {t:"run",l:"7 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"hike",l:"Hiking 75 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:17,p:2,d:"22–27 dic",note:"⚡ Scarico (Tipo R) — coincide con Natale, adatta alla famiglia. La consistenza è sull'anno, non sulla settimana.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"Riposo",x:"Natale"},
-    {t:"run",l:"8 km easy",x:""},{t:"rest",l:"Riposo",x:""},
-    {t:"skimo",l:"Scialpinismo ⛷️ o Trail 17km",x:"Se c'è neve — Z2 per ore · ottimo alternativo al long trail. Se no: 17km ~700m D+ (scarico)"},{t:"rest",l:"Riposo",x:""},
+  {w:17,p:2,d:"21–27 dic",note:"⚡ Scarico (Tipo R) — coincide con Natale, adatta alla famiglia. La consistenza è sull'anno, non sulla settimana.",sessions:[
+    {t:"trail",l:"Trail 17 km",x:"~700m D+ · FC<135 · scarico",alt:[{i:"🚴",l:"Bici 3h15",x:"~1150m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h30",x:"~2000m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"},
+    {t:"gym",l:"💪 Giorno 3 ridotta",x:"Solo 2 esercizi principali + Core #1 · carichi ridotti del 30%"},
+    {t:"run",l:"11 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:18,p:2,d:"29 dic–3 gen",note:"Fine anno. Se hai saltato qualcosa a Natale, riprendi senza stress.",days:[
-    {t:"gym",l:"💪 Giorno 3",x:G3+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:"Prima qualità del nuovo anno"},{t:"gym",l:"💪 Giorno 1",x:G1},
-    {t:"run",l:"11 km easy",x:""},{t:"gym",l:"🪜 ME Workout #10 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},{t:"trail",l:"Trail 30 km",x:"~1400m D+"},
-    {t:"run",l:"10 km easy",x:""},
+  {w:18,p:2,d:"28 dic–3 gen",note:"Fine anno. Se hai saltato qualcosa a Natale, riprendi senza stress.",sessions:[
+    {t:"trail",l:"Trail 30 km",x:"~1400m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 4h35",x:"~3650m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints #10 · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"🪜 ME Workout #9 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1"},
+    {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale + Core #1"},
+    {t:"run",l:"10 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"10 km easy",x:"FC < 141 bpm"},
+    {t:"hike",l:"Hiking 75 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:19,p:2,d:"5–10 gen",note:"Valuta TrainingPeaks — AeT/AnT misurati + volume costante.",days:[
-    {t:"gym",l:"💪 Giorno 2",x:G2+" — 2ª sessione settimanale"},{t:"run",l:"12 km qualità",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
-    {t:"run",l:"11 km easy",x:""},{t:"gym",l:"🪜 ME Workout #11 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
-    {t:"skimo",l:"Scialpinismo o Trail 32km",x:"Se neve: skimo giornata lunga. Se no: 32km ~1600m D+"},
-    {t:"run",l:"10 km easy",x:""},
+  {w:19,p:2,d:"4–10 gen",note:"Valuta TrainingPeaks — AeT/AnT misurati + volume costante.",sessions:[
+    {t:"trail",l:"Trail 32 km",x:"~1600m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 5h00",x:"~3950m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints #11 · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"🪜 ME Workout #10 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
+    {t:"gym",l:"💪 Giorno 3",x:G3+" + Core #1"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" — 2ª sessione settimanale + Core #1"},
+    {t:"run",l:"12 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"12 km easy",x:"FC < 141 bpm"},
+    {t:"hike",l:"Hiking 75 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:20,p:2,d:"12–17 gen",note:"Ultima settimana piena del Base prima dello scarico (S21).",days:[
-    {t:"gym",l:"💪 Giorno 1",x:G1+" — 2ª sessione settimanale"},{t:"run",l:"13 km qualità",x:""},{t:"gym",l:"💪 Giorno 2",x:G2},
-    {t:"run",l:"11 km easy",x:""},{t:"gym",l:"🪜 ME Workout #12 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},{t:"trail",l:"Trail 34 km",x:"~1800m D+"},
-    {t:"run",l:"10 km easy",x:""},
+  {w:20,p:2,d:"11–17 gen",note:"Ultima settimana piena del Base prima dello scarico (S21).",sessions:[
+    {t:"trail",l:"Trail 34 km",x:"~1800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 5h20",x:"~4300m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints #12 · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"gym",l:"🪜 ME Workout #11 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · Core #2 dopo"},
+    {t:"gym",l:"💪 Giorno 1",x:G1+" + Core #1"},
+    {t:"gym",l:"💪 Giorno 3",x:G3+" — 2ª sessione settimanale + Core #1"},
+    {t:"run",l:"14 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"14 km easy",x:"FC < 141 bpm"},
+    {t:"hike",l:"Hiking 75 min",x:"Recovery · FC<130 · 3×150m DH pick-up alla fine"},
   ]},
-  {w:21,p:2,d:"19–24 gen",note:"⚡ Scarico (Tipo R) — ultima settimana a sabato singolo prima del back-to-back del Specifico (da S22).",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici 40 min",x:""},{t:"trail",l:"Trail 20 km",x:"~800m D+ · scarico"},
-    {t:"rest",l:"Riposo",x:""},
+  {w:21,p:2,d:"18–24 gen",note:"⚡ Scarico (Tipo R) — ultima settimana con un solo lungo prima del back-to-back del Specifico (da S22).",sessions:[
+    {t:"trail",l:"Trail 20 km",x:"~800m D+ · FC<135 · scarico",alt:[{i:"🚴",l:"Bici 3h45",x:"~1300m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h55",x:"~2300m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"},
+    {t:"gym",l:"💪 Giorno 2 ridotta",x:"Solo 2 esercizi principali + Core #1 · carichi ridotti del 30%"},
+    {t:"run",l:"8 km easy",x:"FC < 141 bpm"},
+    {t:"run",l:"8 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:22,p:3,note:"Specifico inizia — da qui back-to-back sabato+domenica vero, ogni settimana.",d:"26–31 gen",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:"Simulazione gara: 45 min a passo gara (8:30–9:00/km trail)"},
-    {t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},{t:"run",l:"11 km easy",x:""},
-    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana"},
-    {t:"trail",l:"Trail 28 km",x:"~1200m D+ · 40g CHO/ora · porta cibo come in gara"},
-    {t:"trail",l:"Trail easy 14 km",x:"~500m D+ · Back-to-back · primo b2b vero, 42 km tot (54% volume sett.)"},
+  {w:22,p:3,d:"25–31 gen",note:"Specifico inizia — da qui back-to-back vero: lungo 1 e lungo 2 in giorni consecutivi, ogni settimana.",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 28 km",x:"~1200m D+ · back-to-back giorno 1 · simula i ristori (max 3-5 min) · CHO 40-50 g/ora",alt:[{i:"🚴",l:"Bici 5h25",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 4h10",x:"~3300m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 14 km",x:"~500m D+ · back-to-back giorno 2: il giorno dopo il lungo 1, a gambe stanche · FC<AeT",alt:[{i:"🚴",l:"Bici 2h35",x:"~900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h00",x:"~1600m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana · 15 min riscaldamento + blocchi Z3-4 + defaticamento"},
+    {t:"gym",l:"🪜 ME Workout #12 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · subito dopo la palestra (stessa uscita)"},
+    {t:"gym",l:"💪 Giorno 1",x:G1+" + Core #1"},
+    {t:"run",l:"6 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"6 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:23,p:3,d:"2–7 feb",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"13 km qualità",x:""},{t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"11 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 50 min",x:""},
-    {t:"trail",l:"Trail 30 km",x:"~1400m D+"},
-    {t:"trail",l:"Trail easy 16 km",x:"~600m D+ · Back-to-back · 46 km tot (56%)"},
+  {w:23,p:3,d:"1–7 feb",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 30 km",x:"~1400m D+ · back-to-back giorno 1 · simula i ristori (max 3-5 min) · CHO 40-50 g/ora",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 4h35",x:"~3650m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 16 km",x:"~600m D+ · back-to-back giorno 2: il giorno dopo il lungo 1, a gambe stanche · FC<AeT",alt:[{i:"🚴",l:"Bici 3h00",x:"~1050m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h15",x:"~1800m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana · 15 min riscaldamento + blocchi Z3-4 + defaticamento"},
+    {t:"gym",l:"🪜 ME Workout #13 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · subito dopo la palestra (stessa uscita)"},
+    {t:"gym",l:"💪 Giorno 3",x:G3+" + Core #1"},
+    {t:"run",l:"6 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"6 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:24,p:3,d:"9–14 feb",note:"🔬 Test AnT #2 questa settimana — confronta con la baseline di settembre (159 bpm).",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 1",x:G1},
+  {w:24,p:3,d:"8–14 feb",note:"🔬 Test AnT #2 questa settimana — confronta con la baseline di settembre (159 bpm).",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 33 km",x:"~1600m D+ · back-to-back giorno 1 · simula i ristori (max 3-5 min) · CHO 40-50 g/ora",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 5h05",x:"~4050m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 18 km",x:"~700m D+ · back-to-back giorno 2: il giorno dopo il lungo 1, a gambe stanche · FC<AeT",alt:[{i:"🚴",l:"Bici 3h20",x:"~1150m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h35",x:"~2050m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×18 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
     {t:"test",l:"🔬 Test AnT #2",x:"15 min warm-up + 30 min all-out · confronta con baseline 159 bpm (15/09/2026)"},
-    {t:"run",l:"Qualità Z3-4 · 50 min",x:""},{t:"trail",l:"Trail 33 km",x:"~1600m D+"},
-    {t:"trail",l:"Trail easy 18 km",x:"~700m D+ · Back-to-back · 51 km tot (59%)"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1"},
+    {t:"run",l:"8 km easy",x:"FC < 141 bpm · 4×200m DH pick-up alla fine"},
+    {t:"run",l:"8 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:25,p:3,note:"⚡ Scarico (Tipo R).",d:"16–21 feb",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"8 km easy",x:""},{t:"rest",l:"Riposo",x:""},{t:"trail",l:"Trail 18 km",x:"~700m D+ · scarico"},
-    {t:"trail",l:"Trail easy 10 km",x:"~400m D+ · Back-to-back ridotto · 28 km tot"},
+  {w:25,p:3,d:"15–21 feb",note:"⚡ Scarico (Tipo R).",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 18 km",x:"~700m D+ · FC<135 · scarico",alt:[{i:"🚴",l:"Bici 3h20",x:"~1150m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h35",x:"~2050m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 10 km",x:"~400m D+ · FC<135 · scarico",alt:[{i:"🚴",l:"Bici 1h55",x:"~650m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 1h25",x:"~1150m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×20 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"},
+    {t:"gym",l:"💪 Giorno 1 ridotta",x:"Solo 2 esercizi principali + Core #1 · carichi ridotti del 30%"},
+    {t:"run",l:"7 km easy",x:"FC < 141 bpm"},
+    {t:"run",l:"7 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:26,p:3,d:"23–28 feb",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX · 2-3 min recupero"},
-    {t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},{t:"run",l:"11 km easy",x:""},
-    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana"},
-    {t:"trail",l:"Trail 33 km",x:"~1800m D+"},{t:"trail",l:"Trail easy 18 km",x:"~700m D+ · Back-to-back · 51 km tot (64%)"},
+  {w:26,p:3,d:"22–28 feb",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 33 km",x:"~1800m D+ · back-to-back giorno 1 · simula i ristori (max 3-5 min) · CHO 40-50 g/ora",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 5h15",x:"~4200m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 18 km",x:"~700m D+ · back-to-back giorno 2: il giorno dopo il lungo 1, a gambe stanche · FC<AeT",alt:[{i:"🚴",l:"Bici 3h20",x:"~1150m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h35",x:"~2050m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana · 15 min riscaldamento + blocchi Z3-4 + defaticamento"},
+    {t:"gym",l:"🪜 ME Workout #14 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · subito dopo la palestra (stessa uscita)"},
+    {t:"gym",l:"💪 Giorno 3",x:G3+" + Core #1"},
+    {t:"run",l:"5 km easy",x:"FC < 141 bpm · 4×200m DH pick-up (15-20%, più veloce) alla fine"},
   ]},
-  {w:27,p:3,d:"2–7 mar",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
-    {t:"gym",l:"💪 Giorno 2 + 🪜 ME",x:G2+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},{t:"run",l:"12 km easy",x:""},
-    {t:"run",l:"Qualità Z3-4 · 50 min",x:""},
-    {t:"trail",l:"Trail 35 km",x:"~2000m D+"},{t:"trail",l:"Trail easy 20 km",x:"~800m D+ · Back-to-back · 55 km tot (65%)"},
+  {w:27,p:3,d:"1–7 mar",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 35 km",x:"~2000m D+ · back-to-back giorno 1 · simula i ristori (max 3-5 min) · CHO 40-50 g/ora",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 5h40",x:"~4550m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 20 km",x:"~800m D+ · back-to-back giorno 2: il giorno dopo il lungo 1, a gambe stanche · FC<AeT",alt:[{i:"🚴",l:"Bici 3h45",x:"~1300m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h55",x:"~2300m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana · 15 min riscaldamento + blocchi Z3-4 + defaticamento"},
+    {t:"gym",l:"🪜 ME Workout #15 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · subito dopo la palestra (stessa uscita)"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1"},
+    {t:"run",l:"5 km easy",x:"FC < 141 bpm · 4×200m DH pick-up (15-20%, più veloce) alla fine"},
   ]},
-  {w:28,p:3,note:"🔝 PICCO 1 — settimana di carico più alto del blocco Specifico.",sp:"🔝 Picco 1",d:"9–14 mar",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
-    {t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},{t:"run",l:"12 km easy",x:""},
-    {t:"run",l:"Qualità Z3-4 · 50 min",x:""},
-    {t:"trail",l:"Trail 37 km",x:"~2200m D+"},{t:"trail",l:"Trail easy 22 km",x:"~900m D+ · Back-to-back · 59 km tot (67%) · gambe stanche"},
+  {w:28,p:3,d:"8–14 mar",note:"🔝 PICCO 1 — settimana di carico più alto del blocco Specifico.",sp:"🔝 Picco 1",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 37 km",x:"~2200m D+ · back-to-back giorno 1 · simula i ristori (max 3-5 min) · CHO 40-50 g/ora",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 6h05",x:"~4850m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 22 km",x:"~900m D+ · back-to-back giorno 2: il giorno dopo il lungo 1, a gambe stanche · FC<AeT",alt:[{i:"🚴",l:"Bici 4h10",x:"~1450m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 3h15",x:"~2550m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana · 15 min riscaldamento + blocchi Z3-4 + defaticamento"},
+    {t:"gym",l:"🪜 ME Workout #16 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · subito dopo la palestra (stessa uscita)"},
+    {t:"gym",l:"💪 Giorno 1",x:G1+" + Core #1"},
+    {t:"run",l:"5 km easy",x:"FC < 141 bpm · 4×200m DH pick-up (15-20%, più veloce) alla fine"},
   ]},
-  {w:29,p:3,note:"⚡ Scarico (Tipo R) — recupero dopo Picco 1.",d:"16–21 mar",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"9 km easy",x:""},{t:"rest",l:"Riposo",x:""},{t:"trail",l:"Trail 22 km",x:"~900m D+ · scarico"},
-    {t:"trail",l:"Trail easy 12 km",x:"~500m D+ · Back-to-back ridotto · 34 km tot"},
+  {w:29,p:3,d:"15–21 mar",note:"⚡ Scarico (Tipo R) — recupero dopo Picco 1.",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 22 km",x:"~900m D+ · FC<135 · scarico",alt:[{i:"🚴",l:"Bici 4h10",x:"~1450m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 3h15",x:"~2550m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 12 km",x:"~500m D+ · FC<135 · scarico",alt:[{i:"🚴",l:"Bici 2h15",x:"~800m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 1h45",x:"~1400m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×20 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"},
+    {t:"gym",l:"💪 Giorno 3 ridotta",x:"Solo 2 esercizi principali + Core #1 · carichi ridotti del 30%"},
+    {t:"run",l:"10 km easy",x:"FC < 141 bpm"},
   ]},
-  {w:30,p:3,d:"23–28 mar",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"11 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 50 min",x:""},
-    {t:"trail",l:"Trail 33 km",x:"~2000m D+"},{t:"trail",l:"Trail easy 18 km",x:"~800m D+ · Back-to-back · 51 km tot (68%)"},
+  {w:30,p:3,d:"22–28 mar",sessions:[
+    {t:"trail",l:"Lungo 1 · Trail 33 km",x:"~2000m D+ · back-to-back giorno 1 · simula i ristori (max 3-5 min) · CHO 40-50 g/ora",alt:[{i:"🚴",l:"Bici 5h30",x:"~1900m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min · tetto 5h30: oltre non è più equivalente"},{i:"⛷️",l:"Scialpinismo 5h30",x:"~4350m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"trail",l:"Lungo 2 · Trail 18 km",x:"~800m D+ · back-to-back giorno 2: il giorno dopo il lungo 1, a gambe stanche · FC<AeT",alt:[{i:"🚴",l:"Bici 3h30",x:"~1200m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min"},{i:"⛷️",l:"Scialpinismo 2h40",x:"~2150m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve"}]},
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"},
+    {t:"run",l:"Qualità Z3-4 · 50 min",x:"1 sessione intensità della settimana · 15 min riscaldamento + blocchi Z3-4 + defaticamento"},
+    {t:"gym",l:"🪜 ME Workout #17 · Scala infinita · 60 min",x:"In palestra · 10 min riscaldamento lento + 30 min continui con zaino 8 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · gambe brucianti, cuore no · subito dopo la palestra (stessa uscita)"},
+    {t:"gym",l:"💪 Giorno 2",x:G2+" + Core #1"},
   ]},
-  {w:31,p:3,d:"30 mar–4 apr",note:"DBT 24K con la fidanzata — C-race di sentimento, train through (niente taper).",sp:"🏁 DBT 24K",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 2",x:G2},
-    {t:"run",l:"9 km easy",x:""},{t:"rest",l:"Riposo",x:"Pre-gara"},
-    {t:"race",l:"🏁 DBT 24K",x:"~1400m D+ · Long trail con la fidanzata · train through, nessun taper · goditela"},
+  {w:31,p:3,d:"29 mar–4 apr",note:"DBT 24K con la fidanzata — C-race di sentimento, train through (niente taper).",sp:"🏁 DBT 24K",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 2",x:G2},
+    {t:"run",l:"9 km easy",x:""},
+    {t:"race",l:"🏁 DBT 24K",x:"~1400m D+ · Long trail con la fidanzata · train through, nessun taper · goditela",date:"2027-04-03"},
     {t:"trail",l:"Trail easy 8 km",x:"Gambe leggere post-gara"},
   ]},
-  {w:32,p:3,d:"6–11 apr",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3d+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"11 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 55 min",x:""},
-    {t:"trail",l:"Trail 30 km",x:"~1800m D+"},{t:"trail",l:"Trail easy 16 km",x:"~700m D+ · Back-to-back · 46 km tot (68%)"},
+  {w:32,p:3,d:"5–11 apr",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3d+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"11 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 55 min",x:""},
+    {t:"trail",l:"Trail 30 km",x:"~1800m D+"},
+    {t:"trail",l:"Trail easy 16 km",x:"~700m D+ · Back-to-back · 46 km tot (68%)"},
   ]},
-  {w:33,p:3,d:"13–18 apr",note:"~75% del D+ e distanza di Malcesine — ultimo grande test prima della gara.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"12 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 55 min",x:""},
-    {t:"trail",l:"Trail 39 km",x:"~2400m D+ · ≈75% Malcesine"},{t:"trail",l:"Trail easy 19 km",x:"~900m D+ · Back-to-back · 58 km tot"},
+  {w:33,p:3,d:"12–18 apr",note:"~75% del D+ e distanza di Malcesine — ultimo grande test prima della gara.",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"12 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 55 min",x:""},
+    {t:"trail",l:"Trail 39 km",x:"~2400m D+ · ≈75% Malcesine"},
+    {t:"trail",l:"Trail easy 19 km",x:"~900m D+ · Back-to-back · 58 km tot"},
   ]},
-  {w:34,p:3,d:"20–25 apr",note:"Pre-Malcesine — taper leggero, terreno casa. Niente back-to-back questa settimana.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"gym",l:"💪 Giorno 2 leggera",x:Gl},
-    {t:"run",l:"8 km easy",x:""},{t:"run",l:"Qualità Z3 breve · 30 min",x:"Attiva le gambe, non le stanca"},
-    {t:"trail",l:"Trail 20 km",x:"~900m D+ · solo, no b2b"},{t:"rest",l:"Riposo",x:""},
+  {w:34,p:3,d:"19–25 apr",note:"Pre-Malcesine — taper leggero, terreno casa. Niente back-to-back questa settimana.",sessions:[
+    {t:"run",l:"9 km easy",x:""},
+    {t:"gym",l:"💪 Giorno 2 leggera",x:Gl},
+    {t:"run",l:"8 km easy",x:""},
+    {t:"run",l:"Qualità Z3 breve · 30 min",x:"Attiva le gambe, non le stanca"},
+    {t:"trail",l:"Trail 20 km",x:"~900m D+ · solo, no b2b"},
   ]},
-  {w:35,p:3,d:"27 apr–2 mag",note:"ASICS Malcesine Baldo Trail 52K — B-race, terreno casa, Index refresh.",sp:"🏁 ASICS Malcesine Baldo Trail 52K",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km facilissimi",x:""},{t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"4 km easy",x:""},{t:"rest",l:"Riposo",x:"Prepara materiale"},
-    {t:"race",l:"🏁 MALCESINE BALDO TRAIL",x:"60km · ~3500m D+ · UTMB Index refresh · B-race, gestisci conservativo"},{t:"rest",l:"Riposo",x:""},
+  {w:35,p:3,d:"26 apr–2 mag",note:"ASICS Malcesine Baldo Trail 52K — B-race, terreno casa, Index refresh.",sp:"🏁 ASICS Malcesine Baldo Trail 52K",sessions:[
+    {t:"run",l:"7 km facilissimi",x:""},
+    {t:"run",l:"4 km easy",x:""},
+    {t:"race",l:"🏁 MALCESINE BALDO TRAIL",x:"60km · ~3500m D+ · UTMB Index refresh · B-race, gestisci conservativo",date:"2027-05-01"},
   ]},
-  {w:36,p:3,d:"4–9 mag",note:"⚡ Recovery post-Malcesine (Tipo R). Solo, no back-to-back.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km easy",x:"Solo se le gambe sono ok"},{t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici 50 min",x:""},{t:"trail",l:"Trail 18 km",x:"~700m D+"},
+  {w:36,p:3,d:"3–9 mag",note:"⚡ Recovery post-Malcesine (Tipo R). Solo, no back-to-back.",sessions:[
+    {t:"run",l:"7 km easy",x:"Solo se le gambe sono ok"},
+    {t:"run",l:"9 km easy",x:""},
+    {t:"bike",l:"Bici 50 min",x:""},
+    {t:"trail",l:"Trail 18 km",x:"~700m D+"},
     {t:"hike",l:"Hiking 1.5h",x:""},
   ]},
-  {w:37,p:3,d:"11–16 mag",note:"Specifico — verso Eiger E51 (lug 2027). Back-to-back riprende dopo Malcesine.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"12 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 55 min",x:""},
-    {t:"trail",l:"Trail 30 km",x:"~2000m D+"},{t:"trail",l:"Trail easy 17 km",x:"~800m D+ · Back-to-back · 47 km tot (65%)"},
+  {w:37,p:3,d:"10–16 mag",note:"Specifico — verso Eiger E51 (lug 2027). Back-to-back riprende dopo Malcesine.",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"12 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 55 min",x:""},
+    {t:"trail",l:"Trail 30 km",x:"~2000m D+"},
+    {t:"trail",l:"Trail easy 17 km",x:"~800m D+ · Back-to-back · 47 km tot (65%)"},
   ]},
-  {w:38,p:3,d:"18–23 mag",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 2 + 🪜 ME",x:G2+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"13 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 55 min",x:""},
-    {t:"trail",l:"Trail 35 km",x:"~2400m D+"},{t:"trail",l:"Trail easy 20 km",x:"~900m D+ · Back-to-back · 55 km tot (69%)"},
+  {w:38,p:3,d:"17–23 mag",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 2 + 🪜 ME",x:G2+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"13 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 55 min",x:""},
+    {t:"trail",l:"Trail 35 km",x:"~2400m D+"},
+    {t:"trail",l:"Trail easy 20 km",x:"~900m D+ · Back-to-back · 55 km tot (69%)"},
   ]},
-  {w:39,p:3,d:"25–30 mag",note:"Picco intermedio — non è il picco assoluto (quello è S43), ma il carico più alto finora.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3d+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"13 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 60 min",x:""},
-    {t:"trail",l:"Trail 38 km",x:"~2800m D+ · simula rifornimento gara"},{t:"trail",l:"Trail easy 22 km",x:"~1100m D+ · Back-to-back · 60 km tot (68%)"},
+  {w:39,p:3,d:"24–30 mag",note:"Picco intermedio — non è il picco assoluto (quello è S43), ma il carico più alto finora.",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3d+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"13 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 60 min",x:""},
+    {t:"trail",l:"Trail 38 km",x:"~2800m D+ · simula rifornimento gara"},
+    {t:"trail",l:"Trail easy 22 km",x:"~1100m D+ · Back-to-back · 60 km tot (68%)"},
   ]},
-  {w:40,p:3,d:"1–7 giu",note:"⚡ Scarico (Tipo R) — recupero dopo il picco intermedio di S39.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km easy",x:""},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"9 km easy",x:""},{t:"rest",l:"Riposo",x:""},{t:"trail",l:"Trail 22 km",x:"~1000m D+ · scarico"},
+  {w:40,p:3,d:"31 mag–6 giu",note:"⚡ Scarico (Tipo R) — recupero dopo il picco intermedio di S39.",sessions:[
+    {t:"run",l:"10 km easy",x:""},
+    {t:"run",l:"9 km easy",x:""},
+    {t:"trail",l:"Trail 22 km",x:"~1000m D+ · scarico"},
     {t:"trail",l:"Trail easy 13 km",x:"~500m D+ · Back-to-back ridotto · 35 km tot"},
   ]},
-  {w:41,p:3,d:"8–13 giu",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"13 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 55 min",x:""},
-    {t:"trail",l:"Trail 36 km",x:"~2800m D+"},{t:"trail",l:"Trail easy 20 km",x:"~1100m D+ · Back-to-back · 56 km tot (68%)"},
+  {w:41,p:3,d:"7–13 giu",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 1 + 🪜 ME",x:G1+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"13 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 55 min",x:""},
+    {t:"trail",l:"Trail 36 km",x:"~2800m D+"},
+    {t:"trail",l:"Trail easy 20 km",x:"~1100m D+ · Back-to-back · 56 km tot (68%)"},
   ]},
-  {w:42,p:3,d:"15–20 giu",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 2 + 🪜 ME",x:G2+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"13 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 55 min",x:""},
-    {t:"trail",l:"Trail 38 km",x:"~3000m D+"},{t:"trail",l:"Trail easy 22 km",x:"~1200m D+ · Back-to-back · 60 km tot (70%)"},
+  {w:42,p:3,d:"14–20 giu",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 2 + 🪜 ME",x:G2+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"13 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 55 min",x:""},
+    {t:"trail",l:"Trail 38 km",x:"~3000m D+"},
+    {t:"trail",l:"Trail easy 22 km",x:"~1200m D+ · Back-to-back · 60 km tot (70%)"},
   ]},
-  {w:43,p:3,note:"🔝 PICCO 2 — il vero picco assoluto del blocco. Massimo back-to-back del piano (65 km / 4600m D+, 74% volume sett.).",sp:"🔝 Picco 2",d:"22–27 giu",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},{t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3d+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
-    {t:"run",l:"13 km easy",x:""},{t:"run",l:"Qualità Z3-4 · 60 min",x:""},
-    {t:"trail",l:"Trail 40 km",x:"~3200m D+ · ultimo long prima del taper"},{t:"trail",l:"Trail easy 25 km",x:"~1400m D+ · Back-to-back · 65 km tot (74%) · il tuo weekend più lungo"},
+  {w:43,p:3,d:"21–27 giu",note:"🔝 PICCO 2 — il vero picco assoluto del blocco. Massimo back-to-back del piano (65 km / 4600m D+, 74% volume sett.).",sp:"🔝 Picco 2",sessions:[
+    {t:"run",l:"Hill Sprints · 8 km tot",x:"10×20 sec MAX"},
+    {t:"gym",l:"💪 Giorno 3 + 🪜 ME",x:G3d+" · poi ME (in prova): 30 min scala infinita con zaino 8 kg (10 min lenti + 30 continui + 10 lenti) · FC 130-150, gambe brucianti, cuore no"},
+    {t:"run",l:"13 km easy",x:""},
+    {t:"run",l:"Qualità Z3-4 · 60 min",x:""},
+    {t:"trail",l:"Trail 40 km",x:"~3200m D+ · ultimo long prima del taper"},
+    {t:"trail",l:"Trail easy 25 km",x:"~1400m D+ · Back-to-back · 65 km tot (74%) · il tuo weekend più lungo"},
   ]},
-  {w:44,p:4,d:"29 giu–4 lug",note:"🔋 TAPER 1 pre-Eiger (−43% dal picco di 88 km). Mantieni qualità, riduci volume. Hill Sprints dimezzati.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×15 sec MAX · 2-3 min recupero · nel Taper si dimezzano"},
-    {t:"gym",l:"💪 Giorno 1 light",x:Gl},{t:"run",l:"8 km easy",x:""},
+  {w:44,p:4,d:"28 giu–4 lug",note:"🔋 TAPER 1 pre-Eiger (−43% dal picco di 88 km). Mantieni qualità, riduci volume. Hill Sprints dimezzati.",sessions:[
+    {t:"run",l:"Hill Sprints dimezzati · 6 km tot",x:"5×15 sec MAX · 2-3 min recupero · nel Taper si dimezzano"},
+    {t:"gym",l:"💪 Giorno 1 light",x:Gl},
+    {t:"run",l:"8 km easy",x:""},
     {t:"run",l:"Qualità leggera Z3 · 30 min",x:"Ritmo gara per tenere le gambe vive, senza stancarle"},
     {t:"trail",l:"Trail 22 km",x:"~1000m D+ · ultimo long con vest da gara completo"},
     {t:"trail",l:"Trail easy 13 km",x:"~500m D+ · Back-to-back ridotto · 35 km tot"},
   ]},
-  {w:45,p:4,d:"6–11 lug",note:"🔋 TAPER 2 pre-Eiger (−30% da T1). Solo Z1 e qualità leggera, niente nuovi stimoli. Solo sabato, no back-to-back.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km + 3×1 km",x:"Ritmo gara per sbloccare le gambe"},
-    {t:"gym",l:"💪 Giorno 2 light",x:Gl},{t:"run",l:"6 km easy",x:"Z1"},
-    {t:"rest",l:"Riposo",x:""},
-    {t:"trail",l:"Trail 18 km",x:"~800m D+ · ultima uscita lunga, Z1"},{t:"rest",l:"Riposo",x:""},
+  {w:45,p:4,d:"5–11 lug",note:"🔋 TAPER 2 pre-Eiger (−30% da T1). Solo Z1 e qualità leggera, niente nuovi stimoli. Un solo lungo, no back-to-back.",sessions:[
+    {t:"run",l:"6 km + 3×1 km",x:"Ritmo gara per sbloccare le gambe"},
+    {t:"gym",l:"💪 Giorno 2 light",x:Gl},
+    {t:"run",l:"6 km easy",x:"Z1"},
+    {t:"trail",l:"Trail 18 km",x:"~800m D+ · ultima uscita lunga, Z1"},
   ]},
-  {w:46,p:4,d:"13–18 lug",note:"🏆 EIGER ULTRA TRAIL E51 51K — A-race 2027, ultima settimana del blocco TAPER. Data esatta della gara da verificare. Niente di nuovo in gara: no scarpe nuove, no gel nuovi, no strategie nuove.",sp:"🏆 Eiger E51 51K",days:[
-    {t:"rest",l:"Camminata 20 min",x:""},{t:"run",l:"4 km facilissimi",x:"Solo per sentire le gambe · 4 allunghi brevi"},
-    {t:"rest",l:"Riposo",x:"Prepara zaino, drop bag (unica) e materiale obbligatorio"},
-    {t:"rest",l:"Riposo",x:"Verifica meteo e cerata"},{t:"rest",l:"Riposo",x:"Dormi presto"},
-    {t:"race",l:"🏆 EIGER E51 51K",x:"51km · 3450m D+ · Grindelwald (CH) · loop · quota max ~2680m · A-race 2027 · parti piano (mai spingere nei primi 20 km) · FC target, non passo · 60-80g CHO/ora · +2 Running Stones (Index 50K)"},
-    {t:"rest",l:"Riposo",x:"Recupero post-gara"},
+  {w:46,p:4,d:"12–18 lug",note:"🏆 EIGER ULTRA TRAIL E51 51K — A-race 2027, ultima settimana del blocco TAPER. Data esatta della gara da verificare. Niente di nuovo in gara: no scarpe nuove, no gel nuovi, no strategie nuove.",sp:"🏆 Eiger E51 51K",sessions:[
+    {t:"run",l:"4 km facilissimi",x:"Solo per sentire le gambe · 4 allunghi brevi"},
+    {t:"race",l:"🏆 EIGER E51 51K",x:"51km · 3450m D+ · Grindelwald (CH) · loop · quota max ~2680m · A-race 2027 · parti piano (mai spingere nei primi 20 km) · FC target, non passo · 60-80g CHO/ora · +2 Running Stones (Index 50K)",date:"2027-07-17"},
   ]},
-  {w:47,p:5,d:"20–25 lug",note:"⚡ Recovery post-Eiger (Tipo R) — 20-30 km, tutto Z1. Gambe prima di tutto.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"6 km easy",x:"Solo se le gambe sono ok · Z1"},{t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"7 km easy",x:"Z1"},{t:"bike",l:"Bici 40 min",x:"Recupero attivo"},{t:"trail",l:"Trail 10 km",x:"~400m D+ · leggero"},
+  {w:47,p:5,d:"19–25 lug",note:"⚡ Recovery post-Eiger (Tipo R) — 20-30 km, tutto Z1. Gambe prima di tutto.",sessions:[
+    {t:"run",l:"6 km easy",x:"Solo se le gambe sono ok · Z1"},
+    {t:"run",l:"7 km easy",x:"Z1"},
+    {t:"bike",l:"Bici 40 min",x:"Recupero attivo"},
+    {t:"trail",l:"Trail 10 km",x:"~400m D+ · leggero"},
     {t:"hike",l:"Hiking 1h",x:""},
   ]},
-  {w:48,p:5,d:"27 lug–1 ago",note:"Rebuild — ricostruzione graduale del volume dopo la gara A. Tutto Z1, niente qualità.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:"Z1"},{t:"gym",l:"💪 Giorno 2",x:G2},
-    {t:"run",l:"8 km easy",x:"Z1"},{t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 18 km",x:"~800m D+"},
+  {w:48,p:5,d:"26 lug–1 ago",note:"Rebuild — ricostruzione graduale del volume dopo la gara A. Tutto Z1, niente qualità.",sessions:[
+    {t:"run",l:"9 km easy",x:"Z1"},
+    {t:"gym",l:"💪 Giorno 2",x:G2},
+    {t:"run",l:"8 km easy",x:"Z1"},
+    {t:"bike",l:"Bici Z2 · 60 min",x:""},
+    {t:"trail",l:"Trail 18 km",x:"~800m D+"},
     {t:"hike",l:"Hiking 1.5h",x:""},
   ]},
-  {w:49,p:5,d:"3–8 ago",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"10 km easy",x:""},{t:"gym",l:"💪 Giorno 3",x:G3},
-    {t:"run",l:"9 km easy",x:""},{t:"bike",l:"Bici Z2 · 65 min",x:""},{t:"trail",l:"Trail 22 km",x:"~1000m D+"},
+  {w:49,p:5,d:"2–8 ago",sessions:[
+    {t:"run",l:"10 km easy",x:""},
+    {t:"gym",l:"💪 Giorno 3",x:G3},
+    {t:"run",l:"9 km easy",x:""},
+    {t:"bike",l:"Bici Z2 · 65 min",x:""},
+    {t:"trail",l:"Trail 22 km",x:"~1000m D+"},
     {t:"hike",l:"Hiking 1.5h",x:""},
   ]},
-  {w:50,p:5,d:"10–15 ago",note:"⚡ Scarico (Tipo R). ⚠️ Piena estate — caldo molto limitante (vedi Vulnerabilità e Vincoli): uscite nelle ore fresche.",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"8 km easy",x:"Presto mattina, prima del caldo"},{t:"rest",l:"No palestra",x:""},
-    {t:"run",l:"7 km easy",x:""},{t:"bike",l:"Bici 35 min",x:""},{t:"trail",l:"Trail 14 km",x:"~600m D+ · scarico"},
-    {t:"rest",l:"Riposo",x:""},
+  {w:50,p:5,d:"9–15 ago",note:"⚡ Scarico (Tipo R). ⚠️ Piena estate — caldo molto limitante (vedi Vulnerabilità e Vincoli): uscite nelle ore fresche.",sessions:[
+    {t:"run",l:"8 km easy",x:"Presto mattina, prima del caldo"},
+    {t:"run",l:"7 km easy",x:""},
+    {t:"bike",l:"Bici 35 min",x:""},
+    {t:"trail",l:"Trail 14 km",x:"~600m D+ · scarico"},
   ]},
-  {w:51,p:5,d:"17–22 ago",note:"Rebuild — ultima settimana di carico normale prima della Maratona Alpina (S52, sentimento, niente taper).",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"9 km easy",x:""},{t:"gym",l:"💪 Giorno 1",x:G1},
-    {t:"run",l:"8 km easy",x:""},{t:"bike",l:"Bici Z2 · 60 min",x:""},{t:"trail",l:"Trail 15 km",x:"~700m D+"},
+  {w:51,p:5,d:"16–22 ago",note:"Rebuild — ultima settimana di carico normale prima della Maratona Alpina (S52, sentimento, niente taper).",sessions:[
+    {t:"run",l:"9 km easy",x:""},
+    {t:"gym",l:"💪 Giorno 1",x:G1},
+    {t:"run",l:"8 km easy",x:""},
+    {t:"bike",l:"Bici Z2 · 60 min",x:""},
+    {t:"trail",l:"Trail 15 km",x:"~700m D+"},
     {t:"hike",l:"Hiking 1h",x:""},
   ]},
-  {w:52,p:5,d:"24–29 ago",note:"Maratona Alpina GES Schio — C-race di sentimento, non competitiva: train through, niente taper. Ultima settimana del piano — poi valuta gli obiettivi del 2028 (LUT 80K garantita, giugno). ⚠️ Il file di contesto dice \"metà settembre\" ma S52 cade a fine agosto (24-29): data da verificare.",sp:"🎗️ Maratona Alpina GES Schio",days:[
-    {t:"rest",l:"Riposo",x:""},{t:"run",l:"7 km easy",x:"Z1"},{t:"rest",l:"Riposo",x:""},
-    {t:"run",l:"5 km easy",x:"Z1"},{t:"rest",l:"Riposo",x:"Prepara materiale"},
-    {t:"race",l:"🎗️ Maratona Alpina GES Schio",x:"42km · 3150m D+ · Schio→Pian delle Fugazze · non competitiva, sentimento · zero costo · C-race, train through"},
-    {t:"rest",l:"Riposo",x:"Recupero post-gara"},
+  {w:52,p:5,d:"23–29 ago",note:"Maratona Alpina GES Schio — C-race di sentimento, non competitiva: train through, niente taper. Ultima settimana del piano — poi valuta gli obiettivi del 2028 (LUT 80K garantita, giugno). ⚠️ Il file di contesto dice \"metà settembre\" ma S52 cade a fine agosto (24-29): data da verificare.",sp:"🎗️ Maratona Alpina GES Schio",sessions:[
+    {t:"run",l:"7 km easy",x:"Z1"},
+    {t:"run",l:"5 km easy",x:"Z1"},
+    {t:"race",l:"🎗️ Maratona Alpina GES Schio",x:"42km · 3150m D+ · Schio→Pian delle Fugazze · non competitiva, sentimento · zero costo · C-race, train through",date:"2027-08-28"},
   ]},
 ];
 
@@ -1022,7 +1107,7 @@ var W = [
 // piano di 52 settimane su 5 blocchi (Monte Rosa e Puglia non sono più nel 2027).
 var ROADMAP = [
   {col:"#4ade80", date:"Settembre 2026", name:"Restart ✅ + Test AeT/AnT", detail:"AeT 147 · AnT 159 · gap 7.5% → no ADS · verdict: PROMOSSO"},
-  {col:"#60a5fa", date:"Ottobre 2026–Gennaio 2027", name:"Base", detail:"22–76 km/sett · cicli 2:1 fino a S13, poi 3:1 · Test AeT #2 ✅ (S7) e #3 (S16)"},
+  {col:"#60a5fa", date:"Ottobre 2026–Gennaio 2027", name:"Base", detail:"22–76 km/sett · cicli 2:1 fino a S13, poi 3:1 · C-race Trail delle Bregonze 25K (15/11) e Trail dello Shamano 30K (22/11) · Test AeT #2 ✅ (S7) e #3 (S16)"},
   {col:"#a78bfa", date:"Gennaio–Giugno 2027", name:"Specifico", detail:"42–88 km/sett · back-to-back · DBT 24K (apr) · B-race Malcesine 52K (mag) · Picco 2: 65 km b2b (S43)"},
   {col:"#fbbf24", date:"Luglio 2027", name:"🏆 Eiger Ultra Trail E51 51K", detail:"51km · 3450m D+ · Grindelwald (CH) · A-race 2027 · +2 Running Stones · Index 50K · chiude il blocco Taper", gold:true},
   {col:"#22d3ee", date:"Luglio–Agosto 2027", name:"Rebuild", detail:"22–50 km/sett · recovery + ricostruzione · Maratona Alpina GES Schio (sentimento)"},
@@ -1076,7 +1161,7 @@ function computeWeekMetrics(week) {
   var easy = 0, quality = 0, trailKmTotal = 0, trailKmMax = 0, runKm = 0, bikeMin = 0;
   var gymDays = [], skimo = false, testType = null, raceName = null;
 
-  week.days.forEach(function(d) {
+  week.sessions.forEach(function(d) {
     var label = d.l || "";
     if (d.t === "run") {
       var mk = /([\d.]+)\s*km/.exec(label);
@@ -1251,11 +1336,11 @@ function timelineMilestonesSVG() {
   W.forEach(function(week) {
     var wStart = new Date(planStart.getTime() + (week.w - 1) * 7 * 86400000);
     var frac = (wStart - planStart) / totalMs;
-    var hasTest = week.days.some(function(d){ return d.t === "test"; });
-    var raceDay = week.days.filter(function(d){ return d.t === "race"; })[0];
+    var hasTest = week.sessions.some(function(d){ return d.t === "test"; });
+    var raceDay = week.sessions.filter(function(d){ return d.t === "race"; })[0];
     var isScarico = /scarico/i.test(week.note || "");
     if (hasTest) {
-      var testLabel = week.days.filter(function(d){ return d.t === "test"; })[0].l.replace(/[^\w\sÀ-ÿ]/g, "").trim();
+      var testLabel = week.sessions.filter(function(d){ return d.t === "test"; })[0].l.replace(/[^\w\sÀ-ÿ]/g, "").trim();
       markers.push({ frac: frac, icon: "🔬", label: testLabel, date: wStart });
     }
     if (raceDay) {
@@ -1355,58 +1440,47 @@ function currentPhase() {
 }
 
 // Gerarchia priorità sessioni — da contesto-allenamento.md §"Gerarchia
-// Sessioni - Cosa Saltare se Non Hai Tempo" (3 livelli, non solo
-// obbligatorio/opzionale): 🔴 mai saltare, 🟡 quasi mai, 🟢 saltabile.
-// Le tabelle del libro hanno 3 gruppi (Restart / Base / Specifico); qui sono
-// applicati ai blocchi UFFICIALI del piano (25/09/2026): Restart S1-3, Base
-// S4-21, Specifico S22-43. Taper (S44-46) e Rebuild (S47-52) non hanno una
-// gerarchia scritta: il Taper eredita quella dello Specifico (le sessioni
-// restano le stesse, solo ridotte), il Rebuild quella del Base.
-// NB: il file riporta ancora i vecchi confini (Base S5-24, Specifico S25-38)
-// nelle intestazioni della sezione — vanno riallineati alla struttura a 5 blocchi.
-function sessionPriority(day, dayLabel, weekNum) {
-  if (day.t === "rest") return null;
-  if (day.t === "test") return { sym: "🔴", cls: "never", label: "Mai saltare — calibra tutto il piano" };
-  if (day.t === "race") return { sym: "🔴", cls: "never", label: "Gara" };
-
-  var group = weekNum <= 3 ? "restart" : weekNum <= 21 ? "base" : weekNum <= 46 ? "specifico" : "base";
-
-  if (group === "restart") {
-    if (dayLabel === "Mar" || dayLabel === "Mer") return { sym: "🟡", cls: "rare", label: "Quasi mai saltare" };
-    return { sym: "🟢", cls: "skip", label: "Saltabile" };
+// Sessioni - Cosa Saltare se Non Hai Tempo": 🔴 mai saltare, 🟡 quasi mai,
+// 🟢 saltabile. Dal 26/10/2026 le sessioni NON hanno più un giorno fisso:
+// la priorità dipende dal tipo di sessione, non dal giorno della settimana.
+function sessionPriority(s, weekNum) {
+  var l = s.l || "";
+  if (s.t === "test") return { sym: "🔴", cls: "never", label: "Mai saltare — calibra tutto il piano" };
+  if (s.t === "race") return { sym: "🔴", cls: "never", label: "Gara" };
+  if (/Hill Sprints/i.test(l)) return { sym: "🔴", cls: "never", label: "Mai saltare — Hill Sprints, adattamento neurale" };
+  if (s.t === "trail" || s.t === "skimo") {
+    return { sym: "🔴", cls: "never", label: weekNum >= 22 ? "Mai saltare — back-to-back" : "Mai saltare — 30-40% volume settimana" };
   }
-  if (group === "base") {
-    if (dayLabel === "Mar") return { sym: "🔴", cls: "never", label: "Mai saltare — Hill Sprints, adattamento neurale" };
-    if (dayLabel === "Sab" && day.t === "trail") return { sym: "🔴", cls: "never", label: "Mai saltare — 30-40% volume settimana" };
-    if (dayLabel === "Ven" || dayLabel === "Mer") return { sym: "🟡", cls: "rare", label: "Quasi mai saltare" };
-    return { sym: "🟢", cls: "skip", label: "Saltabile" };
-  }
-  // specifico
-  if (dayLabel === "Mar") return { sym: "🔴", cls: "never", label: "Mai saltare — Hill Sprints" };
-  if ((dayLabel === "Sab" || dayLabel === "Dom") && day.t === "trail") return { sym: "🔴", cls: "never", label: "Mai saltare — back-to-back" };
-  if (dayLabel === "Ven" || dayLabel === "Mer") return { sym: "🟡", cls: "rare", label: "Quasi mai saltare" };
+  if (s.t === "gym" || /Qualit/i.test(l)) return { sym: "🟡", cls: "rare", label: "Quasi mai saltare" };
   return { sym: "🟢", cls: "skip", label: "Saltabile" };
 }
 
-function renderDayRow(day, dayLabel, dateStr, weekNum) {
-  var s = TS[day.t] || TS.rest;
-  var icon = ICONS[day.t] || "";
-  var isKey = ["trail","race","test","skimo"].indexOf(day.t) !== -1;
-  var detail = day.x ? '<div class="day-detail">' + esc(day.x) + '</div>' : "";
-  var isDone = day.t !== "rest" && DATA.completed_dates.indexOf(dateStr) !== -1;
-  var check = isDone ? '<div class="day-check" title="Fatta (Strava, ' + esc(dateStr) + ')">✅</div>' : "";
-
-  var prio = sessionPriority(day, dayLabel, weekNum);
+function renderSessionRow(s, weekNum, idx) {
+  var st = TS[s.t] || TS.rest;
+  var icon = ICONS[s.t] || "";
+  var isKey = ["trail","race","test","skimo"].indexOf(s.t) !== -1;
+  var detail = s.x ? '<div class="day-detail">' + esc(s.x) + '</div>' : "";
+  var alts = "";
+  if (s.alt && s.alt.length) {
+    alts = '<div class="alt-box"><div class="alt-title">Oppure, a scelta (stesso stimolo):</div>' +
+      s.alt.map(function(a) {
+        return '<div class="alt-item"><span class="alt-name">' + esc(a.i) + ' ' + esc(a.l) + '</span> <span class="alt-x">' + esc(a.x) + '</span></div>';
+      }).join("") + '</div>';
+  }
+  var isDone = DATA.completed_sessions.indexOf(weekNum + ":" + idx) !== -1;
+  var check = isDone ? '<div class="day-check" title="Fatta (Strava)">✅</div>' : "";
+  var prio = sessionPriority(s, weekNum);
   var reqMark = prio ? '<span class="req-mark ' + prio.cls + '" title="' + esc(prio.label) + '">' + prio.sym + '</span>' : "";
+  var dateLabel = s.date ? s.date.slice(8, 10) + "/" + s.date.slice(5, 7) : "";
 
   return (
     '<div class="day-row' + (isKey ? " key" : "") + (isDone ? " done" : "") + '">' +
-      '<div class="day-label">' + esc(dayLabel) + '</div>' +
-      '<div class="day-dot" style="background:' + s.dot + '"></div>' +
+      (dateLabel ? '<div class="day-label">' + esc(dateLabel) + '</div>' : "") +
+      '<div class="day-dot" style="background:' + st.dot + '"></div>' +
       '<div style="flex:1">' +
-        '<span class="day-pill" style="background:' + s.bg + ';color:' + s.col + '">' +
-          (icon ? '<span>' + icon + '</span> ' : "") + esc(day.l) +
-        '</span>' + reqMark + detail +
+        '<span class="day-pill" style="background:' + st.bg + ';color:' + st.col + '">' +
+          (icon ? '<span>' + icon + '</span> ' : "") + esc(s.l) +
+        '</span>' + reqMark + detail + alts +
       '</div>' + check +
     '</div>'
   );
@@ -1414,18 +1488,16 @@ function renderDayRow(day, dayLabel, dateStr, weekNum) {
 
 function renderWeekCard(week) {
   var isOpen = planState.openWeek === week.w;
-  var hasRace = week.days.some(function(d){ return d.t === "race"; });
-  var hasTest = week.days.some(function(d){ return d.t === "test"; });
+  var hasRace = week.sessions.some(function(d){ return d.t === "race"; });
+  var hasTest = week.sessions.some(function(d){ return d.t === "test"; });
   var badge = "";
   if (hasRace) badge = '<span class="week-badge" style="background:#1c1004;color:#fbbf24">🏁</span>';
   else if (hasTest) badge = '<span class="week-badge" style="background:#1c0808;color:#fca5a5">🔬</span>';
   else if (week.sp) badge = '<span class="week-badge" style="background:#1e0a3c;color:#c4b5fd">' + esc(week.sp) + '</span>';
 
-  var doneCount = 0, plannedCount = 0;
-  week.days.forEach(function(d, i) {
-    if (d.t === "rest") return;
-    plannedCount++;
-    if (DATA.completed_dates.indexOf(dateForWeekDay(week.w, i)) !== -1) doneCount++;
+  var doneCount = 0, plannedCount = week.sessions.length;
+  week.sessions.forEach(function(d, i) {
+    if (DATA.completed_sessions.indexOf(week.w + ":" + i) !== -1) doneCount++;
   });
   var doneColor = plannedCount && doneCount === plannedCount ? C.p1 : "var(--muted)";
   var doneCounter = '<span class="week-done-count" style="color:' + doneColor + '">' + doneCount + '/' + plannedCount + ' completati</span>';
@@ -1433,8 +1505,9 @@ function renderWeekCard(week) {
   var body = "";
   if (isOpen) {
     var note = week.note ? '<div class="week-note">' + esc(week.note) + '</div>' : "";
-    var days = week.days.map(function(d, i) { return renderDayRow(d, DAYS[i], dateForWeekDay(week.w, i), week.w); }).join("");
-    body = '<div class="week-body">' + note + '<div class="week-days">' + days + '</div></div>';
+    var hint = '<div class="week-note" style="opacity:.75">Le sessioni della settimana: scegli tu i giorni. Una sola sessione dura al giorno; nel back-to-back i due lunghi vanno in giorni consecutivi.</div>';
+    var rows = week.sessions.map(function(s, i) { return renderSessionRow(s, week.w, i); }).join("");
+    body = '<div class="week-body">' + note + hint + '<div class="week-days">' + rows + '</div></div>';
   }
 
   return (
@@ -1487,8 +1560,8 @@ function renderPiano() {
   var aRace = null;
   W.forEach(function(wk) {
     if (aRace || !wk.sp || wk.sp.indexOf("🏆") !== 0) return;
-    for (var i = 0; i < wk.days.length; i++) {
-      if (wk.days[i].t === "race") { aRace = dateForWeekDay(wk.w, i); return; }
+    for (var i = 0; i < wk.sessions.length; i++) {
+      if (wk.sessions[i].t === "race") { aRace = wk.sessions[i].date; return; }
     }
   });
   var days = daysTo(aRace || "2027-07-17");
