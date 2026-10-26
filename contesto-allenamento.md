@@ -64,11 +64,17 @@ Con doppio tentativo 2032+2033: **~72-75%**
 - 2030: 2° tentativo lotteria LUT 120K (se non estratto → guaranteed 2031)
 - 2030/2031: LUT 120K → Index 100M → lotteria UTMB 2032
 
-### 2026 — C-race di sentimento (rinunciata)
+### 2026 — C-race d'autunno
 
-**Trail del Cinghiale 35K · 2301m D+ · 30-31 ottobre 2026 — non disputata.**
-Decisione di Leonardo del 17/10/2026: niente gara, la progressione del Base prosegue senza interruzioni
-(S9 è una normale settimana di carico, vedi Piano Allenamento).
+**Trail delle Bregonze 25K · 1100m D+ · domenica 15 novembre 2026** (S11) — C-race
+**Trail dello Shamano 30K · 1400m D+ · domenica 22 novembre 2026** (S12) — C-race, 7 giorni dopo la Bregonze
+- Allenamento con pettorale (regole C-race): niente taper, il lungo della settimana è la gara
+- Strategia: FC < 147 bpm (AeT) · gel ogni 45 min (30-40g CHO/ora, protocollo Base) · pesa prima/dopo (sweat test) · bastoncini solo se ammessi
+- Settimana della Bregonze: Hill Sprints e ME entro i primi giorni, palestra Giorno 2 (pre-gara), nei 3 giorni prima solo easy o riposo
+- Tra le due gare: 2-3 giorni di solo easy o riposo; nella settimana dello Shamano niente ME
+- Dopo lo Shamano: S13 di scarico (recovery post-gare)
+
+**Trail del Cinghiale 35K · 30-31 ottobre 2026 — rinunciato** (decisione di Leonardo, 17/10/2026). Al suo posto le due gare di novembre.
 
 ### 2027 — Anno di costruzione
 
@@ -238,53 +244,56 @@ Picco/Taper nel nuovo formato.
 ---
 
 ## Programma Settimanale Tipo
-### 4-5 giorni di allenamento — non tutti i giorni
+### Un gruppo di sessioni a settimana — i giorni li scegli tu
 
-Leonardo non può allenarsi tutti i giorni per lavoro e recupero.
+**Dal 26/10/2026 il piano non assegna più un giorno a ogni sessione.** Ogni settimana ha un
+gruppo di sessioni (tabella "Piano Allenamento" e dashboard): Leonardo decide quando farle,
+in base a lavoro e recupero. Il lunedì non è più un riposo fisso. Le uniche date fisse sono le gare.
+
 Il libro richiede **minimo 4 sessioni aerobiche a settimana** — questo è il vincolo.
-La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero.
 
-**Sessioni OBBLIGATORIE (4 — il minimo del libro):**
-- **Martedì 06:00** — Hill Sprints su 12% (da S5) o corsa qualità (S1-3)
-- **Mercoledì** — Palestra + Core #1
-- **Sabato mattina** — Long trail (sessione chiave)
-- **Domenica** — Hiking leggero 45-60 min (recovery) — nel Specifico S21+ diventa long trail 2 (back-to-back)
+**Le sessioni della settimana (per tipo):**
+- **Lungo** (sessione chiave) — da ottobre 2026 a marzo 2027 con alternative equivalenti corsa/bici/scialpinismo (vedi "Lunghi — alternative equivalenti")
+- **Hill Sprints** (1x) — da S5 su pendenza 12%; nelle prime settimane (S1-3) corsa qualità
+- **Palestra + Core #1** (1x; 2x tra S14 e S20)
+- **ME su scala infinita** (1x) — Base: sessione dedicata + Core #2; Specifico (in prova): subito dopo la palestra
+- **Easy Z1** (1-2 uscite) + DH pick-up
+- **Hiking di recovery** (Base, quando previsto)
+- **Specifico (S22+):** una sessione Z3-4 e **due lunghi** (lungo 1 + lungo 2) in giorni consecutivi
 
-**Sessioni OPZIONALI (0-2):**
-- **Giovedì 06:00** — Easy Z1 run + DH pick-up
-- **Venerdì sera** — Bici Z2 max 2 ore (aerobico di base, non ME specifico)
-
-**Lunedì: sempre riposo.**
-
-**Se il lavoro è intenso in una settimana:**
-→ Mantieni martedì + mercoledì + sabato come minimo assoluto.
-→ Venerdì puoi abbassare a bici easy 45 min invece del ME.
-→ Non forzare mai giovedì e domenica.
+**Come distribuirle (regole, non giorni):**
+1. Una sola sessione dura al giorno (lungo, Hill Sprints, Z3-4, test, ME, palestra). Mai due giorni duri consecutivi — unica eccezione: i due lunghi del back-to-back, che vanno in giorni consecutivi.
+2. Il lungo (o il lungo 1 del back-to-back) non il giorno dopo Hill Sprints, Z3-4, ME o palestra: almeno 1 giorno di distanza.
+3. Almeno 1 giorno di riposo completo a settimana.
+4. Test AeT/AnT: dopo almeno 2-3 giorni senza sforzi intensi (AnT: 3); mai lo stesso giorno di un'altra sessione dura.
+5. Hiking di recovery ed easy: il giorno dopo il lungo, se possibile; sono le prime sessioni da spostare o tagliare.
+6. Gara: nei 3 giorni prima solo easy o riposo, niente Hill Sprints/ME/Z3-4, palestra solo Giorno 2 (upper). Dopo una gara C o B: 2-3 giorni di solo easy o riposo.
+7. Se il lavoro è intenso: tieni come minimo assoluto Hill Sprints + palestra + lungo e taglia nell'ordine indicato in Metodologia.
 
 ### Struttura per tipo di settimana (libro)
 
 **Settimana B (Base):**
-- Mar: Hill Sprints (8 km tot incl. warm-up/cool-down)
-- Mer: Palestra + Core #1
-- Gio (opzionale): Easy Z1 7-9 km + 3×150m DH pick-up
-- Ven: ME workout su scala infinita in palestra (zaino 5-8 kg) + Core #2
-- Sab: Long trail Z1 (30-40% km sett) + DH pick-up
-- Dom: **Hiking leggero** 45-60 min (recovery attivo) — nel Specifico S21+ diventa long trail 2 (back-to-back)
+- Hill Sprints (8 km tot incl. warm-up/cool-down)
+- Palestra + Core #1
+- Easy Z1 7-9 km + 3×150m DH pick-up (opzionale)
+- ME workout su scala infinita in palestra (zaino 5-8 kg) + Core #2
+- Lungo Z1 (30-50% km sett) + DH pick-up
+- **Hiking leggero** 45-60 min (recovery attivo) — nel Specifico diventa il lungo 2 (back-to-back)
 
-**Settimana S (Specifico — da S21):**
-- Mar: Hill Sprints (mantieni per tutta la preparazione)
-- Mer: Palestra + Core #1 + ME 30 min su scala infinita (in prova)
-- Ven: 1 sessione Z3-4 + Core #2
-- Sab: Long trail 1 (35-40 km nel picco) ← back-to-back giorno 1
-- Dom: Long trail 2 (20-25 km stanco) ← back-to-back giorno 2
-  I due giorni insieme = 60-80% del volume settimanale
+**Settimana S (Specifico — da S22):**
+- Hill Sprints (mantieni per tutta la preparazione)
+- Palestra + Core #1 + ME 30 min su scala infinita (in prova, subito dopo la palestra)
+- 1 sessione Z3-4 + Core #2
+- Lungo 1 (35-40 km nel picco) ← back-to-back giorno 1
+- Lungo 2 (20-25 km, a gambe stanche) ← back-to-back giorno 2, il giorno dopo
+  I due lunghi insieme = 60-80% del volume settimanale
 
 **Settimana R (Recupero — ogni 4a settimana):**
 - Volume -40/60% rispetto alla settimana di picco
 - Hill Sprints dimezzati (3-4 × 8 sec) oppure saltati
 - 1 sola sessione palestra + 1 core
 - No ME, no Zone 3-4
-- Giovedì e domenica: entrambi riposo
+- Niente hiking di recovery, easy ridotte
 
 **Settimana T (Taper — S45 pre-Eiger):**
 - -25% volume rispetto alla settimana precedente
@@ -309,26 +318,26 @@ La struttura prevede 4 sessioni obbligatorie + 1-2 opzionali in base al recupero
 ## Progressione Long Trail — da S4 a S46 (Eiger)
 
 **Due checkpoint al 75%** (il checkpoint pre-Cinghiale è decaduto: gara rinunciata il 17/10/2026):
-- Pre-Malcesine (S33): sabato **39 km / 2400m D+** = 75% di 52K ✅
-- Pre-Eiger (S43): sabato **40 km** (b2b con 25 km domenica = **65 km / 4600m D+** totali) = 78% di 51K (Eiger) ✅ — checkpoint sul solo sabato, il back-to-back è la modalità con cui si accumula volume in sicurezza (stesso metodo usato per Malcesine)
+- Pre-Malcesine (S33): lungo 1 **39 km / 2400m D+** = 75% di 52K ✅
+- Pre-Eiger (S43): lungo 1 **40 km** (b2b con lungo 2 da 25 km = **65 km / 4600m D+** totali) = 78% di 51K (Eiger) ✅ — checkpoint sul solo lungo 1, il back-to-back è la modalità con cui si accumula volume in sicurezza (stesso metodo usato per Malcesine)
 
-Il long trail del sabato parte da **15 km / 500m D+ (S4, domenica 22 set)**
+Il lungo parte da **15 km / 500m D+ (S4)**
 e arriva al picco back-to-back di 40+25 km = 65 km (S43).
 Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 
-**BASE (S4-S21): solo sabato**
+**BASE (S4-S21): un solo lungo a settimana**
 
-| Sett | Sab km | D+ | Note |
+| Sett | Lungo km | D+ | Note |
 |---|---|---|---|
-| S4 | 15 km | 500m | **Primo long trail · domenica 22 set** |
+| S4 | 15 km | 500m | **Primo long trail** |
 | S5 | 18 km | 700m | |
 | S6 | 21 km | 900m | |
 | S7 R | — | — | Scarico di fatto (settimana saltata · solo Test AeT #2 il 13/10) |
 | S8 | 16 km | 650m | Ripresa · 1ª settimana di carico |
 | S9 | 19 km | 800m | |
 | S10 R | 12 km | 450m | Scarico |
-| S11 | 21 km | 900m | |
-| S12 | 24 km | 1000m | |
+| S11 | **GARA 25K** | **1100m** | **Trail delle Bregonze · dom 15 nov (C-race)** |
+| S12 | **GARA 30K** | **1400m** | **Trail dello Shamano · dom 22 nov (C-race)** |
 | S13 R | 14 km | 500m | Scarico |
 | S14 | 26 km | 1000m | |
 | S15 | 28 km | 1200m | |
@@ -339,9 +348,9 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S20 | 34 km | 1800m | |
 | S21 R | 20 km | 800m | Scarico |
 
-**SPECIFICO (S22-S45): back-to-back sab + dom**
+**SPECIFICO (S22-S45): back-to-back (due lunghi in giorni consecutivi)**
 
-| Sett | Sab | D+ sab | Dom | D+ dom | B2B tot | Note |
+| Sett | Lungo 1 | D+ L1 | Lungo 2 | D+ L2 | B2B tot | Note |
 |---|---|---|---|---|---|---|
 | S22 | 28 km | 1200m | 14 km | 500m | 42 km | Primo b2b |
 | S23 | 30 km | 1400m | 16 km | 600m | 46 km | |
@@ -355,23 +364,73 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S31 | **DBT 24K** | 1400m | — | — | C-race | Train through |
 | S32 | 30 km | 1800m | 16 km | 700m | 46 km | |
 | S33 | **39 km** | **2400m** | 19 km | 900m | 58 km | **75% Malcesine ✅** |
-| S34 taper | 20 km | 900m | — | — | solo sab | No b2b pre-gara |
+| S34 taper | 20 km | 900m | — | — | solo lungo 1 | No b2b pre-gara |
 | S35 | **GARA 52K** | **3541m** | — | — | **Malcesine** | |
-| S36 R | 18 km | 700m | — | — | solo sab | Recovery |
+| S36 R | 18 km | 700m | — | — | solo lungo 1 | Recovery |
 | S37 | 30 km | 2000m | 17 km | 800m | 47 km | |
 | S38 | 35 km | 2400m | 20 km | 900m | 55 km | |
 | S39 | 38 km | 2800m | 22 km | 1100m | 60 km | Picco intermedio |
 | S40 R | 22 km | 1000m | 13 km | 500m | 35 km | Scarico |
 | S41 | 36 km | 2800m | 20 km | 1100m | 56 km | |
 | S42 | 38 km | 3000m | 22 km | 1200m | 60 km | |
-| S43 PICCO2 | **40 km** | **3200m** | **25 km** | **1400m** | **65 km / 4600m** | **78% Eiger (sabato) ✅** |
+| S43 PICCO2 | **40 km** | **3200m** | **25 km** | **1400m** | **65 km / 4600m** | **78% Eiger (lungo 1) ✅** |
 | S44 R | 22 km | 1000m | 13 km | 500m | 35 km | Scarico |
-| S45 taper | 18 km | 800m | — | — | solo sab | Taper |
+| S45 taper | 18 km | 800m | — | — | solo lungo 1 | Taper |
 | **S46** | **EIGER E51 51K** | **3450m** 🏔️ | | | | |
 
 ---
 
-## Hill Sprints — Protocollo (da S5, ogni martedì)
+## Lunghi — alternative equivalenti (ott 2026 – mar 2027)
+
+Dal 26/10/2026, da ottobre 2026 a marzo 2027, ogni lungo settimanale ha tre versioni equivalenti: **corsa, bici o scialpinismo**.
+Leonardo sceglie quale fare; sulla dashboard la spunta ✅ c'è con qualunque delle tre.
+
+**Regola di equivalenza (stesso stimolo aerobico, stessa zona FC):**
+- Tempo del trail: T = 0,105 h/km + 0,001 h/m D+ (tarato sui lunghi di settembre-ottobre)
+- **Scialpinismo:** stesso tempo T · ~800 m D+/h di salita · solo se c'è neve
+- **Bici:** 1,3 × T (niente impatto né discesa: serve più tempo per lo stesso stress) · ~350 m D+/h · tetto 5h30, oltre non è più equivalente
+- FC sempre < 147 bpm (AeT), ultimi 20 min fino all'AeT · CHO ogni 40 min come nel trail
+- Nel back-to-back vale per ciascuno dei due lunghi, ma i due giorni restano consecutivi
+- Nelle settimane di gara (S11, S12) il lungo è la gara: nessuna alternativa
+
+**Nota di coaching (consiglio, non regola):** bici e sci non allenano impatto ed eccentrico in discesa. Con l'Eiger a luglio, conviene
+che almeno un lungo ogni due settimane resti in corsa; le alternative servono per le settimane in cui il lavoro, il tempo o l'ITB lo impediscono.
+
+| Settimana | Corsa | Bici | Scialpinismo |
+|---|---|---|---|
+| S9 | 19 km · 800m D+ | 3h40 · ~1300m D+ | 2h50 · ~2250m D+ |
+| S10 | 12 km · 450m D+ | 2h15 · ~800m D+ | 1h45 · ~1400m D+ |
+| S13 | 14 km · 500m D+ | 2h35 · ~900m D+ | 2h00 · ~1600m D+ |
+| S14 | 26 km · 1000m D+ | 4h50 · ~1700m D+ | 3h45 · ~3000m D+ |
+| S15 | 28 km · 1200m D+ | 5h25 · ~1900m D+ | 4h10 · ~3350m D+ |
+| S16 | 30 km · 1400m D+ | 5h30 · ~1900m D+ | 4h35 · ~3650m D+ |
+| S17 | 17 km · 700m D+ | 3h15 · ~1150m D+ | 2h30 · ~2000m D+ |
+| S18 | 30 km · 1400m D+ | 5h30 · ~1900m D+ | 4h35 · ~3650m D+ |
+| S19 | 32 km · 1600m D+ | 5h30 · ~1900m D+ | 5h00 · ~4000m D+ |
+| S20 | 34 km · 1800m D+ | 5h30 · ~1900m D+ | 5h20 · ~4250m D+ |
+| S21 | 20 km · 800m D+ | 3h45 · ~1300m D+ | 2h55 · ~2350m D+ |
+| S22 · lungo 1 | 28 km · 1200m D+ | 5h25 · ~1900m D+ | 4h10 · ~3350m D+ |
+| S22 · lungo 2 | 14 km · 500m D+ | 2h35 · ~900m D+ | 2h00 · ~1600m D+ |
+| S23 · lungo 1 | 30 km · 1400m D+ | 5h30 · ~1900m D+ | 4h35 · ~3650m D+ |
+| S23 · lungo 2 | 16 km · 600m D+ | 3h00 · ~1050m D+ | 2h15 · ~1800m D+ |
+| S24 · lungo 1 | 33 km · 1600m D+ | 5h30 · ~1900m D+ | 5h05 · ~4050m D+ |
+| S24 · lungo 2 | 18 km · 700m D+ | 3h20 · ~1150m D+ | 2h35 · ~2050m D+ |
+| S25 · lungo 1 | 18 km · 700m D+ | 3h20 · ~1150m D+ | 2h35 · ~2050m D+ |
+| S25 · lungo 2 | 10 km · 400m D+ | 1h55 · ~650m D+ | 1h25 · ~1150m D+ |
+| S26 · lungo 1 | 33 km · 1800m D+ | 5h30 · ~1900m D+ | 5h15 · ~4200m D+ |
+| S26 · lungo 2 | 18 km · 700m D+ | 3h20 · ~1150m D+ | 2h35 · ~2050m D+ |
+| S27 · lungo 1 | 35 km · 2000m D+ | 5h30 · ~1900m D+ | 5h40 · ~4550m D+ |
+| S27 · lungo 2 | 20 km · 800m D+ | 3h45 · ~1300m D+ | 2h55 · ~2350m D+ |
+| S28 · lungo 1 | 37 km · 2200m D+ | 5h30 · ~1900m D+ | 6h05 · ~4850m D+ |
+| S28 · lungo 2 | 22 km · 900m D+ | 4h10 · ~1450m D+ | 3h15 · ~2600m D+ |
+| S29 · lungo 1 | 22 km · 900m D+ | 4h10 · ~1450m D+ | 3h15 · ~2600m D+ |
+| S29 · lungo 2 | 12 km · 500m D+ | 2h15 · ~800m D+ | 1h45 · ~1400m D+ |
+| S30 · lungo 1 | 33 km · 2000m D+ | 5h30 · ~1900m D+ | 5h30 · ~4400m D+ |
+| S30 · lungo 2 | 18 km · 800m D+ | 3h30 · ~1200m D+ | 2h40 · ~2150m D+ |
+
+---
+
+## Hill Sprints — Protocollo (da S5, 1x a settimana)
 
 **Massimo stimolo di potenza per il trail runner — libro pag. 179-183**
 
@@ -398,7 +457,7 @@ Situazione Leonardo: pendenza max vicino casa = 12%. Adattamento: sprint più lu
 
 **Qualità specifica per la velocità sostenibile in salita — libro pag. 240**
 
-1x/sett: Base (S5-S20, venerdì) e Specifico (S22-S43, mercoledì dopo la palestra).
+1x/sett: Base (S5-S20, sessione dedicata) e Specifico (S22-S43, subito dopo la palestra).
 **Nel Specifico è IN PROVA** (decisione di Leonardo, 20/10/2026): se dopo averlo fatto non risulta utile, lo togliamo.
 Rivalutare al Verdict Base (S21) e dopo Malcesine (S36).
 
@@ -406,11 +465,11 @@ Rivalutare al Verdict Base (S21) e dopo Malcesine (S36).
 
 ### Dove si colloca nella settimana
 
-**Base (S5-20):** sessione dedicata del **venerdì in palestra sulla scala infinita** (+ Core #2).
-Il sabato resta long trail senza ME integrato; la domenica resta hiking leggero (recovery).
+**Base (S5-20):** sessione dedicata **in palestra sulla scala infinita** (+ Core #2), in un giorno a scelta (non il giorno prima del lungo).
+Il lungo resta senza ME integrato; l'hiking resta recovery.
 
-**Specifico (S22-S43):** **mercoledì subito dopo la palestra** (stessa uscita in palestra): 30 min sulla scala infinita con zaino 8 kg.
-Il venerdì è la sessione Z3-4. ME saltato nelle settimane R, nella settimana del test AnT, nella settimana di gara C (S31), in S34-S35 (B-race) e nel Taper (S44+).
+**Specifico (S22-S43):** **subito dopo la palestra** (stessa uscita): 30 min sulla scala infinita con zaino 8 kg.
+La sessione Z3-4 è separata. ME saltato nelle settimane R, nella settimana del test AnT, nella settimana di gara C (S31), in S34-S35 (B-race) e nel Taper (S44+).
 
 ### Come fare il ME — istruzioni complete
 
@@ -448,30 +507,30 @@ Segnale giusto: **gambe che bruciano · respiro controllato.**
 - S5-8: 20 min (zaino 5-7 kg · S5-S7 fatti all'aperto, da S8 sulla scala infinita)
 - S9-16: 25 min · zaino 7-8 kg · aumenta la velocità a pari FC
 - S17-20: 30 min · zaino 8 kg
-- S22-S43: 30 min · zaino 8 kg · mercoledì dopo la palestra · IN PROVA (si toglie se non serve)
+- S22-S43: 30 min · zaino 8 kg · subito dopo la palestra · IN PROVA (si toglie se non serve)
 - S44+ (Taper/Rebuild): niente ME
 
 ---
 
 ## Back-to-Back — Cos'è e Perché (da S21)
 
-Due uscite lunghe consecutive — sabato e domenica — con le gambe già stanche il secondo giorno.
+Due uscite lunghe in giorni consecutivi, con le gambe già stanche il secondo giorno.
 
 **Perché funziona:** simula le ultime 4-5 ore della Lavaredo 80K — riserve di glicogeno calate, gambe pesanti, mente sotto pressione. Un long trail fatto riposato non prepara a quello stato. Il back-to-back sì.
 
 **Struttura:**
-- Sabato: long trail principale (25-35 km nel picco)
-- Domenica: secondo long a gambe stanche (15-20 km)
+- Lungo 1: long trail principale (25-35 km nel picco)
+- Lungo 2 (il giorno dopo): secondo long a gambe stanche (15-20 km)
 - Insieme = 60-80% del volume settimanale su 2 giorni
 
-**Nel Base (S5-20):** domenica = hiking leggero. Non è back-to-back vero — è abituare le gambe a muoversi il giorno dopo.
-**Nel Specifico (S21+):** back-to-back vero. Domenica è allenamento, non recovery.
+**Nel Base (S5-20):** il giorno dopo il lungo = hiking leggero. Non è back-to-back vero — è abituare le gambe a muoversi il giorno dopo.
+**Nel Specifico (S21+):** back-to-back vero. Il lungo 2 è allenamento, non recovery.
 
 ---
 
 ## Discesa — Pick-up Veloci (da S5, 2 volte/sett)
 
-Su 2 uscite settimanali (giovedì + domenica o nel long trail), alla fine:
+Su 2 uscite settimanali (easy run, hiking o fine del lungo), alla fine:
 3-4 × 150-200m di corsa veloce in discesa moderata · recupero salendo piano 2-3 min.
 
 Non serve essere rapidi — allena il pattern neurale e i quadricipiti (catena anteriore).
@@ -506,11 +565,11 @@ Non serve essere rapidi — allena il pattern neurale e i quadricipiti (catena a
 
 ## Progressione Bici per Stagione
 
-**Settembre–Novembre:** venerdì Z2 progressiva (60→90→120 min) · long può essere trail o bici
-**Dicembre–Febbraio:** niente bici · corsa + scialpinismo occasionale
-**Marzo–Giugno:** venerdì Z2 da 75 min · long trail priorità · max 3h bici
+**Settembre–Novembre:** bici Z2 progressiva (60→90→120 min) · il lungo può essere trail o bici (alternativa equivalente)
+**Dicembre–Marzo:** il lungo può essere corsa, bici o scialpinismo (alternative equivalenti, a scelta) · nessuna bici extra
+**Aprile–Giugno:** bici Z2 da 75 min come extra · long trail priorità · max 3h bici
 
-**Regola:** bici lunga non supera mai in tempo il long trail della stessa settimana.
+**Regola:** la bici extra non supera mai in tempo il lungo della stessa settimana. Eccezione: la bici che sostituisce il lungo (alternativa equivalente: 1,3× il tempo del trail, tetto 5h30).
 
 ---
 
@@ -580,19 +639,19 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 
 **BASE (12-22 settimane):**
 - Cicli 3:1 (3 settimane build + 1 recovery al 40-60% del picco)
-- Long trail del sabato: progressione da 15-20% a ~75% della distanza A-race
-- Hill Sprints: 1x/settimana il martedì
-- ME: venerdì in palestra sulla scala infinita (zaino 5-8 kg), 20-30 min continui
+- Lungo settimanale: progressione da 15-20% a ~75% della distanza A-race
+- Hill Sprints: 1x/settimana
+- ME: in palestra sulla scala infinita (zaino 5-8 kg), 20-30 min continui
 - DH pick-up: 2x/settimana alla fine di uscite easy
 - Palestra: 2x/settimana + 2 sessioni core
 - Volume max per 50K: 80-88 km/sett · per 100K: 90-100 km/sett
 - Fine blocco: Test AeT di verifica
 
 **SPECIFICO (8-16 settimane):**
-- Back-to-back sab + dom: 60-80% del volume settimanale su 2 giorni
-- ME: mercoledì dopo la palestra, sulla scala infinita (in prova — Leonardo valuta l'utilità)
-- Z3-4 intervals: 1x/settimana il venerdì (prende il posto del ME del Base)
-- Hill Sprints: mantenuti il martedì
+- Back-to-back (due lunghi in giorni consecutivi): 60-80% del volume settimanale su 2 giorni
+- ME: subito dopo la palestra, sulla scala infinita (in prova — Leonardo valuta l'utilità)
+- Z3-4 intervals: 1x/settimana (prende il posto del ME dedicato del Base)
+- Hill Sprints: mantenuti (1x/settimana)
 - Palestra: 1x/settimana (mantenimento)
 - Picco back-to-back: 75-80% della distanza A-race totale
 - Se c'è una B-race: small taper 1 sett prima + 1 sett recovery dopo,
@@ -622,9 +681,9 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 ### Long trail — progressione e checkpoint 75%
 
 - Prima settimana Base: 15-20% della distanza A-race
-- Checkpoint 75%: il sabato (o b2b) deve raggiungere il 75% della distanza A-race
+- Checkpoint 75%: il lungo (o il b2b) deve raggiungere il 75% della distanza A-race
   almeno 2-3 settimane prima della gara
-- Back-to-back nel Specifico: 60-80% del volume settimanale su sab+dom
+- Back-to-back nel Specifico: 60-80% del volume settimanale sui due lunghi
 
 ### Selezione e pianificazione delle gare
 
@@ -641,20 +700,20 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 ### Sessioni settimanali
 
 **Obbligatorie (min 4):**
-- Martedì: Hill Sprints (Base) o qualità Z3-4 (Specifico)
-- Mercoledì: Palestra + Core
-- Sabato: Long trail (sessione chiave)
-- Domenica: Hiking (Base) o Long trail 2 (Specifico back-to-back)
+- Hill Sprints (Base) o qualità Z3-4 (Specifico)
+- Palestra + Core
+- Lungo (sessione chiave)
+- Hiking (Base) o Lungo 2 (Specifico back-to-back)
 
 **Opzionali:**
-- Giovedì: Easy Z1 + DH pick-up
-- Venerdì: Bici Z2 max 2h o ME aggiuntivo
+- Easy Z1 + DH pick-up
+- Bici Z2 max 2h o ME aggiuntivo
 
 **Ordine di taglio se manca il tempo:**
-1. Domenica (Base: hiking · Specifico: accorcia long 2)
-2. Giovedì easy
-3. Venerdì bici/ME
-4. MAI toccare: martedì · mercoledì · sabato
+1. Hiking (Base) o accorcia il lungo 2 (Specifico)
+2. Easy
+3. Bici/ME
+4. MAI toccare: Hill Sprints · palestra · lungo
 
 ### Hill Sprints
 
@@ -666,9 +725,9 @@ Le gare A, B e C sono TUTTE integrate dentro i blocchi:
 
 ### Muscular Endurance (ME)
 
-- **Base:** sessione del venerdì su scala infinita in palestra (zaino 5-8 kg), 20-30 min continui
+- **Base:** sessione dedicata su scala infinita in palestra (zaino 5-8 kg), 20-30 min continui
   Fatica muscolare locale (gambe bruciano), FC bassa (130-150 bpm)
-- **Specifico:** mercoledì dopo la palestra, scala infinita (in prova — se non serve si toglie); Z3-4 il venerdì
+- **Specifico:** subito dopo la palestra, scala infinita (in prova — se non serve si toglie); Z3-4 separato
 - Alternative se manca la palestra: zaino 5-8 kg su salita ≥ 25%, tapis 15%+ con zaino
 - Inverno: scialpinismo conta come ME
 
@@ -714,7 +773,7 @@ A fine di ogni blocco generare un Verdict con:
 | Blocco | Settimane | Periodo | Gare integrate |
 |---|---|---|---|
 | **RESTART** | S1-S3 | set 2026 | — · solo test soglie |
-| **BASE** | S4-S21 | ott 2026–gen 2027 | — · nessuna gara (Trail del Cinghiale rinunciato) |
+| **BASE** | S4-S21 | ott 2026–gen 2027 | C-race Trail delle Bregonze 25K (S11) · C-race Trail dello Shamano 30K (S12) · Cinghiale rinunciato |
 | **SPECIFICO** | S22-S43 | feb–giu 2027 | B-race Malcesine 52K (S35) |
 | **TAPER** | S44-S46 | lug 2027 | **A-race Eiger E51 51K (S46) — fine blocco** |
 | **REBUILD** | S47-S52 | lug-ago 2027 | Maratona Alpina GES Schio (S52 — fine piano) |
@@ -735,9 +794,9 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S8 | 36 | B | Ripresa · Cinghiale rinunciato (17/10) · 1ª settimana di carico |
 | S9 | 40 | B | |
 | S10 | 22 | R | Scarico (cicli 2:1 fino a S13, poi 3:1) |
-| S11 | 44 | B | |
-| S12 | 48 | B | |
-| S13 | 26 | R | Scarico |
+| S11 | 44 | G | **C-RACE Trail delle Bregonze 25K/1100mD+ · dom 15/11** · train through · il lungo è la gara |
+| S12 | 48 | G | **C-RACE Trail dello Shamano 30K/1400mD+ · dom 22/11** · 7 giorni dopo la Bregonze · il lungo è la gara |
+| S13 | 26 | R | Scarico · recovery post-gare |
 | S14 | 52 | B | |
 | S15 | 57 | B | |
 | S16 | 62 | B | Test AeT #3 · confronta progressione passo |
@@ -746,7 +805,7 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S19 | 70 | B | |
 | S20 | 76 | B | |
 | S21 | 42 | R | Scarico |
-| S22 | 78 | S | **Specifico inizia** · back-to-back dom |
+| S22 | 78 | S | **Specifico inizia** · back-to-back |
 | S23 | 82 | S | |
 | S24 | 86 | S | Test AnT #2 · confronta con baseline settembre |
 | S25 | 48 | R | Scarico |
@@ -767,7 +826,7 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S40 | 50 | R | Scarico |
 | S41 | 82 | S | |
 | S42 | 86 | S | |
-| S43 | 88 | S | **PICCO 2** · b2b sab 40 km + dom 25 km = **65 km** 🏔️ |
+| S43 | 88 | S | **PICCO 2** · b2b lungo 1 40 km + lungo 2 25 km = **65 km** 🏔️ |
 | S44 | 50 | T | **TAPER 1** pre-Eiger (dal picco 88km: -43%) |
 | S45 | 35 | T | **TAPER 2** pre-Eiger (-30% da T1) |
 | S46 | 55 | T | **EIGER E51 51K 🏆 A-RACE 2027 · fine blocco TAPER (lug · Grindelwald)** |
@@ -780,7 +839,7 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 
 **Marker:**
 S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
-S10: R · S13: R
+S10: R · S11: G — Trail delle Bregonze 25K (C-race, 15/11) · S12: G — Trail dello Shamano 30K (C-race, 22/11) · S13: R
 S7: scarico di fatto + Test AeT #2 ✅ (13/10) · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
 S39: Picco intermedio (88 km) · S43: PICCO 2 (88 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
@@ -930,46 +989,46 @@ di volume accessorio (saltabili). La gerarchia è per fase.
 |---|---|---|
 | Test AeT (S2) | 🔴 MAI | Calibra tutto il piano — senza non hai le zone |
 | Test AnT (S3) | 🔴 MAI | Idem |
-| Palestra mercoledì | 🟡 Quasi mai | Max 1 salto — fondamenta forza |
-| Corsa martedì | 🟡 Quasi mai | Unica sessione principale della settimana |
-| Easy run giovedì | 🟢 Saltabile | Recuperi il volume col sabato |
-| Bici venerdì | 🟢 Saltabile | Solo mantenimento aerobico in questa fase |
-| Hiking domenica | 🟢 Saltabile | Recovery — zero stimolo specifico |
+| Palestra | 🟡 Quasi mai | Max 1 salto — fondamenta forza |
+| Corsa qualità | 🟡 Quasi mai | Unica sessione principale della settimana |
+| Easy run | 🟢 Saltabile | Recuperi il volume col lungo |
+| Bici | 🟢 Saltabile | Solo mantenimento aerobico in questa fase |
+| Hiking | 🟢 Saltabile | Recovery — zero stimolo specifico |
 
 ### BASE (S5-24)
 
 | Sessione | Priorità | Motivo |
 |---|---|---|
-| Long trail sabato | 🔴 MAI | 30-40% volume sett · saltarlo invalida la settimana secondo il libro |
-| Hill Sprints martedì | 🔴 MAI | Adattamento neurale richiede continuità. Salti = perdi l'effetto cumulativo |
-| ME workout (Base: venerdì · Specifico: mercoledì) | 🟡 Max 1 ogni 3-4 sett | Libro richiede 8 settimane consecutive. Se salti → fai almeno 20 min di scala infinita con zaino il giorno dopo |
-| Palestra mercoledì | 🟡 Quasi mai | 2x/sett è il minimo libro. Se salti mercoledì → sposta a giovedì, non eliminare |
-| Easy run giovedì | 🟢 Saltabile | Serve al volume ma non produce stimolo specifico. Se < 5h sonno o lavoro intenso → riposo |
-| Hiking domenica | 🟢 Saltabile | In Base è solo recovery — back-to-back diventa obbligatorio solo dal Specifico |
+| Lungo | 🔴 MAI | 30-40% volume sett · saltarlo invalida la settimana secondo il libro |
+| Hill Sprints | 🔴 MAI | Adattamento neurale richiede continuità. Salti = perdi l'effetto cumulativo |
+| ME workout | 🟡 Max 1 ogni 3-4 sett | Libro richiede 8 settimane consecutive. Se salti → fai almeno 20 min di scala infinita con zaino il giorno dopo |
+| Palestra | 🟡 Quasi mai | 2x/sett è il minimo libro. Se salti → sposta al giorno dopo, non eliminare |
+| Easy run | 🟢 Saltabile | Serve al volume ma non produce stimolo specifico. Se < 5h sonno o lavoro intenso → riposo |
+| Hiking | 🟢 Saltabile | In Base è solo recovery — back-to-back diventa obbligatorio solo dal Specifico |
 
 ### SPECIFICO (S25-38)
 
 | Sessione | Priorità | Motivo |
 |---|---|---|
-| Long trail sabato | 🔴 MAI | Sessione chiave — prima giornata back-to-back |
-| Long trail domenica | 🔴 MAI | Il secondo giorno stanco è l'effetto principale. Saltarlo = metà dell'adattamento perso |
-| Hill Sprints martedì | 🔴 MAI | Ancora più importanti con i km alti |
-| Sessione Z3-4 venerdì | 🟡 Max 1 ogni 3-4 sett | Unico lavoro intensità della settimana |
-| Palestra mercoledì | 🟡 1x/sett obbligatoria | Nel Specifico il libro prevede riduzione — ma non eliminazione |
-| Easy run giovedì | 🟢 Saltabile | Come in Base |
+| Lungo 1 | 🔴 MAI | Sessione chiave — prima giornata back-to-back |
+| Lungo 2 | 🔴 MAI | Il secondo giorno stanco è l'effetto principale. Saltarlo = metà dell'adattamento perso |
+| Hill Sprints | 🔴 MAI | Ancora più importanti con i km alti |
+| Sessione Z3-4 | 🟡 Max 1 ogni 3-4 sett | Unico lavoro intensità della settimana |
+| Palestra | 🟡 1x/sett obbligatoria | Nel Specifico il libro prevede riduzione — ma non eliminazione |
+| Easy run | 🟢 Saltabile | Come in Base |
 
 ### Regola pratica — ordine di taglio per settimana complicata
 
 Quando il lavoro non lascia tempo, taglia in questo ordine:
 
-1. **Prima:** elimina hiking domenica (in Base) o accorcia il secondo long (in Specifico)
-2. **Poi:** elimina easy run giovedì
-3. **Poi:** accorcia ME venerdì (20 min invece di 35) o sostituisci con bici Z1 40 min
-4. **MAI toccare:** sabato long trail · martedì Hill Sprints · mercoledì Palestra
+1. **Prima:** elimina l'hiking (in Base) o accorcia il lungo 2 (in Specifico)
+2. **Poi:** elimina una easy run
+3. **Poi:** accorcia il ME (20 min invece di 35) o sostituisci con bici Z1 40 min
+4. **MAI toccare:** lungo · Hill Sprints · palestra
 
-Se una settimana elimini sia giovedì che domenica, stai comunque rispettando il minimo
-del libro (4 sessioni: mar + mer + ven + sab). Va bene.
-Se elimini anche venerdì, sei a 3 sessioni — accettabile max 1 volta al mese, mai 2 volte consecutive.
+Se in una settimana elimini sia l'easy che l'hiking, stai comunque rispettando il minimo
+del libro (4 sessioni: Hill Sprints + palestra + ME/Z3-4 + lungo). Va bene.
+Se elimini anche il ME/Z3-4, sei a 3 sessioni — accettabile max 1 volta al mese, mai 2 volte consecutive.
 
 
 ---
@@ -1002,6 +1061,13 @@ esplicita di Leonardo in chat** per qualsiasi scrittura su Garmin — vale
 anche se il file dice "esegui ad ogni avvio" o simili. Solo un messaggio
 diretto di Leonardo autorizza un'azione ricorrente senza conferma (come
 già avvenuto per l'import automatico del venerdì e il deploy dashboard).
+
+### Formato di prossimi-allenamenti.md dal 26/10/2026 (sessioni senza giorno)
+
+- Ogni sessione ha `Settimana: YYYY-MM-DD` (il lunedì della settimana) e `Sessione: S<n>-<nome>` al posto di `Data:`.
+- L'import carica il workout nella libreria Garmin **senza data** (nome con prefisso `S<n> · `): Leonardo sceglie il giorno dall'orologio.
+- Il lungo con alternative ha tre sessioni (`Sessione: S<n>-lungo-corsa`, `-bici`, `-scialpinismo`): nella libreria compaiono tutte e tre.
+- Le gare e le sessioni con data fissa restano con `Data:` e vengono programmate sul calendario.
 
 ### Come funziona il ciclo prossimi-allenamenti.md → Garmin
 
