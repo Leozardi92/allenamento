@@ -4,7 +4,28 @@ Scritto da Claude Chat, letto da Claude Code che importa le sessioni su Garmin.
 Claude Code chiede sempre conferma prima di importare.
 Dopo l'import segna la sessione come "✅ importata".
 
-## Formato
+## Formato dal 26/10/2026 — sessioni SENZA giorno
+
+Le sessioni di una settimana non hanno più un giorno: Leonardo decide quando farle.
+Ogni sessione ha `Settimana:` (il lunedì) e `Sessione:` al posto di `Data:`. Vengono caricate nella
+libreria Garmin senza data (nome con prefisso `S<n> · `). Il lungo ha tre versioni equivalenti
+(`-lungo-corsa`, `-lungo-bici`, `-lungo-skimo`): ne fai una. Le gare e le sessioni con giorno fisso
+restano con `Data:`.
+
+```
+Settimana: YYYY-MM-DD
+Sessione: S<n>-<nome>
+Blocco: Restart | Base | Aerobico | Specifico | Picco | Taper | Test
+Tipo: corsa easy | corsa qualità | long trail | hiking | bici | forza
+Distanza: X km (o Durata: X min)
+FC target: < XXX bpm
+Note: dettagli
+Stato: da importare
+```
+
+---
+
+## Formato (sessioni con giorno fisso)
 
 ```
 Data: YYYY-MM-DD
@@ -353,26 +374,64 @@ Stato: ✅ importata (workout_id 1732433387, automatico il 17/10/2026)
 
 ---
 
-### BLOCCO: Base — Settimana 9 (27 ott–1 nov 2026) · 40 km · Tipo: B
-> 2ª settimana di carico · nessuna gara · ME sale a 25 min
+### BLOCCO: Base — Settimana 9 (26 ott–1 nov 2026) · 40 km · Tipo: B
+> 2ª settimana di carico · nessuna gara · sessioni senza giorno: scegli tu quando farle (una sola sessione dura al giorno)
 
-Data: 2026-10-27
+Settimana: 2026-10-26
+Sessione: S9-lungo-corsa
+Blocco: Base
+Tipo: long trail
+Distanza: 19 km
+FC target: < 141 bpm (Z1) · ultimi 20 min Z2
+Note: LUNGO (versione corsa) · ~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
+Stato: da importare
+
+Settimana: 2026-10-26
+Sessione: S9-lungo-bici
+Blocco: Base
+Tipo: bici
+Durata: 220 min
+FC target: < 147 bpm
+Note: LUNGO (versione bici) · ~1300m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
+Stato: da importare
+
+Settimana: 2026-10-26
+Sessione: S9-lungo-skimo
+Blocco: Base
+Tipo: hiking
+Durata: 170 min
+FC target: < 147 bpm
+Note: LUNGO (versione scialpinismo) · ~2250m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
+Stato: da importare
+
+Settimana: 2026-10-26
+Sessione: S9-hill-sprints
 Blocco: Base
 Tipo: corsa qualità
 Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 8x12sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
-Note: Hill Sprints S4 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
+Note: Hill Sprints #4 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
 Stato: da importare
 
-Data: 2026-10-28
+Settimana: 2026-10-26
+Sessione: S9-me
+Blocco: Base
+Tipo: forza
+Durata: 55 min
+Note: ME Workout #4 su SCALA INFINITA in palestra — 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · le gambe devono bruciare, il cuore no · Core #2 dopo
+Stato: da importare
+
+Settimana: 2026-10-26
+Sessione: S9-palestra
 Blocco: Base
 Tipo: forza
 Durata: 60 min
-Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate · ABS + Core #1
+Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1
 Stato: da importare
 
-Data: 2026-10-29
+Settimana: 2026-10-26
+Sessione: S9-easy-1
 Blocco: Base
 Tipo: corsa easy
 Distanza: 8 km
@@ -380,22 +439,8 @@ FC target: < 141 bpm
 Note: Easy Z1 · 3×150m DH pick-up alla fine
 Stato: da importare
 
-Data: 2026-10-30
-Blocco: Base
-Tipo: forza
-Durata: 55 min
-Note: ME Workout #4 su SCALA INFINITA in palestra — 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · le gambe devono bruciare, il cuore no · Core #2 dopo
-Stato: da importare
-
-Data: 2026-10-31
-Blocco: Base
-Tipo: long trail
-Distanza: 19 km
-FC target: < 141 bpm (Z1) · ultimi 20 min Z2
-Note: ~800m D+ · bastoncini + vest · CHO ogni 40 min · 40g/ora
-Stato: da importare
-
-Data: 2026-11-01
+Settimana: 2026-10-26
+Sessione: S9-hiking
 Blocco: Base
 Tipo: hiking
 Durata: 90 min
@@ -403,39 +448,131 @@ FC target: < 130 bpm
 Note: Recovery · 3×150m DH pick-up alla fine
 Stato: da importare
 
----
 
-### BLOCCO: Base — Settimana 10 (3–8 nov 2026) · 22 km · Tipo: R (SCARICO)
-> Chiude il ciclo 2:1 (S8-S9) · metà reps, una sola palestra, niente ME né Z3-4 · giovedì e domenica riposo
+### BLOCCO: Base — Settimana 10 (2–8 nov 2026) · 22 km · Tipo: R (SCARICO)
+> Chiude il ciclo 2:1 (S8-S9) · metà reps, una sola palestra, niente ME né Z3-4
 
-Data: 2026-11-03
+Settimana: 2026-11-02
+Sessione: S10-lungo-corsa
+Blocco: Base
+Tipo: long trail
+Distanza: 12 km
+FC target: < 135 bpm
+Note: LUNGO (versione corsa) · ~450m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
+Stato: da importare
+
+Settimana: 2026-11-02
+Sessione: S10-lungo-bici
+Blocco: Base
+Tipo: bici
+Durata: 135 min
+FC target: < 147 bpm
+Note: LUNGO (versione bici) · ~800m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
+Stato: da importare
+
+Settimana: 2026-11-02
+Sessione: S10-lungo-skimo
+Blocco: Base
+Tipo: hiking
+Durata: 105 min
+FC target: < 147 bpm
+Note: LUNGO (versione scialpinismo) · ~1350m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
+Stato: da importare
+
+Settimana: 2026-11-02
+Sessione: S10-hill-sprints
 Blocco: Base
 Tipo: corsa qualità
 Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 4x8sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
-Note: Hill Sprints dimezzati (settimana di scarico) · sforzo massimo ma poche ripetute
+Note: Hill Sprints dimezzati — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute · metà reps (scarico)
 Stato: da importare
 
-Data: 2026-11-04
+Settimana: 2026-11-02
+Sessione: S10-palestra
 Blocco: Base
 Tipo: forza
 Durata: 40 min
 Note: Palestra Giorno 3 RIDOTTA · solo 2 esercizi principali + Core #1 · carichi ridotti del 30%
 Stato: da importare
 
-Data: 2026-11-06
+Settimana: 2026-11-02
+Sessione: S10-easy-1
 Blocco: Base
 Tipo: corsa easy
 Distanza: 4 km
 FC target: < 135 bpm
-Note: Gambe leggere
+Note: Easy Z1
 Stato: da importare
 
-Data: 2026-11-07
+
+### BLOCCO: Base — Settimana 11 (9–15 nov 2026) · 44 km · Tipo: G (C-race)
+> C-race Trail delle Bregonze 25K / 1100m D+ domenica 15/11 (il lungo è la gara, senza workout Garmin) · Hill Sprints e ME entro i primi giorni · nei 3 giorni prima della gara solo easy o riposo
+
+Settimana: 2026-11-09
+Sessione: S11-hill-sprints
 Blocco: Base
-Tipo: long trail
-Distanza: 12 km
-FC target: < 135 bpm
-Note: ~450m D+ · uscita leggera · bastoncini + vest
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 8x15sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints #5 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
 Stato: da importare
+
+Settimana: 2026-11-09
+Sessione: S11-me
+Blocco: Base
+Tipo: forza
+Durata: 55 min
+Note: ME Workout #5 su SCALA INFINITA in palestra — 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · le gambe devono bruciare, il cuore no · Core #2 dopo
+Stato: da importare
+
+Settimana: 2026-11-09
+Sessione: S11-palestra
+Blocco: Base
+Tipo: forza
+Durata: 60 min
+Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1 · palestra pre-gara: niente gambe pesanti
+Stato: da importare
+
+Settimana: 2026-11-09
+Sessione: S11-easy-1
+Blocco: Base
+Tipo: corsa easy
+Distanza: 5 km
+FC target: < 141 bpm
+Note: Easy Z1 · 3×150m DH pick-up alla fine
+Stato: da importare
+
+
+### BLOCCO: Base — Settimana 12 (16–22 nov 2026) · 48 km · Tipo: G (C-race)
+> C-race Trail dello Shamano 30K / 1400m D+ domenica 22/11 (il lungo è la gara, senza workout Garmin) · dopo la Bregonze 2-3 giorni solo easy/riposo · niente ME
+
+Settimana: 2026-11-16
+Sessione: S12-hill-sprints
+Blocco: Base
+Tipo: corsa qualità
+Riscaldamento: 15 min FC < 141 bpm
+Ripetute: 8x15sec recupero 3min
+Defaticamento: 10 min FC < 141 bpm
+Note: Hill Sprints #6 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
+Stato: da importare
+
+Settimana: 2026-11-16
+Sessione: S12-palestra
+Blocco: Base
+Tipo: forza
+Durata: 60 min
+Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1 · palestra pre-gara: niente gambe pesanti
+Stato: da importare
+
+Settimana: 2026-11-16
+Sessione: S12-easy-1
+Blocco: Base
+Tipo: corsa easy
+Distanza: 10 km
+FC target: < 141 bpm
+Note: Easy Z1 · 3×150m DH pick-up alla fine
+Stato: da importare
+
