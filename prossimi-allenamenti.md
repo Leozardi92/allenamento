@@ -385,7 +385,7 @@ Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 8x12sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
 Note: Hill Sprints #4 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127286, automatico il 26/10/2026)
 
 Settimana: 2026-10-26
 Sessione: S9-me
@@ -393,7 +393,7 @@ Blocco: Base
 Tipo: forza
 Durata: 55 min
 Note: ME Workout #4 su SCALA INFINITA in palestra — 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · le gambe devono bruciare, il cuore no · Core #2 dopo
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127297, automatico il 26/10/2026)
 
 Settimana: 2026-10-26
 Sessione: S9-palestra
@@ -401,7 +401,7 @@ Blocco: Base
 Tipo: forza
 Durata: 60 min
 Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127299, automatico il 26/10/2026)
 
 Settimana: 2026-10-26
 Sessione: S9-easy-1
@@ -410,7 +410,7 @@ Tipo: corsa easy
 Distanza: 8 km
 FC target: < 141 bpm
 Note: Easy Z1 · 3×150m DH pick-up alla fine
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127307, automatico il 26/10/2026)
 
 Settimana: 2026-10-26
 Sessione: S9-hiking
@@ -419,7 +419,7 @@ Tipo: hiking
 Durata: 90 min
 FC target: < 130 bpm
 Note: Recovery · 3×150m DH pick-up alla fine
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127312, automatico il 26/10/2026)
 
 Settimana: 2026-10-26
 Sessione: S9-lungo-corsa
@@ -428,7 +428,7 @@ Tipo: long trail
 Distanza: 19 km
 FC target: < 141 bpm (Z1) · ultimi 20 min Z2
 Note: LUNGO (versione corsa) · ~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127319, automatico il 26/10/2026)
 
 Settimana: 2026-10-26
 Sessione: S9-lungo-bici
@@ -437,7 +437,7 @@ Tipo: bici
 Durata: 220 min
 FC target: < 147 bpm
 Note: LUNGO (versione bici) · ~1300m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127322, automatico il 26/10/2026)
 
 Settimana: 2026-10-26
 Sessione: S9-lungo-skimo
@@ -446,7 +446,7 @@ Tipo: hiking
 Durata: 170 min
 FC target: < 147 bpm
 Note: LUNGO (versione scialpinismo) · ~2250m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
-Stato: da importare
+Stato: ✅ importata (workout_id 1742127324, automatico il 26/10/2026)
 
 
 ### BLOCCO: Base — Settimana 10 (2–8 nov 2026) · 22 km · Tipo: R (SCARICO)
@@ -575,4 +575,3 @@ Distanza: 10 km
 FC target: < 141 bpm
 Note: Easy Z1 · 3×150m DH pick-up alla fine
 Stato: da importare
-
