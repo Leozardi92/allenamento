@@ -378,33 +378,6 @@ Stato: ✅ importata (workout_id 1732433387, automatico il 17/10/2026)
 > 2ª settimana di carico · nessuna gara · sessioni senza giorno: scegli tu quando farle (una sola sessione dura al giorno)
 
 Settimana: 2026-10-26
-Sessione: S9-lungo-corsa
-Blocco: Base
-Tipo: long trail
-Distanza: 19 km
-FC target: < 141 bpm (Z1) · ultimi 20 min Z2
-Note: LUNGO (versione corsa) · ~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
-Stato: da importare
-
-Settimana: 2026-10-26
-Sessione: S9-lungo-bici
-Blocco: Base
-Tipo: bici
-Durata: 220 min
-FC target: < 147 bpm
-Note: LUNGO (versione bici) · ~1300m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
-Stato: da importare
-
-Settimana: 2026-10-26
-Sessione: S9-lungo-skimo
-Blocco: Base
-Tipo: hiking
-Durata: 170 min
-FC target: < 147 bpm
-Note: LUNGO (versione scialpinismo) · ~2250m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
-Stato: da importare
-
-Settimana: 2026-10-26
 Sessione: S9-hill-sprints
 Blocco: Base
 Tipo: corsa qualità
@@ -448,36 +421,36 @@ FC target: < 130 bpm
 Note: Recovery · 3×150m DH pick-up alla fine
 Stato: da importare
 
+Settimana: 2026-10-26
+Sessione: S9-lungo-corsa
+Blocco: Base
+Tipo: long trail
+Distanza: 19 km
+FC target: < 141 bpm (Z1) · ultimi 20 min Z2
+Note: LUNGO (versione corsa) · ~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
+Stato: da importare
+
+Settimana: 2026-10-26
+Sessione: S9-lungo-bici
+Blocco: Base
+Tipo: bici
+Durata: 220 min
+FC target: < 147 bpm
+Note: LUNGO (versione bici) · ~1300m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
+Stato: da importare
+
+Settimana: 2026-10-26
+Sessione: S9-lungo-skimo
+Blocco: Base
+Tipo: hiking
+Durata: 170 min
+FC target: < 147 bpm
+Note: LUNGO (versione scialpinismo) · ~2250m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
+Stato: da importare
+
 
 ### BLOCCO: Base — Settimana 10 (2–8 nov 2026) · 22 km · Tipo: R (SCARICO)
 > Chiude il ciclo 2:1 (S8-S9) · metà reps, una sola palestra, niente ME né Z3-4
-
-Settimana: 2026-11-02
-Sessione: S10-lungo-corsa
-Blocco: Base
-Tipo: long trail
-Distanza: 12 km
-FC target: < 135 bpm
-Note: LUNGO (versione corsa) · ~450m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
-Stato: da importare
-
-Settimana: 2026-11-02
-Sessione: S10-lungo-bici
-Blocco: Base
-Tipo: bici
-Durata: 135 min
-FC target: < 147 bpm
-Note: LUNGO (versione bici) · ~800m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
-Stato: da importare
-
-Settimana: 2026-11-02
-Sessione: S10-lungo-skimo
-Blocco: Base
-Tipo: hiking
-Durata: 105 min
-FC target: < 147 bpm
-Note: LUNGO (versione scialpinismo) · ~1350m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
-Stato: da importare
 
 Settimana: 2026-11-02
 Sessione: S10-hill-sprints
@@ -504,6 +477,33 @@ Tipo: corsa easy
 Distanza: 4 km
 FC target: < 135 bpm
 Note: Easy Z1
+Stato: da importare
+
+Settimana: 2026-11-02
+Sessione: S10-lungo-corsa
+Blocco: Base
+Tipo: long trail
+Distanza: 12 km
+FC target: < 135 bpm
+Note: LUNGO (versione corsa) · ~450m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
+Stato: da importare
+
+Settimana: 2026-11-02
+Sessione: S10-lungo-bici
+Blocco: Base
+Tipo: bici
+Durata: 135 min
+FC target: < 147 bpm
+Note: LUNGO (versione bici) · ~800m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
+Stato: da importare
+
+Settimana: 2026-11-02
+Sessione: S10-lungo-skimo
+Blocco: Base
+Tipo: hiking
+Durata: 105 min
+FC target: < 147 bpm
+Note: LUNGO (versione scialpinismo) · ~1350m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
 Stato: da importare
 
 
