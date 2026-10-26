@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-20T20:51:25",
-  "phase_label": "Base · sett. 5/18",
+  "generated_at": "2026-10-26T09:49:02",
+  "phase_label": "Base · sett. 6/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-10-20",
-    "day_label": "Mar",
-    "type": "run",
-    "label": "Hill Sprints S3 · 8 km tot",
-    "extra": "7×10 sec MAX · 2-3 min recupero · è il passo saltato in S7 · FC<141 fuori dagli sprint"
+    "date": "2026-10-26#0",
+    "day_label": "S9",
+    "type": "trail",
+    "label": "Trail 19 km",
+    "extra": "~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2"
   },
   "key_workout": {
-    "date": "2026-10-24",
-    "day_label": "Sab",
-    "type": "trail",
-    "label": "Trail 16 km",
-    "extra": "~650m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2"
+    "date": "2026-10-26#1",
+    "day_label": "S9",
+    "type": "run",
+    "label": "Hill Sprints #4 · 8 km tot",
+    "extra": "8×12 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"
   },
   "week": {
-    "planned_km": 36,
+    "planned_km": 40,
     "actual_km": 0.0
   },
   "next_race": {
-    "date": "2027-04-03",
-    "label": "🏁 DBT 24K",
-    "days_until": 165
+    "date": "2026-11-15",
+    "label": "🏁 TRAIL DELLE BREGONZE 25K",
+    "days_until": 20
   }
 }
