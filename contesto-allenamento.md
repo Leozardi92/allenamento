@@ -64,17 +64,14 @@ Con doppio tentativo 2032+2033: **~72-75%**
 - 2030: 2° tentativo lotteria LUT 120K (se non estratto → guaranteed 2031)
 - 2030/2031: LUT 120K → Index 100M → lotteria UTMB 2032
 
-### 2026 — C-race d'autunno
+### 2026 — Gara d'autunno
 
-**Trail delle Bregonze 25K · 1100m D+ · domenica 15 novembre 2026** (S11) — C-race
-**Trail dello Shamano 30K · 1400m D+ · domenica 22 novembre 2026** (S12) — C-race, 7 giorni dopo la Bregonze
-- Allenamento con pettorale (regole C-race): niente taper, il lungo della settimana è la gara
-- Strategia: FC < 147 bpm (AeT) · gel ogni 45 min (30-40g CHO/ora, protocollo Base) · pesa prima/dopo (sweat test) · bastoncini solo se ammessi
-- Settimana della Bregonze: Hill Sprints e ME entro i primi giorni, palestra Giorno 2 (pre-gara), nei 3 giorni prima solo easy o riposo
-- Tra le due gare: 2-3 giorni di solo easy o riposo; nella settimana dello Shamano niente ME
-- Dopo lo Shamano: S13 di scarico (recovery post-gare)
-
-**Trail del Cinghiale 35K · 30-31 ottobre 2026 — rinunciato** (decisione di Leonardo, 17/10/2026). Al suo posto le due gare di novembre.
+**Trail dello Shamano 45K · domenica 22 novembre 2026** (S12) — D+ da confermare. 45 km = 88% dell'Eiger.
+- Scelta di Leonardo (04/11/2026) al posto del Trail delle Bregonze 25K (15 novembre, non lo fa più) e del Trail del Cinghiale 35K (30-31 ottobre, rinunciato il 17/10).
+- Per la distanza è la gara più lunga prima di aprile e supera il 60-80% previsto per una B-race: **trattata come una B-race leggera**, non come una C-race "train through". Settimana di gara senza Hill Sprints né ME, palestra Giorno 2 (solo upper), solo easy nei 3 giorni prima; poi S13 di scarico.
+- Rischio da gestire: l'ultimo lungo prima della gara è di 24 km (S11) e il più lungo fatto finora è 24 km (10/10): la gara è quasi il doppio.
+- Strategia: FC < 147 bpm (AeT) per tutta la gara, cammina le salite · CHO 40-50 g/ora (1 gel ogni 40 min + barretta) e sale 300-500 mg/ora — oltre il protocollo Base (30-40 g/ora), quindi provarlo a 40-50 g/ora nel lungo di S11 · pesa prima/dopo (sweat test) · bastoncini e cerata (novembre) · fermati se compare dolore alla bandelletta (ITB).
+- Dopo lo Shamano: S13 di scarico; monitorare l'ITB nelle discese.
 
 ### 2027 — Anno di costruzione
 
@@ -336,8 +333,8 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S8 | 16 km | 650m | Ripresa · 1ª settimana di carico |
 | S9 | 19 km | 800m | |
 | S10 R | 12 km | 450m | Scarico |
-| S11 | **GARA 25K** | **1100m** | **Trail delle Bregonze · dom 15 nov (C-race)** |
-| S12 | **GARA 30K** | **1400m** | **Trail dello Shamano · dom 22 nov (C-race)** |
+| S11 | 24 km | 1000m | Ultimo lungo prima dello Shamano · prova CHO 40-50 g/ora |
+| S12 | **GARA 45K** | **D+ da confermare** | **Trail dello Shamano · dom 22 nov** |
 | S13 R | 14 km | 500m | Scarico |
 | S14 | 26 km | 1000m | |
 | S15 | 28 km | 1200m | |
@@ -391,7 +388,7 @@ Leonardo sceglie quale fare; sulla dashboard la spunta ✅ c'è con qualunque de
 - **Bici:** 1,3 × T (niente impatto né discesa: serve più tempo per lo stesso stress) · ~350 m D+/h · tetto 5h30, oltre non è più equivalente
 - FC sempre < 147 bpm (AeT), ultimi 20 min fino all'AeT · CHO ogni 40 min come nel trail
 - Nel back-to-back vale per ciascuno dei due lunghi, ma i due giorni restano consecutivi
-- Nelle settimane di gara (S11, S12) il lungo è la gara: nessuna alternativa
+- Nella settimana di gara (S12) il lungo è la gara: nessuna alternativa
 
 **Nota di coaching (consiglio, non regola):** bici e sci non allenano impatto ed eccentrico in discesa. Con l'Eiger a luglio, conviene
 che almeno un lungo ogni due settimane resti in corsa; le alternative servono per le settimane in cui il lavoro, il tempo o l'ITB lo impediscono.
@@ -400,6 +397,7 @@ che almeno un lungo ogni due settimane resti in corsa; le alternative servono pe
 |---|---|---|---|
 | S9 | 19 km · 800m D+ | 3h40 · ~1300m D+ | 2h50 · ~2250m D+ |
 | S10 | 12 km · 450m D+ | 2h15 · ~800m D+ | 1h45 · ~1400m D+ |
+| S11 | 24 km · 1000m D+ | 4h35 · ~1600m D+ | 3h30 · ~2800m D+ |
 | S13 | 14 km · 500m D+ | 2h35 · ~900m D+ | 2h00 · ~1600m D+ |
 | S14 | 26 km · 1000m D+ | 4h50 · ~1700m D+ | 3h45 · ~3000m D+ |
 | S15 | 28 km · 1200m D+ | 5h25 · ~1900m D+ | 4h10 · ~3350m D+ |
@@ -773,7 +771,7 @@ A fine di ogni blocco generare un Verdict con:
 | Blocco | Settimane | Periodo | Gare integrate |
 |---|---|---|---|
 | **RESTART** | S1-S3 | set 2026 | — · solo test soglie |
-| **BASE** | S4-S21 | ott 2026–gen 2027 | C-race Trail delle Bregonze 25K (S11) · C-race Trail dello Shamano 30K (S12) · Cinghiale rinunciato |
+| **BASE** | S4-S21 | ott 2026–gen 2027 | Trail dello Shamano 45K (S12, trattata come B-race leggera) · Cinghiale e Bregonze non fatte |
 | **SPECIFICO** | S22-S43 | feb–giu 2027 | B-race Malcesine 52K (S35) |
 | **TAPER** | S44-S46 | lug 2027 | **A-race Eiger E51 51K (S46) — fine blocco** |
 | **REBUILD** | S47-S52 | lug-ago 2027 | Maratona Alpina GES Schio (S52 — fine piano) |
@@ -794,8 +792,8 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 | S8 | 36 | B | Ripresa · Cinghiale rinunciato (17/10) · 1ª settimana di carico |
 | S9 | 40 | B | |
 | S10 | 22 | R | Scarico (cicli 2:1 fino a S13, poi 3:1) |
-| S11 | 44 | G | **C-RACE Trail delle Bregonze 25K/1100mD+ · dom 15/11** · train through · il lungo è la gara |
-| S12 | 48 | G | **C-RACE Trail dello Shamano 30K/1400mD+ · dom 22/11** · 7 giorni dopo la Bregonze · il lungo è la gara |
+| S11 | 44 | B | 3ª settimana di carico · ultimo lungo (24 km) prima dello Shamano · prova CHO 40-50 g/ora |
+| S12 | 48 | G | **TRAIL DELLO SHAMANO 45K · dom 22/11** · B-race leggera: niente Hill Sprints né ME · 45 km di gara + 3 km di scioltezza |
 | S13 | 26 | R | Scarico · recovery post-gare |
 | S14 | 52 | B | |
 | S15 | 57 | B | |
@@ -839,7 +837,7 @@ Le gare A, B, C sono TUTTE integrate nei blocchi — non esistono blocchi separa
 
 **Marker:**
 S2: Test AeT ✅ 147 bpm · S3: Test AnT ✅ 159 bpm · S4: Base inizia
-S10: R · S11: G — Trail delle Bregonze 25K (C-race, 15/11) · S12: G — Trail dello Shamano 30K (C-race, 22/11) · S13: R
+S10: R · S12: G — Trail dello Shamano 45K (22/11) · S13: R
 S7: scarico di fatto + Test AeT #2 ✅ (13/10) · S16: Test AeT #3 · S24: Test AnT #2 · S25: R
 S28: PICCO 1 (88 km) · S31: G — DBT 24K (C-race) · S35: G — Malcesine 52K (B-race)
 S39: Picco intermedio (88 km) · S43: PICCO 2 (88 km, b2b 40+25=65 km) · S45: Taper · S46: G — EIGER E51 51K 🏆 A-RACE luglio 2027
