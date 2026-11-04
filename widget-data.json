@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-26T10:07:28",
-  "phase_label": "Base · sett. 6/18",
+  "generated_at": "2026-11-04T18:14:16",
+  "phase_label": "Base · sett. 7/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-10-26#0",
-    "day_label": "S9",
+    "date": "2026-11-02#0",
+    "day_label": "S10",
     "type": "run",
-    "label": "Hill Sprints #4 · 8 km tot",
-    "extra": "8×12 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"
+    "label": "Hill Sprints dimezzati · 6 km tot",
+    "extra": "4×8 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"
   },
   "key_workout": {
-    "date": "2026-10-26#5",
-    "day_label": "S9",
+    "date": "2026-11-02#3",
+    "day_label": "S10",
     "type": "trail",
-    "label": "Trail 19 km",
-    "extra": "~800m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · ultimi 20 min Z2"
+    "label": "Trail 12 km",
+    "extra": "~450m D+ · FC<135 · uscita leggera"
   },
   "week": {
-    "planned_km": 40,
+    "planned_km": 22,
     "actual_km": 0.0
   },
   "next_race": {
     "date": "2026-11-15",
     "label": "🏁 TRAIL DELLE BREGONZE 25K",
-    "days_until": 20
+    "days_until": 11
   }
 }
