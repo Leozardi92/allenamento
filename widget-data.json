@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T18:14:16",
+  "generated_at": "2026-11-04T18:21:39",
   "phase_label": "Base · sett. 7/18",
   "plan_status": "active",
   "next_workout": {
@@ -21,8 +21,8 @@
     "actual_km": 0.0
   },
   "next_race": {
-    "date": "2026-11-15",
-    "label": "🏁 TRAIL DELLE BREGONZE 25K",
-    "days_until": 11
+    "date": "2026-11-22",
+    "label": "🏁 TRAIL DELLO SHAMANO 45K",
+    "days_until": 18
   }
 }
