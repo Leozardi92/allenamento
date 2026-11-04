@@ -551,7 +551,7 @@ Blocco: Base
 Tipo: long trail
 Distanza: 24 km
 FC target: < 141 bpm (Z1) · ultimi 20 min Z2
-Note: LUNGO (versione corsa) · ~1000m D+ · bastoncini + vest · CHO 40-50g/ora (1 gel ogni 40 min + barretta: prova per lo Shamano) · alternative equivalenti: bici o scialpinismo
+Note: LUNGO (versione corsa) · ~1000m D+ · bastoncini + vest · CHO 40-50g/ora (1 gel ogni 40 min + barretta: prova per lo Shamano) · se puoi su sentiero tecnico · alternative equivalenti: bici o scialpinismo
 Stato: da importare
 
 Settimana: 2026-11-09
@@ -574,7 +574,7 @@ Stato: da importare
 
 
 ### BLOCCO: Base — Settimana 12 (16–22 nov 2026) · 48 km · Tipo: G (Trail dello Shamano 45K)
-> Trail dello Shamano 45K domenica 22/11 (la gara è il lungo, senza workout Garmin) · B-race leggera: niente Hill Sprints né ME · solo easy nei 3 giorni prima della gara
+> Trail dello Shamano 45K · 1800m D+ · sentiero tecnico · domenica 22/11 (la gara è il lungo, senza workout Garmin) · B-race leggera: niente Hill Sprints né ME · solo easy nei 3 giorni prima della gara
 
 Settimana: 2026-11-16
 Sessione: S12-palestra
