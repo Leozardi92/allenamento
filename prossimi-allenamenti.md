@@ -507,8 +507,8 @@ Note: LUNGO (versione scialpinismo) · ~1350m D+ · FC<147 (ultimi 20 min fino a
 Stato: ✅ importata (workout_id 1751921527, automatico il 04/11/2026)
 
 
-### BLOCCO: Base — Settimana 11 (9–15 nov 2026) · 44 km · Tipo: G (C-race)
-> C-race Trail delle Bregonze 25K / 1100m D+ domenica 15/11 (il lungo è la gara, senza workout Garmin) · Hill Sprints e ME entro i primi giorni · nei 3 giorni prima della gara solo easy o riposo
+### BLOCCO: Base — Settimana 11 (9–15 nov 2026) · 44 km · Tipo: B
+> 3ª settimana di carico · nessuna gara · ultimo lungo (24 km) prima dello Shamano: prova di nutrizione a 40-50 g CHO/ora · sessioni senza giorno: scegli tu quando farle
 
 Settimana: 2026-11-09
 Sessione: S11-hill-sprints
@@ -533,31 +533,48 @@ Sessione: S11-palestra
 Blocco: Base
 Tipo: forza
 Durata: 60 min
-Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1 · palestra pre-gara: niente gambe pesanti
+Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS + Core #1
 Stato: da importare
 
 Settimana: 2026-11-09
 Sessione: S11-easy-1
 Blocco: Base
 Tipo: corsa easy
-Distanza: 5 km
+Distanza: 6 km
 FC target: < 141 bpm
 Note: Easy Z1 · 3×150m DH pick-up alla fine
 Stato: da importare
 
-
-### BLOCCO: Base — Settimana 12 (16–22 nov 2026) · 48 km · Tipo: G (C-race)
-> C-race Trail dello Shamano 30K / 1400m D+ domenica 22/11 (il lungo è la gara, senza workout Garmin) · dopo la Bregonze 2-3 giorni solo easy/riposo · niente ME
-
-Settimana: 2026-11-16
-Sessione: S12-hill-sprints
+Settimana: 2026-11-09
+Sessione: S11-lungo-corsa
 Blocco: Base
-Tipo: corsa qualità
-Riscaldamento: 15 min FC < 141 bpm
-Ripetute: 8x15sec recupero 3min
-Defaticamento: 10 min FC < 141 bpm
-Note: Hill Sprints #6 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
+Tipo: long trail
+Distanza: 24 km
+FC target: < 141 bpm (Z1) · ultimi 20 min Z2
+Note: LUNGO (versione corsa) · ~1000m D+ · bastoncini + vest · CHO 40-50g/ora (1 gel ogni 40 min + barretta: prova per lo Shamano) · alternative equivalenti: bici o scialpinismo
 Stato: da importare
+
+Settimana: 2026-11-09
+Sessione: S11-lungo-bici
+Blocco: Base
+Tipo: bici
+Durata: 275 min
+FC target: < 147 bpm
+Note: LUNGO (versione bici) · ~1600m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
+Stato: da importare
+
+Settimana: 2026-11-09
+Sessione: S11-lungo-skimo
+Blocco: Base
+Tipo: hiking
+Durata: 210 min
+FC target: < 147 bpm
+Note: LUNGO (versione scialpinismo) · ~2800m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
+Stato: da importare
+
+
+### BLOCCO: Base — Settimana 12 (16–22 nov 2026) · 48 km · Tipo: G (Trail dello Shamano 45K)
+> Trail dello Shamano 45K domenica 22/11 (la gara è il lungo, senza workout Garmin) · B-race leggera: niente Hill Sprints né ME · solo easy nei 3 giorni prima della gara
 
 Settimana: 2026-11-16
 Sessione: S12-palestra
@@ -571,7 +588,7 @@ Settimana: 2026-11-16
 Sessione: S12-easy-1
 Blocco: Base
 Tipo: corsa easy
-Distanza: 10 km
+Distanza: 3 km
 FC target: < 141 bpm
-Note: Easy Z1 · 3×150m DH pick-up alla fine
+Note: Easy Z1 · scioltezza pre-gara, nei giorni prima della gara
 Stato: da importare
