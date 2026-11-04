@@ -66,11 +66,13 @@ Con doppio tentativo 2032+2033: **~72-75%**
 
 ### 2026 — Gara d'autunno
 
-**Trail dello Shamano 45K · domenica 22 novembre 2026** (S12) — D+ da confermare. 45 km = 88% dell'Eiger.
+**Trail dello Shamano 45K · 1800m D+ · sentiero tecnico · domenica 22 novembre 2026** (S12). 45 km = 88% dell'Eiger.
+- Tempo stimato: ~6h30 con la formula dei tuoi lunghi (0,105 h/km + 0,001 h/m D+), ma su sentiero tecnico conta 7-8 h: pianifica nutrizione e acqua per quel tempo (circa 300-400 g di CHO) e verifica l'orario di partenza e il materiale obbligatorio.
 - Scelta di Leonardo (04/11/2026) al posto del Trail delle Bregonze 25K (15 novembre, non lo fa più) e del Trail del Cinghiale 35K (30-31 ottobre, rinunciato il 17/10).
 - Per la distanza è la gara più lunga prima di aprile e supera il 60-80% previsto per una B-race: **trattata come una B-race leggera**, non come una C-race "train through". Settimana di gara senza Hill Sprints né ME, palestra Giorno 2 (solo upper), solo easy nei 3 giorni prima; poi S13 di scarico.
 - Rischio da gestire: l'ultimo lungo prima della gara è di 24 km (S11) e il più lungo fatto finora è 24 km (10/10): la gara è quasi il doppio.
 - Strategia: FC < 147 bpm (AeT) per tutta la gara, cammina le salite · CHO 40-50 g/ora (1 gel ogni 40 min + barretta) e sale 300-500 mg/ora — oltre il protocollo Base (30-40 g/ora), quindi provarlo a 40-50 g/ora nel lungo di S11 · pesa prima/dopo (sweat test) · bastoncini e cerata (novembre) · fermati se compare dolore alla bandelletta (ITB).
+- Percorso tecnico: discese più lente e più carico su quadricipiti e ITB — scarpe con grip, bastoncini e discese controllate (non correre forte). Nel lungo di S11 cerca, se puoi, un sentiero tecnico con dislivello.
 - Dopo lo Shamano: S13 di scarico; monitorare l'ITB nelle discese.
 
 ### 2027 — Anno di costruzione
@@ -334,7 +336,7 @@ Il b2b copre il 74% del volume settimanale — dentro il range 60-80% del libro.
 | S9 | 19 km | 800m | |
 | S10 R | 12 km | 450m | Scarico |
 | S11 | 24 km | 1000m | Ultimo lungo prima dello Shamano · prova CHO 40-50 g/ora |
-| S12 | **GARA 45K** | **D+ da confermare** | **Trail dello Shamano · dom 22 nov** |
+| S12 | **GARA 45K** | **1800m (tecnico)** | **Trail dello Shamano · dom 22 nov** |
 | S13 R | 14 km | 500m | Scarico |
 | S14 | 26 km | 1000m | |
 | S15 | 28 km | 1200m | |
