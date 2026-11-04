@@ -460,7 +460,7 @@ Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 4x8sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
 Note: Hill Sprints dimezzati — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute · metà reps (scarico)
-Stato: da importare
+Stato: ✅ importata (workout_id 1751921510, automatico il 04/11/2026)
 
 Settimana: 2026-11-02
 Sessione: S10-palestra
@@ -468,7 +468,7 @@ Blocco: Base
 Tipo: forza
 Durata: 40 min
 Note: Palestra Giorno 3 RIDOTTA · solo 2 esercizi principali + Core #1 · carichi ridotti del 30%
-Stato: da importare
+Stato: ✅ importata (workout_id 1751921516, automatico il 04/11/2026)
 
 Settimana: 2026-11-02
 Sessione: S10-easy-1
@@ -477,7 +477,7 @@ Tipo: corsa easy
 Distanza: 4 km
 FC target: < 135 bpm
 Note: Easy Z1
-Stato: da importare
+Stato: ✅ importata (workout_id 1751921519, automatico il 04/11/2026)
 
 Settimana: 2026-11-02
 Sessione: S10-lungo-corsa
@@ -486,7 +486,7 @@ Tipo: long trail
 Distanza: 12 km
 FC target: < 135 bpm
 Note: LUNGO (versione corsa) · ~450m D+ · bastoncini + vest · CHO ogni 40 min (40g/ora) · alternative equivalenti: bici o scialpinismo
-Stato: da importare
+Stato: ✅ importata (workout_id 1751921521, automatico il 04/11/2026)
 
 Settimana: 2026-11-02
 Sessione: S10-lungo-bici
@@ -495,7 +495,7 @@ Tipo: bici
 Durata: 135 min
 FC target: < 147 bpm
 Note: LUNGO (versione bici) · ~800m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
-Stato: da importare
+Stato: ✅ importata (workout_id 1751921526, automatico il 04/11/2026)
 
 Settimana: 2026-11-02
 Sessione: S10-lungo-skimo
@@ -504,7 +504,7 @@ Tipo: hiking
 Durata: 105 min
 FC target: < 147 bpm
 Note: LUNGO (versione scialpinismo) · ~1350m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
-Stato: da importare
+Stato: ✅ importata (workout_id 1751921527, automatico il 04/11/2026)
 
 
 ### BLOCCO: Base — Settimana 11 (9–15 nov 2026) · 44 km · Tipo: G (C-race)
