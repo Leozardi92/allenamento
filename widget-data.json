@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T18:25:22",
+  "generated_at": "2026-11-06T10:45:08",
   "phase_label": "Base · sett. 7/18",
   "plan_status": "active",
   "next_workout": {
@@ -10,19 +10,19 @@
     "extra": "4×8 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"
   },
   "key_workout": {
-    "date": "2026-11-02#3",
-    "day_label": "S10",
-    "type": "trail",
-    "label": "Trail 12 km",
-    "extra": "~450m D+ · FC<135 · uscita leggera"
+    "date": "2026-11-09#0",
+    "day_label": "S11",
+    "type": "run",
+    "label": "Hill Sprints #5 · 8 km tot",
+    "extra": "8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"
   },
   "week": {
     "planned_km": 22,
-    "actual_km": 0.0
+    "actual_km": 10.6
   },
   "next_race": {
     "date": "2026-11-22",
     "label": "🏁 TRAIL DELLO SHAMANO 45K",
-    "days_until": 18
+    "days_until": 16
   }
 }
