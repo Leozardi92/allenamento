@@ -518,7 +518,7 @@ Riscaldamento: 15 min FC < 141 bpm
 Ripetute: 8x15sec recupero 3min
 Defaticamento: 10 min FC < 141 bpm
 Note: Hill Sprints #5 — sforzo MASSIMO · stop se non raggiungi più la distanza delle prime ripetute
-Stato: da importare
+Stato: ✅ importata (workout_id 1753166543, automatico il 06/11/2026)
 
 Settimana: 2026-11-09
 Sessione: S11-me
@@ -526,7 +526,7 @@ Blocco: Base
 Tipo: forza
 Durata: 55 min
 Note: ME Workout #5 su SCALA INFINITA in palestra — 10 min riscaldamento lento + 25 min continui con zaino 7 kg (gradini alternati, senza appoggiarti ai corrimano) + 10 min defaticamento lento · FC 130-150 (oltre 155 rallenta) · le gambe devono bruciare, il cuore no · Core #2 dopo
-Stato: da importare
+Stato: ✅ importata (workout_id 1753166544, automatico il 06/11/2026)
 
 Settimana: 2026-11-09
 Sessione: S11-palestra
@@ -534,7 +534,7 @@ Blocco: Base
 Tipo: forza
 Durata: 60 min
 Note: Palestra Giorno 1 — Adductor · Squat bilanciere · Hip Thrust · Leg Extension Mono · Calf · Push Down · ABS + Core #1
-Stato: da importare
+Stato: ✅ importata (workout_id 1753166547, automatico il 06/11/2026)
 
 Settimana: 2026-11-09
 Sessione: S11-easy-1
@@ -543,7 +543,7 @@ Tipo: corsa easy
 Distanza: 6 km
 FC target: < 141 bpm
 Note: Easy Z1 · 3×150m DH pick-up alla fine
-Stato: da importare
+Stato: ✅ importata (workout_id 1753166549, automatico il 06/11/2026)
 
 Settimana: 2026-11-09
 Sessione: S11-lungo-corsa
@@ -552,7 +552,7 @@ Tipo: long trail
 Distanza: 24 km
 FC target: < 141 bpm (Z1) · ultimi 20 min Z2
 Note: LUNGO (versione corsa) · ~1000m D+ · bastoncini + vest · CHO 40-50g/ora (1 gel ogni 40 min + barretta: prova per lo Shamano) · se puoi su sentiero tecnico · alternative equivalenti: bici o scialpinismo
-Stato: da importare
+Stato: ✅ importata (workout_id 1753166553, automatico il 06/11/2026)
 
 Settimana: 2026-11-09
 Sessione: S11-lungo-bici
@@ -561,7 +561,7 @@ Tipo: bici
 Durata: 275 min
 FC target: < 147 bpm
 Note: LUNGO (versione bici) · ~1600m D+ · Z2 FC<147 · 1,3× il tempo del trail (niente impatto) · CHO ogni 40 min
-Stato: da importare
+Stato: ✅ importata (workout_id 1753166559, automatico il 06/11/2026)
 
 Settimana: 2026-11-09
 Sessione: S11-lungo-skimo
@@ -570,7 +570,7 @@ Tipo: hiking
 Durata: 210 min
 FC target: < 147 bpm
 Note: LUNGO (versione scialpinismo) · ~2800m D+ · FC<147 (ultimi 20 min fino all'AeT) · stesso tempo del trail · solo se c'è neve
-Stato: da importare
+Stato: ✅ importata (workout_id 1753166565, automatico il 06/11/2026)
 
 
 ### BLOCCO: Base — Settimana 12 (16–22 nov 2026) · 48 km · Tipo: G (Trail dello Shamano 45K)
