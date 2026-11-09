@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-08T10:45:07",
-  "phase_label": "Base · sett. 7/18",
+  "generated_at": "2026-11-09T10:45:07",
+  "phase_label": "Base · sett. 8/18",
   "plan_status": "active",
   "next_workout": {
-    "date": "2026-11-02#0",
-    "day_label": "S10",
-    "type": "run",
-    "label": "Hill Sprints dimezzati · 6 km tot",
-    "extra": "4×8 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint · metà reps (scarico)"
-  },
-  "key_workout": {
     "date": "2026-11-09#0",
     "day_label": "S11",
     "type": "run",
     "label": "Hill Sprints #5 · 8 km tot",
     "extra": "8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"
   },
+  "key_workout": {
+    "date": "2026-11-09#4",
+    "day_label": "S11",
+    "type": "trail",
+    "label": "Trail 24 km",
+    "extra": "~1000m D+ · bastoncini + vest · CHO 40-50g/ora (1 gel ogni 40 min + barretta: prova per lo Shamano) · ultimi 20 min Z2 · se puoi su sentiero tecnico"
+  },
   "week": {
-    "planned_km": 22,
-    "actual_km": 14.7
+    "planned_km": 44,
+    "actual_km": 0.0
   },
   "next_race": {
     "date": "2026-11-22",
     "label": "🏁 TRAIL DELLO SHAMANO 45K",
-    "days_until": 14
+    "days_until": 13
   }
 }
