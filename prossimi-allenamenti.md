@@ -582,7 +582,7 @@ Blocco: Base
 Tipo: forza
 Durata: 60 min
 Note: Palestra Giorno 2 — Lat Machine · Pulley · Trazioni EPS · Chest Press · Shoulder Press · Alzate laterali · ABS + Core #1 · palestra pre-gara: niente gambe pesanti
-Stato: da importare
+Stato: ✅ importata (workout_id 1760487769, automatico il 13/11/2026)
 
 Settimana: 2026-11-16
 Sessione: S12-easy-1
@@ -591,4 +591,4 @@ Tipo: corsa easy
 Distanza: 3 km
 FC target: < 141 bpm
 Note: Easy Z1 · scioltezza pre-gara, nei giorni prima della gara
-Stato: da importare
+Stato: ✅ importata (workout_id 1760487772, automatico il 13/11/2026)
