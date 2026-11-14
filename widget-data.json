@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T10:45:06",
+  "generated_at": "2026-11-14T14:56:43",
   "phase_label": "Base · sett. 8/18",
   "plan_status": "active",
   "next_workout": {
@@ -23,6 +23,6 @@
   "next_race": {
     "date": "2026-11-22",
     "label": "🏁 TRAIL DELLO SHAMANO 45K",
-    "days_until": 9
+    "days_until": 8
   }
 }
