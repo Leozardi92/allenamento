@@ -37,6 +37,27 @@ Dashboard: https://leozardi92.github.io/allenamento/
 
 ---
 
+## Obiettivo — Soccorso Alpino (CNSAS Veneto)
+
+Dal 14/11/2026 Leonardo vuole entrare nel Soccorso Alpino (Operatore di Soccorso Alpino, O.S.A.) **in aggiunta** al piano di corsa, che resta invariato
+(A-race Eiger E51). La corsa è la base di tutto; arrampicata e scialpinismo si costruiscono in parallelo. Percorso e curriculum: tab **Soccorso** della dashboard.
+
+**Requisiti d'ingresso** (Piano Formativo Regionale CNSAS Veneto, griglia G/1, ed. 2016 — confermati dalla stazione il 14/11/2026), domanda tramite la Stazione:
+- Età 18-45 · visita medico-sportiva agonistica · iscrizione al CAI · curriculum alpinistico e scialpinistico degli **ultimi 3 anni**
+- Capocordata su itinerario alpinistico (almeno 4° UIAA) · ramponi su misto e neve · **sci su ogni neve, salita e discesa da scialpinismo** · cordata su roccia, neve e ghiaccio · ARTVA e autosoccorso in valanga
+- Poi: verifica V/1 (2 giorni, roccia in estate e neve in inverno) → moduli O.S.A. entro 2 anni (~10 giorni) → verifica finale; mantenimento di 2 giorni ogni 3 anni
+
+**Punto di partenza:** arrampicata fino al 5b-5c, sci da discesa, qualche uscita di alpinismo. Il gap è lo scialpinismo e il curriculum documentato, non il grado.
+
+**Come si incastra nel piano:**
+- Scialpinismo = alternativa equivalente al lungo di corsa (ott 2026 - mar 2027): ogni uscita conta per il piano e per il curriculum.
+- Arrampicata ripresa dopo l'Eiger (agosto 2027, blocco Rebuild); poco prima di una gara niente uscite impegnative.
+- Corsi CAI proposti: SA1 + ARTVA nell'inverno 2026-27; arrampicata/alpinismo/ghiaccio dopo l'Eiger.
+- Stima (non della stazione): domanda nella primavera 2028, operativo verso il 2029-30.
+- Registro: `dashboard-data/soccorso-registro.json`, alimentato dalle attività Strava di scialpinismo e arrampicata e dalle uscite che Leonardo comunica (data, luogo, tipo, dislivello, grado, ruolo).
+
+---
+
 ## Gare — Roadmap e Dettagli
 
 ### Roadmap UTMB 2032 — Stones e obiettivi fisici
