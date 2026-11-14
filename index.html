@@ -51,8 +51,9 @@
   h1 { font-size: 22px; font-weight: 900; letter-spacing: -0.5px; margin: 0; }
   .subline { font-size: 12px; color: var(--muted); margin-top: 6px; }
 
-  .tabs { display: flex; gap: 4px; padding: 14px 12px 0; }
-  .tab-btn { flex: 1; padding: 8px 0; border-radius: 10px; font-size: 10.5px; font-weight: 700; border: none; cursor: pointer; background: var(--card); color: var(--muted); }
+  .tabs { display: flex; gap: 4px; padding: 14px 12px 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab-btn { flex: 1 0 auto; padding: 8px 11px; border-radius: 10px; font-size: 10.5px; font-weight: 700; border: none; cursor: pointer; background: var(--card); color: var(--muted); }
   .tab-btn.active { background: var(--p2); color: #000; }
   .page { padding: 12px 16px 0; display: none; }
   .page.active { display: block; }
@@ -157,6 +158,49 @@
   .alt-item { font-size: 11px; line-height: 1.35; margin-top: 3px; }
   .alt-name { font-weight: 700; }
   .alt-x { color: var(--muted); }
+  .sa-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
+  .sa-tile { background: var(--card2); border: 1px solid var(--border); border-radius: 12px; padding: 10px; }
+  .sa-tile-h { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 700; }
+  .sa-tile-v { font-size: 22px; font-weight: 900; margin-top: 4px; }
+  .sa-tile-s { font-size: 10.5px; color: var(--muted); margin-bottom: 6px; }
+  .sa-bar { height: 4px; border-radius: 2px; background: var(--border); margin: 0 0 7px; overflow: hidden; }
+  .sa-bar-fill { height: 100%; border-radius: 2px; }
+  .sa-chip { display: inline-block; font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; border: 1px solid; border-radius: 999px; padding: 1px 7px; vertical-align: middle; }
+  .sa-badge { display: inline-block; font-size: 9px; color: var(--muted); border: 1px dashed var(--border); border-radius: 6px; padding: 0 5px; }
+  .sa-req { padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .sa-req:last-child { border-bottom: none; }
+  .sa-req-t { font-size: 12.5px; font-weight: 700; }
+  .sa-req-d { font-size: 11.5px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+  .sa-cv-sec { margin-bottom: 12px; }
+  .sa-cv-h { font-size: 12px; font-weight: 800; margin-bottom: 4px; }
+  .sa-cv-line { font-size: 11.5px; line-height: 1.45; padding: 2px 0; }
+  .sa-cv-d { color: var(--muted); font-weight: 700; }
+  .sa-actions { display: flex; gap: 8px; margin: 6px 0 8px; }
+  .sa-btn { flex: 1; padding: 8px 0; border-radius: 10px; border: 1px solid var(--border); background: var(--card2); color: var(--text, #fff); font-size: 11px; font-weight: 700; cursor: pointer; }
+  .sa-details summary { font-size: 11px; color: var(--muted); cursor: pointer; }
+  .sa-pre { white-space: pre-wrap; font-size: 11px; line-height: 1.5; background: var(--card2); border: 1px solid var(--border); border-radius: 10px; padding: 10px; margin: 8px 0 0; user-select: all; }
+  .sa-course { padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .sa-course:last-child { border-bottom: none; }
+  .sa-course-t { font-size: 12.5px; font-weight: 700; }
+  .sa-course-w { font-size: 11px; color: var(--p6); margin-top: 2px; }
+  .sa-course-x { font-size: 11.5px; color: var(--muted); margin-top: 3px; line-height: 1.45; }
+  .sa-stag { padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .sa-stag:last-child { border-bottom: none; }
+  .sa-stag-h { font-size: 13px; font-weight: 800; }
+  .sa-stag-i { font-size: 11.5px; color: var(--muted); margin: 3px 0 6px; line-height: 1.45; }
+  .sa-item { margin-top: 6px; }
+  .sa-item-t { font-size: 12px; font-weight: 700; }
+  .sa-item-x { font-size: 11.5px; color: var(--muted); line-height: 1.45; }
+  @media print {
+    body { background: #fff !important; }
+    .header, .tabs, .footer-note, .page:not(#page-soccorso), .sa-actions, .sa-details, .note { display: none !important; }
+    #page-soccorso { display: block !important; padding: 0; color: #000; }
+    #page-soccorso .card:not(#sa-cv-card) { display: none !important; }
+    #sa-cv-card { border: none; background: none; }
+    #sa-cv-card .card-head { display: none !important; }
+    .sa-cv-line, .sa-cv-h { color: #000 !important; }
+  }
+
   .req-mark { font-size: 11px; margin-left: 6px; vertical-align: middle; }
   .req-legend { display: flex; gap: 12px; padding: 8px 14px 0; font-size: 10px; color: var(--muted); flex-wrap: wrap; }
   .req-legend span { margin-right: 3px; }
@@ -218,6 +262,7 @@
     <button class="tab-btn" data-page="blocchi">Blocchi</button>
     <button class="tab-btn" data-page="verdict">Verdict</button>
     <button class="tab-btn" data-page="utmb">UTMB</button>
+    <button class="tab-btn" data-page="soccorso">Soccorso</button>
   </div>
   <div class="page active" id="page-oggi"></div>
   <div class="page" id="page-forma"></div>
@@ -225,6 +270,7 @@
   <div class="page" id="page-blocchi"></div>
   <div class="page" id="page-verdict"></div>
   <div class="page" id="page-utmb"></div>
+  <div class="page" id="page-soccorso"></div>
   <div class="footer-note">Generato automaticamente · dati Garmin + Strava</div>
 </div>
 
@@ -232,7 +278,7 @@
 <script>
 "use strict";
 
-var DATA = {"generated_at": "13/11/2026 10:45", "wellness": {"date": "2026-11-07", "rhr": 47, "bb": 90, "stress": 14, "tr": 46, "hrv": 53, "sleep_h": 7.0, "sleep_score": 82}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 14.3, "is_current": false}, {"label": "07/09", "planned": 14, "actual": 17.3, "is_current": false}, {"label": "14/09", "planned": 14, "actual": 23.7, "is_current": false}, {"label": "21/09", "planned": 22, "actual": 37.9, "is_current": false}, {"label": "28/09", "planned": 30, "actual": 13.0, "is_current": false}, {"label": "05/10", "planned": 33, "actual": 35.7, "is_current": false}, {"label": "12/10", "planned": 18, "actual": 9.3, "is_current": false}, {"label": "19/10", "planned": 36, "actual": 19.0, "is_current": false}, {"label": "26/10", "planned": 40, "actual": 43.5, "is_current": false}, {"label": "02/11", "planned": 22, "actual": 14.7, "is_current": false}, {"label": "09/11", "planned": 44, "actual": 0.0, "is_current": true}], "weekly_actual_km": [14.3, 17.3, 23.7, 37.9, 13.0, 35.7, 9.3, 19.0, 43.5, 14.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "20892068055", "name": "Corsa mattutina", "sport_type": "Run", "start_local": "2026-11-07T10:14:52", "summary": {"distance": 4142.0, "moving_time": 1439, "elapsed_time": 1475, "elevation_gain": 9.0, "avg_speed": 2.878, "max_speed": 4.14, "relative_effort": 16.0, "total_calories": 288.0, "avg_cadence": 85.6, "kudos_count": 1, "achievement_count": 1, "pr_count": 1}, "polyline": "ysftGaoxbAMLCIGEEBEACUDY?c@MKCWHo@Xw@Rs@?QFWAKGI{@]c@MsAWIGSm@CAs@?UJ[BICK@YEc@Me@[QUUc@Oa@Wi@AIBKREFi@DcA@iBBWAa@Bo@C]FoBD_@?OGGW@]RkAbAg@t@q@x@i@f@KRw@j@WJURuAr@qAz@_Aj@QPYb@w@XUXi@`@sAv@k@RQPKLc@fAUh@KL[r@[f@a@~@wBbDeA~Bg@x@]^_Aj@GHGh@a@|@Cb@?VMlB@J@Df@L`A^vAz@l@h@RDNJh@TrAt@`@^f@J`C|@h@b@zAr@RZDBLGD?J@LHXj@?Pg@lBGd@Sf@E\\@T`@PpAZz@d@VHRLx@\\VVDABANy@J[PuARg@L?DHAH\\Sl@Pd@X^Nb@b@PFBA?MFQB[H]?KKa@?QLcABWA]COWa@C_@BWAOBMRUJ]VQFKLYDYCSSo@QiAIQU{@Iw@a@qAE[U{@g@wA@Mh@a@^UFIEaAH_ABkBBo@BGBCHBxAjAPPVNL?Z^H@BETu@d@_ADSPc@BWDMPWN_@BOC[@y@AM?gACa@?_@@OBEHAR@FDPb@JJn@NdALlAd@DLAX_@`BAZSbA@F", "performance": {"average_heartrate": 132.8, "max_heartrate": 149.0, "average_cadence": 85.6, "calories": 288.0}, "hr_stream": {"time": [0, 17, 34, 50, 67, 85, 102, 118, 134, 150, 166, 182, 198, 213, 228, 244, 260, 276, 292, 307, 323, 338, 353, 368, 383, 398, 413, 428, 442, 457, 471, 486, 502, 516, 531, 546, 561, 576, 591, 605, 619, 633, 648, 662, 677, 692, 707, 722, 735, 750, 765, 779, 794, 808, 822, 837, 851, 864, 877, 892, 905, 919, 933, 946, 960, 974, 1025, 1041, 1054, 1070, 1084, 1096, 1110, 1123, 1136, 1151, 1164, 1177, 1191, 1205, 1218, 1230, 1243, 1257, 1271, 1285, 1298, 1312, 1326, 1340, 1352, 1366, 1380, 1393, 1405, 1419, 1433, 1445, 1459, 1475], "heart_rate": [83, 92, 94, 100, 103, 108, 112, 114, 118, 119, 120, 123, 122, 121, 119, 115, 121, 121, 122, 122, 125, 125, 124, 125, 126, 127, 131, 133, 130, 130, 130, 129, 129, 127, 127, 129, 131, 132, 133, 136, 141, 144, 146, 145, 144, 144, 141, 135, 137, 137, 139, 136, 135, 137, 136, 137, 137, 137, 143, 143, 143, 142, 143, 144, 145, 144, 128, 125, 127, 132, 132, 137, 139, 142, 144, 145, 146, 145, 146, 146, 147, 147, 147, 148, 147, 147, 148, 146, 145, 146, 147, 147, 147, 146, 146, 144, 145, 145, 146, 146]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 147}, {"min": 148, "max": 159}, {"min": 160, "max": 166}, {"min": 167, "max": 220}], "thresholds": {"aet": 147, "ant": 159, "fcmax": 166, "aet_pace": "6:50/km", "ant_pace": "5:17/km"}, "verdicts": {"restart": {"title": "RESTART (S1-S3 · 1-21 settembre 2026)", "outcome": "promosso", "headline": "✅ PROMOSSO → Base inizia S4 (22 settembre 2026)", "html": "<h4>Dati del blocco</h4><table class=\"vtable\"><thead><tr><th>Metrica</th><th>Valore</th><th>Target</th><th>Esito</th></tr></thead><tbody><tr><td>Settimane completate</td><td>3</td><td>3-4</td><td>✅</td></tr><tr><td>Volume totale</td><td>~42 km</td><td>40-50 km</td><td>✅</td></tr><tr><td>AeT misurata</td><td><strong>147 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>AnT misurata</td><td><strong>159 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>Gap AeT-AnT</td><td>12 bpm (7.5%)</td><td>&lt; 10% = no ADS</td><td>✅ NO ADS</td></tr><tr><td>ITB</td><td>nessun problema</td><td>nessun problema</td><td>✅</td></tr><tr><td>FC media easy run</td><td>132-142 bpm</td><td>&lt; AeT (147 bpm)</td><td>✅</td></tr><tr><td>FC media bici</td><td>131-133 bpm</td><td>&lt; 145 bpm</td><td>✅</td></tr></tbody></table><h4>Easy-day discipline</h4><p>Eccellente. Le 4 sessioni easy del Restart mostrano FC media ben sotto la AeT:</p><ul><li>29/08 Evening Run: 142 bpm (Z1)</li><li>08/09 Corsa serale: 135.7 bpm (Z1 profonda)</li><li>11/09 Test AeT: 139 bpm media (corretto per il test)</li><li>13/09 Morning Ride: 132.8 bpm (Z1)</li><li>15/09 Test AnT: 151 bpm media (corretto per il test)</li></ul><p>Nessuna sessione above Z1 fuori dai test. Disciplina aerobica solida.</p><h4>Test fisiologici</h4><p><strong>AeT = 147 bpm</strong> — era stimata 153 bpm. Trovata per via ventilatoria (respiro nasale): il respiro cambia a ~146-147 bpm. Coincide con la MAF (180-34=146). Questo è un dato positivo: l&#x27;AeT di un atleta aerobicamente sviluppato tende a coincidere con la MAF. Passo a AeT: ~6:50-7:00/km.</p><p><strong>AnT = 159 bpm</strong> — era stimata 161 bpm. Test 30 min all-out su terreno piano (Sommacampagna). FC media 30 min = 159 bpm. Passo a AnT: 5:17/km. La progressione FC durante il test era lineare (154→164 bpm) — buona gestione.</p><p><strong>Gap AeT-AnT = 12 bpm (7.5%):</strong> NO ADS confermato. Significa che la base aerobica è sufficientemente sviluppata per il piano polarizzato. Implicazione: Z1 per le easy (&lt; 141 bpm), Z2 max 15% del volume.</p><h4>Osservazioni chiave</h4><ul><li>L&#x27;AeT più bassa del previsto (147 vs 153 stima) è normale dopo una pausa estiva. Con 3-4 mesi di Base, l&#x27;AeT tornerà a salire — il progresso si misura dal passo a AeT: se a dicembre a 147 bpm corri a 6:20/km invece di 6:50/km, la Base sta funzionando.</li><li>L&#x27;AnT a 159 bpm su terreno piano è nella media bassa per 34 anni. Con il lavoro di qualità del Specifico (Z3-4), può arrivare a 163-165 bpm.</li><li>La bici mostra buona capacità aerobica: 25.6 km a 131 bpm media e 35.7 km a 132.8 bpm — il sistema cardiovascolare risponde bene.</li></ul><h4>Verdetto</h4><p><strong>✅ PROMOSSO → Base inizia S4 (22 settembre 2026)</strong></p><p>Il Restart ha fatto quello che doveva fare:</p><ul><li>Zone calibrate su dati reali</li><li>ADS escluso</li><li>ITB monitorato e ok</li><li>Disciplina Z1 rispettata sin dal primo giorno</li></ul><p><strong>Cosa monitorare nel Base:</strong></p><ul><li>Il passo a 147 bpm deve migliorare di 10-20 sec/km entro dicembre</li><li>RHR target: scendere sotto 46 bpm entro fine Base (ora: 48 bpm)</li><li>HRV: tendenza al rialzo nelle settimane di build</li><li>ITB: monitorare sulle discese dei long trail</li></ul>"}}, "latest_activity_zone_seconds": [835, 576, 29, 0, 0], "latest_activity_comment": "È stata una corsa prevalentemente aerobica — FC quasi sempre in Z1/Z2 (98% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 16.0 (carico basso).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-09-11", "type": "AeT", "hr": 147, "pace_sec_per_km": 410, "note": "Test reale — respiro nasale (ventilatorio). Primo test vero su questo piano, sostituisce la stima storica."}, {"date": "2026-09-15", "type": "AnT", "hr": 159, "pace_sec_per_km": 317, "note": "Test reale — 30 min all-out a Sommacampagna. Sostituisce la stima storica (161 bpm)."}], "nutrition_tests": [], "nutrition_status": {"phase_name": "Base", "cho_target": "30-40g/ora", "cho_detail": "1 gel ogni 45 min sulle uscite oltre 90 min.", "next_sweat_test": {"week": 29, "when": "mar 2027", "desc": "Pre-caldo (tiepido ~18°C, 2h long trail)"}}, "zone_agg_all": {"zone_seconds": [63804, 19659, 9138, 1698, 40], "n_activities": 20, "z1z2_pct": 88, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [46926, 14171, 6693, 466, 40], "n_activities": 13, "z1z2_pct": 89, "low_aerobic_flag": false}, "completed_sessions": ["10:2", "10:3", "1:1", "1:2", "1:3", "2:0", "2:2", "2:4", "3:0", "3:1", "3:2", "4:0", "4:2", "4:5", "5:0", "5:2", "6:0", "6:4", "6:5", "7:0", "8:0", "8:2", "8:5", "9:0", "9:3", "9:5"], "next_workout": {"date": "2026-11-09#0", "day_label": "S11", "type": "run", "label": "Hill Sprints #5 · 8 km tot", "extra": "8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"}, "current_block": {"name": "Base", "start": "2026-09-21", "end": "2027-01-24", "planned_total": 776, "week_start": 4, "week_end": 21}, "block_daily_km": [{"date": "21/09", "cumulative_km": 0.0}, {"date": "22/09", "cumulative_km": 8.2}, {"date": "23/09", "cumulative_km": 8.2}, {"date": "24/09", "cumulative_km": 17.2}, {"date": "25/09", "cumulative_km": 17.2}, {"date": "26/09", "cumulative_km": 29.2}, {"date": "27/09", "cumulative_km": 37.9}, {"date": "28/09", "cumulative_km": 37.9}, {"date": "29/09", "cumulative_km": 43.9}, {"date": "30/09", "cumulative_km": 43.9}, {"date": "01/10", "cumulative_km": 50.9}, {"date": "02/10", "cumulative_km": 50.9}, {"date": "03/10", "cumulative_km": 50.9}, {"date": "04/10", "cumulative_km": 50.9}, {"date": "05/10", "cumulative_km": 50.9}, {"date": "06/10", "cumulative_km": 57.2}, {"date": "07/10", "cumulative_km": 57.2}, {"date": "08/10", "cumulative_km": 57.2}, {"date": "09/10", "cumulative_km": 57.2}, {"date": "10/10", "cumulative_km": 81.1}, {"date": "11/10", "cumulative_km": 86.6}, {"date": "12/10", "cumulative_km": 86.6}, {"date": "13/10", "cumulative_km": 95.9}, {"date": "14/10", "cumulative_km": 95.9}, {"date": "15/10", "cumulative_km": 95.9}, {"date": "16/10", "cumulative_km": 95.9}, {"date": "17/10", "cumulative_km": 95.9}, {"date": "18/10", "cumulative_km": 95.9}, {"date": "19/10", "cumulative_km": 99.9}, {"date": "20/10", "cumulative_km": 99.9}, {"date": "21/10", "cumulative_km": 99.9}, {"date": "22/10", "cumulative_km": 99.9}, {"date": "23/10", "cumulative_km": 106.4}, {"date": "24/10", "cumulative_km": 114.8}, {"date": "25/10", "cumulative_km": 114.8}, {"date": "26/10", "cumulative_km": 114.8}, {"date": "27/10", "cumulative_km": 126.1}, {"date": "28/10", "cumulative_km": 126.1}, {"date": "29/10", "cumulative_km": 134.2}, {"date": "30/10", "cumulative_km": 134.2}, {"date": "31/10", "cumulative_km": 134.2}, {"date": "01/11", "cumulative_km": 158.4}, {"date": "02/11", "cumulative_km": 158.4}, {"date": "03/11", "cumulative_km": 158.4}, {"date": "04/11", "cumulative_km": 158.4}, {"date": "05/11", "cumulative_km": 168.9}, {"date": "06/11", "cumulative_km": 168.9}, {"date": "07/11", "cumulative_km": 173.1}, {"date": "08/11", "cumulative_km": 173.1}, {"date": "09/11", "cumulative_km": 173.1}, {"date": "10/11", "cumulative_km": 173.1}, {"date": "11/11", "cumulative_km": 173.1}, {"date": "12/11", "cumulative_km": 173.1}, {"date": "13/11", "cumulative_km": 173.1}]};
+var DATA = {"generated_at": "14/11/2026 14:56", "wellness": {"date": "2026-11-07", "rhr": 47, "bb": 90, "stress": 14, "tr": 46, "hrv": 53, "sleep_h": 7.0, "sleep_score": 82}, "vo2max_entries": [{"date": "2026-05-01", "vo2max": 51.0, "vo2max_precise": 51.2}, {"date": "2026-05-16", "vo2max": 50.0, "vo2max_precise": 50.2}, {"date": "2026-05-19", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-02", "vo2max": 50.0, "vo2max_precise": 49.9}, {"date": "2026-06-04", "vo2max": 50.0, "vo2max_precise": 49.7}, {"date": "2026-06-07", "vo2max": 50.0, "vo2max_precise": 49.8}, {"date": "2026-06-09", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-14", "vo2max": 50.0, "vo2max_precise": 50.0}, {"date": "2026-06-17", "vo2max": 50.0, "vo2max_precise": 50.3}, {"date": "2026-06-23", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-07-02", "vo2max": 51.0, "vo2max_precise": 50.7}, {"date": "2026-07-09", "vo2max": 51.0, "vo2max_precise": 50.8}, {"date": "2026-07-15", "vo2max": 51.0, "vo2max_precise": 50.9}, {"date": "2026-07-19", "vo2max": 51.0, "vo2max_precise": 50.5}, {"date": "2026-08-23", "vo2max": 50.0, "vo2max_precise": 49.6}], "weekly_km": [{"label": "24/08", "planned": null, "actual": 24.2, "is_current": false}, {"label": "31/08", "planned": 14, "actual": 14.3, "is_current": false}, {"label": "07/09", "planned": 14, "actual": 17.3, "is_current": false}, {"label": "14/09", "planned": 14, "actual": 23.7, "is_current": false}, {"label": "21/09", "planned": 22, "actual": 37.9, "is_current": false}, {"label": "28/09", "planned": 30, "actual": 13.0, "is_current": false}, {"label": "05/10", "planned": 33, "actual": 35.7, "is_current": false}, {"label": "12/10", "planned": 18, "actual": 9.3, "is_current": false}, {"label": "19/10", "planned": 36, "actual": 19.0, "is_current": false}, {"label": "26/10", "planned": 40, "actual": 43.5, "is_current": false}, {"label": "02/11", "planned": 22, "actual": 14.7, "is_current": false}, {"label": "09/11", "planned": 44, "actual": 0.0, "is_current": true}], "weekly_actual_km": [14.3, 17.3, 23.7, 37.9, 13.0, 35.7, 9.3, 19.0, 43.5, 14.7, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "latest_activity": {"id": "20892068055", "name": "Corsa mattutina", "sport_type": "Run", "start_local": "2026-11-07T10:14:52", "summary": {"distance": 4142.0, "moving_time": 1439, "elapsed_time": 1475, "elevation_gain": 9.0, "avg_speed": 2.878, "max_speed": 4.14, "relative_effort": 16.0, "total_calories": 288.0, "avg_cadence": 85.6, "kudos_count": 1, "achievement_count": 1, "pr_count": 1}, "polyline": "ysftGaoxbAMLCIGEEBEACUDY?c@MKCWHo@Xw@Rs@?QFWAKGI{@]c@MsAWIGSm@CAs@?UJ[BICK@YEc@Me@[QUUc@Oa@Wi@AIBKREFi@DcA@iBBWAa@Bo@C]FoBD_@?OGGW@]RkAbAg@t@q@x@i@f@KRw@j@WJURuAr@qAz@_Aj@QPYb@w@XUXi@`@sAv@k@RQPKLc@fAUh@KL[r@[f@a@~@wBbDeA~Bg@x@]^_Aj@GHGh@a@|@Cb@?VMlB@J@Df@L`A^vAz@l@h@RDNJh@TrAt@`@^f@J`C|@h@b@zAr@RZDBLGD?J@LHXj@?Pg@lBGd@Sf@E\\@T`@PpAZz@d@VHRLx@\\VVDABANy@J[PuARg@L?DHAH\\Sl@Pd@X^Nb@b@PFBA?MFQB[H]?KKa@?QLcABWA]COWa@C_@BWAOBMRUJ]VQFKLYDYCSSo@QiAIQU{@Iw@a@qAE[U{@g@wA@Mh@a@^UFIEaAH_ABkBBo@BGBCHBxAjAPPVNL?Z^H@BETu@d@_ADSPc@BWDMPWN_@BOC[@y@AM?gACa@?_@@OBEHAR@FDPb@JJn@NdALlAd@DLAX_@`BAZSbA@F", "performance": {"average_heartrate": 132.8, "max_heartrate": 149.0, "average_cadence": 85.6, "calories": 288.0}, "hr_stream": {"time": [0, 17, 34, 50, 67, 85, 102, 118, 134, 150, 166, 182, 198, 213, 228, 244, 260, 276, 292, 307, 323, 338, 353, 368, 383, 398, 413, 428, 442, 457, 471, 486, 502, 516, 531, 546, 561, 576, 591, 605, 619, 633, 648, 662, 677, 692, 707, 722, 735, 750, 765, 779, 794, 808, 822, 837, 851, 864, 877, 892, 905, 919, 933, 946, 960, 974, 1025, 1041, 1054, 1070, 1084, 1096, 1110, 1123, 1136, 1151, 1164, 1177, 1191, 1205, 1218, 1230, 1243, 1257, 1271, 1285, 1298, 1312, 1326, 1340, 1352, 1366, 1380, 1393, 1405, 1419, 1433, 1445, 1459, 1475], "heart_rate": [83, 92, 94, 100, 103, 108, 112, 114, 118, 119, 120, 123, 122, 121, 119, 115, 121, 121, 122, 122, 125, 125, 124, 125, 126, 127, 131, 133, 130, 130, 130, 129, 129, 127, 127, 129, 131, 132, 133, 136, 141, 144, 146, 145, 144, 144, 141, 135, 137, 137, 139, 136, 135, 137, 136, 137, 137, 137, 143, 143, 143, 142, 143, 144, 145, 144, 128, 125, 127, 132, 132, 137, 139, 142, 144, 145, 146, 145, 146, 146, 147, 147, 147, 148, 147, 147, 148, 146, 145, 146, 147, 147, 147, 146, 146, 144, 145, 145, 146, 146]}}, "hr_zones_def": [{"min": 60, "max": 140}, {"min": 141, "max": 147}, {"min": 148, "max": 159}, {"min": 160, "max": 166}, {"min": 167, "max": 220}], "thresholds": {"aet": 147, "ant": 159, "fcmax": 166, "aet_pace": "6:50/km", "ant_pace": "5:17/km"}, "verdicts": {"restart": {"title": "RESTART (S1-S3 · 1-21 settembre 2026)", "outcome": "promosso", "headline": "✅ PROMOSSO → Base inizia S4 (22 settembre 2026)", "html": "<h4>Dati del blocco</h4><table class=\"vtable\"><thead><tr><th>Metrica</th><th>Valore</th><th>Target</th><th>Esito</th></tr></thead><tbody><tr><td>Settimane completate</td><td>3</td><td>3-4</td><td>✅</td></tr><tr><td>Volume totale</td><td>~42 km</td><td>40-50 km</td><td>✅</td></tr><tr><td>AeT misurata</td><td><strong>147 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>AnT misurata</td><td><strong>159 bpm</strong></td><td>da misurare</td><td>✅ completato</td></tr><tr><td>Gap AeT-AnT</td><td>12 bpm (7.5%)</td><td>&lt; 10% = no ADS</td><td>✅ NO ADS</td></tr><tr><td>ITB</td><td>nessun problema</td><td>nessun problema</td><td>✅</td></tr><tr><td>FC media easy run</td><td>132-142 bpm</td><td>&lt; AeT (147 bpm)</td><td>✅</td></tr><tr><td>FC media bici</td><td>131-133 bpm</td><td>&lt; 145 bpm</td><td>✅</td></tr></tbody></table><h4>Easy-day discipline</h4><p>Eccellente. Le 4 sessioni easy del Restart mostrano FC media ben sotto la AeT:</p><ul><li>29/08 Evening Run: 142 bpm (Z1)</li><li>08/09 Corsa serale: 135.7 bpm (Z1 profonda)</li><li>11/09 Test AeT: 139 bpm media (corretto per il test)</li><li>13/09 Morning Ride: 132.8 bpm (Z1)</li><li>15/09 Test AnT: 151 bpm media (corretto per il test)</li></ul><p>Nessuna sessione above Z1 fuori dai test. Disciplina aerobica solida.</p><h4>Test fisiologici</h4><p><strong>AeT = 147 bpm</strong> — era stimata 153 bpm. Trovata per via ventilatoria (respiro nasale): il respiro cambia a ~146-147 bpm. Coincide con la MAF (180-34=146). Questo è un dato positivo: l&#x27;AeT di un atleta aerobicamente sviluppato tende a coincidere con la MAF. Passo a AeT: ~6:50-7:00/km.</p><p><strong>AnT = 159 bpm</strong> — era stimata 161 bpm. Test 30 min all-out su terreno piano (Sommacampagna). FC media 30 min = 159 bpm. Passo a AnT: 5:17/km. La progressione FC durante il test era lineare (154→164 bpm) — buona gestione.</p><p><strong>Gap AeT-AnT = 12 bpm (7.5%):</strong> NO ADS confermato. Significa che la base aerobica è sufficientemente sviluppata per il piano polarizzato. Implicazione: Z1 per le easy (&lt; 141 bpm), Z2 max 15% del volume.</p><h4>Osservazioni chiave</h4><ul><li>L&#x27;AeT più bassa del previsto (147 vs 153 stima) è normale dopo una pausa estiva. Con 3-4 mesi di Base, l&#x27;AeT tornerà a salire — il progresso si misura dal passo a AeT: se a dicembre a 147 bpm corri a 6:20/km invece di 6:50/km, la Base sta funzionando.</li><li>L&#x27;AnT a 159 bpm su terreno piano è nella media bassa per 34 anni. Con il lavoro di qualità del Specifico (Z3-4), può arrivare a 163-165 bpm.</li><li>La bici mostra buona capacità aerobica: 25.6 km a 131 bpm media e 35.7 km a 132.8 bpm — il sistema cardiovascolare risponde bene.</li></ul><h4>Verdetto</h4><p><strong>✅ PROMOSSO → Base inizia S4 (22 settembre 2026)</strong></p><p>Il Restart ha fatto quello che doveva fare:</p><ul><li>Zone calibrate su dati reali</li><li>ADS escluso</li><li>ITB monitorato e ok</li><li>Disciplina Z1 rispettata sin dal primo giorno</li></ul><p><strong>Cosa monitorare nel Base:</strong></p><ul><li>Il passo a 147 bpm deve migliorare di 10-20 sec/km entro dicembre</li><li>RHR target: scendere sotto 46 bpm entro fine Base (ora: 48 bpm)</li><li>HRV: tendenza al rialzo nelle settimane di build</li><li>ITB: monitorare sulle discese dei long trail</li></ul>"}}, "latest_activity_zone_seconds": [835, 576, 29, 0, 0], "latest_activity_comment": "È stata una corsa prevalentemente aerobica — FC quasi sempre in Z1/Z2 (98% del tempo). Ottima per costruire base e capacità di recupero, senza accumulare fatica eccessiva. Effort relativo Strava: 16.0 (carico basso).", "threshold_tests": [{"date": "2026-08-28", "type": "AeT", "hr": 153, "pace_sec_per_km": 343, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-08-28", "type": "AnT", "hr": 161, "pace_sec_per_km": 305, "note": "Stima storica (test lattato precedente) — non un test reale su questo piano"}, {"date": "2026-09-11", "type": "AeT", "hr": 147, "pace_sec_per_km": 410, "note": "Test reale — respiro nasale (ventilatorio). Primo test vero su questo piano, sostituisce la stima storica."}, {"date": "2026-09-15", "type": "AnT", "hr": 159, "pace_sec_per_km": 317, "note": "Test reale — 30 min all-out a Sommacampagna. Sostituisce la stima storica (161 bpm)."}], "nutrition_tests": [], "nutrition_status": {"phase_name": "Base", "cho_target": "30-40g/ora", "cho_detail": "1 gel ogni 45 min sulle uscite oltre 90 min.", "next_sweat_test": {"week": 29, "when": "mar 2027", "desc": "Pre-caldo (tiepido ~18°C, 2h long trail)"}}, "zone_agg_all": {"zone_seconds": [63804, 19659, 9138, 1698, 40], "n_activities": 20, "z1z2_pct": 88, "low_aerobic_flag": false}, "zone_agg_block": {"zone_seconds": [46926, 14171, 6693, 466, 40], "n_activities": 13, "z1z2_pct": 89, "low_aerobic_flag": false}, "completed_sessions": ["10:2", "10:3", "1:1", "1:2", "1:3", "2:0", "2:2", "2:4", "3:0", "3:1", "3:2", "4:0", "4:2", "4:5", "5:0", "5:2", "6:0", "6:4", "6:5", "7:0", "8:0", "8:2", "8:5", "9:0", "9:3", "9:5"], "soccorso": {"aggiornato": "2026-11-14", "documenti": {"curriculum": "in costruzione", "visita_agonistica": "da verificare", "iscrizione_cai": "da verificare"}, "voci": [{"data": "2025", "categoria": "corsa", "titolo": "Tzimbar Race", "luogo": "", "dettagli": "gara di trail running — dettagli da completare (data, distanza, dislivello)", "dislivello_m": null, "durata": "", "grado": "", "ruolo": "", "note": "", "fonte": "registro"}, {"data": "2023", "categoria": "corsa", "titolo": "Dolomiti Beer Trail", "luogo": "", "dettagli": "gara di trail running — dettagli da completare (data, distanza, dislivello)", "dislivello_m": null, "durata": "", "grado": "", "ruolo": "", "note": "", "fonte": "registro"}], "corsa": {"km_28": 69, "dplus_28": 2432, "km_90": 227, "dplus_90": 5313, "n_90": 26, "lungo": {"km": 24.2, "dplus": 1615, "data": "2026-11-01"}}}, "next_workout": {"date": "2026-11-09#0", "day_label": "S11", "type": "run", "label": "Hill Sprints #5 · 8 km tot", "extra": "8×15 sec MAX · 2-3 min recupero · FC<141 fuori dagli sprint"}, "current_block": {"name": "Base", "start": "2026-09-21", "end": "2027-01-24", "planned_total": 776, "week_start": 4, "week_end": 21}, "block_daily_km": [{"date": "21/09", "cumulative_km": 0.0}, {"date": "22/09", "cumulative_km": 8.2}, {"date": "23/09", "cumulative_km": 8.2}, {"date": "24/09", "cumulative_km": 17.2}, {"date": "25/09", "cumulative_km": 17.2}, {"date": "26/09", "cumulative_km": 29.2}, {"date": "27/09", "cumulative_km": 37.9}, {"date": "28/09", "cumulative_km": 37.9}, {"date": "29/09", "cumulative_km": 43.9}, {"date": "30/09", "cumulative_km": 43.9}, {"date": "01/10", "cumulative_km": 50.9}, {"date": "02/10", "cumulative_km": 50.9}, {"date": "03/10", "cumulative_km": 50.9}, {"date": "04/10", "cumulative_km": 50.9}, {"date": "05/10", "cumulative_km": 50.9}, {"date": "06/10", "cumulative_km": 57.2}, {"date": "07/10", "cumulative_km": 57.2}, {"date": "08/10", "cumulative_km": 57.2}, {"date": "09/10", "cumulative_km": 57.2}, {"date": "10/10", "cumulative_km": 81.1}, {"date": "11/10", "cumulative_km": 86.6}, {"date": "12/10", "cumulative_km": 86.6}, {"date": "13/10", "cumulative_km": 95.9}, {"date": "14/10", "cumulative_km": 95.9}, {"date": "15/10", "cumulative_km": 95.9}, {"date": "16/10", "cumulative_km": 95.9}, {"date": "17/10", "cumulative_km": 95.9}, {"date": "18/10", "cumulative_km": 95.9}, {"date": "19/10", "cumulative_km": 99.9}, {"date": "20/10", "cumulative_km": 99.9}, {"date": "21/10", "cumulative_km": 99.9}, {"date": "22/10", "cumulative_km": 99.9}, {"date": "23/10", "cumulative_km": 106.4}, {"date": "24/10", "cumulative_km": 114.8}, {"date": "25/10", "cumulative_km": 114.8}, {"date": "26/10", "cumulative_km": 114.8}, {"date": "27/10", "cumulative_km": 126.1}, {"date": "28/10", "cumulative_km": 126.1}, {"date": "29/10", "cumulative_km": 134.2}, {"date": "30/10", "cumulative_km": 134.2}, {"date": "31/10", "cumulative_km": 134.2}, {"date": "01/11", "cumulative_km": 158.4}, {"date": "02/11", "cumulative_km": 158.4}, {"date": "03/11", "cumulative_km": 158.4}, {"date": "04/11", "cumulative_km": 158.4}, {"date": "05/11", "cumulative_km": 168.9}, {"date": "06/11", "cumulative_km": 168.9}, {"date": "07/11", "cumulative_km": 173.1}, {"date": "08/11", "cumulative_km": 173.1}, {"date": "09/11", "cumulative_km": 173.1}, {"date": "10/11", "cumulative_km": 173.1}, {"date": "11/11", "cumulative_km": 173.1}, {"date": "12/11", "cumulative_km": 173.1}, {"date": "13/11", "cumulative_km": 173.1}, {"date": "14/11", "cumulative_km": 173.1}]};
 
 var C = { p1:"#4ade80", p2:"#60a5fa", p3:"#f97316", p4:"#a78bfa", p5:"#f43f5e", p6:"#fbbf24", muted:"#6b6560" };
 var ZONE_COLORS = ["#6b7280", "#60a5fa", "#4ade80", "#f97316", "#f43f5e"];
@@ -1761,12 +1807,265 @@ function renderVerdict() {
   });
 }
 
+// ============================================================
+// TAB SOCCORSO — percorso verso il Soccorso Alpino (CNSAS Veneto)
+// Requisiti dal Piano Formativo Regionale CNSAS Veneto (griglia G/1, ed. 2016;
+// "non cambiati", confermato dalla stazione il 14/11/2026). Gli obiettivi
+// numerici sono una proposta mia, NON richiesti dalla stazione (che chiede un
+// curriculum alpinistico e scialpinistico degli ultimi 3 anni).
+// Registro: dashboard-data/soccorso-registro.json + attività Strava di
+// scialpinismo/arrampicata (aggiunte da sole, "da completare").
+// ============================================================
+var SA_TARGETS = { scialpinismo: { n: 15, big: 5 }, arrampicata: { n: 12, capo: 8 }, alpinismo: { n: 2 } };
+
+var SA_CORSI = [
+  { code: "CAI", nome: "Iscrizione al CAI (sezione più vicina)", quando: "Subito",
+    x: "Serve per i corsi e per la domanda alla stazione. Non è un corso, ma è il primo passo." },
+  { code: "SA1", nome: "Corso di scialpinismo base (CAI)", quando: "Inverno 2026-27 · di solito iscrizioni in autunno",
+    x: "Sci in salita e discesa su neve varia, ARTVA, nivologia. Le uscite del corso valgono come lungo nel piano." },
+  { code: "ARTVA", nome: "Corso neve e valanghe / ARTVA-pala-sonda", quando: "Inverno 2026-27",
+    x: "Ricerca ARTVA e autosoccorso in valanga: è un requisito d'ingresso." },
+  { code: "AR1", nome: "Arrampicata su vie lunghe (corso CAI o guida)", quando: "Estate 2027, dopo l'Eiger (agosto-ottobre)",
+    x: "Il tuo grado c'è già; mancano capocordata in ambiente, soste, doppie e manovre di corda." },
+  { code: "AG1", nome: "Alpinismo su ghiaccio base (CAI) o giornata con guida", quando: "Fine estate 2027",
+    x: "Ramponi, picozza e ancoraggi su ghiaccio: copre il requisito dei ramponi su misto e neve." },
+  { code: "A1", nome: "Corso di alpinismo base (CAI)", quando: "Autunno 2027 o primavera 2028",
+    x: "Cordata su roccia e neve, ramponi, autosoccorso. Di solito è in primavera-estate: poco compatibile con lo Specifico 2027." },
+  { code: "BLSD", nome: "BLS-D / primo soccorso", quando: "Quando vuoi",
+    x: "I moduli sanitari CNSAS includono BLS-D e Basic Trauma: arrivarci già formato aiuta. Non è un requisito d'ingresso." },
+  { code: "GPS", nome: "Orientamento, cartografia e GPS", quando: "Quando vuoi",
+    x: "Utile per il modulo di ricerca dispersi." }
+];
+
+var SA_STAGIONI = [
+  { ico: "❄️", nome: "Inverno · dicembre-marzo", intro: "Scialpinismo al posto del lungo di corsa (già equivalente nel piano): non ruba tempo extra.",
+    items: [
+      { t: "Prime uscite vicino a casa, quando c'è neve", x: "Lessinia, Altopiano dei Sette Comuni, Monte Baldo: itinerari semplici e pendii dolci per prendere confidenza con pelli, salita e discesa su neve diversa. Verifica sempre innevamento reale e bollettino valanghe." },
+      { t: "Dolomiti, spostandoti per la giornata", x: "Zone con molti itinerari classici da principiante a intermedio: Passo Rolle e Pale di San Martino, Val di Fassa, Alpe di Siusi, zona di Cortina. Sono le uscite da 1000 m D+ e oltre che pesano nel curriculum." },
+      { t: "Obiettivo stagione", x: "10-15 uscite, di cui 4-5 da 1000 m D+ o più; in mezzo il corso SA1 e il corso ARTVA." } ] },
+  { ico: "🌷", nome: "Primavera · aprile-giugno", intro: "Il piano corsa è pesante (Specifico, Malcesine 52K a maggio): poche uscite, ma scelte bene.",
+    items: [
+      { t: "Scialpinismo di primavera", x: "Neve trasformata e giornate lunghe nelle Dolomiti: uscite più lunghe per chiudere la stagione, con partenza all'alba." },
+      { t: "Ripresa dell'arrampicata, senza fretta", x: "Falesie e vie lunghe facili in Prealpi (Piccole Dolomiti, Carega, Pasubio) per ritrovare movimento e manovre di corda. Niente di impegnativo nelle 2 settimane prima di una gara." } ] },
+  { ico: "☀️", nome: "Estate · luglio-settembre", intro: "Dopo l'Eiger (17-18 luglio 2027) c'è la finestra giusta: blocco Rebuild, meno carico di corsa.",
+    items: [
+      { t: "Vie lunghe in Dolomiti di difficoltà moderata", x: "Da capocordata su vie ben attrezzate o con compagno esperto o guida: Cinque Torri (zona Cortina), Torri del Vajolet e Catinaccio, Gruppo del Sella. È il cuore del requisito 'capocordata su itinerario alpinistico'." },
+      { t: "Una giornata su ghiacciaio, con guida o corso AG1", x: "Ramponi, cordata e manovre di crepaccio: copre il requisito dei ramponi su misto e neve." } ] },
+  { ico: "🍂", nome: "Autunno · ottobre-novembre", intro: "Le giornate si accorciano; il lavoro in montagna si sposta su vie corte e sulla corsa.",
+    items: [
+      { t: "Vie lunghe in Prealpi", x: "Piccole Dolomiti e Carega: meno gente, tempi più brevi, buone per continuare a fare capocordata." },
+      { t: "Lunghi di corsa su sentieri tecnici", x: "I lunghi del piano su terreno impervio contano come 'movimentazione su terreno ostile con adeguata preparazione fisica'." } ] }
+];
+
+var SA_PERCORSO = [
+  { q: "Inverno 2026-27", t: "Iscrizione al CAI · corso SA1 + ARTVA · prima stagione di scialpinismo (10-15 uscite)" },
+  { q: "Primavera-estate 2027", t: "Piano corsa in primo piano (Malcesine, Eiger 17-18 lug) · arrampicata solo leggera · dopo l'Eiger: vie lunghe e ghiaccio" },
+  { q: "Inverno 2027-28", t: "Seconda stagione di scialpinismo · curriculum con 2 inverni e 1 estate documentati" },
+  { q: "Primavera 2028", t: "Domanda alla stazione con il curriculum · verifica d'ingresso V/1 (2 giorni: roccia in estate, neve in inverno)" },
+  { q: "Dopo V/1", t: "Moduli O.S.A. entro 2 anni (~10 giorni) e verifica finale: operativo verso il 2029-30 (stima mia)" }
+];
+
+function saVoci(cat) {
+  return ((DATA.soccorso && DATA.soccorso.voci) || []).filter(function(v) { return v.categoria === cat; });
+}
+function saCourseDone(code) {
+  return saVoci("formazione").some(function(v) { return (v.corso || "").toUpperCase() === code; });
+}
+function saStatus(done, target) {
+  if (done <= 0) return { txt: "Da costruire", col: C.p5 };
+  if (done >= target) return { txt: "Pronto", col: C.p1 };
+  return { txt: "In corso", col: C.p6 };
+}
+function saChip(st) {
+  return '<span class="sa-chip" style="color:' + st.col + ';border-color:' + st.col + '">' + esc(st.txt) + '</span>';
+}
+function saBar(done, target, col) {
+  var pct = Math.max(0, Math.min(100, target ? done / target * 100 : 0));
+  return '<div class="sa-bar"><div class="sa-bar-fill" style="width:' + pct.toFixed(0) + '%;background:' + col + '"></div></div>';
+}
+function saFmtDate(s) {
+  if (!s) return "";
+  if (s.length === 10) return s.slice(8, 10) + "/" + s.slice(5, 7) + "/" + s.slice(0, 4);
+  return s;
+}
+function saCutoffYear() { return new Date().getFullYear() - 3; }
+function saRecent(v) {
+  var y = parseInt((v.data || "").slice(0, 4), 10);
+  return !y || y >= saCutoffYear();
+}
+function saVoceLine(v) {
+  var parts = [];
+  if (v.titolo) parts.push(v.titolo);
+  if (v.luogo) parts.push(v.luogo);
+  if (v.grado) parts.push("grado " + v.grado);
+  if (v.ruolo) parts.push(v.ruolo);
+  if (v.dislivello_m) parts.push("+" + v.dislivello_m + " m");
+  if (v.durata) parts.push(v.durata);
+  if (v.dettagli && v.fonte !== "strava") parts.push(v.dettagli);
+  return parts.join(" · ");
+}
+
+function saRaceList() {
+  var today = new Date().toISOString().slice(0, 10), out = [];
+  W.forEach(function(wk) {
+    wk.sessions.forEach(function(s) {
+      if (s.t === "race" && s.date && s.date >= today) out.push({ date: s.date, label: s.l.replace(/[^\w\sÀ-ÿ]/g, "").replace(/\s+/g, " ").trim() });
+    });
+  });
+  return out;
+}
+
+var SA_CAT_NOMI = { arrampicata: "Arrampicata (roccia)", alpinismo: "Alpinismo (ramponi, ghiaccio, misto)", scialpinismo: "Scialpinismo", corsa: "Corsa e trail di montagna", formazione: "Formazione e corsi" };
+
+function saCurriculumText() {
+  var s = DATA.soccorso || { voci: [], corsa: {}, documenti: {} };
+  var L = [];
+  L.push("CURRICULUM ALPINISTICO E SCIALPINISTICO — BOZZA");
+  L.push("Leonardo Zardini · Verona");
+  L.push("Candidatura: C.N.S.A.S. Veneto — Operatore di Soccorso Alpino (O.S.A.)");
+  L.push("Aggiornato al " + saFmtDate(new Date().toISOString().slice(0, 10)) + " · attività degli ultimi 3 anni");
+  L.push("");
+  ["arrampicata", "alpinismo", "scialpinismo", "corsa", "formazione"].forEach(function(cat) {
+    L.push(SA_CAT_NOMI[cat].toUpperCase());
+    var v = saVoci(cat).filter(saRecent);
+    if (cat === "corsa" && s.corsa && s.corsa.km_90) {
+      L.push("- Ultimi 90 giorni: " + s.corsa.km_90 + " km, +" + s.corsa.dplus_90 + " m D+ in " + s.corsa.n_90 + " uscite" + (s.corsa.lungo ? " · più lunga " + s.corsa.lungo.km + " km, +" + s.corsa.lungo.dplus + " m" : ""));
+    }
+    if (!v.length && !(cat === "corsa" && s.corsa && s.corsa.km_90)) L.push("- (da compilare)");
+    v.forEach(function(x) { L.push("- " + saFmtDate(x.data) + " · " + saVoceLine(x) + (x.fonte === "strava" ? " [da completare]" : "")); });
+    L.push("");
+  });
+  L.push("Documenti: visita medico-sportiva agonistica (" + (s.documenti.visita_agonistica || "da verificare") + ") · iscrizione CAI (" + (s.documenti.iscrizione_cai || "da verificare") + ")");
+  return L.join("\n");
+}
+
+function saCopy() {
+  var txt = saCurriculumText();
+  function done(ok) {
+    var b = document.getElementById("sa-copy");
+    if (b) b.textContent = ok ? "Copiato ✓" : "Copia dal riquadro qui sotto";
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(function() { done(true); }, function() { done(false); });
+  } else { done(false); }
+}
+
+function renderSoccorso() {
+  var s = DATA.soccorso || { voci: [], corsa: {}, documenti: {} };
+  var run = s.corsa || {};
+  var arr = saVoci("arrampicata"), alp = saVoci("alpinismo"), ski = saVoci("scialpinismo");
+  var capo = arr.concat(alp).filter(function(v) { return /capo/i.test(v.ruolo || ""); }).length;
+  var skiBig = ski.filter(function(v) { return (v.dislivello_m || 0) >= 1000; }).length;
+  var corsiFatti = SA_CORSI.filter(function(c) { return c.code !== "CAI" && saCourseDone(c.code); }).length;
+  var corsiTot = SA_CORSI.length - 1;
+  var T = SA_TARGETS;
+
+  // 1) i quattro pilastri
+  var tile = function(ico, nome, big, sub, st, bar) {
+    return '<div class="sa-tile"><div class="sa-tile-h">' + ico + ' ' + esc(nome) + '</div>' +
+      '<div class="sa-tile-v">' + big + '</div><div class="sa-tile-s">' + sub + '</div>' + (bar || "") + (st ? saChip(st) : "") + '</div>';
+  };
+  var tiles =
+    tile("🏃", "Corsa", (run.km_28 || 0) + ' km', '28 gg · +' + (run.dplus_28 || 0) + ' m D+', { txt: "Base in corso", col: C.p2 }, "") +
+    tile("🧗", "Arrampicata", arr.length + '/' + T.arrampicata.n, capo + '/' + T.arrampicata.capo + ' da capocordata', saStatus(arr.length, T.arrampicata.n), saBar(arr.length, T.arrampicata.n, C.p4)) +
+    tile("⛷️", "Scialpinismo", ski.length + '/' + T.scialpinismo.n, skiBig + '/' + T.scialpinismo.big + ' da 1000 m D+', saStatus(ski.length, T.scialpinismo.n), saBar(ski.length, T.scialpinismo.n, C.p1)) +
+    tile("🎓", "Corsi", corsiFatti + '/' + corsiTot, 'CAI, ARTVA, sanitari', saStatus(corsiFatti, 3), saBar(corsiFatti, corsiTot, C.p6));
+  var head =
+    '<div class="card"><div class="card-head"><span class="label">🆘 Obiettivo: Soccorso Alpino</span></div>' +
+    '<div class="card-body"><div style="font-size:13px;line-height:1.5">Operatore di Soccorso Alpino (O.S.A.) del CNSAS Veneto. ' +
+    '<strong>La corsa è la base di tutto</strong>: arrampicata, scialpinismo e corsi la completano. Le soglie numeriche sono una proposta mia, la stazione chiede un curriculum degli ultimi 3 anni.</div>' +
+    '<div class="sa-grid">' + tiles + '</div></div>' +
+    '<div class="note">Percorso: domanda alla stazione → verifica V/1 (2 giorni: roccia e neve) → moduli O.S.A. entro 2 anni (~10 giorni) → verifica finale. Età 18-45.</div></div>';
+
+  // 2) requisiti d'ingresso
+  var reqs = [
+    { t: "Muoversi su terreno impervio con buona preparazione fisica", st: { txt: "Base in corso", col: C.p2 },
+      d: run.lungo ? 'Corsa 90 gg: ' + run.km_90 + ' km · lungo più lungo ' + run.lungo.km + ' km (+' + run.lungo.dplus + ' m)' : 'Dati Strava in arrivo' },
+    { t: "Salire da capocordata su itinerario alpinistico (almeno 4° UIAA)", st: saStatus(capo, T.arrampicata.capo), d: capo + ' vie da capocordata registrate (obiettivo ' + T.arrampicata.capo + ')' },
+    { t: "Ramponi su terreno misto e innevato", st: saStatus(alp.length, T.alpinismo.n), d: alp.length + ' uscite registrate (obiettivo ' + T.alpinismo.n + ')' },
+    { t: "Sci su ogni tipo di neve, salita e discesa da scialpinismo", st: saStatus(ski.length, T.scialpinismo.n), d: ski.length + ' uscite (obiettivo ' + T.scialpinismo.n + ', di cui ' + T.scialpinismo.big + ' da 1000 m D+)' },
+    { t: "Cordata su roccia, neve e ghiaccio · autoassicurazione · doppie · nodi", st: saStatus(["A1", "AR1", "SA1"].filter(saCourseDone).length, 1), d: 'Corso A1, AR1 o SA1 (CAI) o equivalente' },
+    { t: "Ricerca ARTVA e autosoccorso in valanga", st: saStatus(saCourseDone("ARTVA") ? 1 : 0, 1), d: 'Corso ARTVA/valanghe' }
+  ];
+  var reqHtml = reqs.map(function(r) {
+    return '<div class="sa-req"><div class="sa-req-t">' + esc(r.t) + '</div><div class="sa-req-d">' + esc(r.d) + ' ' + saChip(r.st) + '</div></div>';
+  }).join("");
+  var docs = s.documenti || {};
+  var docHtml = '<div class="sa-req"><div class="sa-req-t">Documenti</div><div class="sa-req-d">Curriculum (' + esc(docs.curriculum || "in costruzione") + ') · visita medico-sportiva agonistica (' + esc(docs.visita_agonistica || "da verificare") + ') · iscrizione al CAI (' + esc(docs.iscrizione_cai || "da verificare") + ') · domanda, carta d\'identità, tessera sanitaria, foto</div></div>';
+  var reqCard =
+    '<div class="card"><div class="card-head"><span class="label">✅ Requisiti d\'ingresso</span></div><div class="card-body" style="padding-top:4px">' + reqHtml + docHtml + '</div>' +
+    '<div class="note">Fonte: Piano Formativo Regionale CNSAS Veneto (griglia G/1, 2016), requisiti confermati dalla stazione il 14/11/2026.</div></div>';
+
+  // 3) curriculum
+  var curSections = ["arrampicata", "alpinismo", "scialpinismo", "corsa", "formazione"].map(function(cat) {
+    var v = saVoci(cat).filter(saRecent);
+    var extra = "";
+    if (cat === "corsa") {
+      if (run.km_90) extra += '<div class="sa-cv-line">Ultimi 90 giorni: ' + run.km_90 + ' km, +' + run.dplus_90 + ' m D+ in ' + run.n_90 + ' uscite' + (run.lungo ? ' · più lunga ' + run.lungo.km + ' km (+' + run.lungo.dplus + ' m)' : '') + '</div>';
+      var races = saRaceList();
+      if (races.length) extra += '<div class="sa-cv-line" style="color:var(--muted)">In programma: ' + races.map(function(r) { return esc(saFmtDate(r.date)) + ' ' + esc(r.label); }).join(' · ') + '</div>';
+    }
+    var lines = v.map(function(x) {
+      return '<div class="sa-cv-line"><span class="sa-cv-d">' + esc(saFmtDate(x.data)) + '</span> ' + esc(saVoceLine(x)) +
+        (x.fonte === "strava" ? ' <span class="sa-badge">da completare</span>' : '') + '</div>';
+    }).join("");
+    if (!lines && !extra) lines = '<div class="sa-cv-line" style="color:var(--muted)">Ancora nessuna uscita registrata.</div>';
+    return '<div class="sa-cv-sec"><div class="sa-cv-h">' + esc(SA_CAT_NOMI[cat]) + ' <span style="color:var(--muted);font-weight:500">(' + v.length + ')</span></div>' + extra + lines + '</div>';
+  }).join("");
+  var cvCard =
+    '<div class="card" id="sa-cv-card"><div class="card-head"><span class="label">📄 Curriculum (bozza per la stazione)</span></div>' +
+    '<div class="card-body">' + curSections +
+    '<div class="sa-actions"><button class="sa-btn" id="sa-copy">Copia testo</button><button class="sa-btn" id="sa-print">Stampa / PDF</button></div>' +
+    '<details class="sa-details"><summary>Mostra il testo del curriculum</summary><pre class="sa-pre">' + esc(saCurriculumText()) + '</pre></details></div>' +
+    '<div class="note">Conta solo ciò che è registrato: le uscite di scialpinismo e arrampicata su Strava compaiono da sole come "da completare". Questa pagina è pubblica: niente nomi di compagni.</div></div>';
+
+  // 4) corsi
+  var corsiHtml = SA_CORSI.map(function(c) {
+    var done = c.code === "CAI" ? (docs.iscrizione_cai === "fatta" || docs.iscrizione_cai === "ok") : saCourseDone(c.code);
+    return '<div class="sa-course"><div class="sa-course-t">' + esc(c.nome) + ' ' + saChip(done ? { txt: "Fatto", col: C.p1 } : { txt: "Da fare", col: C.muted }) + '</div>' +
+      '<div class="sa-course-w">' + esc(c.quando) + '</div><div class="sa-course-x">' + esc(c.x) + '</div></div>';
+  }).join("");
+  var corsiCard =
+    '<div class="card"><div class="card-head"><span class="label">🎓 Corsi e formazione</span></div><div class="card-body" style="padding-top:4px">' + corsiHtml + '</div>' +
+    '<div class="note">Date indicative e codici CAI da verificare sul calendario della sezione: i corsi di alpinismo e scialpinismo cambiano da scuola a scuola.</div></div>';
+
+  // 5) percorso previsto
+  var percorsoHtml = SA_PERCORSO.map(function(p) {
+    return '<div class="milestone-row"><div class="milestone-dot" style="background:' + C.p2 + '"></div><div><div class="milestone-date">' + esc(p.q) + '</div><div class="milestone-detail" style="margin-top:2px">' + esc(p.t) + '</div></div></div>';
+  }).join("");
+  var percorsoCard =
+    '<div class="card"><div class="card-head"><span class="label">🗓️ Percorso previsto (stima)</span></div>' + percorsoHtml +
+    '<div class="note">Stima mia, non della stazione: dipende da quanto tempo riesci a liberare e dalla selezione.</div></div>';
+
+  // 6) uscite per stagione
+  var stagHtml = SA_STAGIONI.map(function(st) {
+    var items = st.items.map(function(i) { return '<div class="sa-item"><div class="sa-item-t">' + esc(i.t) + '</div><div class="sa-item-x">' + esc(i.x) + '</div></div>'; }).join("");
+    return '<div class="sa-stag"><div class="sa-stag-h">' + st.ico + ' ' + esc(st.nome) + '</div><div class="sa-stag-i">' + esc(st.intro) + '</div>' + items + '</div>';
+  }).join("");
+  var stagCard =
+    '<div class="card"><div class="card-head"><span class="label">🏔️ Uscite per stagione · Prealpi e Dolomiti</span></div><div class="card-body" style="padding-top:4px">' + stagHtml + '</div>' +
+    '<div class="note">Sono aree e idee, non relazioni di via: scegli itinerari sotto il tuo livello, con compagno esperto, corso o guida finché non hai autonomia, e verifica meteo, valanghe e condizioni aggiornate.</div></div>';
+
+  // 7) come si alimenta
+  var feedCard =
+    '<div class="card"><div class="card-head"><span class="label">📝 Come si alimenta il curriculum</span></div><div class="card-body" style="font-size:12.5px;line-height:1.55">' +
+    '<div>1. <strong>Strava</strong>: scialpinismo e arrampicata compaiono da soli come "da completare".</div>' +
+    '<div>2. <strong>Dopo ogni uscita</strong> mandami: data, itinerario e luogo, tipo, dislivello, difficoltà (UIAA/francese), ruolo (capocordata, secondo, ricognizione), condizioni e note. Le inserisco nel registro.</div>' +
+    '<div>3. <strong>Corsi</strong>: appena finiti, dimmi codice e data e li registro come formazione.</div>' +
+    '<div>4. <strong>Ogni inverno e ogni estate</strong>: rileggiamo il curriculum e lo confrontiamo con la stazione.</div></div></div>';
+
+  document.getElementById("page-soccorso").innerHTML = head + reqCard + cvCard + corsiCard + stagCard + percorsoCard + feedCard;
+  var cp = document.getElementById("sa-copy"); if (cp) cp.addEventListener("click", saCopy);
+  var pr = document.getElementById("sa-print"); if (pr) pr.addEventListener("click", function() { window.print(); });
+}
+
 function initTabs() {
   var btns = document.querySelectorAll(".tab-btn");
   btns.forEach(function(btn) {
     btn.addEventListener("click", function() {
       btns.forEach(function(b){ b.classList.remove("active"); });
       btn.classList.add("active");
+      btn.scrollIntoView({ inline: "center", block: "nearest" });
       document.querySelectorAll(".page").forEach(function(p){ p.classList.remove("active"); });
       document.getElementById("page-" + btn.dataset.page).classList.add("active");
     });
@@ -1780,6 +2079,7 @@ document.addEventListener("DOMContentLoaded", function() {
   renderBlocchi();
   renderVerdict();
   renderUtmb();
+  renderSoccorso();
   initTabs();
 });
 
